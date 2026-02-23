@@ -1,46 +1,37 @@
-# Astro Starter Kit: Basics
+# www.jodieplant.com
 
-```sh
-npm create astro@latest -- --template basics
+Marketing website for Jodie Plant Marketing — an AI/tech-forward digital marketing agency targeting startups and tech companies.
+
+**Live**: [www.jodieplant.com](https://www.jodieplant.com)
+
+## Tech Stack
+
+- [Astro 5](https://astro.build) — static site framework
+- Tailwind CSS — utility-first styling (planned, see backlog FEAT-001)
+- GitHub Pages — hosting via GitHub Actions
+
+## Commands
+
+| Command | Action |
+|---------|--------|
+| `npm install` | Install dependencies |
+| `npm run dev` | Start dev server at `localhost:4321` |
+| `npm run build` | Production build to `./dist/` |
+| `npm run preview` | Preview production build locally |
+
+## Sprint Management
+
+This project uses [aishore](https://github.com/simonweniger/aishore) for AI-assisted sprint management.
+
+```bash
+.aishore/aishore status              # View backlog overview
+.aishore/aishore run                 # Run next sprint
+.aishore/aishore run FEAT-001        # Run specific item
+.aishore/aishore groom --backlog     # Product owner grooming
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Documentation
 
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
-
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- [`docs/WEBSITE_BRIEF.md`](docs/WEBSITE_BRIEF.md) — Full design and content brief
+- [`backlog/backlog.json`](backlog/backlog.json) — Feature backlog (19 stories)
+- [`CLAUDE.md`](CLAUDE.md) — AI coding assistant instructions

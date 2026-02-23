@@ -4,7 +4,9 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project
 
-Astro 5 static site for www.jodieplant.com (Jodie Plant Marketing). Deployed to GitHub Pages via GitHub Actions on push to `main`.
+Astro 5 static site for www.jodieplant.com — Jodie Plant Marketing, an AI/tech-forward digital marketing agency targeting startups and tech companies. Deployed to GitHub Pages via GitHub Actions on push to `main`.
+
+The full design and content brief is at `docs/WEBSITE_BRIEF.md` (v2.0). The sprint backlog is at `backlog/backlog.json`.
 
 ## Commands
 
@@ -13,19 +15,31 @@ Astro 5 static site for www.jodieplant.com (Jodie Plant Marketing). Deployed to 
 - `npm run preview` — preview production build locally
 - `npm ci` — install dependencies (used in CI)
 
-No linting or test tooling is configured.
+No linting or test tooling is configured. Validation command for aishore sprints is `npm run build`.
 
 ## Architecture
 
 Standard Astro project structure using strict TypeScript (`astro/tsconfigs/strict`):
 
-- `src/pages/` — file-based routing (currently just `index.astro`)
-- `src/layouts/Layout.astro` — base HTML shell (meta, favicon, CSS reset)
-- `src/components/` — reusable `.astro` components
+- `src/pages/` — file-based routing (MVP: index, about, services, results, contact)
+- `src/layouts/Layout.astro` — base HTML shell (meta, favicon, fonts, CSS)
+- `src/components/` — reusable `.astro` components (Header, Footer, ServiceCard, etc.)
 - `src/assets/` — imported assets (SVGs processed by Astro)
-- `public/` — static files served as-is (favicons)
+- `public/` — static files served as-is (favicons, OG images)
+- `docs/` — project documentation (website brief)
+- `backlog/` — aishore sprint backlog and bugs
 
-Pure static site — no SSR, no frontend framework integrations (React/Vue/Svelte), no content collections. Styles are scoped CSS within `.astro` files.
+Pure static site — no SSR, no frontend framework integrations (React/Vue/Svelte). Tailwind CSS for styling (to be added in FEAT-001). Forms handled by Formspree or similar static-compatible service.
+
+## Key Design Decisions (from brief v2.0)
+
+- **Brand colors**: Dark navy `#0F172A`, orange accent `#FF6B35`, indigo secondary `#6366F1`
+- **Typography**: Cabinet Grotesk (headlines), Inter (body), Space Grotesk (stats/callouts)
+- **Pages**: / (homepage), /about, /services, /results, /contact
+- **CTA strategy**: Contact form (primary) + email (jodie@jodieplant.com) + calendar booking (Phase 2)
+- **Lead magnet**: "Free Marketing Audit" framing on contact page
+- **Tone**: Bold, confident, direct — "we get results" energy
+- **Social proof**: Real credentials only — never fake case studies or fabricated metrics
 
 ## Deployment
 
@@ -53,6 +67,7 @@ This project uses [aishore](https://github.com/simonweniger/aishore) for AI-assi
 .aishore/aishore review --since <commit>       # Review changes since commit
 
 # Info
+.aishore/aishore status             # Backlog overview and sprint readiness
 .aishore/aishore metrics            # Sprint metrics
 .aishore/aishore metrics --json     # Metrics as JSON
 
