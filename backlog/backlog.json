@@ -1,0 +1,360 @@
+{
+  "description": "Feature backlog — www.jodieplant.com (ref: docs/WEBSITE_BRIEF.md v2.0)",
+  "items": [
+    {
+      "id": "FEAT-001",
+      "title": "Install Tailwind CSS and configure brand design tokens",
+      "description": "Install @astrojs/tailwind and tailwindcss. Create tailwind.config.mjs with the design tokens from WEBSITE_BRIEF.md Section 7 (v2.0):\n\nColors: Dark #0F172A (navy — nav, footer, dark sections), Accent #FF6B35 (warm orange — CTAs, links, brand mark), Accent Secondary #6366F1 (indigo — supporting highlights), Light BG #FFFFFF/#F8FAFC, Text #1E293B (slate-800), Muted #64748B (slate-500).\n\nTypography: Cabinet Grotesk (700-800) for headlines — this is the bold brand differentiator. Inter (400-500) for body. Space Grotesk (500-700) for stats/callouts/numbers. Load Cabinet Grotesk and Space Grotesk via Google Fonts or Fontsource. Inter can use system font stack or Fontsource.\n\nBreakpoints: Mobile <640px, Tablet 640-1024px, Desktop >1024px with max-width 1280px container.\n\nAdd a base CSS layer with font-face declarations and CSS custom properties for the brand colors. Ensure the orange (#FF6B35) passes WCAG AA contrast on both navy and white backgrounds for large text.",
+      "acceptanceCriteria": [
+        "Tailwind CSS is installed and integrated with Astro via @astrojs/tailwind",
+        "tailwind.config.mjs defines all brand colors (navy, orange, indigo, light, text, muted), fonts, and breakpoints from brief Section 7",
+        "Cabinet Grotesk, Space Grotesk, and Inter fonts are loaded and available",
+        "Orange accent (#FF6B35) passes WCAG AA contrast check for large text on navy and white",
+        "npm run build succeeds with Tailwind configured"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "FOUNDATION: Everything depends on this. Must be first sprint. The bold color/type choices are a key differentiator — Cabinet Grotesk for headlines and orange accent are deliberate departures from generic tech aesthetic."
+    },
+    {
+      "id": "FEAT-002",
+      "title": "Build Layout.astro shell with Header and Footer components",
+      "description": "Rebuild src/layouts/Layout.astro as the base HTML shell for all pages. It should accept props for title, description, and ogImage.\n\nCreate src/components/Header.astro — responsive navigation per brief Section 8 (v2.0):\n- Nav links: Services, Results, About\n- CTA button: 'Get Your Free Audit' (orange #FF6B35 background) linking to /contact\n- Mobile: hamburger menu (JavaScript island or CSS-only)\n- Sticky header on scroll\n- Brand name 'Jodie Plant' as text in Cabinet Grotesk (no image logo yet)\n\nCreate src/components/Footer.astro per brief Section 8 (v2.0):\n- Links: Services | Results | About | Contact\n- Email: jodie@jodieplant.com\n- LinkedIn link placeholder\n- Availability signal: 'Currently taking on new clients for Q2 2026'\n- Copyright: © 2026 Jodie Plant Marketing\n- Dark background (navy #0F172A) with light text\n\nLayout wraps Header + <slot /> + Footer. Includes viewport meta, favicon links, font loading, and prefers-reduced-motion support.",
+      "acceptanceCriteria": [
+        "Layout.astro accepts title, description, and optional ogImage props",
+        "Header shows nav links (Services, Results, About) and orange 'Get Your Free Audit' CTA button",
+        "Header is sticky and responsive — hamburger menu on mobile (<640px)",
+        "Footer shows page links, email, availability signal, and copyright on dark navy background",
+        "Touch targets are minimum 44x44px on mobile",
+        "Cabinet Grotesk is used for brand name in header",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-001"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "FOUNDATION: Layout, Header, and Footer are the structural shell. The orange CTA in the nav and availability signal in the footer are conversion elements that appear on every page."
+    },
+    {
+      "id": "FEAT-003",
+      "title": "Build Homepage with condensed high-impact sections",
+      "description": "Build src/pages/index.astro as the homepage per brief Section 9 (v2.0). Condensed to 5 high-impact sections (down from 7). Startup founders are time-poor — every section must earn the next scroll.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline in Cabinet Grotesk 800, large scale (e.g., 'Marketing that moves the needle for tech companies')\n- Subhead: 1-2 sentences — AI-forward, senior-level, full-service value prop\n- Primary CTA: 'Get Your Free Marketing Audit' (orange button → /contact)\n- Secondary CTA: 'See How I Work' (text link → /results)\n- Availability signal: small text 'Currently taking on 2 new clients for Q2 2026'\n- Visual: clean typographic hero, subtle geometric pattern or gradient. No stock photos\n\n2. SOCIAL PROOF BAR (immediately after hero — most important trust signal):\n- 3-4 credential stats in Space Grotesk at large scale with orange accent on key numbers\n- Stats MUST be real: years experience, campaigns delivered, ad spend managed, etc.\n- If client logos available: 'Trusted by' logo bar\n- If testimonial available: one pull quote\n- Light background. This section appears before any other content because trust comes first for services businesses\n\n3. HOW I'M DIFFERENT (combines old Problem + Jodie Difference):\n- Opening line: 'Tired of agencies that hand you off to juniors?'\n- Three bold differentiator cards: AI-Powered, Senior-Level Always, Full-Service\n- Each card: orange icon/accent + title + 1-2 sentence explanation\n- CTA: 'See what I'd do for your startup →' linking to /contact\n\n4. SERVICES OVERVIEW:\n- Intro line: 'Full-service marketing. Every channel. One partner.'\n- 6 service cards in responsive grid (2×3 desktop, stacked mobile)\n- Each card: icon + service name + one-line benefit from Section 5\n- Each links to /services (with anchor to relevant section)\n\n5. FINAL CTA (dark navy background):\n- Headline: 'Ready to see what AI-powered marketing can do for your startup?'\n- Orange CTA button: 'Get Your Free Marketing Audit' → /contact\n- Supporting text: 'Or email me directly: jodie@jodieplant.com'\n- Availability: 'Currently accepting new clients for Q2 2026'\n\nTone: Bold, confident, direct. Use Cabinet Grotesk for all section headlines.",
+      "acceptanceCriteria": [
+        "Homepage has exactly 5 sections: Hero, Social Proof Bar, How I'm Different, Services Overview, Final CTA",
+        "Hero has dark navy background with bold Cabinet Grotesk headline and orange CTA",
+        "Social proof bar appears immediately after hero with real credential stats (not placeholder)",
+        "How I'm Different section has 3 differentiator cards with orange accents",
+        "Services overview shows 6 cards in responsive grid linking to /services",
+        "Final CTA uses dark navy background with orange button",
+        "Availability signal appears in hero and final CTA sections",
+        "All internal links work (/services, /results, /contact)",
+        "Page is fully responsive (single column mobile, multi-column desktop)",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "CRITICAL: Primary conversion page. Social proof bar placement (immediately after hero) is a deliberate best-practice decision — trust before content. Stats must be real numbers."
+    },
+    {
+      "id": "FEAT-004",
+      "title": "Build About page with story, approach, and AI advantage",
+      "description": "Build src/pages/about.astro per brief Section 9 (v2.0) 'About Page'.\n\nPurpose: Build trust and personal connection. 'Solo' means 'senior-level attention' not 'under-resourced.'\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'One marketer. Full attention. Real results.' Brief positioning statement.\n\n2. JODIE'S STORY: Background and experience. Why she started the agency. Philosophy: senior talent, AI-enhanced, no bloat. Authentic voice — personal, not corporate. Use placeholder copy that captures the right tone (to be replaced with real bio).\n\n3. THE APPROACH: 4 numbered steps — (1) Understand your business, (2) Build data-driven strategy, (3) Execute with AI-enhanced workflows, (4) Measure, report, iterate. Visual: numbered steps or timeline. Emphasis on transparency.\n\n4. THE AI ADVANTAGE: How AI tools deliver better results — research at scale, content optimization, campaign management, reporting. Key message: augmenting human strategy, not replacing it.\n\n5. CTA: 'Let's talk about your marketing' with links to /contact (form) AND jodie@jodieplant.com (email) — dual paths.",
+      "acceptanceCriteria": [
+        "About page has all 5 sections: Hero, Story, Approach, AI Advantage, CTA",
+        "Hero uses Cabinet Grotesk headline",
+        "Story section has placeholder bio in bold, personal tone (not corporate)",
+        "Approach section shows 4 numbered steps in a visually clear format",
+        "AI Advantage section explains how AI enhances marketing delivery",
+        "CTA offers both form link (/contact) and direct email",
+        "Page is fully responsive",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Trust page for a solo practitioner. The AI Advantage section is unique to this agency and reinforces the core differentiator."
+    },
+    {
+      "id": "FEAT-005",
+      "title": "Build Services page with AI-led structure and engagement models",
+      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'AI-Powered Marketing for Tech Companies'. Subhead about AI-enhanced workflows giving agency output from a senior practitioner.\n\n2. THE AI-ENHANCED METHOD (before individual services): Brief explanation of how AI changes marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 6 services, each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) Content Marketing, (2) SEO, (3) Paid Advertising, (4) Analytics & Reporting, (5) Social Media, (6) Email Marketing.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. HOW ENGAGEMENTS WORK: Three models — Monthly Retainer ('Most clients start here'), Project-Based, Advisory. What a typical month looks like. Reporting cadence.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free Marketing Audit' → /contact + jodie@jodieplant.com.",
+      "acceptanceCriteria": [
+        "Services page has Hero, AI Method section, 6 Service Blocks, Engagements, and CTA",
+        "AI-Enhanced Method section appears BEFORE individual services",
+        "Each service block leads with 'The AI difference' specific to that service",
+        "Services ordered by differentiation strength (Content first, Email last)",
+        "Engagement section explains three models (retainer, project, advisory)",
+        "All service blocks are scannable with alternating visual layout",
+        "Orange accents used for service icons and highlights",
+        "CTA offers form link and email",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "CRITICAL: This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate."
+    },
+    {
+      "id": "FEAT-006",
+      "title": "Build Results page with real credentials and methodology (not fake case studies)",
+      "description": "Build src/pages/results.astro per brief Section 9 (v2.0) 'Results Page'.\n\nCRITICAL: This is NOT a portfolio page with fake case studies. Placeholder case studies with fabricated metrics actively harm credibility. This page uses real credentials and methodology to demonstrate expertise.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'What You Can Expect'. Subhead: honest framing — 'I don't have a portfolio of logos to hide behind. Here's what I bring instead — real experience, a proven approach, and the results to back it up.'\n\n2. CREDENTIALS & NUMBERS: Real, provable stats in Space Grotesk at large scale — years experience, campaigns/projects delivered, ad spend managed, client retention, industries worked with. MUST be real. Small but honest beats large but fabricated.\n\n3. THE APPROACH IN ACTION: Instead of fake case studies, show methodology applied:\n- 'What a typical SEO engagement looks like' — month-by-month\n- 'How I'd approach a startup launch campaign' — step-by-step\n- 'What a monthly retainer delivers' — concrete deliverables\nDemonstrates expertise without fabricating results.\n\n4. WHAT CLIENTS SAY: Real testimonials, LinkedIn recommendations, or professional endorsements. Even 1-2 is better than none. If no client testimonials exist: results from past roles with appropriate framing. Structure ready for adding real testimonials later.\n\n5. INDUSTRIES & EXPERIENCE: Types of companies Jodie works with — SaaS, fintech, dev tools, etc. Pattern recognition: 'I've seen what works for companies like yours.'\n\n6. CTA: 'Want to see what I'd do for your company?' + 'Get Your Free Marketing Audit' → /contact.",
+      "acceptanceCriteria": [
+        "Results page has Hero, Credentials, Approach in Action, Client Testimonials, Industries, and CTA",
+        "No fake case studies or fabricated metrics anywhere on the page",
+        "Credentials section uses Space Grotesk at large scale for real stats",
+        "Approach in Action section shows methodology through real scenario walkthroughs",
+        "Testimonials section has structure ready for real content (even if placeholder notes 'coming soon')",
+        "Hero acknowledges the honest positioning rather than pretending to have a portfolio",
+        "Page is fully responsive",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Reframed from fake portfolio to honest credentials page. This is more credible and more useful for a new agency. The methodology walkthroughs answer 'what do I actually get?' which is what prospects really want to know."
+    },
+    {
+      "id": "FEAT-007",
+      "title": "Build Contact page with form, email, and calendar — multiple conversion paths",
+      "description": "Build src/pages/contact.astro per brief Section 9 (v2.0) 'Contact Page'.\n\nCRITICAL: Multiple conversion paths, not just mailto:. A form is lower friction than composing an email from scratch. Different prospects prefer different channels.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'Let's Talk'. Subhead: 'Whether you want a free audit, have a quick question, or are ready to get started — I'm here.'\n\n2. FREE MARKETING AUDIT FORM (primary conversion path):\n- Headline: 'Get Your Free Marketing Audit'\n- Description: 'Tell me a bit about your company and I'll send you a personalised assessment...'\n- Form fields: Name, Company name, Company URL, Biggest marketing challenge (short text or dropdown), Budget range (optional dropdown: <£2k, £2-5k, £5-10k, £10k+)\n- Submit to Formspree or Formspark (static-site compatible, sends to email)\n- Confirmation: 'Thanks! I'll review your marketing and get back to you within 24 hours.'\n- Form validation with helpful error messages\n\n3. OTHER WAYS TO REACH ME:\n- Email: jodie@jodieplant.com with mailto: link\n- Book a call: placeholder for Cal.com/Calendly link (Phase 2) — can show as 'Coming soon' or omit until ready\n- LinkedIn: profile link\n\n4. WHAT TO EXPECT:\n- 'I respond to every enquiry within 24 hours'\n- 'Audit responses include a personalised assessment, not a generic template'\n- 'No pressure, no hard sell'\n\n5. AVAILABILITY:\n- 'Currently taking on 2 new clients for Q2 2026'\n- Creates urgency without being pushy",
+      "acceptanceCriteria": [
+        "Contact page has Hero, Audit Form, Other Contact Methods, Expectations, and Availability sections",
+        "Form has fields for name, company, URL, challenge, and optional budget range",
+        "Form submits to Formspree/Formspark (or similar static-compatible service) and sends to email",
+        "Form shows confirmation message after successful submission",
+        "Form has client-side validation with helpful error messages",
+        "Email mailto: link is prominent alongside the form (not hidden)",
+        "Availability signal creates urgency ('Currently taking on 2 new clients')",
+        "Calendar booking link has placeholder structure for Phase 2",
+        "Page is fully responsive",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "CRITICAL: Conversion endpoint. The form is lower friction than mailto: — prospect doesn't need to context-switch to email client. The audit framing gives the prospect something concrete in return for reaching out. Availability signal drives urgency."
+    },
+    {
+      "id": "FEAT-008",
+      "title": "Add SEO meta tags, Open Graph, and Twitter cards to all pages",
+      "description": "Update Layout.astro and all 5 pages to include proper SEO meta tags per brief Section 12 (v2.0).\n\nEach page needs: <title>, <meta name='description'>, Open Graph tags (og:title, og:description, og:type, og:url, og:image, og:site_name), Twitter card tags (twitter:card, twitter:title, twitter:description, twitter:image), canonical URL, lang='en' on html.\n\nMeta content per page (from brief Section 12 v2.0):\n- Homepage: 'Jodie Plant Marketing — AI-Powered Marketing for Tech Companies'\n- Services: 'Services — Jodie Plant Marketing' / 'AI-enhanced SEO, paid advertising...'\n- About: 'About — Jodie Plant Marketing' / 'Meet Jodie Plant...'\n- Results: 'Results — Jodie Plant Marketing' / 'See how Jodie Plant Marketing delivers results...'\n- Contact: 'Get Your Free Marketing Audit — Jodie Plant Marketing' / 'Get a free, personalised marketing audit...'\n\nCreate a default OG image placeholder in public/ (simple branded graphic with Cabinet Grotesk text, navy bg, orange accent).",
+      "acceptanceCriteria": [
+        "Every page has unique <title> and <meta name='description'> matching brief Section 12",
+        "Open Graph tags (og:title, og:description, og:type, og:url, og:image) on all pages",
+        "Twitter card meta tags on all pages",
+        "Canonical URLs set correctly",
+        "Contact page title leads with 'Get Your Free Marketing Audit' for search CTR",
+        "Default OG image exists in public/",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. The Contact page meta title ('Get Your Free Marketing Audit') is deliberately crafted for search CTR."
+    },
+    {
+      "id": "FEAT-009",
+      "title": "Add structured data, XML sitemap, and robots.txt",
+      "description": "Implement structured data and search engine configuration per brief Section 12 (v2.0).\n\nStructured data (JSON-LD):\n- Organization schema: name, url, logo, contactPoint (email), sameAs (LinkedIn)\n- LocalBusiness schema (if targeting geography): name, address, email\n- Service schema on /services: serviceType for each of the 6 services\n\nXML Sitemap: Install @astrojs/sitemap, configure in astro.config.mjs with site URL https://www.jodieplant.com.\n\nrobots.txt: Create public/robots.txt, allow all crawlers, reference sitemap.\n\nClean URLs: consistent trailing slash behavior, lowercase.",
+      "acceptanceCriteria": [
+        "JSON-LD Organization schema in Layout or homepage",
+        "Service schema markup on /services page",
+        "@astrojs/sitemap installed and generates sitemap on build",
+        "public/robots.txt exists with sitemap reference",
+        "URLs are clean and consistent",
+        "npm run build succeeds and sitemap generated in dist/"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-008"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Important for search indexing. Structured data helps with rich results."
+    },
+    {
+      "id": "FEAT-010",
+      "title": "Integrate Plausible analytics with MVP event tracking",
+      "description": "Add Plausible analytics per brief Section 11 (v2.0). Plausible is recommended over PostHog for MVP — privacy-focused, no cookie banner needed, simpler setup.\n\nMVP events to track:\n- $pageview (automatic)\n- cta_clicked (any CTA button click)\n- email_clicked (mailto: link click)\n- form_submitted (contact/audit form submission)\n- contact_page_reached (/contact page load)\n\nAdd Plausible script to Layout.astro (load async). Add data attributes for custom event tracking on CTA buttons, mailto links, and form submission. Use environment variable for domain config.",
+      "acceptanceCriteria": [
+        "Plausible script loads on all pages via Layout.astro",
+        "Page views tracked automatically",
+        "CTA clicks fire cta_clicked events",
+        "mailto: clicks fire email_clicked events",
+        "Form submissions fire form_submitted events",
+        "/contact loads fire contact_page_reached event",
+        "Script loads async without blocking rendering",
+        "No cookie banner needed (Plausible is cookieless)",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-003", "FEAT-007"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Can't measure KPIs from brief Section 13 without analytics. Plausible specifically chosen for no-cookie simplicity — no GDPR banner overhead."
+    },
+    {
+      "id": "FEAT-011",
+      "title": "Create custom 404 page",
+      "description": "Create src/pages/404.astro — branded 404 page using Layout component. Clear '404' message in bold brand tone (confident, not apologetic — e.g., 'This page doesn't exist. But your marketing strategy should.'). Links to homepage and /contact. Cabinet Grotesk headline. Orange accent on CTA.",
+      "acceptanceCriteria": [
+        "404.astro renders a branded 404 page with Layout (header/footer)",
+        "Tone matches brand voice — confident, not apologetic",
+        "Links to homepage and other key pages",
+        "Uses Cabinet Grotesk headline and orange accent",
+        "npm run build succeeds and 404.html generated in dist/"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "LOW-MEDIUM VALUE: Quick win for professional polish. The 404 copy is a brand opportunity — even error pages should demonstrate personality."
+    },
+    {
+      "id": "FEAT-012",
+      "title": "Add scroll animations and micro-interactions",
+      "description": "Add subtle motion to the site per brief Section 7 visual style:\n- Fade-in sections on scroll (IntersectionObserver)\n- Counting-up animation for stat numbers in Social Proof bar and Results page\n- Hover effects on service cards and CTA buttons (scale, shadow, color shift)\n- Smooth scroll for anchor links\n- All animations respect prefers-reduced-motion media query\n\nKeep it subtle — enhance, don't distract. No heavy animation libraries; use CSS transitions and minimal JS.",
+      "acceptanceCriteria": [
+        "Sections fade in on scroll using IntersectionObserver",
+        "Stat numbers animate (count up) when scrolled into view",
+        "Cards and buttons have hover effects",
+        "Anchor links smooth-scroll",
+        "All animations disabled when prefers-reduced-motion is set",
+        "No heavy animation libraries added",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-003", "FEAT-006"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Motion adds polish and makes the site feel premium. Stat count-up animations draw attention to credibility numbers. Must respect accessibility."
+    },
+    {
+      "id": "FEAT-013",
+      "title": "Add blog infrastructure with 2-3 seed posts",
+      "description": "Set up blog per brief Appendix C (v2.0) — this is a Phase 2 PRIORITY, not Phase 3.\n\nA marketer without a blog is like a chef without a menu. Blog content demonstrates the expertise being sold.\n\nTechnical: Use Astro Content Collections with markdown files. Create:\n- /blog listing page with featured post\n- /blog/[slug] individual post pages\n- CTA at end of each post ('Want help implementing this? Get your free audit')\n\nSeed posts (2-3 at launch):\n1. 'How to build a marketing strategy for your seed-stage startup'\n2. 'SEO vs paid ads: where should startups spend first?'\n3. 'What an AI-powered marketing workflow actually looks like'\n\nPosts should be real, substantive content (800-1500 words) that demonstrates Jodie's expertise. These are NOT placeholder posts.",
+      "acceptanceCriteria": [
+        "Astro Content Collections configured for blog posts",
+        "/blog listing page shows posts with featured post highlighted",
+        "Individual /blog/[slug] pages render markdown with clean reading experience",
+        "Each post has CTA at the end linking to /contact",
+        "2-3 seed posts exist with real, substantive content (800+ words each)",
+        "Blog posts use brand typography and styling",
+        "Navigation updated to include Blog link",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Moved from Phase 3 to Phase 2 priority. Blog posts target valuable keywords, demonstrate expertise, and give the site ongoing SEO momentum. The seed posts are carefully chosen to serve each target audience."
+    },
+    {
+      "id": "FEAT-014",
+      "title": "Add Cal.com calendar booking integration",
+      "description": "Integrate Cal.com (free tier) for 15-minute intro call booking per brief Section 11 Phase 2. Add booking link/embed to /contact page 'Other Ways to Reach Me' section. Replace placeholder with working calendar link.\n\nConfigure Cal.com with:\n- 15-minute intro call slot\n- Availability windows\n- Confirmation email\n- Calendar sync",
+      "acceptanceCriteria": [
+        "Cal.com booking link or embed on /contact page",
+        "'Book a 15-minute intro call' option available alongside form and email",
+        "Booking flow works end-to-end",
+        "calendar_clicked analytics event fires when link is clicked"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-007"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Third conversion path for prospects who prefer live conversation. Low effort, removes friction for call-oriented buyers."
+    },
+    {
+      "id": "FEAT-015",
+      "title": "Add live chat widget (Crisp)",
+      "description": "Integrate Crisp free tier chat widget per brief Section 11 Phase 2. Widget on all pages, non-intrusive, loads async. Conversations route to Jodie. Must not cover CTAs on mobile.",
+      "acceptanceCriteria": [
+        "Crisp chat widget appears on all pages",
+        "Widget is non-intrusive and doesn't overlap mobile CTAs",
+        "Loads asynchronously without impacting page speed",
+        "Chat conversations route to Jodie"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-003"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Engages high-intent visitors in real-time. Phase 2 item."
+    },
+    {
+      "id": "FEAT-016",
+      "title": "Add privacy policy page",
+      "description": "Create src/pages/privacy.astro per brief Appendix C (v2.0). Covers: data collected (analytics via Plausible — cookieless, form submissions via Formspree), no data selling, GDPR compliance, contact for data requests (jodie@jodieplant.com). Note that Plausible is cookieless — no cookie banner needed. Use Layout component. Add link in Footer.",
+      "acceptanceCriteria": [
+        "/privacy page exists with privacy policy content",
+        "Covers analytics (Plausible — cookieless), form data handling, GDPR",
+        "Footer links to /privacy",
+        "Uses Layout component",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "LOW-MEDIUM VALUE: Required for GDPR compliance. Simpler than most privacy pages since Plausible is cookieless."
+    },
+    {
+      "id": "FEAT-017",
+      "title": "Add individual service sub-pages",
+      "description": "Create 6 individual service pages per brief Appendix C (v2.0): /services/seo, /services/paid-ads, /services/social-media, /services/content-marketing, /services/email-marketing, /services/analytics. Each: hero, AI-enhanced approach for this service, deliverables, FAQ (3-5 questions), CTA. Targets long-tail search queries.",
+      "acceptanceCriteria": [
+        "6 service sub-pages exist under /services/",
+        "Each leads with the AI-enhanced approach specific to that service",
+        "Each has FAQ section targeting service-specific search queries",
+        "Navigation updated to support service sub-pages",
+        "All pages responsive with brand styling"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Good for SEO long-tail. Phase 3 — after MVP and blog are established."
+    },
+    {
+      "id": "FEAT-018",
+      "title": "Add individual case study pages (when real content exists)",
+      "description": "Create /results/[slug] case study pages per brief Appendix C (v2.0). ONLY when real case study content is available — never with fabricated content. Structure: client context, strategy, execution, real metrics, testimonial, CTA. Link from /results project cards.",
+      "acceptanceCriteria": [
+        "Case study pages exist with real client content only",
+        "Each follows structure: context, strategy, execution, results, quote, CTA",
+        "Results include specific, real metrics",
+        "Linked from /results page",
+        "Responsive with brand styling"
+      ],
+      "priority": "future",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-006"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE when real content exists. Explicitly blocked until genuine case studies are available. Never fabricate."
+    },
+    {
+      "id": "FEAT-019",
+      "title": "Add email capture / newsletter signup with lead magnet",
+      "description": "Add email capture per brief Section 11 Phase 2. Offer value exchange — downloadable 'Startup Marketing Checklist' PDF or similar. Use ConvertKit or Resend free tier. Add to blog posts and optionally homepage. Double opt-in, GDPR compliant.",
+      "acceptanceCriteria": [
+        "Email signup form on blog posts and/or homepage",
+        "Lead magnet (checklist PDF or similar) delivered on signup",
+        "Double opt-in flow",
+        "Privacy notice near form",
+        "Confirmation message on submission"
+      ],
+      "priority": "future",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-013"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Lead nurturing requires blog content first (FEAT-013). Phase 2 item, after blog is live."
+    }
+  ],
+  "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."
+}
