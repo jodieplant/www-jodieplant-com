@@ -40,6 +40,8 @@ Pure static site — no SSR, no frontend framework integrations (React/Vue/Svelt
 - **Lead magnet**: "Free Marketing Audit" framing on contact page
 - **Tone**: Bold, confident, direct — "we get results" energy
 - **Social proof**: Real credentials only — never fake case studies or fabricated metrics
+- **Analytics**: PostHog (product analytics, session recording, funnels) — requires cookie consent banner
+- **Cookie consent**: PostHog must NOT load until user consents; `localStorage` key `analytics_consent`
 
 ## Deployment
 

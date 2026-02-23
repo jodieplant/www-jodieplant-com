@@ -180,24 +180,29 @@
     },
     {
       "id": "FEAT-010",
-      "title": "Integrate Plausible analytics with MVP event tracking",
-      "description": "Add Plausible analytics per brief Section 11 (v2.0). Plausible is recommended over PostHog for MVP — privacy-focused, no cookie banner needed, simpler setup.\n\nMVP events to track:\n- $pageview (automatic)\n- cta_clicked (any CTA button click)\n- email_clicked (mailto: link click)\n- form_submitted (contact/audit form submission)\n- contact_page_reached (/contact page load)\n\nAdd Plausible script to Layout.astro (load async). Add data attributes for custom event tracking on CTA buttons, mailto links, and form submission. Use environment variable for domain config.",
+      "title": "Integrate PostHog with cookie consent banner and core event tracking",
+      "description": "Install PostHog JS and build a cookie consent banner. These MUST ship together — PostHog uses cookies so consent is required before initialisation.\n\nPer brief Section 11 (v2.0):\n\nCOOKIE CONSENT BANNER (src/components/CookieConsent.astro or similar):\n- Show on first visit if no consent stored\n- Two buttons: Accept / Reject\n- On Accept: store localStorage key 'analytics_consent' = 'granted', initialise PostHog, dismiss banner\n- On Reject: store 'analytics_consent' = 'denied', dismiss banner, do NOT load PostHog\n- On page load: check localStorage — only init PostHog if consent === 'granted'\n- Include link to /privacy page\n- Consent expires after 1 year (re-prompt)\n- Banner should be non-intrusive but visible (bottom of screen, not blocking content)\n\nPOSTHOG INITIALISATION:\n- Add posthog-js via npm or CDN script\n- Initialise ONLY after consent granted\n- Use environment variable for PostHog API key and host (don't hardcode)\n- Configure: autocapture enabled, capture_pageview: true, capture_pageleave: true\n- Disable PostHog in development (check for localhost)\n\nCORE CUSTOM EVENTS (instrument across all existing pages):\n- cta_clicked: on every CTA button/link. Properties: cta_text, cta_location (hero/nav/footer/inline), cta_destination, page\n- email_clicked: on every mailto: link. Properties: location (footer/contact/inline), page\n- nav_clicked: on header/footer nav links. Properties: link_text, destination, is_mobile\n- service_card_clicked: on homepage service cards. Properties: service_name\n\nUse data-ph-* attributes or a small inline script on each interactive element. Prefer data attributes where PostHog autocapture supports them.\n\nPERSON PROPERTIES (set on first visit):\n- first_visit_page: the page they landed on\n- utm_source, utm_medium, utm_campaign: from URL params if present\n- visit_count: increment each session",
       "acceptanceCriteria": [
-        "Plausible script loads on all pages via Layout.astro",
-        "Page views tracked automatically",
-        "CTA clicks fire cta_clicked events",
-        "mailto: clicks fire email_clicked events",
-        "Form submissions fire form_submitted events",
-        "/contact loads fire contact_page_reached event",
-        "Script loads async without blocking rendering",
-        "No cookie banner needed (Plausible is cookieless)",
+        "Cookie consent banner appears on first visit with Accept/Reject options",
+        "PostHog JS does NOT load until user clicks Accept",
+        "Rejecting consent stores preference and does not load PostHog",
+        "Consent persists in localStorage across page loads (key: analytics_consent)",
+        "Banner links to /privacy page",
+        "PostHog initialises with autocapture, pageview, and pageleave enabled",
+        "PostHog API key is configurable via environment variable, not hardcoded",
+        "PostHog disabled on localhost/development",
+        "cta_clicked events fire on all CTA buttons across all pages with correct properties",
+        "email_clicked events fire on all mailto: links",
+        "nav_clicked events fire on header and footer navigation links",
+        "service_card_clicked events fire on homepage service grid",
+        "UTM parameters captured as person properties from URL",
         "npm run build succeeds"
       ],
       "priority": "should",
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Can't measure KPIs from brief Section 13 without analytics. Plausible specifically chosen for no-cookie simplicity — no GDPR banner overhead."
+      "groomingNotes": "HIGH VALUE: PostHog is the analytics foundation. Cookie consent banner is legally required and MUST ship with PostHog — not deferred. Core events cover the interactions that feed into conversion funnels (FEAT-021)."
     },
     {
       "id": "FEAT-011",
@@ -263,7 +268,7 @@
         "Cal.com booking link or embed on /contact page",
         "'Book a 15-minute intro call' option available alongside form and email",
         "Booking flow works end-to-end",
-        "calendar_clicked analytics event fires when link is clicked"
+        "calendar_clicked PostHog event fires when link is clicked"
       ],
       "priority": "could",
       "readyForSprint": false,
@@ -289,20 +294,24 @@
     },
     {
       "id": "FEAT-016",
-      "title": "Add privacy policy page",
-      "description": "Create src/pages/privacy.astro per brief Appendix C (v2.0). Covers: data collected (analytics via Plausible — cookieless, form submissions via Formspree), no data selling, GDPR compliance, contact for data requests (jodie@jodieplant.com). Note that Plausible is cookieless — no cookie banner needed. Use Layout component. Add link in Footer.",
+      "title": "Add privacy policy page covering PostHog, cookies, and GDPR",
+      "description": "Create src/pages/privacy.astro. This is more important now that PostHog uses cookies.\n\nMust cover per brief Appendix C (v2.0):\n- What data is collected: PostHog analytics (page views, clicks, scroll depth), session recordings (what is/isn't captured), form submissions via Formspree\n- Cookie usage: explain PostHog session cookies, what they do, how consent works\n- How to accept/reject cookies and what happens in each case\n- How to withdraw consent after granting it\n- No data selling\n- Session recordings: explain what's recorded, data retention period, that sensitive form fields can be masked\n- GDPR compliance statement\n- Data retention policy\n- Contact for data requests: jodie@jodieplant.com\n- Right to erasure\n\nUse Layout component. Add link in Footer. Write in plain English, not legalese.",
       "acceptanceCriteria": [
-        "/privacy page exists with privacy policy content",
-        "Covers analytics (Plausible — cookieless), form data handling, GDPR",
+        "/privacy page exists with comprehensive privacy policy",
+        "Covers PostHog analytics, session recording, cookies, and form data",
+        "Explains cookie consent mechanism and how to change preference",
+        "Explains what session recordings capture and retention",
+        "GDPR compliance section with data subject rights",
+        "Written in plain English, not dense legalese",
         "Footer links to /privacy",
-        "Uses Layout component",
+        "Cookie consent banner links to this page",
         "npm run build succeeds"
       ],
-      "priority": "could",
+      "priority": "should",
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "LOW-MEDIUM VALUE: Required for GDPR compliance. Simpler than most privacy pages since Plausible is cookieless."
+      "groomingNotes": "ELEVATED PRIORITY: Now 'should' instead of 'could' because PostHog uses cookies. The consent banner (FEAT-010) links to this page, so it should exist before or alongside analytics go-live."
     },
     {
       "id": "FEAT-017",
@@ -354,6 +363,96 @@
       "dependsOn": ["FEAT-013"],
       "groomedAt": "2026-02-23",
       "groomingNotes": "MEDIUM VALUE: Lead nurturing requires blog content first (FEAT-013). Phase 2 item, after blog is live."
+    },
+    {
+      "id": "FEAT-020",
+      "title": "Add PostHog contact form analytics (start, abandon, field tracking)",
+      "description": "Instrument the contact/audit form with detailed PostHog event tracking per brief Section 11 'Custom Events — Contact Form'.\n\nThis goes deeper than the core CTA tracking in FEAT-010 — it tracks the full form interaction lifecycle to measure and improve form conversion.\n\nEvents to implement:\n- form_viewed: when form scrolls into viewport (IntersectionObserver)\n- form_started: when first form field receives focus. Properties: first_field\n- form_field_completed: when a field loses focus with a value. Properties: field_name\n- form_abandoned: when user navigates away with partially completed form (beforeunload). Properties: fields_completed (count), last_field\n- form_error: when validation error is shown. Properties: field_name, error_type\n\nNote: form_submitted is already tracked in FEAT-010. This story adds the surrounding lifecycle events.\n\nAlso add properties to the existing form_submitted event: budget_range (selected value), has_url (boolean), challenge_length (character count of challenge field).\n\nThis data enables calculating form completion rate (form_started vs form_submitted) and identifying where prospects drop off.",
+      "acceptanceCriteria": [
+        "form_viewed fires when contact form scrolls into viewport",
+        "form_started fires on first field focus with first_field property",
+        "form_field_completed fires on blur for each field with field_name",
+        "form_abandoned fires on page leave with partial form data (fields_completed, last_field)",
+        "form_error fires on validation errors with field_name and error_type",
+        "form_submitted event enriched with budget_range, has_url, challenge_length properties",
+        "Events only fire when PostHog consent is granted",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-010"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: The form is the primary conversion path. Understanding where prospects drop off (which field, at what stage) directly enables conversion optimization. Form completion rate is a Section 13 KPI."
+    },
+    {
+      "id": "FEAT-021",
+      "title": "Add PostHog scroll depth and section visibility tracking",
+      "description": "Add scroll and content engagement tracking per brief Section 11 'Custom Events — Page-Level'.\n\nEvents to implement:\n- scroll_depth: fires when user scrolls past 25%, 50%, 75%, 100% of page. Properties: depth_percent, page. Use IntersectionObserver on sentinel elements at each threshold. Deduplicate — each threshold fires once per page load.\n- page_section_viewed: fires when a named section scrolls into viewport. Properties: section_id, page, viewport_percent. Track all major sections on homepage (hero, social-proof, differentiators, services, final-cta) and other pages.\n\nThis data answers: 'How far do visitors scroll?', 'Do they see the services section?', 'Does anyone reach the final CTA?'\n\nAll events conditional on PostHog consent being granted.",
+      "acceptanceCriteria": [
+        "scroll_depth events fire at 25%, 50%, 75%, 100% thresholds with deduplication",
+        "page_section_viewed fires for all major homepage sections and key sections on other pages",
+        "Events include page and section_id properties",
+        "IntersectionObserver used (no scroll event listeners)",
+        "Events only fire when PostHog consent is granted",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-010"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Scroll depth reveals whether the condensed 5-section homepage is working. If visitors aren't reaching the final CTA, the page needs restructuring. Section visibility data validates the design decisions."
+    },
+    {
+      "id": "FEAT-022",
+      "title": "Configure PostHog conversion funnels and dashboards",
+      "description": "Set up PostHog dashboards and funnels per brief Section 11 'Conversion Funnels' and 'PostHog Dashboards'. This is configuration in the PostHog UI, not code — but document the setup in a new docs/ANALYTICS_SETUP.md file so it can be recreated.\n\nFUNNELS to configure:\n1. Primary funnel: $pageview (/) → $pageview (/contact) → form_started → form_submitted\n2. Services exploration: $pageview (/) → service_card_clicked OR $pageview (/services) → $pageview (/contact) → form_submitted\n\nDASHBOARDS to configure:\n1. Overview: unique visitors (daily/weekly/monthly), page views by page, bounce rate, avg session duration, top referrers, device breakdown\n2. Conversion: primary funnel visualization, form submissions (daily trend), email clicks, CTA clicks by location, form completion rate (started vs submitted), form abandonment by last field\n\nCreate docs/ANALYTICS_SETUP.md documenting:\n- PostHog project setup steps\n- Each funnel definition (steps, filters)\n- Each dashboard panel definition\n- How to read the key metrics\n- Mapping to brief Section 13 KPIs",
+      "acceptanceCriteria": [
+        "docs/ANALYTICS_SETUP.md created with full PostHog configuration guide",
+        "Document defines primary and services exploration funnels with exact event filters",
+        "Document defines Overview and Conversion dashboard panels",
+        "Each KPI from brief Section 13 is mapped to a specific PostHog metric or dashboard panel",
+        "Setup is reproducible from the documentation alone"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-020", "FEAT-021"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Without configured funnels and dashboards, raw events are just noise. This turns PostHog data into actionable insights. Documentation ensures the setup is reproducible."
+    },
+    {
+      "id": "FEAT-023",
+      "title": "Enable PostHog session recording with privacy controls",
+      "description": "Enable PostHog session recording per brief Section 11. Session recordings let Jodie watch how visitors interact with the site — where they hover, scroll, click, and get stuck.\n\nConfiguration:\n- Enable session recording in PostHog init config (only when consent granted)\n- Mask sensitive form fields: budget_range dropdown value, company URL. Use PostHog's data attribute (data-ph-no-capture) on sensitive elements\n- Set recording sample rate (start at 100% — low traffic site, free tier allows 5K/month)\n- Document in ANALYTICS_SETUP.md: what's recorded, what's masked, retention period, how to review recordings\n\nPrivacy:\n- Recordings only captured when cookie consent is granted\n- Sensitive form field values masked\n- Update /privacy page content if it exists (FEAT-016) to explain session recordings",
+      "acceptanceCriteria": [
+        "PostHog session recording enabled in init config",
+        "Recordings only captured when analytics consent is granted",
+        "Sensitive form fields have data-ph-no-capture attribute",
+        "Session recording documented in docs/ANALYTICS_SETUP.md",
+        "If /privacy page exists, it explains what session recordings capture",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-010"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Session recordings are invaluable for understanding why visitors don't convert. At low traffic volumes, watching individual sessions is often more useful than aggregate data. Free tier supports 5K recordings/month."
+    },
+    {
+      "id": "FEAT-024",
+      "title": "Add PostHog blog content engagement tracking",
+      "description": "When blog exists (FEAT-013), add content-specific PostHog events per brief Section 11 'Custom Events — Content Engagement'.\n\nEvents:\n- blog_post_read: fires when user scrolls past 75% of post body. Properties: post_slug, post_title, read_time_seconds (time from page load to 75% scroll)\n- external_link_clicked: fires on any outbound link click from blog posts. Properties: url, link_text, page\n\nAlso add blog CTA tracking — when the end-of-post 'Get your free audit' CTA is clicked, fire cta_clicked with cta_location = 'blog_post' and post_slug.\n\nThis data feeds the Content funnel defined in brief Section 11 and the Phase 2 Content Dashboard.",
+      "acceptanceCriteria": [
+        "blog_post_read fires at 75% scroll of post body with slug, title, and read_time",
+        "external_link_clicked fires on outbound links in blog posts",
+        "Blog CTA clicks tracked as cta_clicked with cta_location='blog_post'",
+        "Events only fire when PostHog consent is granted",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-010", "FEAT-013"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Measures whether blog content drives enquiries. Blocked on blog existing (FEAT-013). Feeds the Content Dashboard and content funnel."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."

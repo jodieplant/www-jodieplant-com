@@ -810,23 +810,168 @@ www-jodieplant-com/
 
 ## 11. Analytics & Integrations
 
-### MVP Analytics (Ship This)
+### Decision: PostHog
+
+PostHog is the analytics platform for this site. It provides a unified stack — product analytics, session recording, funnels, A/B testing — in a single tool. This avoids stitching together separate services and means all data lives in one place.
+
+**Cost**: Free tier includes 1M events/month, 5K session recordings/month, and 1M feature flag requests/month. More than sufficient for an agency site.
+
+**GDPR note**: PostHog uses cookies for session tracking. A cookie consent banner is **required** before initialising PostHog for EU visitors. The banner must be shipped alongside the PostHog integration — not deferred.
+
+### MVP Analytics Stack
 
 | Capability | Tool | Cost |
 |------------|------|------|
-| Analytics | **Plausible** | Free tier / $9/mo — privacy-focused, no cookie banner needed |
+| Analytics & events | **PostHog** | Free (1M events/mo) |
+| Session recording | **PostHog** | Free (5K recordings/mo) |
+| Funnels & goals | **PostHog** | Included |
 | Form handling | **Formspree** or **Formspark** | Free tier (50 submissions/mo) |
 
-**MVP events to track**:
+### MVP Event Tracking (Comprehensive)
 
-| Event | Trigger |
-|-------|---------|
-| `$pageview` | Page load (automatic) |
-| `cta_clicked` | Any CTA button click |
-| `email_clicked` | mailto: link click |
-| `form_submitted` | Contact/audit form submission |
-| `calendar_clicked` | Calendar booking link click (Phase 2) |
-| `contact_page_reached` | /contact page load |
+#### Automatic Events (PostHog autocapture)
+
+PostHog autocapture handles clicks, page views, and form interactions automatically. However, we also define explicit custom events for the interactions that matter most — this ensures reliable funnel analysis even if autocapture config changes.
+
+#### Custom Events — Page-Level
+
+| Event | Trigger | Properties |
+|-------|---------|------------|
+| `$pageview` | Page load (automatic) | `path`, `referrer`, `utm_source`, `utm_medium`, `utm_campaign` |
+| `page_section_viewed` | Section scrolls into viewport | `section_id`, `page`, `viewport_percent` |
+| `scroll_depth` | User scrolls past 25/50/75/100% | `depth_percent`, `page` |
+
+#### Custom Events — CTA & Navigation
+
+| Event | Trigger | Properties |
+|-------|---------|------------|
+| `cta_clicked` | Any CTA button click | `cta_text`, `cta_location` (hero/nav/footer/inline), `cta_destination`, `page` |
+| `email_clicked` | mailto: link click | `location` (footer/contact/inline), `page` |
+| `nav_clicked` | Navigation link click | `link_text`, `destination`, `is_mobile` |
+| `service_card_clicked` | Service card click on homepage | `service_name`, `page` |
+| `calendar_clicked` | Calendar booking link click | `location`, `page` |
+
+#### Custom Events — Contact Form
+
+| Event | Trigger | Properties |
+|-------|---------|------------|
+| `form_viewed` | Contact form scrolls into viewport | — |
+| `form_started` | First form field focused | `first_field` |
+| `form_field_completed` | Field loses focus with value | `field_name` |
+| `form_abandoned` | User leaves page with partial form | `fields_completed`, `last_field` |
+| `form_submitted` | Form successfully submitted | `budget_range`, `has_url`, `challenge_length` |
+| `form_error` | Form validation error shown | `field_name`, `error_type` |
+
+#### Custom Events — Content Engagement
+
+| Event | Trigger | Properties |
+|-------|---------|------------|
+| `blog_post_read` | User scrolls past 75% of post | `post_slug`, `post_title`, `read_time_seconds` |
+| `external_link_clicked` | Click on outbound link | `url`, `link_text`, `page` |
+
+### Person Properties
+
+Set these on the PostHog person profile to enable segmentation:
+
+| Property | Source | Purpose |
+|----------|--------|---------|
+| `first_visit_page` | First pageview | Which page attracted them |
+| `utm_source` | URL params | Attribution |
+| `utm_medium` | URL params | Attribution |
+| `utm_campaign` | URL params | Attribution |
+| `visit_count` | Incremented each session | Engagement depth |
+| `pages_viewed` | Array of visited pages | Interest profiling |
+| `form_submitted` | Boolean | Conversion flag |
+| `budget_range` | Form submission | Lead qualification |
+
+### Cookie Consent
+
+PostHog uses cookies. A consent banner **must** ship alongside PostHog — not deferred.
+
+| Requirement | Implementation |
+|-------------|----------------|
+| Banner trigger | Show on first visit, persist preference |
+| Options | Accept / Reject (simple two-button) |
+| Default behavior | PostHog NOT initialised until consent given |
+| Storage | `localStorage` key `analytics_consent`, value `granted` or `denied` |
+| Expiry | 1 year, then re-prompt |
+| Privacy link | Links to /privacy page |
+| Script behavior | If consent granted: load PostHog JS. If denied: do not load. If no choice yet: do not load |
+
+**Implementation pattern**:
+```
+1. Page loads → check localStorage for consent
+2. If no consent stored → show banner, do NOT load PostHog
+3. If consent === 'granted' → initialise PostHog
+4. If consent === 'denied' → do not load PostHog
+5. On banner accept → store consent, initialise PostHog, dismiss banner
+6. On banner reject → store denial, dismiss banner
+```
+
+### Conversion Funnels (Configure in PostHog)
+
+**Primary funnel** (Homepage → Enquiry):
+1. `$pageview` where `path = /`
+2. `$pageview` where `path = /contact`
+3. `form_started`
+4. `form_submitted`
+
+**Services exploration funnel**:
+1. `$pageview` where `path = /`
+2. `service_card_clicked` OR `$pageview` where `path = /services`
+3. `$pageview` where `path = /contact`
+4. `form_submitted`
+
+**Content funnel** (Phase 2, when blog exists):
+1. `$pageview` where `path starts with /blog`
+2. `blog_post_read`
+3. `cta_clicked` where `cta_location = blog_post`
+4. `form_submitted`
+
+### PostHog Dashboards
+
+Create these saved dashboards in PostHog:
+
+**Overview Dashboard**:
+- Unique visitors (daily/weekly/monthly)
+- Page views by page
+- Bounce rate
+- Average session duration
+- Top referrers
+- Device/browser breakdown
+
+**Conversion Dashboard**:
+- Primary funnel visualization
+- Form submission count (daily trend)
+- Email click count
+- CTA click heatmap by location
+- Form completion rate (started vs. submitted)
+- Form abandonment by last field
+
+**Content Dashboard** (Phase 2):
+- Blog post views
+- Read completion rate per post
+- Blog → contact conversion rate
+- Top posts by engagement
+
+### Google Search Console
+
+Not part of PostHog but required for organic search visibility:
+- Verify domain ownership
+- Submit XML sitemap
+- Monitor indexing status
+- Track search impressions, clicks, and average position
+- Set up as Phase 2 (manual setup, not a code change)
+
+### UTM Parameter Handling
+
+All UTM parameters (`utm_source`, `utm_medium`, `utm_campaign`, `utm_term`, `utm_content`) should be:
+1. Captured from URL on page load
+2. Stored as PostHog person properties for attribution
+3. Included as properties on the `form_submitted` event
+4. Preserved across page navigations within the session (PostHog handles this automatically)
+
+This enables answering: "Which LinkedIn post / campaign / channel is driving actual enquiries?"
 
 ### Phase 2 Integrations
 
@@ -836,14 +981,14 @@ www-jodieplant-com/
 | Live chat | **Crisp** | Free tier | Engage high-intent visitors |
 | Calendar booking | **Cal.com** | Free | 15-min intro call booking |
 | Email capture | **ConvertKit** or **Resend** | Free tier | Newsletter / lead nurture |
+| Search Console | **Google Search Console** | Free | Organic search monitoring |
 
 ### Phase 3 Enhancements
 
 - CRM integration (HubSpot Free or Notion)
-- A/B testing (headline variations, CTA copy)
-- Heat mapping (PostHog session recording)
-- Conversion funnel analysis
-- UTM tracking for campaign attribution
+- A/B testing via PostHog feature flags (headline variations, CTA copy)
+- PostHog session recording analysis (watch where users get stuck)
+- Cohort analysis (returning visitors vs. new)
 
 ---
 
@@ -1066,14 +1211,17 @@ Additional posts (ongoing cadence of 2-4 per month):
 
 ### Phase 2: Privacy Policy (`/privacy`)
 
-**Purpose**: Required legal page, builds trust.
+**Purpose**: Required legal page, builds trust. More important now with PostHog cookies.
 
 **Key points**:
-- What data is collected (analytics + form submissions)
+- What data is collected (PostHog analytics, session recordings, form submissions)
+- Cookie usage explanation (PostHog session cookies, consent required)
+- How consent works (accept/reject, what happens in each case)
 - No data selling
-- Cookie policy (Plausible is cookieless — note this)
+- Session recordings: what is/isn't captured, data retention
 - GDPR compliance
 - Contact for data requests: jodie@jodieplant.com
+- How to withdraw consent
 
 ---
 
