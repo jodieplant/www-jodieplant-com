@@ -28,8 +28,9 @@
 - [Appendix B](#appendix-b-launch-checklist) — Launch checklist
 - [Appendix C](#appendix-c-post-mvp-page-specifications) — Post-MVP page specs
 
-**Related Documents** (to be created):
-- `WEBSITE_COPY.md` — Finalized copy for all pages
+**Related Documents**:
+- `MARKET_RESEARCH_2026.md` — Market research: what services sell, GEO/AEO shifts, budget tiers, packaging strategy
+- `WEBSITE_COPY.md` — Finalized copy for all pages (to be created)
 
 ---
 
@@ -238,18 +239,20 @@ Before listing individual services, establish the overarching method:
 
 > "Every service I deliver is powered by an AI-enhanced workflow. This isn't about replacing strategy with automation — it's about using modern tools to research deeper, create faster, optimise smarter, and report clearer than a traditional agency can."
 
-### SEO (Search Engine Optimization)
+### SEO & GEO (Search + AI Engine Optimization)
 
-**The AI difference**: AI-powered competitor analysis, content gap identification at scale, and automated technical audit workflows that find issues humans miss.
+**The AI difference**: AI-powered competitor analysis, content gap identification at scale, automated technical audit workflows, and GEO optimization for AI answer engines (see `MARKET_RESEARCH_2026.md`).
 
 **What you get**:
 - Technical SEO audit and remediation
 - Keyword strategy and content mapping
 - On-page optimization
-- Monthly performance reporting
+- GEO/AEO strategy — "best answer" page optimization for AI citations
+- Structured data, llms.txt, and AI-crawlability improvements
+- Monthly performance reporting (rankings + branded search + AI citation tracking)
 - Competitor gap analysis
 
-**For the client**: "Get found by the people already searching for what you sell."
+**For the client**: "Get found by the people — and the AI — already searching for what you sell."
 
 ### Paid Advertising (PPC)
 
@@ -279,16 +282,18 @@ Before listing individual services, establish the overarching method:
 
 ### Content Marketing
 
-**The AI difference**: AI-assisted research and first-draft generation, SEO-optimised content structures, and automated content performance analysis.
+**The AI difference**: AI-assisted research and first-draft generation, "best answer" content structures optimized for both search and AI citation, and automated content performance analysis.
 
 **What you get**:
 - Content strategy and editorial calendar
+- "Best answer" pages: pricing, comparisons, alternatives, how-it-works, FAQs
 - Blog posts and long-form content
-- Case studies and customer stories
+- Case studies, benchmarks, and "how we do it" proof assets
 - Landing page copy
+- Content distribution plan (LinkedIn, newsletters, partners)
 - Content performance tracking
 
-**For the client**: "Content that ranks, converts, and sounds like a human wrote it — because a human refined it."
+**For the client**: "Content that ranks, gets cited by AI, converts — and sounds like a human wrote it."
 
 ### Email Marketing
 
@@ -315,6 +320,83 @@ Before listing individual services, establish the overarching method:
 - Actionable recommendations
 
 **For the client**: "Finally know what's working and what's burning money."
+
+### GEO / Answer Engine Optimization (New in 2026)
+
+> SEO isn't dead, but clicks are less reliable. AI Overviews and zero-click experiences are reducing organic CTR. Content must earn trust and get referenced — even when it isn't clicked. See `MARKET_RESEARCH_2026.md` for full context.
+
+**The AI difference**: AI-powered analysis of how LLMs and AI answer engines reference and cite content. Systematic optimization for AI discoverability alongside traditional search.
+
+**What you get**:
+- "Best answer" page strategy (pricing, comparisons, alternatives, how-it-works, FAQs)
+- Brand signal audit — how your brand appears across AI answers, search, and communities
+- Structured data and clean site architecture for AI crawlability
+- Third-party mention strategy (PR, partners, reviews, communities)
+- llms.txt implementation
+- Success measurement: branded search lift, assisted conversions, direct traffic, lead quality
+
+**For the client**: "Get referenced and recommended by AI — not just ranked by Google."
+
+### Local Visibility & Reputation (SMB Services)
+
+**The AI difference**: AI-powered review sentiment analysis, automated review prompt workflows, and competitive local ranking analysis at scale.
+
+**What you get**:
+- Google Business Profile optimization
+- Review generation system (email/SMS prompts, routing)
+- Local pages and service area pages
+- Citation cleanup and NAP consistency
+- Local competitor analysis
+
+**For the client**: "Turn your Google profile into your best sales rep — calls, directions, bookings on autopilot."
+
+### Owned Audience & Nurture Systems
+
+**The AI difference**: AI-assisted newsletter content, smart segmentation, and automated engagement-based nurture triggers.
+
+**What you get**:
+- Newsletter setup + lead magnets that are genuinely useful
+- Nurture sequences (welcome, education, "book a call")
+- Referral loop design (customer referral, partner referral)
+- List hygiene and growth strategy
+- Community presence strategy
+
+**For the client**: "Build an audience you own — stop renting attention from platforms."
+
+### Partnerships & Distribution
+
+**The AI difference**: AI-powered partner identification, outreach templating, and performance tracking across partnership channels.
+
+**What you get**:
+- Newsletter sponsorship sourcing and placement
+- Podcast guesting / sponsorship strategy
+- Influencer/creator micro-partnership activation
+- Affiliate or referral partner program design
+- Channel performance measurement
+
+**For the client**: "Buy trust and attention cheaper than clicks — through the right partners."
+
+### Service Packaging (Market-Aligned)
+
+> Based on 2026 market research (see `MARKET_RESEARCH_2026.md`): buyers want measurable leads, less platform dependence, and credibility in both AI and human discovery. Package services by outcome, not channel.
+
+**Recommended starter packages:**
+
+| Package | Model | What's Included | Buyer Need |
+|---------|-------|-----------------|------------|
+| **Conversion & Tracking Setup** | Fixed-fee | Website conversion audit, landing page(s), analytics/attribution, lead capture | "I need more leads from my existing traffic" |
+| **Local Visibility & Reviews** | Retainer | GBP optimization, review generation, local pages, citations | "I need more local calls and bookings" |
+| **AI-Ready Content** | Retainer (2 pages/month + distribution) | "Best answer" pages, proof assets, LinkedIn/newsletter distribution | "I need to show up in search AND AI answers" |
+| **Partnerships Outreach** | Project-based | Partner identification, newsletter sponsorships, podcast placements, referral programs | "I need leads without expensive ads" |
+
+**Budget tier alignment** (what buyers expect at each level):
+
+| Monthly Budget | Buyer Profile | Recommended Package Combination |
+|----------------|---------------|--------------------------------|
+| $0-$1,500 | Micro-SMB, solopreneurs | Local visibility + one landing page + simple email follow-up |
+| $1,500-$5,000 | Typical SMB services | Conversion setup + local + 1-2 content pillars + light paid tests |
+| $5,000-$15,000 | Serious SMB / early startup | Full measurement + conversion + AI-ready content + partnerships + disciplined paid |
+| $15,000+ | Growth-stage | Multi-channel, creative production, experimentation, quarterly planning |
 
 ---
 
@@ -786,6 +868,17 @@ www-jodieplant-com/
 └── package.json
 ```
 
+### AI Discoverability
+
+| File | Purpose | Location |
+|------|---------|----------|
+| `llms.txt` | Curated AI-friendly index of key site content | `public/llms.txt` |
+| `llms-full.txt` | Extended version with full page content in markdown | `public/llms-full.txt` (optional) |
+
+**llms.txt** is a proposed convention for helping AI agents understand a site's most important content. It should list key pages with brief descriptions in clean markdown. Treat as a small technical add-on in the broader GEO strategy — not a substitute for authority, distribution, or third-party mentions.
+
+Generate/update `llms.txt` as part of the build process or maintain manually. Include: homepage, services, about, results, contact, and blog posts (when they exist).
+
 ### Performance Targets
 
 | Metric | Target |
@@ -1029,6 +1122,27 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 - Title: "Get Your Free Marketing Audit — Jodie Plant Marketing"
 - Description: "Get a free, personalised marketing audit for your startup. Tell me about your business and I'll show you where I'd focus first."
 
+### GEO / Answer Engine Optimization (AEO)
+
+> SEO is expanding into Generative Engine Optimization. The site itself should practice what Jodie sells. See `MARKET_RESEARCH_2026.md` for full market context.
+
+**"Best answer" page strategy**: Key pages should directly and completely answer buyer questions — not just target keywords. Structure content so AI systems can extract and cite clear answers.
+
+**Tactics for this site**:
+- Service pages structured as clear Q&A: "What does an SEO engagement include?", "How much does startup marketing cost?", "What's the difference between an agency and a freelancer?"
+- FAQ sections on service pages with structured data (`FAQPage` schema)
+- Comparison-style content: "Agency vs freelancer vs in-house" (already partly covered in Section 6)
+- Results page methodology walkthroughs serve as "how we do it" proof assets
+
+**llms.txt**: Add `/llms.txt` — a curated, AI-friendly index of the site's key content in clean markdown. Small technical add-on, not a substitute for authority. See Section 10 for implementation.
+
+**Success metrics beyond rankings**:
+- Branded search volume (are more people searching "Jodie Plant Marketing"?)
+- Direct traffic growth
+- Assisted conversions (visitors who saw content before converting)
+- AI citation monitoring (where does the brand appear in AI answers?)
+- Lead quality (not just quantity)
+
 ### Keyword Targets
 
 See [Appendix A](#appendix-a-seo-keyword-targets) for full keyword strategy.
@@ -1093,6 +1207,18 @@ See [Appendix A](#appendix-a-seo-keyword-targets) for full keyword strategy.
 - marketing consultant [city] tech startups
 - freelance marketer [city]
 
+### GEO/AEO Keywords (New — AI Discovery)
+
+These target AI answer engines and "best answer" queries:
+
+- what does a marketing agency actually do
+- how much does startup marketing cost
+- marketing agency vs freelancer vs in-house
+- how to get leads without Google Ads
+- what is generative engine optimization
+- best marketing channels for startups 2026
+- how to show up in AI search results
+
 ### Content Opportunities (Phase 2 Blog — seed posts)
 
 Priority seed posts for Phase 2 launch (these demonstrate expertise and target valuable keywords):
@@ -1105,6 +1231,17 @@ Additional posts (ongoing cadence of 2-4 per month):
 - "Why your startup needs a marketing partner, not an agency"
 - "How AI is changing digital marketing in [year]"
 - "The startup marketing stack: tools that actually matter"
+
+### "Best Answer" Content Pages (GEO-Optimized)
+
+These pages are designed to directly answer buyer questions and get referenced by AI answer engines. They serve both human readers and AI citation. Format: clear question, direct answer, supporting evidence, relevant CTAs.
+
+Priority pages:
+1. "How much does startup marketing cost?" — pricing transparency, budget tiers, what to expect at each level
+2. "Marketing agency vs freelancer vs in-house: which is right for your startup?" — comparison using Section 6 data
+3. "What does a marketing retainer actually include?" — demystifies the engagement, shows concrete deliverables
+4. "How to get leads without expensive Google and Meta Ads" — alternative channels, partnerships, organic strategies
+5. "What is GEO (Generative Engine Optimization) and why does it matter?" — thought leadership, demonstrates expertise
 
 ---
 

@@ -453,6 +453,97 @@
       "dependsOn": ["FEAT-010", "FEAT-013"],
       "groomedAt": "2026-02-23",
       "groomingNotes": "MEDIUM VALUE: Measures whether blog content drives enquiries. Blocked on blog existing (FEAT-013). Feeds the Content Dashboard and content funnel."
+    },
+    {
+      "id": "FEAT-025",
+      "title": "Add outcome-based service packages to Services page",
+      "description": "Update /services page to include market-aligned, outcome-based service packages alongside the existing channel-based services (ref: MARKET_RESEARCH_2026.md, WEBSITE_BRIEF.md Section 5 'Service Packaging').\n\nThe current services (SEO, PPC, Social, Content, Email, Analytics) are channel-based — table stakes. Buyers in 2026 describe their needs by outcome: 'I need leads', 'I need to be found locally', 'I need to show up in AI answers.'\n\nAdd a new section to the services page (after or alongside the AI-enhanced method) that presents packaged offerings:\n\n1. **Conversion & Tracking Setup** (fixed-fee): Website conversion audit, landing page(s), analytics/attribution setup, lead capture forms. Headline benefit: 'More leads from your existing traffic.'\n\n2. **Local Visibility & Reviews** (retainer): GBP optimization, review generation system, local pages, citation cleanup. Headline benefit: 'More local calls and bookings.'\n\n3. **AI-Ready Content** (retainer): 'Best answer' pages (2/month), proof assets, distribution via LinkedIn/newsletters/partners. Headline benefit: 'Show up in search AND AI answers.'\n\n4. **Partnerships & Distribution** (project-based): Partner identification, newsletter sponsorships, podcast placements, referral programs. Headline benefit: 'Leads without expensive ads.'\n\nInclude budget tier guidance to help prospects self-qualify (brief Section 5 'Budget tier alignment' table).\n\nDesign: Use the same visual treatment as existing service blocks (orange accents, alternating layout). Packages should feel like a natural complement to the channel services, not a replacement. Consider a tab or toggle to switch between 'By Channel' and 'By Outcome' views.",
+      "acceptanceCriteria": [
+        "Services page includes outcome-based packages section with 4 packages",
+        "Each package shows: name, engagement model (fixed-fee/retainer/project), what's included, headline benefit",
+        "Budget tier guidance is visible to help prospects self-qualify",
+        "Packages complement (not replace) existing channel-based service blocks",
+        "Visual treatment matches brand design system (orange accents, brand typography)",
+        "Page remains scannable and not overwhelming despite additional content",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Aligns service presentation with how buyers actually describe their needs in 2026. Outcome-based packaging ('I need leads') converts better than channel lists ('SEO, PPC, Social'). Based on MARKET_RESEARCH_2026.md findings."
+    },
+    {
+      "id": "FEAT-026",
+      "title": "Create GEO-optimized 'best answer' content pages",
+      "description": "Create 3-5 'best answer' content pages designed to win in AI answer engines and human search. These pages directly and completely answer high-intent buyer questions.\n\nRef: MARKET_RESEARCH_2026.md 'Content Designed for AI Answers', WEBSITE_BRIEF.md Appendix A 'Best Answer Content Pages'.\n\nPriority pages:\n1. 'How much does startup marketing cost?' — pricing transparency, budget tiers from research, what to expect at each level. Demystifies costs, builds trust.\n2. 'Marketing agency vs freelancer vs in-house' — comparison table using Section 6 data. Honest pros/cons of each.\n3. 'What does a marketing retainer actually include?' — concrete deliverables, typical month walkthrough.\n4. 'How to get leads without expensive Google and Meta Ads' — alternative channels from research (partnerships, newsletters, community, LinkedIn organic).\n5. 'What is GEO and why does it matter for your business?' — thought leadership, demonstrates expertise.\n\nFormat for each page:\n- Clear question as H1 headline\n- Direct, concise answer in the first paragraph (AI-extractable)\n- Supporting detail, examples, and evidence\n- Structured data (FAQPage schema where applicable)\n- CTA: 'Want help with this? Get your free marketing audit'\n- Author attribution (Jodie Plant) for E-E-A-T signals\n\nThese can be blog posts (if blog infrastructure exists via FEAT-013) or standalone pages under a /guides or /resources path.",
+      "acceptanceCriteria": [
+        "At least 3 'best answer' pages published with substantive content (800+ words each)",
+        "Each page has a clear question as headline and direct answer in opening paragraph",
+        "FAQPage structured data on pages with FAQ-style content",
+        "Each page has CTA linking to /contact for free audit",
+        "Content is genuinely useful and demonstrates expertise (not thin SEO content)",
+        "Pages are linked from relevant service pages and/or navigation",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Core GEO/AEO strategy. These pages serve both AI citation (direct answers, structured data) and human conversion (trust-building, CTA). The pricing transparency page alone can be a significant lead driver. Can launch as standalone pages even before blog infrastructure."
+    },
+    {
+      "id": "FEAT-027",
+      "title": "Add llms.txt for AI agent discoverability",
+      "description": "Create public/llms.txt — a curated, AI-friendly index of the site's most important content in clean markdown format.\n\nRef: MARKET_RESEARCH_2026.md 'llms.txt', WEBSITE_BRIEF.md Section 10 'AI Discoverability'.\n\nllms.txt is a proposed convention for helping AI agents understand a site's key content. It should:\n- List key pages with brief descriptions\n- Use clean markdown format\n- Include: homepage, services, about, results, contact\n- Include blog posts and 'best answer' pages when they exist\n- Optionally create llms-full.txt with extended page content\n\nFormat example:\n```\n# Jodie Plant Marketing\n\n> AI-powered digital marketing for startups and tech companies.\n\n## Pages\n\n- [Homepage](https://www.jodieplant.com/): Full-service digital marketing for tech companies, powered by AI.\n- [Services](https://www.jodieplant.com/services): AI-enhanced SEO, paid ads, content, social, email, analytics + outcome-based packages.\n- [About](https://www.jodieplant.com/about): Jodie Plant — senior marketer, AI-enhanced workflows, no agency bloat.\n- [Results](https://www.jodieplant.com/results): Methodology, credentials, and what to expect from an engagement.\n- [Contact](https://www.jodieplant.com/contact): Free marketing audit, contact form, booking.\n```\n\nThis is a small technical add-on — not a substitute for authority or distribution. Treat as one component of the broader GEO strategy.",
+      "acceptanceCriteria": [
+        "public/llms.txt exists with curated site index in clean markdown",
+        "All MVP pages listed with accurate descriptions",
+        "File is accessible at /llms.txt on the live site",
+        "Format follows the llms.txt convention (markdown, concise descriptions)",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "LOW-MEDIUM VALUE: Quick win for AI discoverability. Takes minutes to create. Should be updated whenever significant pages are added. Part of broader GEO strategy but not high-impact on its own."
+    },
+    {
+      "id": "FEAT-028",
+      "title": "Update SEO service block and services page for GEO/AEO positioning",
+      "description": "Update the SEO service block on /services to reflect the expanded SEO → GEO/AEO positioning from the market research.\n\nRef: MARKET_RESEARCH_2026.md 'GEO/AEO: What Is Replacing Traditional SEO', WEBSITE_BRIEF.md Section 5 'SEO & GEO'.\n\nChanges:\n- Rename service from 'SEO' to 'SEO & GEO' or 'Search & AI Optimization' on the services page\n- Update the AI difference copy to include GEO/AEO language\n- Add deliverables: 'best answer' page strategy, AI citation tracking, llms.txt, structured data for AI crawlability\n- Update the benefit one-liner: 'Get found by the people — and the AI — already searching for what you sell.'\n- Consider adding a brief explainer paragraph about GEO/AEO for visitors unfamiliar with the concept\n\nThis positions Jodie ahead of agencies still talking about 'SEO' as if it's 2020. The GEO framing is a differentiator in itself.",
+      "acceptanceCriteria": [
+        "SEO service block renamed to reflect GEO/AEO positioning",
+        "AI difference copy updated with GEO-specific language",
+        "Deliverables list includes GEO items (best answer pages, AI citation tracking, llms.txt)",
+        "Benefit one-liner updated",
+        "Positioning is clear and accessible (not jargon-heavy for non-technical buyers)",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: GEO/AEO is the most differentiating service positioning available in 2026. Most agencies haven't updated their language yet. Being early to this framing signals thought leadership and attracts forward-thinking clients."
+    },
+    {
+      "id": "FEAT-029",
+      "title": "Add FAQ structured data to service and content pages",
+      "description": "Add FAQPage JSON-LD structured data to pages that contain FAQ-style content. This supports both traditional search rich results and AI answer engine discoverability.\n\nRef: MARKET_RESEARCH_2026.md 'Content Designed for AI Answers', WEBSITE_BRIEF.md Section 12 'GEO / Answer Engine Optimization'.\n\nPages to add FAQ schema:\n- /services — common questions about engagement models, pricing, what's included\n- /results — questions about methodology, what to expect, timelines\n- 'Best answer' content pages (FEAT-026) — inherently FAQ-structured\n- Individual service sub-pages (FEAT-017) when they exist — 3-5 FAQs per service\n\nImplementation:\n- Create a reusable FAQSchema.astro component that accepts an array of {question, answer} objects\n- Render as JSON-LD in the page <head>\n- Also render the FAQ content visibly on the page (accordion or list) — structured data must match visible content\n- Validate with Google's Rich Results Test",
+      "acceptanceCriteria": [
+        "FAQSchema.astro component exists and is reusable across pages",
+        "FAQPage JSON-LD renders in <head> with valid schema",
+        "FAQ content is visible on the page (not hidden)",
+        "Schema validates with Google Rich Results Test",
+        "/services page has at least 3-5 FAQs with structured data",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005", "FEAT-009"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: FAQ structured data is a direct GEO/AEO tactic — helps both Google rich results and AI answer extraction. Reusable component makes it easy to add FAQs to any page. Low effort, compounding benefit."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."
