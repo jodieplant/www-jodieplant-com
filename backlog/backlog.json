@@ -106,7 +106,7 @@
     {
       "id": "FEAT-006",
       "title": "Build Results page with real credentials and methodology (not fake case studies)",
-      "description": "Build src/pages/results.astro per brief Section 9 (v2.2) 'Results Page'.\n\nCRITICAL: This is NOT a portfolio page with fake case studies. Placeholder case studies with fabricated metrics actively harm credibility. This page uses real credentials and methodology to demonstrate expertise.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'What You Can Expect'. Subhead: honest framing — 'I don't have a portfolio of logos to hide behind. Here's what I bring instead — real experience, a proven approach, and the results to back it up.'\n\n2. CREDENTIALS & NUMBERS: Real, provable stats in Space Grotesk at large scale — years experience, campaigns/projects delivered, ad spend managed, client retention, industries worked with. MUST be real. Small but honest beats large but fabricated. Add OUTCOME RANGE ANCHORS (generalized, historical patterns — not client-specific): e.g. 'Increased demo bookings 30–120% in 90 days', 'Reduced cost per lead 18–40%', 'Doubled organic visibility in 6–12 months'. Frame as 'What I've seen across engagements' or 'Typical outcome ranges' to make methodology tangible.\n\n3. THE APPROACH IN ACTION: Instead of fake case studies, show methodology applied:\n- 'What a typical SEO engagement looks like' — month-by-month\n- 'How I'd approach a startup launch campaign' — step-by-step\n- 'What a monthly retainer delivers' — concrete deliverables\nDemonstrates expertise without fabricating results.\n\n3b. 'PEEK UNDER THE HOOD' — VISUAL PROCESS PROOF:\nDon't just list what you do — VISUALIZE the workflow. Prospects are skeptical of AI claims. Show actual artifacts:\n- Blurred/redacted screenshot of an AI-enhanced research workflow or audit output\n- Sample 'AI Visibility Report' structure (designed mockup with real formatting, anonymized data)\n- Before/after of an AI-optimized content piece\n- Dashboard screenshot showing type of reporting (redacted data)\nUse subtle frame/border treatment to make these feel like real documents. This section is the most powerful differentiator on the page — it proves Jodie is a systems builder, not just a prompt engineer.\n\n4. WHAT CLIENTS SAY: Real testimonials, LinkedIn recommendations, or professional endorsements. Even 1-2 is better than none. If no client testimonials exist: results from past roles with appropriate framing. Structure ready for adding real testimonials later.\n\n5. INDUSTRIES & EXPERIENCE: Types of companies Jodie works with — SaaS, fintech, dev tools, etc. Pattern recognition: 'I've seen what works for companies like yours.'\n\n6. CTA: 'Want to see what I'd do for your company?' + 'Get Your Free AI Visibility Snapshot' → /contact.",
+      "description": "Build src/pages/results.astro per brief Section 9 (v2.2) 'Results Page'.\n\nCRITICAL: This is NOT a portfolio page with fake case studies. Placeholder case studies with fabricated metrics actively harm credibility. This page uses real credentials and methodology to demonstrate expertise.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'What You Can Expect'. Subhead: honest framing — 'I don't have a portfolio of logos to hide behind. Here's what I bring instead — real experience, a proven approach, and the results to back it up.'\n\n2. CREDENTIALS & NUMBERS: Real, provable stats in Space Grotesk at large scale — years experience, campaigns/projects delivered, ad spend managed, client retention, industries worked with. MUST be real. Small but honest beats large but fabricated. Add OUTCOME RANGE ANCHORS (generalized, historical patterns — not client-specific): e.g. 'Increased demo bookings 30–120% in 90 days', 'Reduced cost per lead 18–40%', 'Doubled organic visibility in 6–12 months'. Frame as 'What I've seen across engagements' or 'Typical outcome ranges' to make methodology tangible.\n\n3. THE APPROACH IN ACTION: Instead of fake case studies, show methodology applied:\n- 'What a typical SEO engagement looks like' — month-by-month\n- 'How I'd approach a startup launch campaign' — step-by-step\n- 'What a monthly retainer delivers' — concrete deliverables\nDemonstrates expertise without fabricating results.\n\n3b. 'PEEK UNDER THE HOOD' — VISUAL PROCESS PROOF:\nDon't just list what you do — VISUALIZE the workflow. Prospects are skeptical of AI claims. Show actual artifacts:\n- Blurred/redacted screenshot of an AI-enhanced research workflow or audit output\n- Sample 'AI Visibility Report' structure (designed mockup with real formatting, anonymized data)\n- Before/after of an AI-optimized content piece\n- Dashboard screenshot showing type of reporting (redacted data)\nUse subtle frame/border treatment to make these feel like real documents. This section is the most powerful differentiator on the page — it proves Jodie is a systems builder, not just a prompt engineer.\n\n4. WHAT CLIENTS SAY: Real testimonials, LinkedIn recommendations, or professional endorsements. Even 1-2 is better than none. If no client testimonials exist: results from past roles with appropriate framing. Structure ready for adding real testimonials later.\n\n5. INDUSTRIES & EXPERIENCE: Types of companies Jodie works with — SaaS, fintech, dev tools, etc. Pattern recognition: 'I've seen what works for companies like yours.'\n\n6. CTA: 'Want to see what I'd do for your company?' + 'Get Your Free Visibility Snapshot' → /contact.",
       "acceptanceCriteria": [
         "Results page has Hero, Credentials, Approach in Action, Client Testimonials, Industries, and CTA",
         "No fake case studies or fabricated metrics anywhere on the page",
@@ -167,7 +167,7 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. The Contact page meta title ('Get Your Free AI Visibility Snapshot') is deliberately crafted for search CTR."
+      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. Meta titles updated per v2.3: Homepage leads with 'One Senior Marketer. Your Entire Account.' Contact page leads with 'Get Your Free Visibility Snapshot' — both crafted for search CTR."
     },
     {
       "id": "FEAT-009",
@@ -272,10 +272,10 @@
     {
       "id": "FEAT-014",
       "title": "Add Cal.com calendar booking integration",
-      "description": "Integrate Cal.com (free tier) for 15-minute intro call booking per brief Section 11 Phase 2. Add booking link/embed to /contact page 'Other Ways to Reach Me' section. Replace placeholder with working calendar link.\n\nConfigure Cal.com with:\n- 15-minute intro call slot\n- Availability windows\n- Confirmation email\n- Calendar sync",
+      "description": "Integrate Cal.com (free tier) for 15-minute intro call booking per brief Section 11 Phase 2. Per v2.3: calendar booking link appears in the FORM CONFIRMATION flow (after form submit), not as a standalone section on /contact. This ensures prospects share context first.\n\nConfigure Cal.com with:\n- 15-minute intro call slot\n- Availability windows\n- Confirmation email\n- Calendar sync\n\nIntegration point: form confirmation message includes 'Want to talk it through? Book a 15-minute intro call.' with Cal.com link.",
       "acceptanceCriteria": [
-        "Cal.com booking link or embed on /contact page",
-        "'Book a 15-minute intro call' option available alongside form and email",
+        "Cal.com booking link appears in form confirmation message on /contact",
+        "'Book a 15-minute intro call' option available after form submission",
         "Booking flow works end-to-end",
         "calendar_clicked PostHog event fires when link is clicked"
       ],
@@ -283,7 +283,7 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Third conversion path for prospects who prefer live conversation. Low effort, removes friction for call-oriented buyers."
+      "groomingNotes": "MEDIUM VALUE: Per v2.3, calendar in confirmation flow ensures prospects share context before booking. Reduces low-quality calls. Low effort integration."
     },
     {
       "id": "FEAT-015",
@@ -304,6 +304,7 @@
     {
       "id": "FEAT-016",
       "title": "Add privacy policy page covering PostHog, cookies, and GDPR",
+      "groomingNotes": "DEPENDENCY: Must ship with or before FEAT-010 (PostHog) for GDPR compliance.",
       "description": "Create src/pages/privacy.astro. This is more important now that PostHog uses cookies.\n\nMust cover per brief Appendix C (v2.0):\n- What data is collected: PostHog analytics (page views, clicks, scroll depth), session recordings (what is/isn't captured), form submissions via Formspree\n- Cookie usage: explain PostHog session cookies, what they do, how consent works\n- How to accept/reject cookies and what happens in each case\n- How to withdraw consent after granting it\n- No data selling\n- Session recordings: explain what's recorded, data retention period, that sensitive form fields can be masked\n- GDPR compliance statement\n- Data retention policy\n- Contact for data requests: jodie@jodieplant.com\n- Right to erasure\n\nUse Layout component. Add link in Footer. Write in plain English, not legalese.",
       "acceptanceCriteria": [
         "/privacy page exists with comprehensive privacy policy",
@@ -424,9 +425,9 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": ["FEAT-020", "FEAT-021"],
+      "dependsOn": ["FEAT-010"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Without configured funnels and dashboards, raw events are just noise. This turns PostHog data into actionable insights. Documentation ensures the setup is reproducible."
+      "groomingNotes": "HIGH VALUE: Unblocked from FEAT-020/021 (deprioritised to 'could') — dashboard doc can reference planned events without requiring them to be implemented first. Depends only on FEAT-010 (core PostHog). Documentation ensures the setup is reproducible."
     },
     {
       "id": "FEAT-023",
@@ -538,7 +539,7 @@
     },
     {
       "id": "FEAT-032",
-      "title": "Add AI Visibility Audit as primary bridge product on /services and /contact",
+      "title": "Add AI Visibility Audit as primary bridge product on /services",
       "description": "Add the 'AI Visibility Audit' as the PRIMARY BRIDGE PRODUCT with a DEDICATED FEATURED SECTION on /services. Per v2.3: the audit upsell lives on /services ONLY — NOT on /contact (contact page is a clean conversion path).\n\nREF: MARKET_RESEARCH_2026.md Part 4 — one-time project fee $500-$1,500.\n\nSTRATEGIC ROLE: The jump from Free Audit ($0) to Growth Retainer ($2,500+) is a significant trust gap. The AI Visibility Audit transforms Jodie from 'vendor asking for a retainer' into 'consultant providing a paid diagnostic.' Conversion ladder: Free Audit → AI Visibility Audit ($500-$1,500) → Retainer ($1,500-$7,500/mo).\n\nON /SERVICES — DEDICATED FEATURED SECTION (not just pricing row):\n- Headline and subhead: what the audit is and why it exists\n- What it includes: how the brand appears across ChatGPT/Perplexity/Gemini/Google AI Overviews; competitor AI visibility comparison; content gap analysis; entity authority assessment; actionable recommendations with priority ranking\n- Deliverable format: e.g. written report + optional walkthrough call\n- Timeline: e.g. delivered within 5–10 business days\n- Who it's for: founders/marketers who want to know where they stand in AI discovery before committing to a retainer\n- Visually marked as 'Recommended First Step' (badge or label)\n- Primary CTA: 'Start with AI Visibility Audit' (links to /contact with audit context)\n\nMINIMAL LAUNCH VERSION: A mention and link within the /services pricing section is sufficient for launch day. The full dedicated featured section can be built as a follow-up sprint.\n\nOptional: dedicated landing page for the audit (e.g. best-answer page).",
       "acceptanceCriteria": [
         "AI Visibility Audit has a dedicated featured section on /services with: what it includes, deliverable format, timeline, who it's for, why it exists",
@@ -549,11 +550,11 @@
         "Clear differentiation from the free marketing audit (paid diagnostic vs. free assessment)",
         "npm run build succeeds"
       ],
-      "priority": "must",
+      "priority": "should",
       "readyForSprint": false,
-      "dependsOn": ["FEAT-005", "FEAT-007"],
+      "dependsOn": ["FEAT-005"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "ELEVATED TO MUST: Primary bridge product closing the trust gap. Per v2.3: lives on /services only (removed from /contact for cleaner conversion path). Minimal version (mention in pricing section) can ship with FEAT-005; full featured section is a follow-up sprint. The conversion ladder (Free Audit → Paid Diagnostic → Retainer) is a proven consultative sales pattern."
+      "groomingNotes": "SHOULD: Minimal version (mention in pricing section) ships with FEAT-005 and satisfies launch requirements. Full dedicated featured section is a post-launch enhancement. Removed FEAT-007 dependency — audit upsell no longer on /contact per v2.3."
     },
     {
       "id": "FEAT-033",
@@ -584,9 +585,10 @@
         "At least 1 review or testimonial collected"
       ],
       "priority": "must",
-      "readyForSprint": true,
+      "readyForSprint": false,
+      "sprintable": false,
       "groomedAt": "2026-02-23",
-      "groomingNotes": "ELEVATED TO MUST + PARALLEL TRACK: This is the #1 off-site lever for AI citation and should start IMMEDIATELY — it has ZERO dependencies on website code. Do not wait for the site to launch. Jodie should be actively posting on LinkedIn, contributing on Reddit (r/marketing, r/startups), and listed on at least one directory within 30 days. LinkedIn-first content distribution: post substance on LinkedIn to build entity signals, then link back to site when it's live. AI models prioritize high-engagement social threads for expert citations. This work runs in parallel with all website sprints."
+      "groomingNotes": "MUST PRIORITY — PARALLEL MANUAL TRACK: Off-site/manual work only — NOT sprintable by AI agents. Zero code dependencies. Jodie should start immediately in parallel with website development: LinkedIn posting, Reddit engagement (r/marketing, r/startups), directory listings. LinkedIn-first content distribution builds entity signals before site launch. Target: active on LinkedIn + 1 directory within 30 days."
     },
     {
       "id": "FEAT-036",
@@ -660,7 +662,7 @@
     {
       "id": "FEAT-040",
       "title": "Add sticky CTA on scroll (mobile-first)",
-      "description": "Add a sticky CTA bar (mobile-first) that appears on scroll (e.g. after user scrolls past hero or 25% of page). Especially important on mobile where the primary CTA can scroll out of view. CTA should be 'Free AI Visibility Snapshot' linking to /contact. Non-intrusive: should not cover key content; consider bottom orange bar or floating button. Per synthesis review: conversion optimization for mobile.",
+      "description": "Add a sticky CTA bar (mobile-first) that appears on scroll (e.g. after user scrolls past hero or 25% of page). Especially important on mobile where the primary CTA can scroll out of view. CTA should be 'Free Visibility Snapshot' linking to /contact. Non-intrusive: should not cover key content; consider bottom orange bar or floating button. Per synthesis review: conversion optimization for mobile.",
       "acceptanceCriteria": [
         "Sticky CTA appears on scroll on homepage and key pages (e.g. after hero or at 25% scroll)",
         "Mobile-friendly: visible and tappable without covering primary content",
@@ -671,7 +673,8 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": ["FEAT-002", "FEAT-003"],
-      "groomingNotes": "Conversion optimization per synthesis review. Mobile especially benefits from persistent CTA."
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "CONVERSION OPT: Mobile users lose the primary CTA on scroll. Sticky bar ensures conversion path is always visible. Low-medium effort. User value: reduces friction for mobile visitors who are ready to act."
     },
     {
       "id": "FEAT-041",
@@ -686,7 +689,8 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-032"],
-      "groomingNotes": "Conversion optimization per synthesis review. Long services page needs multiple conversion opportunities."
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "CONVERSION OPT: Long /services page (10+ scroll heights) needs multiple conversion opportunities. Users reading mid-page should not have to scroll to bottom. User value: captures high-intent visitors at moment of decision."
     },
     {
       "id": "FEAT-042",
@@ -701,7 +705,8 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
-      "groomingNotes": "Conversion and credibility per synthesis review. Low effort if outcome ranges already defined (brief v2.2 / FEAT-006)."
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "CREDIBILITY: Micro proof within service context builds trust without requiring full case studies. Use real, generalized outcome ranges only. User value: visitors see evidence alongside claims, increasing confidence."
     },
     {
       "id": "FEAT-043",
@@ -716,7 +721,8 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": ["FEAT-006", "FEAT-009"],
-      "groomingNotes": "Future-ready for rich results and AI citation when testimonials are added. Low priority until testimonials exist."
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "FUTURE-READY: Schema prep for when testimonials exist. Low effort to build reusable component now. User value: SEO rich results and AI citation when content is added. Keep low priority until testimonials are collected."
     },
     {
       "id": "FEAT-044",
@@ -731,7 +737,8 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": ["FEAT-007", "FEAT-014"],
-      "groomingNotes": "Phase 2 conversion optimization. Reduces tire-kickers on calls; aligns with Free Audit → Audit → Retainer ladder."
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "PHASE 2: Requires Cal.com integration (FEAT-014) first. Reduces low-quality calls by encouraging audit-first path. User value: higher quality conversations, better-prepared prospects. Consider bypass option for high-intent users."
     },
     {
       "id": "FEAT-045",
@@ -740,10 +747,27 @@
       "acceptanceCriteria": [
         "See FEAT-003 and FEAT-005 acceptance criteria"
       ],
-      "priority": "n/a",
+      "priority": "future",
       "readyForSprint": false,
       "dependsOn": ["FEAT-003", "FEAT-005"],
-      "groomingNotes": "ABSORBED into FEAT-003 and FEAT-005 per v2.3 review. No longer a standalone item."
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "ARCHIVED: Absorbed into FEAT-003 and FEAT-005 per v2.3 review. Kept for historical reference only — excluded from active sprint planning."
+    },
+    {
+      "id": "FEAT-046",
+      "title": "Bootstrap social proof: collect LinkedIn recommendations and pre-launch endorsements",
+      "description": "Before site launch, collect 3–5 LinkedIn recommendations from former colleagues, managers, or clients from previous roles. These don't need to be Jodie Plant Marketing clients — they need to be credible professionals vouching for Jodie's marketing expertise.\n\nAlso: ask 2–3 trusted contacts to review the site pre-launch and provide a one-line endorsement (e.g. 'I'd hire Jodie for my startup's marketing in a heartbeat' — with name and title).\n\nThese populate the testimonials section on /results and optionally the homepage Social Proof bar at launch — avoiding empty 'testimonials coming soon' sections.\n\nRef: WEBSITE_BRIEF.md v2.3 Section 9 Results Page, 'Social Proof Bootstrapping'.",
+      "acceptanceCriteria": [
+        "At least 3 LinkedIn recommendations collected from credible professionals",
+        "At least 2 one-line endorsements collected for site testimonials section",
+        "Endorsements include name and title for credibility",
+        "Content ready to populate FEAT-006 (Results page) testimonials section"
+      ],
+      "priority": "must",
+      "readyForSprint": false,
+      "sprintable": false,
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MUST PRIORITY — MANUAL PRE-LAUNCH TASK: Not sprintable by AI agents. This is Jodie's personal outreach task. A strong LinkedIn recommendation from a VP of Marketing carries more weight than 'testimonials coming soon.' Should be completed before FEAT-006 (Results page) is built so testimonials can populate at launch."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."
