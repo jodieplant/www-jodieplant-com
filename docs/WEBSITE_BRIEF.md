@@ -1,20 +1,30 @@
 # Jodie Plant Marketing — Website Design & Briefing Document
 
-**Version**: 2.2
+**Version**: 2.3
 **Created**: 2026-02-20
 **Updated**: 2026-02-23
 **Purpose**: Design and content brief for www.jodieplant.com
 
+> **v2.3 changes** (positioning broadening & conversion tightening):
+> 1. **Niche broadened**: Reversed v2.2 "B2B SaaS Seed to Series B" niche declaration — back to "startups and tech companies" as the primary audience. Keeps Local Visibility and Foundation tier in scope. Specialization can sharpen through case studies and vertical content later, not through excluding audiences at launch.
+> 2. **Audiences tightened to 2**: Merged "CTOs / Technical Co-founders" into "Startup Founders" — now 2 primary audiences instead of 3. CTO messaging absorbed into Founders section.
+> 3. **AI mention density reduced**: Homepage limited to 2 concrete AI references (Visibility Engine framework + microproof line). Removed AI-leading language from Services hero. "One senior marketer. Your entire account." elevated as hero subhead.
+> 4. **Visibility Engine specificity**: Added concrete deliverable examples to each framework step. Dropped ™ symbol (not trademarked).
+> 5. **Contact page simplified to 5 sections**: Moved AI Visibility Audit upsell to /services only (not /contact). Calendar booking moved to form confirmation flow. Cleaner conversion path.
+> 6. **Pricing language**: Ranges narrowed to "starting at" language. One-time projects framed as retainer on-ramps.
+> 7. **Copy fixes**: Replaced "move fast and break things", replaced "Data in, decisions out", added maintenance note to scarcity signal.
+> 8. **New sections**: Social proof bootstrapping guidance, referral mechanism note, 90-day content calendar outline.
+
 > **v2.2 changes** (synthesis review — positioning & conversion):
-> 1. **Primary niche declaration**: Explicit "B2B SaaS startups, Seed to Series B" in Section 2 to sharpen authority and reduce "tech companies" breadth.
+> 1. ~~**Primary niche declaration**~~ — Reversed in v2.3. See above.
 > 2. **Primary vs supporting services**: Section 5 now structures services as Primary Growth Engines (Search & AI Visibility, Authority Content & AI Citation, Smart-Stack Paid Media) vs Supporting Capabilities — positions Jodie as search/visibility specialist with execution breadth, not generalist.
 > 3. **AI narrative shift**: "AI-powered" → "AI-orchestrated marketing systems" across hero, services, and About — emphasizes systems-builder over prompt-engineer.
-> 4. **Named framework**: One signature framework (e.g. "The Visibility Engine™" or "Search-to-Citation System™") in Services AI Method section for memorability.
+> 4. **Named framework**: One signature framework ("The Visibility Engine") in Services AI Method section for memorability.
 > 5. **Homepage "Who This Is For"**: New micro-section after Hero with ICP pain bullets (pipeline, agency burn, need for senior leadership).
 > 6. **Free audit framing**: Contact page constrains free audit — Loom-style video (5–10 min), delivered in 48 hours, limited weekly slots — to raise perceived value and reduce tire-kickers.
 > 7. **Results outcome anchors**: Credentials section adds generalized outcome ranges (e.g. demo bookings +40–120%, CAC -18–35%, organic traffic 2x in 6–12 months) as historical patterns, not fabricated.
 > 8. **Fractional leadership reframe**: "Every engagement includes fractional marketing leadership" — elevates from service #5 to overarching positioning.
-> 9. **Sharper tagline**: Homepage/meta shift toward "Search & AI Visibility for B2B SaaS" where appropriate.
+> 9. ~~**Sharper tagline**~~ — Reversed in v2.3. Broadened back from "Search & AI Visibility for B2B SaaS".
 
 > **v2.1 changes** (external strategy review integration):
 > 1. **Trust gap / bridge product**: AI Visibility Audit positioned as primary bridge between free audit and retainer (Section 4, Section 5, Section 9 Contact Page)
@@ -108,19 +118,15 @@ A marketing website for Jodie Plant Marketing — a solo, AI/tech-forward digita
 
 ## 2. Strategic Positioning
 
-### Primary Niche Declaration (Non-negotiable)
-
-**I work primarily with B2B SaaS startups from Seed to Series B.**
-
-Even if other segments are accepted, this declaration sharpens authority. Specialization increases perceived value. The site should state this clearly — "tech companies" is too broad; "B2B SaaS, Seed to Series B" signals focus and defensible expertise.
-
 ### Brand Positioning Statement
 
-**For** startup founders, CTOs, and heads of marketing at B2B SaaS companies (Seed to Series B) who need marketing that actually moves the needle,
+**For** startup founders and heads of marketing at tech companies who need marketing that actually moves the needle,
 **Jodie Plant Marketing is** a fractional marketing leader and AI-orchestrated digital marketing partner
 **that** delivers full-service marketing with senior-level attention on every account,
 **unlike** big agencies that hand you off to juniors, freelancers who only do one thing, or DIY tools that lack strategy,
 **Jodie** combines deep marketing expertise with AI-orchestrated systems to deliver faster, smarter, and more measurable results.
+
+> **On specialization**: The site positions broadly as "startups and tech companies" at launch. Vertical depth (SaaS, fintech, dev tools, local services) will sharpen through case studies and content over time — not by excluding audiences before proof points exist.
 
 ### Core Brand Promise
 
@@ -151,26 +157,29 @@ Solo practitioners have a natural capacity constraint — this is a feature, not
 
 This isn't manufactured urgency — it's the honest reality of a one-person operation. Prospects who delay may genuinely miss out.
 
+> **Maintenance**: The capacity signal ("Currently taking on 2 new clients this quarter") MUST be updated quarterly or when the roster changes. Stale availability signals undermine trust. Add a recurring calendar reminder to update this number on the 1st of each quarter. If capacity is genuinely full, say so — "Waitlist open for Q3 2026" is more credible than a permanently available signal.
+
 ---
 
 ## 3. Target Audiences
 
-### Primary: Startup Founders (Seed to Series B)
+### Primary: Startup Founders & Technical Co-founders
 
-**Profile**: Technical founders who've built a product but need help getting it in front of the right people. Marketing feels like a foreign language but they know they need it.
+**Profile**: Founders (including technical co-founders and CTOs handed the "and marketing" brief) who've built a product but need help getting it in front of the right people. Marketing feels like a foreign language but they know they need it. They want someone who speaks their language and moves at their pace.
 
 | Attribute | Detail |
 |-----------|--------|
-| Pain | Built something great, nobody knows about it. Tried DIY marketing, wasted time. Previous agency burned budget with no results |
-| Trigger | Just raised a round, need to show growth. Competitor gaining visibility. Board asking about marketing metrics |
-| Win | Clear marketing strategy, measurable pipeline growth, someone who "gets" tech |
+| Pain | Built something great, nobody knows about it. Tried DIY marketing, wasted time. Previous agency burned budget with no results. Marketing feels like guesswork — need data-driven, systematic approach |
+| Trigger | Just raised a round, need to show growth. Competitor gaining visibility. Board asking about marketing metrics. CEO said "sort out marketing" |
+| Win | Clear marketing strategy, measurable pipeline growth, someone who "gets" tech. A marketing partner who thinks like an engineer — systematic, measurable, iterative |
 | Budget | $2.5k-12k/month |
-| Channels | LinkedIn, startup events, founder communities, referrals |
+| Channels | LinkedIn, startup events, founder communities, tech meetups, dev communities, referrals |
 
 **Key Messages**:
 - "You build the product. I'll build the pipeline."
 - "Marketing that understands your tech stack"
 - "No hand-off to juniors. Ever."
+- "Marketing, explained in your language"
 
 ### Primary: Heads of Marketing at Tech Companies
 
@@ -190,32 +199,13 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 - "I speak your language — literally"
 - "Fractional marketing leadership that integrates with your team"
 
-### Secondary: CTOs / Technical Co-founders
-
-**Profile**: CTOs at startups who've been handed the "and marketing" brief alongside their technical role. They want someone who can speak their language and move at their pace.
-
-| Attribute | Detail |
-|-----------|--------|
-| Pain | Marketing feels like guesswork. Agencies speak a different language. Need data-driven, systematic approach |
-| Trigger | CEO told them to "sort out marketing." Need to hire but want to understand it first |
-| Win | A marketing partner who thinks like an engineer — systematic, measurable, iterative |
-| Budget | $2.5k-10k/month |
-| Channels | Tech meetups, dev communities, LinkedIn, referrals from other founders |
-
-**Key Messages**:
-- "Marketing, explained in your language"
-- "Data in, decisions out"
-- "Think of it as CI/CD for your brand"
-
 ---
 
 ## 4. Value Propositions
 
 ### Primary Value Proposition
 
-> **Search & AI Visibility for B2B SaaS — full-service marketing delivered through AI-orchestrated systems by a senior marketer who's actually paying attention.**
-
-(Alternative tagline for hero/meta: "Search & AI Visibility for B2B SaaS" — memorable and niche-sharp.)
+> **One senior marketer. Your entire account. Full-service marketing delivered through AI-orchestrated systems — with search and AI visibility at the core.**
 
 ### Supporting Value Props
 
@@ -224,7 +214,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 | AI/tech-forward | Faster execution, better insights | "AI-enhanced marketing that moves at startup speed" |
 | Senior-level attention | No juniors, no hand-offs | "One senior marketer. Your entire account." |
 | Full-service | One partner for everything | "SEO, paid, social, content, email — one relationship" |
-| Startup-native | Understands constraints and pace | "Built for companies that move fast and break things" |
+| Startup-native | Understands constraints and pace | "Built for companies that ship fast and measure everything" |
 | Data-driven | Transparent, measurable results | "Every dollar tracked. Every result measured." |
 | No bloat | No account managers, no overhead | "You're not paying for a fancy office and a sales team" |
 | **Fractional leadership** | **CMO-level strategy at a fraction of the cost** | **"Every engagement includes fractional marketing leadership — strategy AND execution, without the $300K salary"** |
@@ -241,8 +231,8 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 
 Don't just ask prospects to "get in touch" — offer them something concrete in return:
 
-**MVP Lead Magnet**: "Free AI Visibility Snapshot"
-- CTA: "Get Your Free AI Visibility Snapshot" or "See what I'd do for your startup"
+**MVP Lead Magnet**: "Free Visibility Snapshot"
+- CTA: "Get Your Free Visibility Snapshot" or "See what I'd do for your startup"
 - Prospect fills out a short form (company URL, biggest challenge, budget range)
 - **Delivery format**: A **video walkthrough** (Loom-style, 5–10 minutes) — not a generic PDF. This raises perceived value and demonstrates thinking in Jodie's voice.
 - **Turnaround**: Delivered within **48 hours**.
@@ -257,7 +247,7 @@ Don't just ask prospects to "get in touch" — offer them something concrete in 
 The jump from a **Free Audit** (zero commitment) to a **$2,500+ Growth Retainer** (high commitment) is a significant "trust gap." Founders are wary of free audits being generic sales pitches. The **AI Visibility Audit ($500–$1,500)** is the primary bridge product that closes this gap.
 
 **The conversion ladder:**
-1. **Free AI Visibility Snapshot** ($0) — Low friction, demonstrates thinking, pre-qualifies leads
+1. **Free Visibility Snapshot** ($0) — Low friction, demonstrates thinking, pre-qualifies leads
 2. **AI Visibility Audit** ($500–$1,500) — Paid diagnostic that transforms Jodie from "vendor asking for a retainer" into "consultant providing a high-value insight report"
 3. **Retainer** ($1,500–$7,500/month) — Much easier to sell once they've already paid for and received value from a $1K diagnostic
 
@@ -301,7 +291,7 @@ The services page must **not** read like every other marketing freelancer's list
 
 ### The AI-Enhanced Approach (Lead With This)
 
-Before listing individual services, establish the overarching method and **one named framework** for memorability (e.g. "The Visibility Engine™", "The Search-to-Citation System™", or "The AI Growth Stack™"). The framework name should appear in the Services hero or AI Method section.
+Before listing individual services, establish the overarching method and **one named framework** for memorability (e.g. "The Visibility Engine", "The Search-to-Citation System", or "The AI Growth Stack"). The framework name should appear in the Services hero or AI Method section.
 
 > "Every service I deliver is powered by an AI-orchestrated workflow. This isn't about replacing strategy with automation — it's about using modern tools to research deeper, create faster, optimise smarter, and report clearer than a traditional agency can."
 
@@ -390,6 +380,8 @@ Before listing individual services, establish the overarching method and **one n
 
 **For the client**: "Build an audience you own, nurture them into customers — without being annoying about it."
 
+> **Referral mechanism**: Design a simple referral loop into the engagement model from day one. After each successful engagement milestone (e.g. 90-day check-in, first measurable result), prompt clients with: "Know someone who'd benefit from this? Introductions are the highest compliment." Consider a lightweight referral incentive (e.g. one free month of reporting, a complimentary audit for the referred company). Referrals from happy clients convert at 3–5x the rate of cold leads. This should be systematized, not ad hoc — add it to the client onboarding checklist and quarterly review template.
+
 ### Growth Attribution & AI Insights
 
 > Renamed from "Performance Intelligence" — an outcome-first name that sounds like a senior leadership tool rather than just a GA4 dashboard setup. "Performance Intelligence" is vague. "Growth Attribution & AI Insights" signals what founders actually want: understanding what's driving growth and getting AI-powered insights they can act on.
@@ -455,20 +447,22 @@ Before listing individual services, establish the overarching method and **one n
 
 | Package | Monthly Fee | What's Included | Best For |
 |---------|-------------|-----------------|----------|
-| **Foundation** | $1,500–$2,500 | Social media (2 platforms, including short-form video), content creation (8–12 posts), basic email marketing (2–4 campaigns), local visibility setup, monthly reporting | Local businesses, early-stage startups |
-| **Growth** | $2,500–$4,500 | Foundation + GEO/SEO strategy, "best answer" content pages, one paid ad channel, AI visibility monitoring, partnership channel activation | Growing SMBs, funded startups |
-| **Authority** | $4,500–$7,500 | Growth + full Search & AI Visibility (SEO + GEO), multi-channel paid media, email automation & nurture sequences, AI marketing systems consulting, conversion rate optimization, schema markup & technical optimization. **Fractional marketing leadership** — strategy, execution, and reporting at the CMO level. | Established SMBs ready to dominate their niche |
+| **Foundation** | Starting at $1,500/mo | Social media (2 platforms, including short-form video), content creation (8–12 posts), basic email marketing (2–4 campaigns), local visibility setup, monthly reporting | Local businesses, early-stage startups |
+| **Growth** | Starting at $2,500/mo | Foundation + GEO/SEO strategy, "best answer" content pages, one paid ad channel, AI visibility monitoring, partnership channel activation | Growing SMBs, funded startups |
+| **Authority** | Starting at $4,500/mo | Growth + full Search & AI Visibility (SEO + GEO), multi-channel paid media, email automation & nurture sequences, AI marketing systems consulting, conversion rate optimization, schema markup & technical optimization. **Fractional marketing leadership** — strategy, execution, and reporting at the CMO level. | Established SMBs ready to dominate their niche |
 
-#### One-Time Projects
+#### One-Time Projects (Retainer On-Ramps)
+
+> Every one-time project is designed as a natural on-ramp to ongoing work. The deliverable is valuable standalone, but it also reveals the scope of what a retainer could achieve. Frame these as "start here, stay for results."
 
 | Project | Fee Range | Notes |
 |---------|-----------|-------|
-| **AI Visibility Audit** | **$500–$1,500** | **Primary bridge product — see Section 4** |
-| Conversion & Tracking Setup | $1,000–$3,000 | |
-| Marketing Strategy & Roadmap | $1,500–$3,000 | |
-| Email Automation Setup | $1,000–$2,500 | |
-| Website Content Overhaul for GEO | $2,000–$5,000 | |
-| Go-To-Market (GTM) Strategy Sprint | $3,000–$7,000 | |
+| **AI Visibility Audit** | **$500–$1,500** | **Primary bridge product — see Section 4. Natural on-ramp to Growth/Authority retainer.** |
+| Conversion & Tracking Setup | $1,000–$3,000 | Leads into ongoing CRO and reporting via retainer |
+| Marketing Strategy & Roadmap | $1,500–$3,000 | Roadmap execution continues via retainer |
+| Email Automation Setup | $1,000–$2,500 | Ongoing optimization and nurture via retainer |
+| Website Content Overhaul for GEO | $2,000–$5,000 | Content maintenance and expansion via retainer |
+| Go-To-Market (GTM) Strategy Sprint | $3,000–$7,000 | Sprint execution continues via retainer |
 
 > **AI Visibility Audit (Bridge Product)**: The recommended entry point for prospects who aren't ready for a retainer. "What happens when someone asks ChatGPT/Perplexity/Gemini about your industry? Are you cited? Are competitors? What would it take to change that?" This transforms the relationship from "vendor pitch" to "consultant delivering paid insights" — making the retainer conversation natural rather than salesy. Present this prominently, not buried in a table.
 >
@@ -478,9 +472,9 @@ Before listing individual services, establish the overarching method and **one n
 
 | Monthly Budget | Buyer Profile | Recommended Package |
 |----------------|---------------|---------------------|
-| $1,500–$2,500 | Local businesses, early-stage startups | Foundation |
-| $2,500–$5,000 | Growing SMBs, funded startups | Growth |
-| $5,000–$7,500 | Established SMBs | Authority |
+| From $1,500 | Local businesses, early-stage startups | Foundation |
+| From $2,500 | Growing SMBs, funded startups | Growth |
+| From $4,500 | Established SMBs | Authority |
 | $7,500+ | Growth-stage companies | Custom engagement |
 
 > **Pricing note:** Frame everything around outcomes, not deliverables. Not "12 posts per month" but "build your brand's AI citation presence and drive qualified leads." Charge for value from day one.
@@ -676,17 +670,18 @@ jodieplant.com/
 
 **Purpose**: Communicate who Jodie is, what she does, and why visitors should care — within 10 seconds. Drive visitors to make contact. Every section earns the next scroll.
 
-**Design note**: Category-defining structure: **Hero → Who This Is For → Social Proof → The Visibility Engine™ → Primary Growth Engines → Final CTA**. This anchors a category, disqualifies poor-fit leads, and makes the method memorable.
+**Design note**: Category-defining structure: **Hero → Who This Is For → Social Proof → The Visibility Engine → Primary Growth Engines → Final CTA**. This anchors a category, disqualifies poor-fit leads, and makes the method memorable.
 
 **Sections**:
 
 #### 1. Hero (Above the fold — this is everything)
 
-- **Headline**: **"Search & AI Visibility for B2B SaaS"**
-- **Subhead**: "Get found by buyers — and by AI — when they’re actively searching for what you sell."
-- **Microproof line** (small text under subhead): "Seed–Series B startups | Senior-led execution | AI-orchestrated systems"
-- **Primary CTA**: **"Get Your Free AI Visibility Snapshot"** → /contact (with snapshot context)
-- **Secondary CTA**: **"See How The Visibility Engine™ Works"** → /services (anchor to framework section)
+- **Headline**: **"Marketing That Gets You Found"**
+- **Subhead**: **"One senior marketer. Your entire account."**
+- **Supporting line**: "Search visibility, AI citation, authority content, and smart paid media — delivered through AI-orchestrated systems by someone who’s actually paying attention."
+- **Microproof line** (small text under supporting line): "Startups & tech companies | Senior-led execution | AI-orchestrated systems"
+- **Primary CTA**: **"Get Your Free Visibility Snapshot"** → /contact (with snapshot context)
+- **Secondary CTA**: **"See How It Works"** → /services (anchor to framework section)
 - **Availability signal**: Small text below CTAs — "**Limited roster model:** I work with **5–7 companies at a time** to maintain senior-level attention."
 - **Visual**: Dark navy background. Clean typographic hero. Orange accent on CTA. No stock photos. Subtle geometric pattern or gradient accent
 
@@ -696,9 +691,9 @@ Explicit ICP framing before services. Pattern: **Who this is for** → Pain → 
 
 - **Headline**: "This is for you if…" or "Built for founders who…"
 - **Bullet-style** (3–4 items), e.g.:
-  - You've raised funding but pipeline isn't predictable.
-  - You're tired of agencies burning ad spend with no clear ROI.
-  - Your competitors show up in ChatGPT/Perplexity and you don’t.
+  - You’ve built something great but your pipeline isn’t predictable.
+  - You’re tired of agencies burning ad spend with no clear ROI.
+  - Your competitors show up in search and AI results — and you don’t.
   - You need senior marketing leadership without hiring a full-time CMO.
 - Keep it scannable; this dramatically increases conversion clarity.
 
@@ -713,16 +708,16 @@ This is THE most important trust signal for a services business. It must appear 
 
 > **Critical**: Do NOT launch with obviously fake stats or placeholder testimonials. Real but modest numbers beat impressive but obviously fabricated ones. If nothing real is available, use credential-based proof instead.
 
-#### 4. The Visibility Engine™ (Signature framework)
+#### 4. The Visibility Engine (Signature framework)
 
-Add a simple 4-block diagram:
+Simple 4-block diagram — each step includes a concrete deliverable example:
 
-1. **Discover** — Audit search presence, AI citations, competitors, funnel gaps
-2. **Dominate** — Build search visibility + authority content that wins intent
-3. **Amplify** — Layer smart paid + distribution to accelerate capture
-4. **Optimize** — AI insights + CRO + attribution to improve pipeline efficiency
+1. **Discover** — Audit search presence, AI citations, competitors, funnel gaps → *"We'll map exactly where you're visible (and invisible) across search and AI."*
+2. **Dominate** — Build search visibility + authority content that wins intent → *"Best-answer pages, technical SEO, and content that ranks and gets cited."*
+3. **Amplify** — Layer smart paid + distribution to accelerate capture → *"Budget-smart ads on platforms where your money actually works."*
+4. **Optimize** — Attribution, CRO + AI insights to improve pipeline efficiency → *"Monthly reporting that tells you what's working and what to do next."*
 
-- **CTA**: "Start with a Visibility Snapshot →" linking to /contact
+- **CTA**: "Start with a Free Visibility Snapshot →" linking to /contact
 
 #### 5. Primary Growth Engines
 
@@ -736,8 +731,8 @@ Each: one-line benefit + one microproof snippet (generalised outcome range) + li
 #### 6. Final CTA (Dark section)
 
 - Dark navy background with orange CTA button — high contrast
-- **Headline**: "Ready to own your category in search and AI?"
-- **CTA**: "Get Your Free AI Visibility Snapshot" → /contact
+- **Headline**: "Ready to get found?"
+- **CTA**: "Get Your Free Visibility Snapshot" → /contact
 - **Supporting**: "Or email me directly: jodie@jodieplant.com"
 - **Availability**: "Limited roster model — 5–7 companies at a time"
 
@@ -797,18 +792,18 @@ Each: one-line benefit + one microproof snippet (generalised outcome range) + li
 
 #### 1. Hero
 
-Headline in Cabinet Grotesk: **"Search & AI Visibility for B2B SaaS"**
+Headline in Cabinet Grotesk: **"Marketing That Gets You Found"**
 
-Subhead: "Built on **The Visibility Engine™** — a repeatable system to get you discovered by buyers (and by AI) at the moment of intent."
+Subhead: "One senior marketer. Your entire account. Built on **The Visibility Engine** — a repeatable system to get you discovered by buyers (and by AI) at the moment of intent."
 
-#### 2. The Visibility Engine™ (Framework)
+#### 2. The Visibility Engine (Framework)
 
-Expand the framework with a simple diagram and 1–2 lines per step:
+Expand the framework with a simple diagram, 1–2 lines per step, and a concrete deliverable example for each:
 
-1. **Discover**
-2. **Dominate**
-3. **Amplify**
-4. **Optimize**
+1. **Discover** — *"We'll map exactly where you're visible (and invisible) across search and AI."*
+2. **Dominate** — *"Best-answer pages, technical SEO, and content that ranks and gets cited."*
+3. **Amplify** — *"Budget-smart ads on platforms where your money actually works."*
+4. **Optimize** — *"Monthly reporting that tells you what's working and what to do next."*
 
 #### 3. Primary Growth Engines (Top of page)
 
@@ -849,7 +844,7 @@ Show the three tiered retainer packages (Foundation / Growth / Authority) from S
 #### 7. CTA
 
 - "Not sure what you need? Let's figure it out together."
-- "Get Your Free AI Visibility Snapshot" → /contact
+- "Get Your Free Visibility Snapshot" → /contact
 - jodie@jodieplant.com
 
 ---
@@ -916,6 +911,9 @@ This section shows real (but redacted) artifacts from Jodie's AI-enhanced workfl
 - If no client testimonials exist: professional endorsements, colleague recommendations, or specific results from past roles (with appropriate framing: "In my previous role at [Company], I...")
 - Structure ready for adding real client testimonials as they come in
 
+**Social Proof Bootstrapping** (pre-launch action):
+Before launch, actively collect 3–5 LinkedIn recommendations from former colleagues, managers, or clients from previous roles. These don't need to be Jodie Plant Marketing clients — they need to be credible professionals vouching for Jodie's marketing expertise. A strong LinkedIn recommendation from a VP of Marketing or a former client carries more weight than a placeholder "testimonials coming soon." Also: ask 2–3 trusted contacts to review the site pre-launch and provide a one-line endorsement ("I'd hire Jodie for my startup's marketing in a heartbeat" — with name and title). These can populate the testimonials section at launch.
+
 #### 5. Industries & Experience
 
 - Types of companies Jodie has worked with or targets
@@ -925,7 +923,7 @@ This section shows real (but redacted) artifacts from Jodie's AI-enhanced workfl
 #### 6. CTA
 
 - "Want to see what I'd do for your company?"
-- "Get Your Free AI Visibility Snapshot" → /contact
+- "Get Your Free Visibility Snapshot" → /contact
 
 ---
 
@@ -942,10 +940,10 @@ This section shows real (but redacted) artifacts from Jodie's AI-enhanced workfl
 - Headline in Cabinet Grotesk: "Let's Talk"
 - Subhead: "Whether you want a visibility snapshot, have a quick question, or are ready to get started — I'm here."
 
-#### 2. Free AI Visibility Snapshot (Primary conversion path)
+#### 2. Free Visibility Snapshot (Primary conversion path)
 
 This is the lead magnet in action:
-- **Headline**: "Get Your Free AI Visibility Snapshot"
+- **Headline**: "Get Your Free Visibility Snapshot"
 - **Description**: "Tell me a bit about your company and I’ll send you a **personalised 5–10 min Loom walkthrough**: search visibility analysis, AI citation check, competitor gap summary, and **3 prioritised next actions**. **Delivered in 48 hours. Limited weekly slots.**"
 - **Short form** with fields (order matters for conversion — see note):
   - Your name
@@ -953,43 +951,34 @@ This is the lead magnet in action:
   - Company URL
   - Biggest marketing challenge (dropdown or short text)
   - Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+) — **MUST be the last field**
-- Form submits to Jodie's email (via Formspree, Formspark, or similar static-compatible service)
-- Confirmation message: "Thanks! I'll send your AI Visibility Snapshot within 48 hours."
+- Form submits to Jodie’s email (via Formspree, Formspark, or similar static-compatible service)
+- **Confirmation message**: "Thanks! I’ll send your Visibility Snapshot within 48 hours. **Want to talk it through? Book a 15-minute intro call.**" (Include Cal.com/Calendly link in confirmation — Phase 2)
 - **On-page constraint**: State "Limited weekly slots" and "Video walkthrough (5–10 min), delivered in 48 hours" to set expectations and reduce tire-kickers.
 
-> **Field order optimization**: Budget range MUST be the last field. Asking for money too early causes drop-offs — prospects haven't been shown enough value yet to justify disclosing budget. If `form_abandoned` tracking (FEAT-020) shows users quitting at the budget field, it signals the value prop hasn't justified the price tag yet. This is a key diagnostic signal for conversion optimization.
+> **Field order optimization**: Budget range MUST be the last field. Asking for money too early causes drop-offs — prospects haven’t been shown enough value yet to justify disclosing budget. If `form_abandoned` tracking (FEAT-020) shows users quitting at the budget field, it signals the value prop hasn’t justified the price tag yet. This is a key diagnostic signal for conversion optimization.
+
+> **Calendar booking**: Calendar link lives in the form confirmation flow, not on the main contact page. This ensures prospects have already shared context (via the form) before booking a call, which makes the call more productive and reduces tire-kickers.
 
 #### 3. Other Ways to Reach Me
 
 For prospects who prefer alternatives to the form:
 
-- **Email**: jodie@jodieplant.com — "Prefer email? Drop me a message about what you're working on."
-- **Book a call**: Cal.com or Calendly link — "Want to talk it through? Book a 15-minute intro call." (Phase 2 — placeholder link for now)
+- **Email**: jodie@jodieplant.com — "Prefer email? Drop me a message about what you’re working on."
 - **LinkedIn**: Profile link — "Connect with me on LinkedIn"
 
-#### 4. AI Visibility Audit Upsell (Bridge product — prominent placement)
+#### 4. What to Expect
 
-For prospects who want more than a free audit but aren't ready for a retainer:
-
-- **Headline**: "Want a Deeper Dive? Book an AI Visibility Audit"
-- **Description**: "Find out what happens when someone asks ChatGPT, Perplexity, or Gemini about your industry. Are you cited? Are competitors? I'll audit your AI visibility and show you exactly where to focus."
-- **Price**: "$500–$1,500 depending on scope"
-- **CTA**: "Book Your AI Visibility Audit" → links to form or email with audit context
-- **Positioning**: This is the bridge between "curious" and "committed" — see Section 4 Trust Gap strategy
-
-> **Design note**: This section should be visually distinct from the free audit form — different card/block, clear pricing, positioned as a premium next step. Not competing with the free audit, but upgrading it.
-
-#### 5. What to Expect
-
-- "Your free audit is a **video walkthrough** (5–10 min) — personalised, not a template. Delivered within **48 hours**. Limited weekly slots."
+- "Your free snapshot is a **video walkthrough** (5–10 min) — personalised, not a template. Delivered within **48 hours**. Limited weekly slots."
 - "I respond to every enquiry within 24 hours"
 - "No pressure, no hard sell — just an honest conversation about whether I can help"
 
-#### 6. Availability
+#### 5. Availability
 
 - "Limited roster model — I work with 5–7 companies at a time to maintain senior-level attention"
 - (Optional capacity note): "Currently taking on 2 new clients for Q2 2026"
 - Creates urgency without being pushy
+
+> **Note**: The AI Visibility Audit ($500–$1,500) upsell lives on /services, not /contact. The contact page is a clean conversion path — form + email + expectations. Don’t dilute it with a paid upsell competing with the free snapshot.
 
 ---
 
@@ -1271,12 +1260,12 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 ### Meta Tag Templates
 
 **Homepage**:
-- Title: "Jodie Plant Marketing — Search & AI Visibility for B2B SaaS"
-- Description: "Search & AI visibility, authority content, and smart-stack paid media for B2B SaaS. AI-orchestrated marketing systems, delivered by a senior marketer. Seed to Series B."
+- Title: "Jodie Plant Marketing — One Senior Marketer. Your Entire Account."
+- Description: "Search visibility, authority content, and smart paid media for startups and tech companies. AI-orchestrated marketing systems, delivered by a senior marketer who's actually paying attention."
 
 **Services**:
 - Title: "Services — Jodie Plant Marketing"
-- Description: "AI-enhanced Search & AI Visibility, authority content & AI citation, smart-stack paid media, social media, email, growth attribution, and AI marketing systems for startups and tech companies."
+- Description: "Search & AI visibility, authority content, smart-stack paid media, social media, email, growth attribution, and AI marketing systems for startups and tech companies."
 
 **About**:
 - Title: "About — Jodie Plant Marketing"
@@ -1287,8 +1276,8 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 - Description: "See how Jodie Plant Marketing delivers results for tech companies. Real credentials, proven methodology, and a track record of measurable growth."
 
 **Contact**:
-- Title: "Get Your Free AI Visibility Snapshot — Jodie Plant Marketing"
-- Description: "Get a free, personalised AI visibility snapshot for your B2B SaaS. I’ll review your search visibility and AI citations and send a 5–10 min Loom walkthrough with 3 prioritised next actions."
+- Title: "Get Your Free Visibility Snapshot — Jodie Plant Marketing"
+- Description: "Get a free, personalised visibility snapshot for your startup or tech company. I’ll review your search visibility and AI citations and send a 5–10 min Loom walkthrough with 3 prioritised next actions."
 
 ### GEO / Answer Engine Optimization (AEO)
 
@@ -1322,6 +1311,29 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 - This inverts the typical "publish on site, share link on social" pattern. The social thread IS the primary distribution; the site is the canonical reference.
 - High-engagement LinkedIn posts create entity authority signals that AI systems use when deciding who to cite as an expert.
 - **Implementation**: Every blog post (FEAT-013) should have a LinkedIn companion post drafted as part of the content creation process. The LinkedIn version should be substantive (not just a link), designed to generate comments and engagement.
+
+### 90-Day Content Calendar Outline
+
+A lightweight content calendar to build entity authority from launch:
+
+**Month 1 (Foundation):**
+- Week 1–2: Publish 2 seed blog posts (from FEAT-013 list). LinkedIn companion posts for each.
+- Week 3: "How much does startup marketing cost?" best-answer page (FEAT-026). Share key takeaway on LinkedIn.
+- Week 4: 2 LinkedIn posts — one thought leadership (AI/visibility insight), one personal (why I started this agency).
+
+**Month 2 (Authority):**
+- Week 1: 3rd seed blog post. LinkedIn companion.
+- Week 2: "Marketing agency vs freelancer vs in-house" best-answer page. LinkedIn thread with comparison table.
+- Week 3: 2 LinkedIn posts — case study format (anonymized result from past role), industry trend analysis.
+- Week 4: Guest contribution or Reddit/community engagement (r/startups, r/marketing — genuine value, not self-promotion).
+
+**Month 3 (Amplify):**
+- Week 1: "Fractional CMO vs Agency vs In-House" best-answer page (FEAT-039). LinkedIn thread.
+- Week 2: 4th blog post + LinkedIn. Begin newsletter if email capture is live (FEAT-019).
+- Week 3: 2 LinkedIn posts — client-focused (what a typical retainer month looks like), tools/workflow share.
+- Week 4: Review and refresh Month 1 content for freshness (GEO signal). Quarterly content retrospective.
+
+**Cadence**: 2 LinkedIn posts/week minimum, 1 blog post every 2 weeks, 1 best-answer page per month. LinkedIn is the primary distribution channel; the blog is the canonical reference.
 
 **AI citation monitoring**: Track how and where the brand appears in AI answers.
 - Tools: Semrush AIO, Otterly.ai, Ahrefs Brand Radar, Brandi AI
@@ -1572,4 +1584,4 @@ Priority pages:
 ---
 
 *Document maintained by: Jodie Plant*
-*Last updated: 2026-02-23 (v2.2 — synthesis review: positioning, conversion, niche, outcome anchors)*
+*Last updated: 2026-02-23 (v2.3 — positioning broadened, AI density reduced, contact page simplified, content calendar added)*
