@@ -48,6 +48,21 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta name="twitter:image" content={new URL(ogImage, Astro.site)} />
     <!-- Cabinet Grotesk (headlines) -->
     <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@700,800&display=swap" rel="stylesheet">
+    <!-- Organization structured data -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Jodie Plant Marketing",
+      "url": "https://www.jodieplant.com",
+      "logo": new URL("/og-default.svg", Astro.site).href,
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "jodie@jodieplant.com",
+        "contactType": "sales"
+      },
+      "sameAs": ["https://linkedin.com/in/jodieplant"]
+    })} />
+    <slot name="head" />
   </head>
   <body class="font-body text-text bg-white antialiased">
     <Header />
