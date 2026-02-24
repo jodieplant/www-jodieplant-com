@@ -1,9 +1,16 @@
 # Jodie Plant Marketing — Website Design & Briefing Document
 
-**Version**: 2.0
+**Version**: 2.1
 **Created**: 2026-02-20
 **Updated**: 2026-02-23
 **Purpose**: Design and content brief for www.jodieplant.com
+
+> **v2.1 changes** (external strategy review integration):
+> 1. **Trust gap / bridge product**: AI Visibility Audit positioned as primary bridge between free audit and retainer (Section 4, Section 5, Section 9 Contact Page)
+> 2. **Outcome-first service names**: Content Marketing → Authority Content & AI Citation, Paid Advertising → Smart-Stack Paid Media, Performance Intelligence → Growth Attribution & AI Insights (Section 5, Section 8, Section 9)
+> 3. **"Peek Under the Hood" visual proof**: Results page gains visual process artifacts — blurred screenshots, sample reports, dashboard mockups (Section 9 Results Page)
+> 4. **Form field ordering**: Budget range moved to last field to reduce drop-offs (Section 9 Contact Page)
+> 5. **LinkedIn-first content distribution**: Blog posts distributed LinkedIn-first to build entity authority for AI citation (Section 12)
 
 ---
 
@@ -222,6 +229,19 @@ Don't just ask prospects to "get in touch" — offer them something concrete in 
 
 **Why this works**: It's low commitment for the prospect, showcases Jodie's thinking, and creates a natural segue into a paid engagement. It also pre-qualifies leads — anyone willing to fill out the form is genuinely interested.
 
+### Closing the Trust Gap: The Bridge Product
+
+The jump from a **Free Audit** (zero commitment) to a **$2,500+ Growth Retainer** (high commitment) is a significant "trust gap." Founders are wary of free audits being generic sales pitches. The **AI Visibility Audit ($500–$1,500)** is the primary bridge product that closes this gap.
+
+**The conversion ladder:**
+1. **Free Marketing Audit** ($0) — Low friction, demonstrates thinking, pre-qualifies leads
+2. **AI Visibility Audit** ($500–$1,500) — Paid diagnostic that transforms Jodie from "vendor asking for a retainer" into "consultant providing a high-value insight report"
+3. **Retainer** ($1,500–$7,500/month) — Much easier to sell once they've already paid for and received value from a $1K diagnostic
+
+**Why the bridge matters**: It's significantly easier to convert a $4K/month retainer once a prospect has already paid $1K for a high-value insight report. The paid audit demonstrates expertise through actual deliverables, not a sales pitch. It also pre-qualifies budget: anyone willing to pay $500–$1,500 for a diagnostic is a serious buyer.
+
+**Implementation**: The AI Visibility Audit should be prominently positioned on /services and /contact as the recommended next step for prospects who aren't ready for a retainer. It should NOT be buried in a pricing table — it's the primary on-ramp.
+
 **Alternative/supplementary lead magnets** (Phase 2):
 - "Startup Marketing Checklist" downloadable PDF
 - "Is your marketing working?" self-assessment quiz
@@ -262,8 +282,10 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Get found by the people — and the AI — already searching for what you sell."
 
-### Paid Advertising (Beyond Google & Meta)
+### Smart-Stack Paid Media
 
+> Renamed from "Paid Advertising (Beyond Google & Meta)" — an outcome-first name that immediately highlights the strategy of using low-CPC platforms like Reddit/Bing over expensive Meta/Google defaults. "Paid Advertising" is generic. "Smart-Stack Paid Media" signals a specific, differentiated approach to budget allocation.
+>
 > Google and Meta CPCs keep climbing. For SMBs with budgets under $5K/month, there are stronger plays: Bing (~60% lower CPC), Reddit (~$0.20 CPC), Quora ($0.35–$0.75), Pinterest, TikTok Spark Ads. See `MARKET_RESEARCH_2026.md` Part 3 for full platform comparison.
 
 **The AI difference**: AI-assisted ad copy generation and testing, predictive bid optimization, automated performance anomaly detection, and smart budget allocation across platforms.
@@ -294,7 +316,9 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Build a brand presence where your audience actually hangs out — with the content formats they actually watch."
 
-### Content Marketing
+### Authority Content & AI Citation
+
+> Renamed from "Content Marketing" — an outcome-first name that signals content isn't just for reading, but for training AI models to recommend the brand. "Content Marketing" sounds like every other freelancer on LinkedIn. "Authority Content & AI Citation" communicates the unique value: content that builds authority AND gets your brand cited by AI systems.
 
 **The AI difference**: AI-assisted research and first-draft generation, "best answer" content structures optimized for both search and AI citation, and automated content performance analysis.
 
@@ -324,7 +348,9 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Build an audience you own, nurture them into customers — without being annoying about it."
 
-### Performance Intelligence
+### Growth Attribution & AI Insights
+
+> Renamed from "Performance Intelligence" — an outcome-first name that sounds like a senior leadership tool rather than just a GA4 dashboard setup. "Performance Intelligence" is vague. "Growth Attribution & AI Insights" signals what founders actually want: understanding what's driving growth and getting AI-powered insights they can act on.
 
 **The AI difference**: AI-generated insight summaries, anomaly detection, and natural-language reporting that explains what the data means — not just what it says.
 
@@ -393,15 +419,17 @@ Before listing individual services, establish the overarching method:
 
 #### One-Time Projects
 
-| Project | Fee Range |
-|---------|-----------|
-| AI Visibility Audit | $500–$1,500 |
-| Conversion & Tracking Setup | $1,000–$3,000 |
-| Marketing Strategy & Roadmap | $1,500–$3,000 |
-| Email Automation Setup | $1,000–$2,500 |
-| Website Content Overhaul for GEO | $2,000–$5,000 |
-| Go-To-Market (GTM) Strategy Sprint | $3,000–$7,000 |
+| Project | Fee Range | Notes |
+|---------|-----------|-------|
+| **AI Visibility Audit** | **$500–$1,500** | **Primary bridge product — see Section 4** |
+| Conversion & Tracking Setup | $1,000–$3,000 | |
+| Marketing Strategy & Roadmap | $1,500–$3,000 | |
+| Email Automation Setup | $1,000–$2,500 | |
+| Website Content Overhaul for GEO | $2,000–$5,000 | |
+| Go-To-Market (GTM) Strategy Sprint | $3,000–$7,000 | |
 
+> **AI Visibility Audit (Bridge Product)**: The recommended entry point for prospects who aren't ready for a retainer. "What happens when someone asks ChatGPT/Perplexity/Gemini about your industry? Are you cited? Are competitors? What would it take to change that?" This transforms the relationship from "vendor pitch" to "consultant delivering paid insights" — making the retainer conversation natural rather than salesy. Present this prominently, not buried in a table.
+>
 > **GTM Strategy Sprint**: For funded startups preparing a product launch, market entry, or pivot. Includes positioning, channel strategy, messaging framework, and a 90-day execution roadmap. A natural entry point into ongoing retainer work.
 
 #### Budget Alignment
@@ -551,13 +579,13 @@ jodieplant.com/
 ├── /services      (Services overview + pricing)
 │   ├── /search-ai-visibility    (was /seo-geo)
 │   ├── /ai-marketing-systems    (was /ai-consulting)
-│   ├── /content-marketing
-│   ├── /paid-ads
+│   ├── /authority-content           (was /content-marketing)
+│   ├── /smart-stack-paid-media      (was /paid-ads)
 │   ├── /social-media
 │   ├── /local-visibility
 │   ├── /email-marketing
 │   ├── /conversion-optimization  (NEW)
-│   └── /performance-intelligence (was /analytics)
+│   └── /growth-attribution          (was /performance-intelligence, /analytics)
 ├── /results       (Results & methodology)
 │   └── /[case-study-slug]  (Individual case studies — when real content exists)
 ├── /blog          (Blog / insights — Phase 2 priority)
@@ -591,7 +619,7 @@ jodieplant.com/
 - **Get Your Free Audit** (CTA button)
 
 **Footer**:
-- Services: SEO & GEO, Content, Paid Ads, Social Media, Email, Analytics, AI Consulting, Local
+- Services: Search & AI Visibility, Authority Content, Smart-Stack Paid Media, Social Media, Email, Growth Attribution, AI Marketing Systems, Local
 - Company: About, Results, Blog, Contact
 - Legal: Privacy Policy
 - Social links
@@ -649,8 +677,8 @@ Combines the old "Problem" and "Jodie Difference" sections into one focused pitc
 - The 5 hero services (ordered by differentiation):
   1. **Search & AI Visibility** — "Get found by people — and AI — already searching for what you sell."
   2. **AI Marketing Systems** — "We'll build the AI workflows that make your marketing faster and smarter."
-  3. **Content for AI & Search** — "Content that ranks, gets cited by AI, and converts."
-  4. **Paid Advertising (Beyond Google & Meta)** — "Turn ad spend into pipeline — on the platforms where your budget works."
+  3. **Authority Content & AI Citation** — "Content that ranks, gets cited by AI, and converts."
+  4. **Smart-Stack Paid Media** — "Turn ad spend into pipeline — on the platforms where your budget works."
   5. **Fractional Marketing Leadership** — "CMO-level strategy and execution, without the CMO salary."
 - Each card: icon + service name + one-line benefit
 - Each card links to /services (to the relevant section anchor)
@@ -735,7 +763,7 @@ Before listing services, establish the overarching approach:
 
 #### 3. Service Blocks
 
-9 services (Performance Intelligence presented as "included infrastructure"), each structured as **AI difference + Deliverables + Client benefit**:
+9 services (Growth Attribution & AI Insights presented as "included infrastructure"), each structured as **AI difference + Deliverables + Client benefit**:
 
 Each block:
 - Service name and icon (orange accent)
@@ -746,16 +774,16 @@ Each block:
 Services in order of differentiation strength:
 1. **Search & AI Visibility (SEO + GEO)** — GEO positioning is the single most differentiating offering in 2026
 2. **AI Marketing Systems** — unique to AI-forward practitioners
-3. **Content Marketing** — "best answer" approach is differentiating
-4. **Paid Advertising (Beyond Google & Meta)** — "beyond" framing is differentiating
+3. **Authority Content & AI Citation** — "best answer" approach + AI citation focus is differentiating (was "Content Marketing")
+4. **Smart-Stack Paid Media** — smart budget allocation immediately signals differentiation (was "Paid Advertising")
 5. **Fractional Marketing Leadership** — positions the Authority tier as CMO-level engagement
 6. **Social Media & Short-Form Video** — video emphasis signals current-market awareness
 7. **Conversion Rate Optimization** — high-ROI, data-driven, pairs with paid and SEO
 8. **Local Visibility & Reputation** — high demand, clear ROI for SMBs
 9. **Email Marketing & Owned Audience** — audience ownership reduces platform dependence
-10. **Performance Intelligence** — foundational, enables everything else (presented as included infrastructure, not a standalone sale)
+10. **Growth Attribution & AI Insights** — foundational, enables everything else (presented as included infrastructure, not a standalone sale; was "Performance Intelligence")
 
-> **Note**: Performance Intelligence (analytics/reporting) is not presented as a standalone service card but as a feature included in all retainer packages. The /services page may show it in a "What's always included" section rather than as a separate block. This brings the visible service blocks to 9.
+> **Note**: Growth Attribution & AI Insights (analytics/reporting; formerly "Performance Intelligence") is not presented as a standalone service card but as a feature included in all retainer packages. The /services page may show it in a "What's always included" section rather than as a separate block. This brings the visible service blocks to 9.
 
 Each block should be visually distinct and scannable. Alternating layout (left/right or card-based) to prevent monotony.
 
@@ -807,6 +835,21 @@ Instead of fake case studies, show the methodology applied to real scenarios:
 
 This demonstrates expertise without fabricating results. It also answers the question "what do I actually get?"
 
+#### 3b. "Peek Under the Hood" — Visual Process Proof
+
+> **Key insight**: Don't just LIST what you do — VISUALIZE the workflow. Prospects in 2026 are skeptical of AI claims. Showing actual artifacts of the work proves you aren't just a "prompt engineer" but a systems builder.
+
+This section shows real (but redacted) artifacts from Jodie's AI-enhanced workflow:
+
+- **Blurred/redacted screenshot** of an actual AI-enhanced research workflow or audit output
+- **Sample "AI Visibility Report"** structure — showing the kind of deliverable a prospect would receive (can be a designed mockup with real formatting but anonymized data)
+- **Before/after** of an AI-optimized content piece or campaign setup
+- **Dashboard screenshot** showing the type of reporting clients receive (redacted data)
+
+**Implementation**: These can be styled screenshots, designed mockups, or actual artifacts with client data redacted. The goal is to make the invisible visible — prospects should see the SYSTEM, not just read about it. This is the most powerful section on the page for differentiation.
+
+**Design**: Use a subtle frame/border treatment to make these feel like "artifacts" rather than stock imagery. Consider a slight tilt or shadow to suggest "looking at a real document."
+
 #### 4. What Clients Say
 
 - Real testimonials or LinkedIn recommendations (even 1-2 is better than none)
@@ -844,14 +887,16 @@ This demonstrates expertise without fabricating results. It also answers the que
 This is the lead magnet in action:
 - **Headline**: "Get Your Free Marketing Audit"
 - **Description**: "Tell me a bit about your company and I'll send you a personalised assessment of your marketing — what's working, what's not, and where I'd focus first."
-- **Short form** with fields:
+- **Short form** with fields (order matters for conversion — see note):
   - Your name
   - Company name
   - Company URL
   - Biggest marketing challenge (dropdown or short text)
-  - Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+)
+  - Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+) — **MUST be the last field**
 - Form submits to Jodie's email (via Formspree, Formspark, or similar static-compatible service)
 - Confirmation message: "Thanks! I'll review your marketing and get back to you within 24 hours."
+
+> **Field order optimization**: Budget range MUST be the last field. Asking for money too early causes drop-offs — prospects haven't been shown enough value yet to justify disclosing budget. If `form_abandoned` tracking (FEAT-020) shows users quitting at the budget field, it signals the value prop hasn't justified the price tag yet. This is a key diagnostic signal for conversion optimization.
 
 #### 3. Other Ways to Reach Me
 
@@ -861,13 +906,25 @@ For prospects who prefer alternatives to the form:
 - **Book a call**: Cal.com or Calendly link — "Want to talk it through? Book a 15-minute intro call." (Phase 2 — placeholder link for now)
 - **LinkedIn**: Profile link — "Connect with me on LinkedIn"
 
-#### 4. What to Expect
+#### 4. AI Visibility Audit Upsell (Bridge product — prominent placement)
+
+For prospects who want more than a free audit but aren't ready for a retainer:
+
+- **Headline**: "Want a Deeper Dive? Book an AI Visibility Audit"
+- **Description**: "Find out what happens when someone asks ChatGPT, Perplexity, or Gemini about your industry. Are you cited? Are competitors? I'll audit your AI visibility and show you exactly where to focus."
+- **Price**: "$500–$1,500 depending on scope"
+- **CTA**: "Book Your AI Visibility Audit" → links to form or email with audit context
+- **Positioning**: This is the bridge between "curious" and "committed" — see Section 4 Trust Gap strategy
+
+> **Design note**: This section should be visually distinct from the free audit form — different card/block, clear pricing, positioned as a premium next step. Not competing with the free audit, but upgrading it.
+
+#### 5. What to Expect
 
 - "I respond to every enquiry within 24 hours"
 - "Audit responses include a personalised assessment, not a generic template"
 - "No pressure, no hard sell — just an honest conversation about whether I can help"
 
-#### 5. Availability
+#### 6. Availability
 
 - "Currently taking on 2 new clients for Q2 2026"
 - Creates urgency without being pushy
@@ -1157,7 +1214,7 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 
 **Services**:
 - Title: "Services — Jodie Plant Marketing"
-- Description: "AI-enhanced SEO & GEO, content marketing, paid advertising, social media, email, analytics, and AI workflow consulting for startups and tech companies."
+- Description: "AI-enhanced Search & AI Visibility, authority content & AI citation, smart-stack paid media, social media, email, growth attribution, and AI marketing systems for startups and tech companies."
 
 **About**:
 - Title: "About — Jodie Plant Marketing"
@@ -1196,6 +1253,13 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 - If the brand appears across multiple credible sources, AI systems gain "confidence" in recommending it
 - Verified reviews, case studies, and testimonials are trust signals for AI systems
 - Third-party mentions (PR, partners, reviews, communities)
+
+**LinkedIn-first content distribution** (critical for GEO):
+- For a GEO-led strategy, **LinkedIn is the "Home Page" for AI crawlers**. AI models (Perplexity, Gemini) prioritize high-engagement social threads when looking for "expert" citations.
+- Blog posts should be **"LinkedIn-first"**: post the substance on LinkedIn to build entity signals and engagement, then link back to the site for the full version.
+- This inverts the typical "publish on site, share link on social" pattern. The social thread IS the primary distribution; the site is the canonical reference.
+- High-engagement LinkedIn posts create entity authority signals that AI systems use when deciding who to cite as an expert.
+- **Implementation**: Every blog post (FEAT-013) should have a LinkedIn companion post drafted as part of the content creation process. The LinkedIn version should be substantive (not just a link), designed to generate comments and engagement.
 
 **AI citation monitoring**: Track how and where the brand appears in AI answers.
 - Tools: Semrush AIO, Otterly.ai, Ahrefs Brand Radar, Brandi AI
@@ -1411,7 +1475,7 @@ Priority pages:
 - FAQ (3-5 common questions)
 - CTA to get in touch
 
-**Pages**: `/services/search-ai-visibility`, `/services/ai-marketing-systems`, `/services/content-marketing`, `/services/paid-ads`, `/services/social-media`, `/services/local-visibility`, `/services/email-marketing`, `/services/conversion-optimization`, `/services/performance-intelligence`
+**Pages**: `/services/search-ai-visibility`, `/services/ai-marketing-systems`, `/services/authority-content`, `/services/smart-stack-paid-media`, `/services/social-media`, `/services/local-visibility`, `/services/email-marketing`, `/services/conversion-optimization`, `/services/growth-attribution`
 
 ---
 
@@ -1446,4 +1510,4 @@ Priority pages:
 ---
 
 *Document maintained by: Jodie Plant*
-*Last updated: 2026-02-23*
+*Last updated: 2026-02-23 (v2.1 — external strategy review integrated)*
