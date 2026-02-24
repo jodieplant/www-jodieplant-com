@@ -1,0 +1,66 @@
+---
+const footerLinks = [
+  { href: '/services', label: 'Services' },
+  { href: '/results', label: 'Results' },
+  { href: '/about', label: 'About' },
+  { href: '/contact', label: 'Contact' },
+  { href: '/privacy', label: 'Privacy' },
+];
+const currentYear = new Date().getFullYear();
+---
+
+<footer class="bg-navy text-white/90">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-12">
+      <!-- Brand & Availability -->
+      <div>
+        <a href="/" class="font-headline text-xl font-bold text-white tracking-tight">
+          Jodie Plant
+        </a>
+        <p class="mt-3 text-sm text-white/70 leading-relaxed">
+          AI-powered digital marketing for startups and tech companies.
+        </p>
+        <p class="mt-4 text-sm font-mono font-medium text-orange">
+          Currently taking on new clients for Q2 2026
+        </p>
+      </div>
+
+      <!-- Links -->
+      <div>
+        <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Pages</h3>
+        <nav class="flex flex-col gap-2" aria-label="Footer navigation">
+          {footerLinks.map(link => (
+            <a href={link.href} class="text-sm text-white/70 hover:text-white transition-colors min-h-[44px] flex items-center">
+              {link.label}
+            </a>
+          ))}
+        </nav>
+      </div>
+
+      <!-- Contact -->
+      <div>
+        <h3 class="text-sm font-semibold text-white uppercase tracking-wider mb-4">Get in Touch</h3>
+        <a
+          href="mailto:jodie@jodieplant.com"
+          class="text-sm text-white/70 hover:text-orange transition-colors min-h-[44px] flex items-center"
+        >
+          jodie@jodieplant.com
+        </a>
+        <a
+          href="https://linkedin.com/in/jodieplant"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="text-sm text-white/70 hover:text-orange transition-colors min-h-[44px] flex items-center"
+        >
+          LinkedIn
+        </a>
+      </div>
+    </div>
+
+    <div class="mt-10 pt-8 border-t border-white/10 text-center">
+      <p class="text-sm text-white/50">
+        &copy; {currentYear} Jodie Plant Marketing. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,101 @@
+---
+const navLinks = [
+  { href: '/services', label: 'Services' },
+  { href: '/results', label: 'Results' },
+  { href: '/about', label: 'About' },
+];
+---
+
+<header id="site-header" class="fixed top-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100 transition-shadow duration-200">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 sm:h-20">
+      <!-- Brand -->
+      <a href="/" class="font-headline text-xl sm:text-2xl font-bold text-navy tracking-tight">
+        Jodie Plant
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden sm:flex items-center gap-8" aria-label="Main navigation">
+        {navLinks.map(link => (
+          <a href={link.href} class="text-text hover:text-navy font-medium text-sm transition-colors">
+            {link.label}
+          </a>
+        ))}
+        <a
+          href="/contact"
+          class="inline-flex items-center px-5 py-2.5 bg-orange text-white font-semibold text-sm rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]"
+        >
+          Get Your Free Audit
+        </a>
+      </nav>
+
+      <!-- Mobile Menu Button -->
+      <button
+        id="mobile-menu-btn"
+        type="button"
+        class="sm:hidden flex items-center justify-center w-11 h-11 text-navy"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+        <svg id="menu-icon-open" class="w-6 h-6" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <svg id="menu-icon-close" class="w-6 h-6 hidden" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="sm:hidden hidden border-t border-gray-100 bg-white">
+    <nav class="px-4 py-4 space-y-1" aria-label="Mobile navigation">
+      {navLinks.map(link => (
+        <a href={link.href} class="block px-3 py-3 text-text hover:text-navy font-medium text-base rounded-lg hover:bg-light transition-colors min-h-[44px]">
+          {link.label}
+        </a>
+      ))}
+      <a
+        href="/contact"
+        class="block mt-2 px-3 py-3 bg-orange text-white font-semibold text-base text-center rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]"
+      >
+        Get Your Free Audit
+      </a>
+    </nav>
+  </div>
+</header>
+
+<!-- Spacer for fixed header -->
+<div class="h-16 sm:h-20"></div>
+
+<script>
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const iconOpen = document.getElementById('menu-icon-open');
+  const iconClose = document.getElementById('menu-icon-close');
+
+  btn?.addEventListener('click', () => {
+    const expanded = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!expanded));
+    menu?.classList.toggle('hidden');
+    iconOpen?.classList.toggle('hidden');
+    iconClose?.classList.toggle('hidden');
+  });
+
+  // Add shadow on scroll
+  let ticking = false;
+  window.addEventListener('scroll', () => {
+    if (!ticking) {
+      requestAnimationFrame(() => {
+        const header = document.getElementById('site-header');
+        if (window.scrollY > 10) {
+          header?.classList.add('shadow-sm');
+        } else {
+          header?.classList.remove('shadow-sm');
+        }
+        ticking = false;
+      });
+      ticking = true;
+    }
+  });
+</script>
