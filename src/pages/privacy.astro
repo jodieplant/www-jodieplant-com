@@ -1,0 +1,94 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Privacy Policy — Jodie Plant Marketing"
+  description="How we collect, use, and protect your data. Plain English, no legalese."
+>
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <h1 class="font-headline text-4xl sm:text-5xl font-extrabold text-navy">Privacy Policy</h1>
+        <p class="mt-4 text-muted">Last updated: February 2026</p>
+
+        <div class="mt-10 space-y-10 text-text leading-relaxed">
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-navy">The Short Version</h2>
+            <p class="mt-3">I respect your privacy and I'm transparent about what data I collect. I use analytics to improve the site, I collect form data to respond to your enquiries, and I never sell your data to anyone. Here are the details.</p>
+          </div>
+
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-navy">What Data I Collect</h2>
+            <div class="mt-4 space-y-4">
+              <div>
+                <h3 class="font-semibold text-navy">Analytics (PostHog)</h3>
+                <p class="mt-1 text-muted">When you accept cookies, I use PostHog to understand how visitors use this site. This includes page views, clicks, scroll depth, and general interaction patterns. PostHog uses cookies to track sessions. No personal data is collected unless you submit a form.</p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-navy">Session Recordings</h3>
+                <p class="mt-1 text-muted">With your consent, PostHog may record your browsing session to help me understand how visitors navigate the site. Sensitive form field values (like budget ranges and URLs) are masked in recordings. Sessions are retained for 30 days.</p>
+              </div>
+              <div>
+                <h3 class="font-semibold text-navy">Contact Form</h3>
+                <p class="mt-1 text-muted">When you submit the contact form, your name, company, URL, marketing challenge, and optional budget range are sent to me via Formspree. This data is used solely to respond to your enquiry and provide the visibility snapshot you requested.</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-navy">Cookies</h2>
+            <p class="mt-3">This site uses a cookie consent banner. Here's how it works:</p>
+            <ul class="mt-3 space-y-2 text-muted">
+              <li>• <strong class="text-text">Accept:</strong> PostHog analytics and session recording cookies are enabled. A localStorage key (<code class="bg-light px-1 rounded text-sm">analytics_consent</code>) stores your preference.</li>
+              <li>• <strong class="text-text">Reject:</strong> No analytics cookies are set. PostHog does not load. Your preference is stored locally.</li>
+              <li>• <strong class="text-text">Change your mind:</strong> Clear your browser's localStorage or cookies for this site, and the consent banner will appear again on your next visit.</li>
+            </ul>
+            <p class="mt-3 text-muted">Consent preferences expire after 1 year, at which point you'll be prompted again.</p>
+          </div>
+
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-navy">How Your Data Is Used</h2>
+            <ul class="mt-3 space-y-2 text-muted">
+              <li>• To respond to your enquiry and provide marketing services</li>
+              <li>• To understand how the site is used and improve it</li>
+              <li>• To identify usability issues through session recordings</li>
+            </ul>
+            <p class="mt-3 text-muted">I do <strong class="text-text">not</strong> sell, rent, or share your data with third parties for their marketing purposes.</p>
+          </div>
+
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-navy">Data Retention</h2>
+            <ul class="mt-3 space-y-2 text-muted">
+              <li>• <strong class="text-text">Analytics data:</strong> Retained by PostHog for up to 12 months</li>
+              <li>• <strong class="text-text">Session recordings:</strong> Retained for 30 days</li>
+              <li>• <strong class="text-text">Form submissions:</strong> Retained for as long as needed to serve you</li>
+            </ul>
+          </div>
+
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-navy">Your Rights (GDPR)</h2>
+            <p class="mt-3 text-muted">If you're in the EU/UK, you have the right to:</p>
+            <ul class="mt-3 space-y-2 text-muted">
+              <li>• <strong class="text-text">Access</strong> — Request a copy of the data I hold about you</li>
+              <li>• <strong class="text-text">Rectification</strong> — Ask me to correct inaccurate data</li>
+              <li>• <strong class="text-text">Erasure</strong> — Ask me to delete your data ("right to be forgotten")</li>
+              <li>• <strong class="text-text">Restriction</strong> — Ask me to limit how I process your data</li>
+              <li>• <strong class="text-text">Portability</strong> — Request your data in a machine-readable format</li>
+              <li>• <strong class="text-text">Object</strong> — Object to data processing based on legitimate interests</li>
+            </ul>
+            <p class="mt-3 text-muted">To exercise any of these rights, email me at <a href="mailto:jodie@jodieplant.com" class="text-orange hover:text-orange/80 transition-colors">jodie@jodieplant.com</a>. I'll respond within 30 days.</p>
+          </div>
+
+          <div>
+            <h2 class="font-headline text-2xl font-bold text-navy">Contact</h2>
+            <p class="mt-3 text-muted">
+              For any questions about this privacy policy or your data, contact:<br />
+              <a href="mailto:jodie@jodieplant.com" class="text-orange hover:text-orange/80 transition-colors">jodie@jodieplant.com</a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
