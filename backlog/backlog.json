@@ -1,5 +1,5 @@
 {
-  "description": "Feature backlog — www.jodieplant.com (ref: docs/WEBSITE_BRIEF.md v2.0)",
+  "description": "Feature backlog — www.jodieplant.com (ref: docs/WEBSITE_BRIEF.md v2.2)",
   "items": [
     {
       "id": "FEAT-001",
@@ -39,15 +39,18 @@
     {
       "id": "FEAT-003",
       "title": "Build Homepage with condensed high-impact sections",
-      "description": "Build src/pages/index.astro as the homepage per brief Section 9 (v2.0). Condensed to 5 high-impact sections (down from 7). Startup founders are time-poor — every section must earn the next scroll.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline in Cabinet Grotesk 800, large scale (e.g., 'Marketing that moves the needle for tech companies')\n- Subhead: 1-2 sentences — AI-forward, senior-level, full-service value prop\n- Primary CTA: 'Get Your Free Marketing Audit' (orange button → /contact)\n- Secondary CTA: 'See How I Work' (text link → /results)\n- Availability signal: small text 'Currently taking on 2 new clients for Q2 2026'\n- Visual: clean typographic hero, subtle geometric pattern or gradient. No stock photos\n\n2. SOCIAL PROOF BAR (immediately after hero — most important trust signal):\n- 3-4 credential stats in Space Grotesk at large scale with orange accent on key numbers\n- Stats MUST be real: years experience, campaigns delivered, ad spend managed, etc.\n- If client logos available: 'Trusted by' logo bar\n- If testimonial available: one pull quote\n- Light background. This section appears before any other content because trust comes first for services businesses\n\n3. HOW I'M DIFFERENT (combines old Problem + Jodie Difference):\n- Opening line: 'Tired of agencies that hand you off to juniors?'\n- Three bold differentiator cards: AI-Powered, Senior-Level Always, Full-Service\n- Each card: orange icon/accent + title + 1-2 sentence explanation\n- CTA: 'See what I'd do for your startup →' linking to /contact\n\n4. SERVICES OVERVIEW:\n- Intro line: 'Full-service marketing. Every channel. One partner.'\n- 5 hero service cards in responsive grid (3+2 or 2+3 desktop, stacked mobile)\n- The 5 hero services (ordered by differentiation):\n  1. Search & AI Visibility — 'Get found by people — and AI — already searching for what you sell.'\n  2. AI Marketing Systems — 'Build the AI workflows that make your marketing faster and smarter.'\n  3. Authority Content & AI Citation — 'Content that ranks, gets cited by AI, and converts.'\n  4. Smart-Stack Paid Media — 'Turn ad spend into pipeline — on the platforms where your budget works.'\n  5. Fractional Marketing Leadership — 'CMO-level strategy and execution, without the CMO salary.'\n- Each card: icon + service name + one-line benefit\n- Each links to /services (relevant section anchor)\n- Below grid: 'See all services →' text link to /services\n- Reduced from 8 to 5 to sharpen homepage positioning. Full menu lives on /services.\n\n5. FINAL CTA (dark navy background):\n- Headline: 'Ready to see what AI-powered marketing can do for your startup?'\n- Orange CTA button: 'Get Your Free Marketing Audit' → /contact\n- Supporting text: 'Or email me directly: jodie@jodieplant.com'\n- Availability: 'Currently accepting new clients for Q2 2026'\n\nTone: Bold, confident, direct. Use Cabinet Grotesk for all section headlines.",
+      "description": "Build src/pages/index.astro as the category-defining homepage per brief Section 9 (v2.2). The goal is to own a clear category (Search & AI Visibility for B2B SaaS), disqualify poor-fit leads quickly, and make the system memorable.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline: 'Search & AI Visibility for B2B SaaS'\n- Subhead: 'Get found by buyers — and by AI — when they’re actively searching for what you sell.'\n- Microproof line: 'Seed–Series B startups | Senior-led execution | AI-orchestrated systems'\n- Primary CTA: 'Get Your Free AI Visibility Snapshot' (orange button → /contact)\n- Secondary CTA: 'See How The Visibility Engine™ Works' (text link → /services framework section)\n- Availability signal: 'Limited roster model — I work with 5–7 companies at a time to maintain senior-level attention'\n\n2. WHO THIS IS FOR:\n- Headline: 'This is for you if…'\n- Bullets:\n  - You’ve raised funding but pipeline isn’t predictable.\n  - You’re tired of agencies burning ad spend.\n  - Your competitors show up in ChatGPT/Perplexity and you don’t.\n  - You need senior marketing leadership without hiring a $300k CMO.\n\n3. SOCIAL PROOF BAR (immediately after Who This Is For):\n- 3-4 credential stats in Space Grotesk (must be real)\n- Optional: trusted-by logos, pull quote\n\n4. THE VISIBILITY ENGINE™ (signature framework):\n- Simple 4-block diagram: Discover → Dominate → Amplify → Optimize\n- 1-line explanation under each\n- CTA: 'Start with a Visibility Snapshot →' linking to /contact\n\n5. PRIMARY GROWTH ENGINES:\n- Three large cards only:\n  1) Search & AI Visibility\n  2) Authority Content & AI Citation\n  3) Smart-Stack Paid Media\n- Each card: one-line benefit + microproof snippet (generalised outcome range) + link to /services\n\n6. FINAL CTA (dark navy background):\n- Headline: 'Ready to own your category in search and AI?'\n- Orange CTA button: 'Get Your Free AI Visibility Snapshot' → /contact\n- Supporting text: 'Or email me directly: jodie@jodieplant.com'\n- Availability reminder: 'Limited roster model — 5–7 companies at a time'\n\nTone: Bold, confident, direct. Mention AI sparingly and concretely (method + visibility), not in every paragraph.",
       "acceptanceCriteria": [
-        "Homepage has exactly 5 sections: Hero, Social Proof Bar, How I'm Different, Services Overview, Final CTA",
+        "Homepage has 6 sections: Hero, Who This Is For, Social Proof Bar, The Visibility Engine™, Primary Growth Engines, Final CTA",
         "Hero has dark navy background with bold Cabinet Grotesk headline and orange CTA",
-        "Social proof bar appears immediately after hero with real credential stats (not placeholder)",
-        "How I'm Different section has 3 differentiator cards with orange accents",
-        "Services overview shows 5 hero cards in responsive grid linking to /services, plus 'See all services' link",
+        "Hero primary CTA is 'Get Your Free AI Visibility Snapshot' linking to /contact",
+        "Hero secondary CTA links to Visibility Engine™ section on /services",
+        "Who This Is For includes competitor-in-AI bullet (ChatGPT/Perplexity) and senior-leadership bullet",
+        "Social proof bar appears after Who This Is For with real credential stats (not placeholder)",
+        "Visibility Engine™ section shows 4-step diagram: Discover → Dominate → Amplify → Optimize",
+        "Primary Growth Engines section shows exactly 3 cards (Search & AI Visibility, Authority Content & AI Citation, Smart-Stack Paid Media)",
         "Final CTA uses dark navy background with orange button",
-        "Availability signal appears in hero and final CTA sections",
+        "Limited roster model (5–7 companies) appears in hero and/or final CTA",
         "All internal links work (/services, /results, /contact)",
         "Page is fully responsive (single column mobile, multi-column desktop)",
         "npm run build succeeds"
@@ -56,7 +59,7 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CRITICAL: Primary conversion page. Social proof bar placement (immediately after hero) is a deliberate best-practice decision — trust before content. Stats must be real numbers."
+      "groomingNotes": "CONVERSION-CRITICAL. Category anchor: 'Search & AI Visibility for B2B SaaS'. Includes the Visibility Engine™ framework section and primary growth engines to avoid 'menu' perception. Stats must be real numbers."
     },
     {
       "id": "FEAT-004",
@@ -81,7 +84,7 @@
     {
       "id": "FEAT-005",
       "title": "Build Services page with AI-led structure and engagement models",
-      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'AI-Powered Marketing for Tech Companies'. Subhead about AI-enhanced workflows giving agency output from a senior practitioner.\n\n2. THE AI-ENHANCED METHOD (before individual services): Brief explanation of how AI changes marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 9 services (Growth Attribution & AI Insights presented as 'included infrastructure'), each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) Search & AI Visibility (SEO + GEO), (2) AI Marketing Systems, (3) Authority Content & AI Citation (was Content Marketing), (4) Smart-Stack Paid Media (was Paid Advertising), (5) Fractional Marketing Leadership, (6) Social Media & Short-Form Video, (7) Conversion Rate Optimization, (8) Local Visibility & Reputation, (9) Email Marketing & Owned Audience.\n\nGrowth Attribution & AI Insights (was Performance Intelligence; analytics & reporting) is not a standalone service block — it's featured in a 'What's always included' section after the service blocks.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. PACKAGES & PRICING: Three tiered retainer packages (Foundation $1,500-$2,500 / Growth $2,500-$4,500 / Authority $4,500-$7,500) as pricing cards with orange accent on recommended tier (Growth). Plus one-time projects. Each card shows what's included, who it's for, price range, CTA to /contact. What a typical month looks like at each tier. Reporting cadence. Authority tier should explicitly include 'Fractional marketing leadership' language. Add a 'Strategy Sprint' one-time project ($3,000-$7,000) for funded startups preparing launches, market entries, or pivots — this fills the gap between free audit and committed retainer.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free Marketing Audit' → /contact + jodie@jodieplant.com.",
+      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'AI-Orchestrated Marketing for B2B SaaS'. Subhead about AI-orchestrated workflows giving agency output from a senior practitioner.\n\n2. THE AI-ENHANCED METHOD (before individual services): Include one NAMED FRAMEWORK (e.g. 'The Visibility Engine™', 'The Search-to-Citation System™') for memorability. Brief explanation of how AI-orchestrated systems change marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 9 services (Growth Attribution & AI Insights presented as 'included infrastructure'), each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) Search & AI Visibility (SEO + GEO), (2) AI Marketing Systems, (3) Authority Content & AI Citation (was Content Marketing), (4) Smart-Stack Paid Media (was Paid Advertising), (5) Fractional Marketing Leadership, (6) Social Media & Short-Form Video, (7) Conversion Rate Optimization, (8) Local Visibility & Reputation, (9) Email Marketing & Owned Audience.\n\nGrowth Attribution & AI Insights (was Performance Intelligence; analytics & reporting) is not a standalone service block — it's featured in a 'What's always included' section after the service blocks.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. PACKAGES & PRICING: Three tiered retainer packages (Foundation $1,500-$2,500 / Growth $2,500-$4,500 / Authority $4,500-$7,500) as pricing cards with orange accent on recommended tier (Growth). Plus one-time projects. Each card shows what's included, who it's for, price range, CTA to /contact. What a typical month looks like at each tier. Reporting cadence. Authority tier should explicitly include 'Fractional marketing leadership' language. Add a 'Strategy Sprint' one-time project ($3,000-$7,000) for funded startups preparing launches, market entries, or pivots — this fills the gap between free audit and committed retainer.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free AI Visibility Snapshot' → /contact + jodie@jodieplant.com.",
       "acceptanceCriteria": [
         "Services page has Hero, AI Method section, 8 Service Blocks, Pricing, and CTA",
         "AI-Enhanced Method section appears BEFORE individual services",
@@ -97,16 +100,17 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CRITICAL: This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate. Service names use outcome-first language (Authority Content & AI Citation, Smart-Stack Paid Media, Growth Attribution & AI Insights) with technical terms in subtext. This naming strategy differentiates from the hundreds of other freelancers on LinkedIn. Fractional Marketing Leadership and CRO are new additions. Analytics (Growth Attribution) folded into 'always included' to avoid looking like table stakes."
+      "groomingNotes": "CONVERSION-CRITICAL. This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate. Service names use outcome-first language (Authority Content & AI Citation, Smart-Stack Paid Media, Growth Attribution & AI Insights) with technical terms in subtext. This naming strategy differentiates from the hundreds of other freelancers on LinkedIn. Fractional Marketing Leadership and CRO are new additions. Analytics (Growth Attribution) folded into 'always included' to avoid looking like table stakes. Per brief v2.2: Hero = 'AI-Orchestrated Marketing for B2B SaaS'; include one named framework (e.g. Visibility Engine™) in AI Method section."
     },
     {
       "id": "FEAT-006",
       "title": "Build Results page with real credentials and methodology (not fake case studies)",
-      "description": "Build src/pages/results.astro per brief Section 9 (v2.0) 'Results Page'.\n\nCRITICAL: This is NOT a portfolio page with fake case studies. Placeholder case studies with fabricated metrics actively harm credibility. This page uses real credentials and methodology to demonstrate expertise.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'What You Can Expect'. Subhead: honest framing — 'I don't have a portfolio of logos to hide behind. Here's what I bring instead — real experience, a proven approach, and the results to back it up.'\n\n2. CREDENTIALS & NUMBERS: Real, provable stats in Space Grotesk at large scale — years experience, campaigns/projects delivered, ad spend managed, client retention, industries worked with. MUST be real. Small but honest beats large but fabricated.\n\n3. THE APPROACH IN ACTION: Instead of fake case studies, show methodology applied:\n- 'What a typical SEO engagement looks like' — month-by-month\n- 'How I'd approach a startup launch campaign' — step-by-step\n- 'What a monthly retainer delivers' — concrete deliverables\nDemonstrates expertise without fabricating results.\n\n3b. 'PEEK UNDER THE HOOD' — VISUAL PROCESS PROOF:\nDon't just list what you do — VISUALIZE the workflow. Prospects are skeptical of AI claims. Show actual artifacts:\n- Blurred/redacted screenshot of an AI-enhanced research workflow or audit output\n- Sample 'AI Visibility Report' structure (designed mockup with real formatting, anonymized data)\n- Before/after of an AI-optimized content piece\n- Dashboard screenshot showing type of reporting (redacted data)\nUse subtle frame/border treatment to make these feel like real documents. This section is the most powerful differentiator on the page — it proves Jodie is a systems builder, not just a prompt engineer.\n\n4. WHAT CLIENTS SAY: Real testimonials, LinkedIn recommendations, or professional endorsements. Even 1-2 is better than none. If no client testimonials exist: results from past roles with appropriate framing. Structure ready for adding real testimonials later.\n\n5. INDUSTRIES & EXPERIENCE: Types of companies Jodie works with — SaaS, fintech, dev tools, etc. Pattern recognition: 'I've seen what works for companies like yours.'\n\n6. CTA: 'Want to see what I'd do for your company?' + 'Get Your Free Marketing Audit' → /contact.",
+      "description": "Build src/pages/results.astro per brief Section 9 (v2.2) 'Results Page'.\n\nCRITICAL: This is NOT a portfolio page with fake case studies. Placeholder case studies with fabricated metrics actively harm credibility. This page uses real credentials and methodology to demonstrate expertise.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'What You Can Expect'. Subhead: honest framing — 'I don't have a portfolio of logos to hide behind. Here's what I bring instead — real experience, a proven approach, and the results to back it up.'\n\n2. CREDENTIALS & NUMBERS: Real, provable stats in Space Grotesk at large scale — years experience, campaigns/projects delivered, ad spend managed, client retention, industries worked with. MUST be real. Small but honest beats large but fabricated. Add OUTCOME RANGE ANCHORS (generalized, historical patterns — not client-specific): e.g. 'Increased demo bookings 30–120% in 90 days', 'Reduced cost per lead 18–40%', 'Doubled organic visibility in 6–12 months'. Frame as 'What I've seen across engagements' or 'Typical outcome ranges' to make methodology tangible.\n\n3. THE APPROACH IN ACTION: Instead of fake case studies, show methodology applied:\n- 'What a typical SEO engagement looks like' — month-by-month\n- 'How I'd approach a startup launch campaign' — step-by-step\n- 'What a monthly retainer delivers' — concrete deliverables\nDemonstrates expertise without fabricating results.\n\n3b. 'PEEK UNDER THE HOOD' — VISUAL PROCESS PROOF:\nDon't just list what you do — VISUALIZE the workflow. Prospects are skeptical of AI claims. Show actual artifacts:\n- Blurred/redacted screenshot of an AI-enhanced research workflow or audit output\n- Sample 'AI Visibility Report' structure (designed mockup with real formatting, anonymized data)\n- Before/after of an AI-optimized content piece\n- Dashboard screenshot showing type of reporting (redacted data)\nUse subtle frame/border treatment to make these feel like real documents. This section is the most powerful differentiator on the page — it proves Jodie is a systems builder, not just a prompt engineer.\n\n4. WHAT CLIENTS SAY: Real testimonials, LinkedIn recommendations, or professional endorsements. Even 1-2 is better than none. If no client testimonials exist: results from past roles with appropriate framing. Structure ready for adding real testimonials later.\n\n5. INDUSTRIES & EXPERIENCE: Types of companies Jodie works with — SaaS, fintech, dev tools, etc. Pattern recognition: 'I've seen what works for companies like yours.'\n\n6. CTA: 'Want to see what I'd do for your company?' + 'Get Your Free AI Visibility Snapshot' → /contact.",
       "acceptanceCriteria": [
         "Results page has Hero, Credentials, Approach in Action, Client Testimonials, Industries, and CTA",
         "No fake case studies or fabricated metrics anywhere on the page",
         "Credentials section uses Space Grotesk at large scale for real stats",
+        "Credentials section includes 2-3 generalized outcome range anchors (e.g. demo bookings +30–120%, cost per lead -18–40%, organic visibility 2x in 6–12 months) framed as historical patterns",
         "Approach in Action section shows methodology through real scenario walkthroughs",
         "'Peek Under the Hood' section includes at least 2 visual artifacts (blurred screenshots, sample report mockups, or dashboard examples) proving the AI-enhanced workflow",
         "Testimonials section has structure ready for real content (even if placeholder notes 'coming soon')",
@@ -118,20 +122,21 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Reframed from fake portfolio to honest credentials page. This is more credible and more useful for a new agency. The methodology walkthroughs answer 'what do I actually get?' which is what prospects really want to know. NEW: 'Peek Under the Hood' section (per external strategy review) adds visual proof of AI-enhanced workflows — blurred screenshots, sample reports, dashboard mockups. This is the most powerful differentiator for countering AI skepticism."
+      "groomingNotes": "CONVERSION-CRITICAL. Reframed from fake portfolio to honest credentials page. This is more credible and more useful for a new agency. The methodology walkthroughs answer 'what do I actually get?' which is what prospects really want to know. Outcome range anchors (synthesis review) make methodology tangible. 'Peek Under the Hood' adds visual proof of AI-enhanced workflows — blurred screenshots, sample reports, dashboard mockups. This is the most powerful differentiator for countering AI skepticism."
     },
     {
       "id": "FEAT-007",
       "title": "Build Contact page with form, email, and calendar — multiple conversion paths",
-      "description": "Build src/pages/contact.astro per brief Section 9 (v2.0) 'Contact Page'.\n\nCRITICAL: Multiple conversion paths, not just mailto:. A form is lower friction than composing an email from scratch. Different prospects prefer different channels.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'Let's Talk'. Subhead: 'Whether you want a free audit, have a quick question, or are ready to get started — I'm here.'\n\n2. FREE MARKETING AUDIT FORM (primary conversion path):\n- Headline: 'Get Your Free Marketing Audit'\n- Description: 'Tell me a bit about your company and I'll send you a personalised assessment...'\n- Form fields (in this order — order matters for conversion):\n  1. Name\n  2. Company name\n  3. Company URL\n  4. Biggest marketing challenge (short text or dropdown)\n  5. Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+) — MUST be LAST. Asking for money too early causes drop-offs. If form_abandoned tracking shows users quitting at budget, the value prop hasn't justified the price tag yet.\n- Submit to Formspree or Formspark (static-site compatible, sends to email)\n- Confirmation: 'Thanks! I'll review your marketing and get back to you within 24 hours.'\n- Form validation with helpful error messages\n\n3. OTHER WAYS TO REACH ME:\n- Email: jodie@jodieplant.com with mailto: link\n- Book a call: placeholder for Cal.com/Calendly link (Phase 2) — can show as 'Coming soon' or omit until ready\n- LinkedIn: profile link\n\n4. WHAT TO EXPECT:\n- 'I respond to every enquiry within 24 hours'\n- 'Audit responses include a personalised assessment, not a generic template'\n- 'No pressure, no hard sell'\n\n5. AVAILABILITY:\n- 'Currently taking on 2 new clients for Q2 2026'\n- Creates urgency without being pushy",
+      "description": "Build src/pages/contact.astro per brief Section 9 (v2.2) 'Contact Page'.\n\nCRITICAL: Multiple conversion paths, not just mailto:. A form is lower friction than composing an email from scratch. Different prospects prefer different channels.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'Let's Talk'. Subhead: 'Whether you want a visibility snapshot, have a quick question, or are ready to get started — I'm here.'\n\n2. FREE AI VISIBILITY SNAPSHOT (primary conversion path):\n- Headline: 'Get Your Free AI Visibility Snapshot'\n- Description: Personalised video walkthrough (5–10 min, Loom-style) with search visibility analysis + AI citation check + competitor gap summary + 3 prioritised next actions. Delivered within 48 hours. LIMITED WEEKLY SLOTS.\n- Form fields (in this order — order matters for conversion):\n  1. Name\n  2. Company name\n  3. Company URL\n  4. Biggest marketing challenge (short text or dropdown)\n  5. Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+) — MUST be LAST. Asking for money too early causes drop-offs.\n- Submit to Formspree or Formspark (static-site compatible, sends to email)\n- Confirmation: 'Thanks! I’ll send your AI Visibility Snapshot within 48 hours.'\n- Form validation with helpful error messages\n\n3. OTHER WAYS TO REACH ME:\n- Email: jodie@jodieplant.com with mailto: link\n- Book a call: placeholder for Cal.com/Calendly link (Phase 2) — can show as 'Coming soon' or omit until ready\n- LinkedIn: profile link\n\n4. WHAT TO EXPECT:\n- 'Your visibility snapshot is a video walkthrough (5–10 min), delivered within 48 hours. Limited weekly slots.'\n- 'I respond to every enquiry within 24 hours'\n- 'No pressure, no hard sell'\n\n5. AVAILABILITY:\n- 'Limited roster model — 5–7 companies at a time'\n- Creates urgency without being pushy",
       "acceptanceCriteria": [
         "Contact page has Hero, Audit Form, Other Contact Methods, Expectations, and Availability sections",
+        "Snapshot is framed as video walkthrough (5–10 min), 48-hour delivery, limited weekly slots — stated in form description and What to Expect",
         "Form has fields for name, company, URL, challenge, and optional budget range — budget range MUST be the last field (reduces drop-off)",
         "Form submits to Formspree/Formspark (or similar static-compatible service) and sends to email",
         "Form shows confirmation message after successful submission",
         "Form has client-side validation with helpful error messages",
         "Email mailto: link is prominent alongside the form (not hidden)",
-        "Availability signal creates urgency ('Currently taking on 2 new clients')",
+        "Availability signal uses limited roster model (5–7 companies) rather than generic capacity claims",
         "Calendar booking link has placeholder structure for Phase 2",
         "Page is fully responsive",
         "npm run build succeeds"
@@ -140,18 +145,18 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CRITICAL: Conversion endpoint. The form is lower friction than mailto: — prospect doesn't need to context-switch to email client. The audit framing gives the prospect something concrete in return for reaching out. Availability signal drives urgency."
+      "groomingNotes": "CONVERSION-CRITICAL. Conversion endpoint. The form is lower friction than mailto: — prospect doesn't need to context-switch to email client. The audit framing (video, 48hr, limited slots per synthesis review) gives the prospect something concrete and reduces tire-kickers. Availability signal drives urgency."
     },
     {
       "id": "FEAT-008",
       "title": "Add SEO meta tags, Open Graph, and Twitter cards to all pages",
-      "description": "Update Layout.astro and all 5 pages to include proper SEO meta tags per brief Section 12 (v2.0).\n\nEach page needs: <title>, <meta name='description'>, Open Graph tags (og:title, og:description, og:type, og:url, og:image, og:site_name), Twitter card tags (twitter:card, twitter:title, twitter:description, twitter:image), canonical URL, lang='en' on html.\n\nMeta content per page (from brief Section 12 v2.0):\n- Homepage: 'Jodie Plant Marketing — AI-Powered Marketing for Tech Companies'\n- Services: 'Services — Jodie Plant Marketing' / 'AI-enhanced SEO, paid advertising...'\n- About: 'About — Jodie Plant Marketing' / 'Meet Jodie Plant...'\n- Results: 'Results — Jodie Plant Marketing' / 'See how Jodie Plant Marketing delivers results...'\n- Contact: 'Get Your Free Marketing Audit — Jodie Plant Marketing' / 'Get a free, personalised marketing audit...'\n\nCreate a default OG image placeholder in public/ (simple branded graphic with Cabinet Grotesk text, navy bg, orange accent).",
+      "description": "Update Layout.astro and all 5 pages to include proper SEO meta tags per brief Section 12 (v2.2).\n\nEach page needs: <title>, <meta name='description'>, Open Graph tags (og:title, og:description, og:type, og:url, og:image, og:site_name), Twitter card tags (twitter:card, twitter:title, twitter:description, twitter:image), canonical URL, lang='en' on html.\n\nMeta content per page (from brief Section 12 v2.2):\n- Homepage: 'Jodie Plant Marketing — Search & AI Visibility for B2B SaaS'\n- Services: 'Services — Jodie Plant Marketing' / 'Search & AI visibility, authority content, smart-stack paid media...'\n- About: 'About — Jodie Plant Marketing'\n- Results: 'Results — Jodie Plant Marketing'\n- Contact: 'Get Your Free AI Visibility Snapshot — Jodie Plant Marketing'\n\nCreate a default OG image placeholder in public/ (simple branded graphic with Cabinet Grotesk text, navy bg, orange accent).",
       "acceptanceCriteria": [
         "Every page has unique <title> and <meta name='description'> matching brief Section 12",
         "Open Graph tags (og:title, og:description, og:type, og:url, og:image) on all pages",
         "Twitter card meta tags on all pages",
         "Canonical URLs set correctly",
-        "Contact page title leads with 'Get Your Free Marketing Audit' for search CTR",
+        "Contact page title leads with 'Get Your Free AI Visibility Snapshot' for search CTR",
         "Default OG image exists in public/",
         "npm run build succeeds"
       ],
@@ -159,7 +164,7 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. The Contact page meta title ('Get Your Free Marketing Audit') is deliberately crafted for search CTR."
+      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. The Contact page meta title ('Get Your Free AI Visibility Snapshot') is deliberately crafted for search CTR."
     },
     {
       "id": "FEAT-009",
@@ -531,12 +536,13 @@
     {
       "id": "FEAT-032",
       "title": "Add AI Visibility Audit as primary bridge product on /services and /contact",
-      "description": "Add the 'AI Visibility Audit' as the PRIMARY BRIDGE PRODUCT prominently on /services and /contact pages. This is the key conversion ladder element that closes the trust gap between the free audit and retainer commitment (see brief Section 4 'Closing the Trust Gap').\n\nRef: MARKET_RESEARCH_2026.md Part 4 — one-time project fee $500-$1,500.\n\nSTRATEGIC ROLE: The jump from Free Audit ($0) to Growth Retainer ($2,500+) is a significant trust gap. Founders are wary of free audits being generic sales pitches. The AI Visibility Audit transforms Jodie from 'vendor asking for a retainer' into 'consultant providing a paid diagnostic.' It's much easier to sell a $4K/month retainer once they've already paid $1K for a high-value insight report.\n\nThe AI Visibility Audit asks: 'What happens when someone asks ChatGPT/Perplexity/Gemini about your industry? Are you cited? Are competitors? What would it take to change that?'\n\nConversion ladder: Free Audit → AI Visibility Audit ($500-$1,500) → Retainer ($1,500-$7,500/mo)\n\nImplementation:\n- Add audit as a PROMINENT section on /services page — not buried in a pricing table. It's the recommended first paid engagement.\n- Add as a visually distinct upsell section on /contact page: 'Want a Deeper Dive? Book an AI Visibility Audit' — separate card/block from the free audit form with clear pricing.\n- Consider a dedicated landing page for the audit (could be a best-answer page).\n\nDeliverables to describe:\n- Audit of how the brand appears across ChatGPT, Perplexity, Gemini, Google AI Overviews\n- Competitor AI visibility comparison\n- Content gap analysis (what questions are being asked that you don't answer?)\n- Entity authority assessment\n- Actionable recommendations with priority ranking",
+      "description": "Add the 'AI Visibility Audit' as the PRIMARY BRIDGE PRODUCT with a DEDICATED FEATURED SECTION on /services and prominent placement on /contact. This is the key conversion ladder element that closes the trust gap between the free audit and retainer commitment (see brief Section 4 'Closing the Trust Gap'). Per synthesis review: the bridge product must feel like the natural next step — not buried in pricing.\n\nREF: MARKET_RESEARCH_2026.md Part 4 — one-time project fee $500-$1,500.\n\nSTRATEGIC ROLE: The jump from Free Audit ($0) to Growth Retainer ($2,500+) is a significant trust gap. The AI Visibility Audit transforms Jodie from 'vendor asking for a retainer' into 'consultant providing a paid diagnostic.' Conversion ladder: Free Audit → AI Visibility Audit ($500-$1,500) → Retainer ($1,500-$7,500/mo).\n\nON /SERVICES — DEDICATED FEATURED SECTION (not just pricing row):\n- Headline and subhead: what the audit is and why it exists\n- What it includes: how the brand appears across ChatGPT/Perplexity/Gemini/Google AI Overviews; competitor AI visibility comparison; content gap analysis; entity authority assessment; actionable recommendations with priority ranking\n- Deliverable format: e.g. written report + optional walkthrough call\n- Timeline: e.g. delivered within 5–10 business days\n- Who it's for: B2B SaaS founders/marketers who want to know where they stand in AI discovery before committing to a retainer\n- Visually marked as 'Recommended First Step' (badge or label)\n- Primary CTA: 'Start with AI Visibility Audit' (links to /contact with audit context)\n\nON /CONTACT: Visually distinct upsell section: 'Want a Deeper Dive? Book an AI Visibility Audit' — separate card/block from the free audit form, clear pricing ($500-$1,500), CTA to form or email with audit context.\n\nOptional: dedicated landing page for the audit (e.g. best-answer page).",
       "acceptanceCriteria": [
-        "AI Visibility Audit has a prominent, dedicated section on /services page (not just a row in a pricing table)",
-        "AI Visibility Audit has a visually distinct upsell section on /contact page with clear pricing",
+        "AI Visibility Audit has a dedicated featured section on /services with: what it includes, deliverable format, timeline, who it's for, why it exists",
+        "Section is visually marked as 'Recommended First Step' (badge or label)",
+        "Primary CTA in section: 'Start with AI Visibility Audit' linking to /contact with audit context",
+        "AI Visibility Audit has a visually distinct upsell section on /contact page with clear pricing ($500-$1,500)",
         "Clear conversion ladder messaging: Free Audit → AI Visibility Audit → Retainer",
-        "Pricing clearly stated ($500-$1,500)",
         "Clear differentiation from the free marketing audit (paid diagnostic vs. free assessment)",
         "npm run build succeeds"
       ],
@@ -647,6 +653,98 @@
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
       "groomingNotes": "HIGH VALUE: Fractional CMO comparison queries are high-intent and growing. This page positions Jodie in the conversation and uses real market pricing data (from the review) to build credibility. Natural fit alongside the other best-answer pages in FEAT-026."
+    },
+    {
+      "id": "FEAT-040",
+      "title": "Add sticky CTA on scroll (mobile-first)",
+      "description": "Add a sticky CTA bar (mobile-first) that appears on scroll (e.g. after user scrolls past hero or 25% of page). Especially important on mobile where the primary CTA can scroll out of view. CTA should be 'Free AI Visibility Snapshot' linking to /contact. Non-intrusive: should not cover key content; consider bottom orange bar or floating button. Per synthesis review: conversion optimization for mobile.",
+      "acceptanceCriteria": [
+        "Sticky CTA appears on scroll on homepage and key pages (e.g. after hero or at 25% scroll)",
+        "Mobile-friendly: visible and tappable without covering primary content",
+        "CTA copy and destination match primary conversion path (/contact)",
+        "Respects prefers-reduced-motion if applicable",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-002", "FEAT-003"],
+      "groomingNotes": "Conversion optimization per synthesis review. Mobile especially benefits from persistent CTA."
+    },
+    {
+      "id": "FEAT-041",
+      "title": "Add inline CTAs in long services page",
+      "description": "Add inline CTAs at mid-page and between service blocks on /services, not just at the bottom. Long scroll without CTAs loses conversion. Options: 'Not sure where to start? Get your free audit' after AI Method section; 'Start with AI Visibility Audit' after the audit featured section; repeat CTA after every 2–3 service blocks. Per synthesis review: don't rely on bottom CTA only.",
+      "acceptanceCriteria": [
+        "At least 2 inline CTAs on /services in addition to bottom CTA (e.g. after AI Method, after AI Visibility Audit section)",
+        "CTAs link to /contact with appropriate context (free audit or AI Visibility Audit)",
+        "Visual hierarchy: inline CTAs secondary to main content, not overwhelming",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005", "FEAT-032"],
+      "groomingNotes": "Conversion optimization per synthesis review. Long services page needs multiple conversion opportunities."
+    },
+    {
+      "id": "FEAT-042",
+      "title": "Add case-style micro proof snippets inside service blocks",
+      "description": "Inside selected service blocks on /services, add short 'proof' snippets — e.g. one-line outcome ('Increased demo bookings 40% in 90 days'), anonymised client type ('SaaS founder, Series A'), or methodology snippet. These are not full case studies; they are micro proof points that build credibility within the service description. Per synthesis review: case-style micro proof inside service blocks.",
+      "acceptanceCriteria": [
+        "At least 2–3 service blocks include a micro proof snippet (outcome range, client type, or methodology note)",
+        "Snippets are honest and generalised (no fabricated metrics or client names without permission)",
+        "Visual treatment distinct from body copy (e.g. callout, italic, or small badge)",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005"],
+      "groomingNotes": "Conversion and credibility per synthesis review. Low effort if outcome ranges already defined (brief v2.2 / FEAT-006)."
+    },
+    {
+      "id": "FEAT-043",
+      "title": "Add testimonials schema markup (future-ready)",
+      "description": "Add Review or AggregateRating/Review structured data (JSON-LD) to support future testimonials and rich results. When real testimonials exist, they can be marked up for SEO and AI citation. Implementation: reusable TestimonialSchema component; include on /results and optionally /homepage when testimonial content exists. Placeholder or minimal implementation acceptable until testimonials are added. Per synthesis review: testimonials schema markup future-ready.",
+      "acceptanceCriteria": [
+        "Reusable component or pattern for testimonial/review structured data",
+        "Schema valid per schema.org Review or AggregateRating",
+        "Integrated on /results (and elsewhere when testimonial content exists)",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-006", "FEAT-009"],
+      "groomingNotes": "Future-ready for rich results and AI citation when testimonials are added. Low priority until testimonials exist."
+    },
+    {
+      "id": "FEAT-044",
+      "title": "Calendly/Cal.com gating: require audit before call booking (Phase 2)",
+      "description": "When calendar booking (Cal.com/Calendly) is live, add optional gating logic: require or strongly encourage completing the free audit (or AI Visibility Audit) before booking a call. E.g. calendar link on /contact could go to a short landing message: 'Best results when we've reviewed your marketing first — get your free audit, then book a call to discuss.' Or: only show calendar link after form submission. Reduces low-quality calls and aligns with conversion ladder. Phase 2 — after FEAT-014 (Cal.com integration). Per synthesis review: Calendly gating logic.",
+      "acceptanceCriteria": [
+        "Calendar booking flow encourages or requires audit before call (landing message, or calendar link after form submit)",
+        "Documented in brief or analytics setup how gating is implemented",
+        "Does not block high-intent users who need to talk first (consider 'or book a call' path)",
+        "npm run build succeeds (if implementation is in-repo)"
+      ],
+      "priority": "could",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-007", "FEAT-014"],
+      "groomingNotes": "Phase 2 conversion optimization. Reduces tire-kickers on calls; aligns with Free Audit → Audit → Retainer ladder."
+    },
+    {
+      "id": "FEAT-045",
+      "title": "Add The Visibility Engine™ framework section + diagram",
+      "description": "Add a dedicated 'The Visibility Engine™' framework section with a simple 4-step diagram on /services (and a short preview on the homepage if applicable). This is a category-defining differentiator: it brands the method and positions Jodie as a systems-builder.\n\nFramework steps:\n1) Discover — audit search presence, AI citations, competitors, funnel gaps\n2) Dominate — build search visibility + authority content assets\n3) Amplify — layer smart paid + distribution\n4) Optimize — AI insights + CRO + attribution to improve pipeline efficiency\n\nDesign:\n- Simple 4-block diagram (desktop row, mobile stacked)\n- One-line explanation under each block\n- Inline CTA under the section: 'Start with a Visibility Snapshot →' linking to /contact\n\nPer strategy: this is MUST-have for memorability and perceived sophistication.",
+      "acceptanceCriteria": [
+        "Services page includes a dedicated Visibility Engine™ section with 4-step diagram and short explanations",
+        "Section includes CTA to /contact for Free AI Visibility Snapshot",
+        "Diagram is responsive (row on desktop, stacked on mobile)",
+        "Homepage includes either the full diagram or a short teaser linking to /services section",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-003", "FEAT-005", "FEAT-007"],
+      "groomingNotes": "CONVERSION-CRITICAL positioning component. Brands the method; reduces 'services menu' perception."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."

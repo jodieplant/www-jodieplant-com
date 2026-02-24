@@ -1,9 +1,20 @@
 # Jodie Plant Marketing — Website Design & Briefing Document
 
-**Version**: 2.1
+**Version**: 2.2
 **Created**: 2026-02-20
 **Updated**: 2026-02-23
 **Purpose**: Design and content brief for www.jodieplant.com
+
+> **v2.2 changes** (synthesis review — positioning & conversion):
+> 1. **Primary niche declaration**: Explicit "B2B SaaS startups, Seed to Series B" in Section 2 to sharpen authority and reduce "tech companies" breadth.
+> 2. **Primary vs supporting services**: Section 5 now structures services as Primary Growth Engines (Search & AI Visibility, Authority Content & AI Citation, Smart-Stack Paid Media) vs Supporting Capabilities — positions Jodie as search/visibility specialist with execution breadth, not generalist.
+> 3. **AI narrative shift**: "AI-powered" → "AI-orchestrated marketing systems" across hero, services, and About — emphasizes systems-builder over prompt-engineer.
+> 4. **Named framework**: One signature framework (e.g. "The Visibility Engine™" or "Search-to-Citation System™") in Services AI Method section for memorability.
+> 5. **Homepage "Who This Is For"**: New micro-section after Hero with ICP pain bullets (pipeline, agency burn, need for senior leadership).
+> 6. **Free audit framing**: Contact page constrains free audit — Loom-style video (5–10 min), delivered in 48 hours, limited weekly slots — to raise perceived value and reduce tire-kickers.
+> 7. **Results outcome anchors**: Credentials section adds generalized outcome ranges (e.g. demo bookings +40–120%, CAC -18–35%, organic traffic 2x in 6–12 months) as historical patterns, not fabricated.
+> 8. **Fractional leadership reframe**: "Every engagement includes fractional marketing leadership" — elevates from service #5 to overarching positioning.
+> 9. **Sharper tagline**: Homepage/meta shift toward "Search & AI Visibility for B2B SaaS" where appropriate.
 
 > **v2.1 changes** (external strategy review integration):
 > 1. **Trust gap / bridge product**: AI Visibility Audit positioned as primary bridge between free audit and retainer (Section 4, Section 5, Section 9 Contact Page)
@@ -97,13 +108,19 @@ A marketing website for Jodie Plant Marketing — a solo, AI/tech-forward digita
 
 ## 2. Strategic Positioning
 
+### Primary Niche Declaration (Non-negotiable)
+
+**I work primarily with B2B SaaS startups from Seed to Series B.**
+
+Even if other segments are accepted, this declaration sharpens authority. Specialization increases perceived value. The site should state this clearly — "tech companies" is too broad; "B2B SaaS, Seed to Series B" signals focus and defensible expertise.
+
 ### Brand Positioning Statement
 
-**For** startup founders, CTOs, and heads of marketing at tech companies who need marketing that actually moves the needle,
-**Jodie Plant Marketing is** a fractional marketing leader and AI-forward digital marketing partner
+**For** startup founders, CTOs, and heads of marketing at B2B SaaS companies (Seed to Series B) who need marketing that actually moves the needle,
+**Jodie Plant Marketing is** a fractional marketing leader and AI-orchestrated digital marketing partner
 **that** delivers full-service marketing with senior-level attention on every account,
 **unlike** big agencies that hand you off to juniors, freelancers who only do one thing, or DIY tools that lack strategy,
-**Jodie** combines deep marketing expertise with modern AI tools to deliver faster, smarter, and more measurable results.
+**Jodie** combines deep marketing expertise with AI-orchestrated systems to deliver faster, smarter, and more measurable results.
 
 ### Core Brand Promise
 
@@ -126,6 +143,7 @@ Replace the anxiety of "is our marketing even working?" with confidence and clar
 
 Solo practitioners have a natural capacity constraint — this is a feature, not a bug. The site should use this honestly:
 
+- **Limited roster model**: "I work with **5–7 companies at a time** to maintain senior-level attention" (update if the model changes)
 - **Capacity signal**: "Currently taking on 2 new clients this quarter" (update quarterly)
 - **Availability signal**: "Next available: [Month Year]" (update as needed)
 - **Quality signal**: "I limit my client roster to give each company my full attention"
@@ -195,7 +213,9 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 
 ### Primary Value Proposition
 
-> **Full-service digital marketing for tech companies — powered by AI, delivered by a senior marketer who's actually paying attention.**
+> **Search & AI Visibility for B2B SaaS — full-service marketing delivered through AI-orchestrated systems by a senior marketer who's actually paying attention.**
+
+(Alternative tagline for hero/meta: "Search & AI Visibility for B2B SaaS" — memorable and niche-sharp.)
 
 ### Supporting Value Props
 
@@ -207,7 +227,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 | Startup-native | Understands constraints and pace | "Built for companies that move fast and break things" |
 | Data-driven | Transparent, measurable results | "Every dollar tracked. Every result measured." |
 | No bloat | No account managers, no overhead | "You're not paying for a fancy office and a sales team" |
-| **Fractional leadership** | **CMO-level strategy at a fraction of the cost** | **"Think of me as your fractional CMO — strategy AND execution, without the $300K salary"** |
+| **Fractional leadership** | **CMO-level strategy at a fraction of the cost** | **"Every engagement includes fractional marketing leadership — strategy AND execution, without the $300K salary"** |
 
 ### The "Why Jodie" Argument
 
@@ -221,20 +241,23 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 
 Don't just ask prospects to "get in touch" — offer them something concrete in return:
 
-**MVP Lead Magnet**: "Free Marketing Audit"
-- CTA: "Get a free 15-minute marketing audit" or "See what I'd do for your startup"
+**MVP Lead Magnet**: "Free AI Visibility Snapshot"
+- CTA: "Get Your Free AI Visibility Snapshot" or "See what I'd do for your startup"
 - Prospect fills out a short form (company URL, biggest challenge, budget range)
-- Jodie responds with a brief, personalised assessment + recommended next steps
-- This demonstrates expertise before any money changes hands
+- **Delivery format**: A **video walkthrough** (Loom-style, 5–10 minutes) — not a generic PDF. This raises perceived value and demonstrates thinking in Jodie's voice.
+- **Turnaround**: Delivered within **48 hours**.
+- **Capacity**: **Limited weekly slots** — stated on the contact page. This reduces tire-kickers and creates healthy scarcity.
+- Includes: search visibility analysis, AI citation check, competitor gap summary, and **3 prioritised next actions**.
+- Jodie's response: personalised assessment + recommended next steps (often pointing to the AI Visibility Audit as the natural next step).
 
-**Why this works**: It's low commitment for the prospect, showcases Jodie's thinking, and creates a natural segue into a paid engagement. It also pre-qualifies leads — anyone willing to fill out the form is genuinely interested.
+**Why this works**: It's low commitment for the prospect, showcases Jodie's thinking, and creates a natural segue into a paid engagement. The video format and slot limit pre-qualify leads and reduce abuse.
 
 ### Closing the Trust Gap: The Bridge Product
 
 The jump from a **Free Audit** (zero commitment) to a **$2,500+ Growth Retainer** (high commitment) is a significant "trust gap." Founders are wary of free audits being generic sales pitches. The **AI Visibility Audit ($500–$1,500)** is the primary bridge product that closes this gap.
 
 **The conversion ladder:**
-1. **Free Marketing Audit** ($0) — Low friction, demonstrates thinking, pre-qualifies leads
+1. **Free AI Visibility Snapshot** ($0) — Low friction, demonstrates thinking, pre-qualifies leads
 2. **AI Visibility Audit** ($500–$1,500) — Paid diagnostic that transforms Jodie from "vendor asking for a retainer" into "consultant providing a high-value insight report"
 3. **Retainer** ($1,500–$7,500/month) — Much easier to sell once they've already paid for and received value from a $1K diagnostic
 
@@ -251,17 +274,36 @@ The jump from a **Free Audit** (zero commitment) to a **$2,500+ Growth Retainer*
 
 ## 5. Service Offerings
 
+### Primary Focus vs Supporting Capabilities
+
+To avoid "I do everything" credibility tension, services are structured as:
+
+**Primary Growth Engines** (where Jodie leads with depth and differentiation):
+- **Search & AI Visibility** — SEO + GEO, AI citation, technical visibility
+- **Authority Content & AI Citation** — Best-answer content, AI citation strategy
+- **Smart-Stack Paid Media** — Budget-smart paid across platforms
+
+**Supporting Capabilities** (execution breadth that rounds out engagements):
+- CRO (Conversion Rate Optimization)
+- Email marketing & owned audience
+- AI Marketing Systems (workflow design, tooling)
+- Growth Attribution & AI Insights
+- Social & short-form
+- Local visibility (where relevant)
+
+This reframes Jodie as **a search and visibility specialist with execution breadth** — not a marketing generalist. The homepage and services hero should emphasise the three growth engines; the full list lives on /services with this hierarchy clear.
+
 ### How to Present Services: AI-Led, Not Generic
 
-The services page must **not** read like every other marketing freelancer's list. The differentiator is HOW these services are delivered — with AI-enhanced workflows. Lead with the method, not just the menu.
+The services page must **not** read like every other marketing freelancer's list. The differentiator is HOW these services are delivered — with AI-orchestrated workflows. Lead with the method, not just the menu.
 
 **Structure each service as: What AI changes + What you get + Why it matters**
 
 ### The AI-Enhanced Approach (Lead With This)
 
-Before listing individual services, establish the overarching method:
+Before listing individual services, establish the overarching method and **one named framework** for memorability (e.g. "The Visibility Engine™", "The Search-to-Citation System™", or "The AI Growth Stack™"). The framework name should appear in the Services hero or AI Method section.
 
-> "Every service I deliver is powered by an AI-enhanced workflow. This isn't about replacing strategy with automation — it's about using modern tools to research deeper, create faster, optimise smarter, and report clearer than a traditional agency can."
+> "Every service I deliver is powered by an AI-orchestrated workflow. This isn't about replacing strategy with automation — it's about using modern tools to research deeper, create faster, optimise smarter, and report clearer than a traditional agency can."
 
 ### Search & AI Visibility (SEO + GEO)
 
@@ -634,20 +676,33 @@ jodieplant.com/
 
 **Purpose**: Communicate who Jodie is, what she does, and why visitors should care — within 10 seconds. Drive visitors to make contact. Every section earns the next scroll.
 
-**Design note**: Condensed from 7 sections to 4-5 high-impact sections. Startup founders are time-poor — don't make them scroll through 7 sections to find the CTA.
+**Design note**: Category-defining structure: **Hero → Who This Is For → Social Proof → The Visibility Engine™ → Primary Growth Engines → Final CTA**. This anchors a category, disqualifies poor-fit leads, and makes the method memorable.
 
 **Sections**:
 
 #### 1. Hero (Above the fold — this is everything)
 
-- **Headline**: Bold, benefit-driven statement in Cabinet Grotesk 800. Large scale. (e.g., "Marketing that moves the needle for tech companies")
-- **Subhead**: 1-2 sentences expanding on the value prop — AI-forward, senior-level, full-service
-- **Primary CTA**: "Get Your Free Marketing Audit" → /contact (with audit context)
-- **Secondary CTA**: "See How I Work" → /results (text link, lower prominence)
-- **Availability signal**: Small text below CTAs — "Currently taking on 2 new clients for Q2 2026"
+- **Headline**: **"Search & AI Visibility for B2B SaaS"**
+- **Subhead**: "Get found by buyers — and by AI — when they’re actively searching for what you sell."
+- **Microproof line** (small text under subhead): "Seed–Series B startups | Senior-led execution | AI-orchestrated systems"
+- **Primary CTA**: **"Get Your Free AI Visibility Snapshot"** → /contact (with snapshot context)
+- **Secondary CTA**: **"See How The Visibility Engine™ Works"** → /services (anchor to framework section)
+- **Availability signal**: Small text below CTAs — "**Limited roster model:** I work with **5–7 companies at a time** to maintain senior-level attention."
 - **Visual**: Dark navy background. Clean typographic hero. Orange accent on CTA. No stock photos. Subtle geometric pattern or gradient accent
 
-#### 2. Social Proof Bar (Immediately after hero)
+#### 2. Who This Is For (Micro-section — immediately after hero)
+
+Explicit ICP framing before services. Pattern: **Who this is for** → Pain → Solution → Proof → CTA. This section answers "Is this for me?" in 10 seconds.
+
+- **Headline**: "This is for you if…" or "Built for founders who…"
+- **Bullet-style** (3–4 items), e.g.:
+  - You've raised funding but pipeline isn't predictable.
+  - You're tired of agencies burning ad spend with no clear ROI.
+  - Your competitors show up in ChatGPT/Perplexity and you don’t.
+  - You need senior marketing leadership without hiring a full-time CMO.
+- Keep it scannable; this dramatically increases conversion clarity.
+
+#### 3. Social Proof Bar (Immediately after "Who This Is For")
 
 This is THE most important trust signal for a services business. It must appear before any other content.
 
@@ -656,44 +711,35 @@ This is THE most important trust signal for a services business. It must appear 
 - **Pull quote**: One strong testimonial or endorsement. If no client testimonial exists yet, use a professional endorsement or LinkedIn recommendation
 - **Design**: Light background, stats displayed large and bold with orange accent on key numbers
 
-> **Critical**: Do NOT launch with obviously fake stats or placeholder testimonials. Real but modest numbers ("50+ campaigns delivered") beat impressive but obviously fabricated ones ("10,000+ clients served"). If nothing real is available, use credential-based proof instead: years of experience, certifications, notable employers, specific skills.
+> **Critical**: Do NOT launch with obviously fake stats or placeholder testimonials. Real but modest numbers beat impressive but obviously fabricated ones. If nothing real is available, use credential-based proof instead.
 
-#### 3. How I'm Different (The pitch)
+#### 4. The Visibility Engine™ (Signature framework)
 
-Combines the old "Problem" and "Jodie Difference" sections into one focused pitch:
+Add a simple 4-block diagram:
 
-- **Opening line**: Short, punchy acknowledgment of the problem ("Tired of agencies that hand you off to juniors?")
-- **Three differentiators** as bold cards/blocks:
-  1. **AI-Powered** — "I use AI across every workflow — research, creation, optimization, reporting. You get agency output from a senior practitioner." (Orange icon/accent)
-  2. **Senior-Level, Always** — "No juniors. No hand-offs. The person you talk to is the person doing the work." (Orange icon/accent)
-  3. **Full-Service** — "SEO, paid, social, content, email, analytics — one relationship, one strategy, no coordination overhead." (Orange icon/accent)
-- **CTA**: "See what I'd do for your startup →" linking to /contact
+1. **Discover** — Audit search presence, AI citations, competitors, funnel gaps
+2. **Dominate** — Build search visibility + authority content that wins intent
+3. **Amplify** — Layer smart paid + distribution to accelerate capture
+4. **Optimize** — AI insights + CRO + attribution to improve pipeline efficiency
 
-#### 4. Services Overview
+- **CTA**: "Start with a Visibility Snapshot →" linking to /contact
 
-- 5 hero service cards in a responsive grid (desktop: 3 + 2, or 2 + 3; stacked on mobile)
-- These are the **differentiating** services — not the full menu
-- Brief intro line above the grid: "Full-service marketing. Every channel. One partner."
-- The 5 hero services (ordered by differentiation):
-  1. **Search & AI Visibility** — "Get found by people — and AI — already searching for what you sell."
-  2. **AI Marketing Systems** — "We'll build the AI workflows that make your marketing faster and smarter."
-  3. **Authority Content & AI Citation** — "Content that ranks, gets cited by AI, and converts."
-  4. **Smart-Stack Paid Media** — "Turn ad spend into pipeline — on the platforms where your budget works."
-  5. **Fractional Marketing Leadership** — "CMO-level strategy and execution, without the CMO salary."
-- Each card: icon + service name + one-line benefit
-- Each card links to /services (to the relevant section anchor)
-- Below the grid: "See all services →" text link to /services for the full menu
-- Clean, scannable. The full 9 services live on /services — the homepage sells the sharp positioning.
+#### 5. Primary Growth Engines
 
-> **Design note**: Reduced from 8 to 5 cards. Eight services on the homepage created choice overload and diluted the AI-forward positioning by making Jodie look like a generic full-service freelancer. The homepage should sell the differentiators. The full menu is one click away.
+Three large cards (specialist pillars — not a menu):
+1. **Search & AI Visibility**
+2. **Authority Content & AI Citation**
+3. **Smart-Stack Paid Media**
 
-#### 5. Final CTA (Dark section)
+Each: one-line benefit + one microproof snippet (generalised outcome range) + link to /services.
+
+#### 6. Final CTA (Dark section)
 
 - Dark navy background with orange CTA button — high contrast
-- **Headline**: "Ready to see what AI-powered marketing can do for your startup?"
-- **CTA**: "Get Your Free Marketing Audit" → /contact
+- **Headline**: "Ready to own your category in search and AI?"
+- **CTA**: "Get Your Free AI Visibility Snapshot" → /contact
 - **Supporting**: "Or email me directly: jodie@jodieplant.com"
-- **Availability**: "Currently accepting new clients for Q2 2026"
+- **Availability**: "Limited roster model — 5–7 companies at a time"
 
 ---
 
@@ -728,12 +774,12 @@ Combines the old "Problem" and "Jodie Difference" sections into one focused pitc
 
 #### 4. The AI Advantage
 
-- How AI tools are used to deliver better results:
+- How AI-orchestrated systems deliver better results:
   - Research and analysis at scale
   - Content creation and optimization
   - Campaign management and optimization
   - Reporting and insights
-- Key message: not replacing human strategy — augmenting it
+- Key message: not "I use AI tools" but "I build AI-orchestrated marketing systems" — systems-builder, not prompt-engineer. Human strategy is augmented, not replaced.
 - This section demonstrates the same AI fluency that clients would benefit from
 
 #### 5. CTA
@@ -751,53 +797,59 @@ Combines the old "Problem" and "Jodie Difference" sections into one focused pitc
 
 #### 1. Hero
 
-- Headline in Cabinet Grotesk: "AI-Powered Marketing for Tech Companies"
-- Subhead: "Every service I deliver is enhanced by AI — deeper research, faster execution, smarter optimization. One senior marketer with the output of a team."
+Headline in Cabinet Grotesk: **"Search & AI Visibility for B2B SaaS"**
 
-#### 2. The AI-Enhanced Method (Lead section — BEFORE individual services)
+Subhead: "Built on **The Visibility Engine™** — a repeatable system to get you discovered by buyers (and by AI) at the moment of intent."
 
-Before listing services, establish the overarching approach:
-- Brief explanation of how AI changes the game for each marketing discipline
-- Not a generic AI pitch — specific examples of what AI enables
-- This section is what makes the page different from every other freelancer's service list
+#### 2. The Visibility Engine™ (Framework)
 
-#### 3. Service Blocks
+Expand the framework with a simple diagram and 1–2 lines per step:
 
-9 services (Growth Attribution & AI Insights presented as "included infrastructure"), each structured as **AI difference + Deliverables + Client benefit**:
+1. **Discover**
+2. **Dominate**
+3. **Amplify**
+4. **Optimize**
 
-Each block:
-- Service name and icon (orange accent)
-- "The AI difference" — 1-2 sentences on how AI enhances THIS specific service
-- Key deliverables (3-5 bullet points)
-- Benefit-driven one-liner
+#### 3. Primary Growth Engines (Top of page)
 
-Services in order of differentiation strength:
-1. **Search & AI Visibility (SEO + GEO)** — GEO positioning is the single most differentiating offering in 2026
-2. **AI Marketing Systems** — unique to AI-forward practitioners
-3. **Authority Content & AI Citation** — "best answer" approach + AI citation focus is differentiating (was "Content Marketing")
-4. **Smart-Stack Paid Media** — smart budget allocation immediately signals differentiation (was "Paid Advertising")
-5. **Fractional Marketing Leadership** — positions the Authority tier as CMO-level engagement
-6. **Social Media & Short-Form Video** — video emphasis signals current-market awareness
-7. **Conversion Rate Optimization** — high-ROI, data-driven, pairs with paid and SEO
-8. **Local Visibility & Reputation** — high demand, clear ROI for SMBs
-9. **Email Marketing & Owned Audience** — audience ownership reduces platform dependence
-10. **Growth Attribution & AI Insights** — foundational, enables everything else (presented as included infrastructure, not a standalone sale; was "Performance Intelligence")
+Make these the first (largest) blocks on the page:
 
-> **Note**: Growth Attribution & AI Insights (analytics/reporting; formerly "Performance Intelligence") is not presented as a standalone service card but as a feature included in all retainer packages. The /services page may show it in a "What's always included" section rather than as a separate block. This brings the visible service blocks to 9.
+Primary growth engines:
+1. **Search & AI Visibility**
+2. **Authority Content & AI Citation**
+3. **Smart-Stack Paid Media**
 
-Each block should be visually distinct and scannable. Alternating layout (left/right or card-based) to prevent monotony.
+Each block: AI difference (specific), 3–5 deliverables, microproof snippet (generalised range), and an inline CTA.
 
-#### 4. Packages & Pricing
+#### 4. Infrastructure & Acceleration (Supporting capabilities)
+
+Present as supporting (visually secondary) so the page does not read like a menu:
+- AI Marketing Systems
+- Growth Attribution & AI Insights
+- CRO
+- Email
+- Social
+- Local (only if relevant)
+
+#### 5. Featured Bridge Product (Recommended first step)
+
+Dedicated highlighted section:
+
+**AI Visibility Audit ($500–$1,500)** — **Recommended First Step**
+- What it includes, deliverable format, timeline, who it’s for
+- CTA: "Start with AI Visibility Audit →" to /contact (audit context)
+
+#### 6. Packages & Pricing
 
 Show the three tiered retainer packages (Foundation / Growth / Authority) from Section 5, plus one-time projects. Design as pricing cards with orange accent on recommended tier (Growth). Each card shows: what's included, who it's for, price range, CTA to /contact.
 
 - What a typical month looks like at each tier
 - Reporting and communication cadence
 
-#### 5. CTA
+#### 7. CTA
 
 - "Not sure what you need? Let's figure it out together."
-- "Get Your Free Marketing Audit" → /contact
+- "Get Your Free AI Visibility Snapshot" → /contact
 - jodie@jodieplant.com
 
 ---
@@ -825,6 +877,14 @@ Real, provable stats displayed in Space Grotesk at large scale:
 - Industry experience ("Worked with companies from seed to Series C")
 
 **These numbers must be real.** Small but honest beats large but fabricated. "8 years in marketing" is more credible than "500+ campaigns delivered" if the latter isn't true.
+
+**Outcome range anchors** (generalized, framed as historical patterns — not client-specific or fabricated):
+- Include 2–3 ranges where Jodie has seen results, e.g.:
+  - "Increased demo bookings **30–120%** in 90 days" (where applicable)
+  - "Reduced cost per lead **18–40%** through channel and creative optimization"
+  - "Doubled organic visibility in **6–12 months**" (SEO/content engagements)
+- Frame as "What I've seen across engagements" or "Typical outcome ranges" — methodology proof, not fake case studies.
+- These give prospects concrete outcome anchors and make the methodology feel tangible.
 
 #### 3. The Approach in Action
 
@@ -865,7 +925,7 @@ This section shows real (but redacted) artifacts from Jodie's AI-enhanced workfl
 #### 6. CTA
 
 - "Want to see what I'd do for your company?"
-- "Get Your Free Marketing Audit" → /contact
+- "Get Your Free AI Visibility Snapshot" → /contact
 
 ---
 
@@ -880,13 +940,13 @@ This section shows real (but redacted) artifacts from Jodie's AI-enhanced workfl
 #### 1. Hero
 
 - Headline in Cabinet Grotesk: "Let's Talk"
-- Subhead: "Whether you want a free audit, have a quick question, or are ready to get started — I'm here."
+- Subhead: "Whether you want a visibility snapshot, have a quick question, or are ready to get started — I'm here."
 
-#### 2. Free Marketing Audit CTA (Primary conversion path)
+#### 2. Free AI Visibility Snapshot (Primary conversion path)
 
 This is the lead magnet in action:
-- **Headline**: "Get Your Free Marketing Audit"
-- **Description**: "Tell me a bit about your company and I'll send you a personalised assessment of your marketing — what's working, what's not, and where I'd focus first."
+- **Headline**: "Get Your Free AI Visibility Snapshot"
+- **Description**: "Tell me a bit about your company and I’ll send you a **personalised 5–10 min Loom walkthrough**: search visibility analysis, AI citation check, competitor gap summary, and **3 prioritised next actions**. **Delivered in 48 hours. Limited weekly slots.**"
 - **Short form** with fields (order matters for conversion — see note):
   - Your name
   - Company name
@@ -894,7 +954,8 @@ This is the lead magnet in action:
   - Biggest marketing challenge (dropdown or short text)
   - Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+) — **MUST be the last field**
 - Form submits to Jodie's email (via Formspree, Formspark, or similar static-compatible service)
-- Confirmation message: "Thanks! I'll review your marketing and get back to you within 24 hours."
+- Confirmation message: "Thanks! I'll send your AI Visibility Snapshot within 48 hours."
+- **On-page constraint**: State "Limited weekly slots" and "Video walkthrough (5–10 min), delivered in 48 hours" to set expectations and reduce tire-kickers.
 
 > **Field order optimization**: Budget range MUST be the last field. Asking for money too early causes drop-offs — prospects haven't been shown enough value yet to justify disclosing budget. If `form_abandoned` tracking (FEAT-020) shows users quitting at the budget field, it signals the value prop hasn't justified the price tag yet. This is a key diagnostic signal for conversion optimization.
 
@@ -920,13 +981,14 @@ For prospects who want more than a free audit but aren't ready for a retainer:
 
 #### 5. What to Expect
 
+- "Your free audit is a **video walkthrough** (5–10 min) — personalised, not a template. Delivered within **48 hours**. Limited weekly slots."
 - "I respond to every enquiry within 24 hours"
-- "Audit responses include a personalised assessment, not a generic template"
 - "No pressure, no hard sell — just an honest conversation about whether I can help"
 
 #### 6. Availability
 
-- "Currently taking on 2 new clients for Q2 2026"
+- "Limited roster model — I work with 5–7 companies at a time to maintain senior-level attention"
+- (Optional capacity note): "Currently taking on 2 new clients for Q2 2026"
 - Creates urgency without being pushy
 
 ---
@@ -1209,8 +1271,8 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 ### Meta Tag Templates
 
 **Homepage**:
-- Title: "Jodie Plant Marketing — AI-Powered Marketing for Tech Companies"
-- Description: "Full-service digital marketing for startups and tech companies. SEO, paid ads, social media, content, and analytics — powered by AI, delivered by a senior marketer."
+- Title: "Jodie Plant Marketing — Search & AI Visibility for B2B SaaS"
+- Description: "Search & AI visibility, authority content, and smart-stack paid media for B2B SaaS. AI-orchestrated marketing systems, delivered by a senior marketer. Seed to Series B."
 
 **Services**:
 - Title: "Services — Jodie Plant Marketing"
@@ -1225,8 +1287,8 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 - Description: "See how Jodie Plant Marketing delivers results for tech companies. Real credentials, proven methodology, and a track record of measurable growth."
 
 **Contact**:
-- Title: "Get Your Free Marketing Audit — Jodie Plant Marketing"
-- Description: "Get a free, personalised marketing audit for your startup. Tell me about your business and I'll show you where I'd focus first."
+- Title: "Get Your Free AI Visibility Snapshot — Jodie Plant Marketing"
+- Description: "Get a free, personalised AI visibility snapshot for your B2B SaaS. I’ll review your search visibility and AI citations and send a 5–10 min Loom walkthrough with 3 prioritised next actions."
 
 ### GEO / Answer Engine Optimization (AEO)
 
@@ -1510,4 +1572,4 @@ Priority pages:
 ---
 
 *Document maintained by: Jodie Plant*
-*Last updated: 2026-02-23 (v2.1 — external strategy review integrated)*
+*Last updated: 2026-02-23 (v2.2 — synthesis review: positioning, conversion, niche, outcome anchors)*
