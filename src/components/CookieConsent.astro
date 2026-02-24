@@ -1,0 +1,160 @@
+---
+---
+
+<div id="cookie-banner" class="fixed bottom-0 left-0 right-0 z-50 hidden" role="dialog" aria-label="Cookie consent">
+  <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 pb-4">
+    <div class="bg-navy text-white rounded-xl p-4 sm:p-6 shadow-xl border border-white/10 flex flex-col sm:flex-row items-start sm:items-center gap-4">
+      <p class="text-sm text-white/80 flex-grow">
+        I use analytics to understand how visitors use this site and improve it. No personal data is sold.
+        <a href="/privacy" class="text-orange hover:text-orange/80 underline transition-colors">Privacy policy</a>
+      </p>
+      <div class="flex gap-3 flex-shrink-0">
+        <button
+          id="cookie-reject"
+          type="button"
+          class="px-4 py-2 text-sm font-medium text-white/70 hover:text-white border border-white/20 rounded-lg transition-colors min-h-[44px]"
+        >
+          Reject
+        </button>
+        <button
+          id="cookie-accept"
+          type="button"
+          class="px-4 py-2 text-sm font-medium bg-orange text-white rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]"
+        >
+          Accept
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const CONSENT_KEY = 'analytics_consent';
+  const CONSENT_TIMESTAMP_KEY = 'analytics_consent_at';
+  const ONE_YEAR_MS = 365 * 24 * 60 * 60 * 1000;
+
+  function getConsent(): string | null {
+    const consent = localStorage.getItem(CONSENT_KEY);
+    const timestamp = localStorage.getItem(CONSENT_TIMESTAMP_KEY);
+
+    // Check if consent has expired (1 year)
+    if (consent && timestamp) {
+      const elapsed = Date.now() - parseInt(timestamp, 10);
+      if (elapsed > ONE_YEAR_MS) {
+        localStorage.removeItem(CONSENT_KEY);
+        localStorage.removeItem(CONSENT_TIMESTAMP_KEY);
+        return null;
+      }
+    }
+
+    return consent;
+  }
+
+  function setConsent(value: 'granted' | 'denied') {
+    localStorage.setItem(CONSENT_KEY, value);
+    localStorage.setItem(CONSENT_TIMESTAMP_KEY, String(Date.now()));
+  }
+
+  function initPostHog() {
+    // Skip on localhost/development
+    if (window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1') {
+      return;
+    }
+
+    const apiKey = (import.meta as any).env?.PUBLIC_POSTHOG_KEY;
+    const apiHost = (import.meta as any).env?.PUBLIC_POSTHOG_HOST || 'https://us.i.posthog.com';
+
+    if (!apiKey) return;
+
+    // Load PostHog JS
+    const script = document.createElement('script');
+    script.src = 'https://us-assets.i.posthog.com/static/array.js';
+    script.onload = () => {
+      (window as any).posthog?.init(apiKey, {
+        api_host: apiHost,
+        capture_pageview: true,
+        capture_pageleave: true,
+        autocapture: true,
+      });
+
+      // Set person properties
+      const params = new URLSearchParams(window.location.search);
+      const properties: Record<string, string> = {};
+      if (params.get('utm_source')) properties.utm_source = params.get('utm_source')!;
+      if (params.get('utm_medium')) properties.utm_medium = params.get('utm_medium')!;
+      if (params.get('utm_campaign')) properties.utm_campaign = params.get('utm_campaign')!;
+      properties.first_visit_page = window.location.pathname;
+
+      if (Object.keys(properties).length > 0) {
+        (window as any).posthog?.setPersonPropertiesForFlags(properties);
+      }
+    };
+    document.head.appendChild(script);
+  }
+
+  function trackEvent(eventName: string, properties?: Record<string, any>) {
+    if (getConsent() !== 'granted') return;
+    (window as any).posthog?.capture(eventName, properties);
+  }
+
+  // Show banner or init PostHog based on existing consent
+  const consent = getConsent();
+  if (consent === null) {
+    document.getElementById('cookie-banner')?.classList.remove('hidden');
+  } else if (consent === 'granted') {
+    initPostHog();
+  }
+
+  // Handle accept
+  document.getElementById('cookie-accept')?.addEventListener('click', () => {
+    setConsent('granted');
+    document.getElementById('cookie-banner')?.classList.add('hidden');
+    initPostHog();
+  });
+
+  // Handle reject
+  document.getElementById('cookie-reject')?.addEventListener('click', () => {
+    setConsent('denied');
+    document.getElementById('cookie-banner')?.classList.add('hidden');
+  });
+
+  // Track CTA clicks
+  document.addEventListener('click', (e) => {
+    const target = (e.target as HTMLElement).closest('a, button');
+    if (!target) return;
+
+    const href = target.getAttribute('href') || '';
+    const text = target.textContent?.trim() || '';
+
+    // CTA clicks
+    if (href === '/contact' || href.includes('mailto:') || text.includes('Free') || text.includes('Get Started')) {
+      const section = target.closest('section');
+      const location = section?.querySelector('h1') ? 'hero' :
+        target.closest('header') ? 'nav' :
+        target.closest('footer') ? 'footer' : 'inline';
+
+      if (href.includes('mailto:')) {
+        trackEvent('email_clicked', { location, page: window.location.pathname });
+      } else {
+        trackEvent('cta_clicked', {
+          cta_text: text,
+          cta_location: location,
+          cta_destination: href,
+          page: window.location.pathname,
+        });
+      }
+    }
+
+    // Nav clicks
+    if (target.closest('header nav') || target.closest('footer nav')) {
+      trackEvent('nav_clicked', {
+        link_text: text,
+        destination: href,
+        is_mobile: window.innerWidth < 640,
+      });
+    }
+  });
+
+  // Expose trackEvent globally for page-specific use
+  (window as any).__trackEvent = trackEvent;
+</script>
