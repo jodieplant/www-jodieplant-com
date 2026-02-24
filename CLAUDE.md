@@ -26,7 +26,7 @@ Standard Astro project structure using strict TypeScript (`astro/tsconfigs/stric
 - `src/components/` — reusable `.astro` components (Header, Footer, ServiceCard, etc.)
 - `src/assets/` — imported assets (SVGs processed by Astro)
 - `public/` — static files served as-is (favicons, OG images)
-- `docs/` — project documentation (website brief)
+- `docs/` — project documentation (website brief, market research)
 - `backlog/` — aishore sprint backlog and bugs
 
 Pure static site — no SSR, no frontend framework integrations (React/Vue/Svelte). Tailwind CSS for styling (to be added in FEAT-001). Forms handled by Formspree or similar static-compatible service.
@@ -45,7 +45,7 @@ Pure static site — no SSR, no frontend framework integrations (React/Vue/Svelt
 
 ## Deployment
 
-GitHub Actions workflow (`.github/workflows/deploy.yml`) builds with Node 20 and deploys the `dist/` directory to GitHub Pages on push to `main`.
+GitHub Actions workflow (`.github/workflows/deploy.yml`) builds with Node 22 LTS and deploys the `dist/` directory to GitHub Pages on push to `main`.
 
 ## Sprint Orchestration (aishore)
 

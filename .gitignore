@@ -10,6 +10,19 @@ dist/
 # OS
 .DS_Store
 
+# Environment variables
+.env
+.env.*
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Debug
+npm-debug.log*
+
 # aishore runtime files
 .aishore/data/logs/
 .aishore/data/status/result.json

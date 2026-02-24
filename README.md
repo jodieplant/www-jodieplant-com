@@ -33,5 +33,6 @@ This project uses [aishore](https://github.com/simonweniger/aishore) for AI-assi
 ## Documentation
 
 - [`docs/WEBSITE_BRIEF.md`](docs/WEBSITE_BRIEF.md) — Full design and content brief
-- [`backlog/backlog.json`](backlog/backlog.json) — Feature backlog (19 stories)
+- [`backlog/backlog.json`](backlog/backlog.json) — Feature backlog (31 items)
+- [`docs/MARKET_RESEARCH_2026.md`](docs/MARKET_RESEARCH_2026.md) — 2026 market research and competitive analysis
 - [`CLAUDE.md`](CLAUDE.md) — AI coding assistant instructions
