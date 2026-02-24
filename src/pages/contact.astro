@@ -1,0 +1,207 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="Get Your Free Visibility Snapshot — Jodie Plant Marketing"
+  description="Get a personalised visibility snapshot — free, no strings. Search visibility analysis, AI citation check, competitor gaps, and prioritised next actions."
+>
+  <!-- HERO -->
+  <section class="bg-navy text-white py-16 sm:py-20">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h1 class="font-headline text-4xl sm:text-5xl font-extrabold leading-tight">
+          Let's Talk
+        </h1>
+        <p class="mt-4 text-lg text-white/70 leading-relaxed">
+          Whether you want a visibility snapshot, have a quick question, or are ready to get started — I'm here.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORM SECTION -->
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-5 gap-12 lg:gap-16">
+        <!-- Form -->
+        <div class="lg:col-span-3">
+          <h2 class="font-headline text-2xl sm:text-3xl font-bold text-navy">Get Your Free Visibility Snapshot</h2>
+          <p class="mt-3 text-muted leading-relaxed">
+            A personalised video walkthrough (5–10 min, Loom-style) covering your search visibility, AI citation status, competitor gaps, and 3 prioritised next actions. Delivered within 48 hours. <span class="text-orange font-medium">Limited weekly slots.</span>
+          </p>
+
+          <form
+            id="contact-form"
+            action="https://formspree.io/f/placeholder"
+            method="POST"
+            class="mt-8 space-y-6"
+          >
+            <!-- Name -->
+            <div>
+              <label for="name" class="block text-sm font-medium text-navy mb-1">Name <span class="text-orange">*</span></label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange/50 focus:border-orange outline-none transition-colors text-text"
+                placeholder="Your name"
+              />
+            </div>
+
+            <!-- Company -->
+            <div>
+              <label for="company" class="block text-sm font-medium text-navy mb-1">Company Name <span class="text-orange">*</span></label>
+              <input
+                type="text"
+                id="company"
+                name="company"
+                required
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange/50 focus:border-orange outline-none transition-colors text-text"
+                placeholder="Your company"
+              />
+            </div>
+
+            <!-- Company URL -->
+            <div>
+              <label for="url" class="block text-sm font-medium text-navy mb-1">Company URL <span class="text-orange">*</span></label>
+              <input
+                type="url"
+                id="url"
+                name="url"
+                required
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange/50 focus:border-orange outline-none transition-colors text-text"
+                placeholder="https://yourcompany.com"
+              />
+            </div>
+
+            <!-- Challenge -->
+            <div>
+              <label for="challenge" class="block text-sm font-medium text-navy mb-1">Biggest Marketing Challenge <span class="text-orange">*</span></label>
+              <textarea
+                id="challenge"
+                name="challenge"
+                required
+                rows="3"
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange/50 focus:border-orange outline-none transition-colors text-text resize-y"
+                placeholder="What's the #1 thing you'd like to fix or improve?"
+              ></textarea>
+            </div>
+
+            <!-- Budget (optional, LAST) -->
+            <div>
+              <label for="budget" class="block text-sm font-medium text-navy mb-1">Budget Range <span class="text-muted font-normal">(optional)</span></label>
+              <select
+                id="budget"
+                name="budget"
+                class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange/50 focus:border-orange outline-none transition-colors text-text bg-white"
+              >
+                <option value="">Prefer not to say</option>
+                <option value="<2k">Less than $2,000/mo</option>
+                <option value="2-5k">$2,000–$5,000/mo</option>
+                <option value="5-10k">$5,000–$10,000/mo</option>
+                <option value="10k+">$10,000+/mo</option>
+              </select>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full sm:w-auto inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]"
+            >
+              Send My Request
+            </button>
+          </form>
+
+          <!-- Success Message (hidden by default) -->
+          <div id="form-success" class="hidden mt-8 bg-green-50 border border-green-200 rounded-xl p-6">
+            <h3 class="font-headline text-xl font-bold text-green-800">Thanks! I'll send your Visibility Snapshot within 48 hours.</h3>
+            <p class="mt-2 text-green-700 text-sm">
+              Want to talk it through? <a href="#" class="underline font-medium">Book a 15-minute intro call</a> (coming soon).
+            </p>
+          </div>
+
+          <!-- Error Message (hidden by default) -->
+          <div id="form-error" class="hidden mt-8 bg-red-50 border border-red-200 rounded-xl p-6">
+            <p class="text-red-700 text-sm">Something went wrong. Please try again or email me directly at <a href="mailto:jodie@jodieplant.com" class="underline">jodie@jodieplant.com</a>.</p>
+          </div>
+        </div>
+
+        <!-- Sidebar -->
+        <div class="lg:col-span-2 space-y-8">
+          <!-- Other ways to reach me -->
+          <div>
+            <h3 class="font-headline text-xl font-bold text-navy">Other Ways to Reach Me</h3>
+            <div class="mt-4 space-y-3">
+              <a href="mailto:jodie@jodieplant.com" class="flex items-center gap-3 text-text hover:text-orange transition-colors min-h-[44px]">
+                <svg class="w-5 h-5 text-orange flex-shrink-0" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75" /></svg>
+                jodie@jodieplant.com
+              </a>
+              <a href="https://linkedin.com/in/jodieplant" target="_blank" rel="noopener noreferrer" class="flex items-center gap-3 text-text hover:text-orange transition-colors min-h-[44px]">
+                <svg class="w-5 h-5 text-orange flex-shrink-0" fill="currentColor" viewBox="0 0 24 24"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                LinkedIn
+              </a>
+            </div>
+          </div>
+
+          <!-- What to Expect -->
+          <div class="bg-light rounded-xl p-6 border border-gray-100">
+            <h3 class="font-headline text-lg font-bold text-navy">What to Expect</h3>
+            <ul class="mt-4 space-y-3 text-sm text-muted">
+              <li class="flex gap-2">
+                <span class="text-orange">✓</span>
+                Your free snapshot is a video walkthrough (5–10 min), delivered within 48 hours
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange">✓</span>
+                I respond to every enquiry within 24 hours
+              </li>
+              <li class="flex gap-2">
+                <span class="text-orange">✓</span>
+                No pressure, no hard sell
+              </li>
+            </ul>
+          </div>
+
+          <!-- Availability -->
+          <div class="bg-navy/5 rounded-xl p-6 border border-navy/10">
+            <h3 class="font-headline text-lg font-bold text-navy">Availability</h3>
+            <p class="mt-3 text-sm text-muted">
+              <span class="text-orange font-medium">Limited roster model</span> — I work with 5–7 companies at a time to ensure senior-level attention on every account.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
+
+<script>
+  const form = document.getElementById('contact-form') as HTMLFormElement;
+  const successMsg = document.getElementById('form-success');
+  const errorMsg = document.getElementById('form-error');
+
+  form?.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    successMsg?.classList.add('hidden');
+    errorMsg?.classList.add('hidden');
+
+    try {
+      const response = await fetch(form.action, {
+        method: 'POST',
+        body: new FormData(form),
+        headers: { 'Accept': 'application/json' },
+      });
+
+      if (response.ok) {
+        form.reset();
+        form.classList.add('hidden');
+        successMsg?.classList.remove('hidden');
+      } else {
+        errorMsg?.classList.remove('hidden');
+      }
+    } catch {
+      errorMsg?.classList.remove('hidden');
+    }
+  });
+</script>
