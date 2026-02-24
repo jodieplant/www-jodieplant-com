@@ -39,13 +39,13 @@
     {
       "id": "FEAT-003",
       "title": "Build Homepage with condensed high-impact sections",
-      "description": "Build src/pages/index.astro as the homepage per brief Section 9 (v2.0). Condensed to 5 high-impact sections (down from 7). Startup founders are time-poor — every section must earn the next scroll.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline in Cabinet Grotesk 800, large scale (e.g., 'Marketing that moves the needle for tech companies')\n- Subhead: 1-2 sentences — AI-forward, senior-level, full-service value prop\n- Primary CTA: 'Get Your Free Marketing Audit' (orange button → /contact)\n- Secondary CTA: 'See How I Work' (text link → /results)\n- Availability signal: small text 'Currently taking on 2 new clients for Q2 2026'\n- Visual: clean typographic hero, subtle geometric pattern or gradient. No stock photos\n\n2. SOCIAL PROOF BAR (immediately after hero — most important trust signal):\n- 3-4 credential stats in Space Grotesk at large scale with orange accent on key numbers\n- Stats MUST be real: years experience, campaigns delivered, ad spend managed, etc.\n- If client logos available: 'Trusted by' logo bar\n- If testimonial available: one pull quote\n- Light background. This section appears before any other content because trust comes first for services businesses\n\n3. HOW I'M DIFFERENT (combines old Problem + Jodie Difference):\n- Opening line: 'Tired of agencies that hand you off to juniors?'\n- Three bold differentiator cards: AI-Powered, Senior-Level Always, Full-Service\n- Each card: orange icon/accent + title + 1-2 sentence explanation\n- CTA: 'See what I'd do for your startup →' linking to /contact\n\n4. SERVICES OVERVIEW:\n- Intro line: 'Full-service marketing. Every channel. One partner.'\n- 8 service cards in responsive grid (2×4 desktop, stacked mobile)\n- The 8 services: SEO & GEO, AI Implementation & Workflow Consulting, Content Marketing, Paid Advertising (Beyond Google & Meta), Social Media & Short-Form Video, Local Visibility & Reputation, Email Marketing & Owned Audience, Analytics & Reporting\n- Each card: icon + service name + one-line benefit from Section 5\n- Each links to /services (with anchor to relevant section)\n\n5. FINAL CTA (dark navy background):\n- Headline: 'Ready to see what AI-powered marketing can do for your startup?'\n- Orange CTA button: 'Get Your Free Marketing Audit' → /contact\n- Supporting text: 'Or email me directly: jodie@jodieplant.com'\n- Availability: 'Currently accepting new clients for Q2 2026'\n\nTone: Bold, confident, direct. Use Cabinet Grotesk for all section headlines.",
+      "description": "Build src/pages/index.astro as the homepage per brief Section 9 (v2.0). Condensed to 5 high-impact sections (down from 7). Startup founders are time-poor — every section must earn the next scroll.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline in Cabinet Grotesk 800, large scale (e.g., 'Marketing that moves the needle for tech companies')\n- Subhead: 1-2 sentences — AI-forward, senior-level, full-service value prop\n- Primary CTA: 'Get Your Free Marketing Audit' (orange button → /contact)\n- Secondary CTA: 'See How I Work' (text link → /results)\n- Availability signal: small text 'Currently taking on 2 new clients for Q2 2026'\n- Visual: clean typographic hero, subtle geometric pattern or gradient. No stock photos\n\n2. SOCIAL PROOF BAR (immediately after hero — most important trust signal):\n- 3-4 credential stats in Space Grotesk at large scale with orange accent on key numbers\n- Stats MUST be real: years experience, campaigns delivered, ad spend managed, etc.\n- If client logos available: 'Trusted by' logo bar\n- If testimonial available: one pull quote\n- Light background. This section appears before any other content because trust comes first for services businesses\n\n3. HOW I'M DIFFERENT (combines old Problem + Jodie Difference):\n- Opening line: 'Tired of agencies that hand you off to juniors?'\n- Three bold differentiator cards: AI-Powered, Senior-Level Always, Full-Service\n- Each card: orange icon/accent + title + 1-2 sentence explanation\n- CTA: 'See what I'd do for your startup →' linking to /contact\n\n4. SERVICES OVERVIEW:\n- Intro line: 'Full-service marketing. Every channel. One partner.'\n- 5 hero service cards in responsive grid (3+2 or 2+3 desktop, stacked mobile)\n- The 5 hero services (ordered by differentiation):\n  1. Search & AI Visibility — 'Get found by people — and AI — already searching for what you sell.'\n  2. AI Marketing Systems — 'Build the AI workflows that make your marketing faster and smarter.'\n  3. Content for AI & Search — 'Content that ranks, gets cited by AI, and converts.'\n  4. Paid Advertising (Beyond Google & Meta) — 'Turn ad spend into pipeline — on the platforms where your budget works.'\n  5. Fractional Marketing Leadership — 'CMO-level strategy and execution, without the CMO salary.'\n- Each card: icon + service name + one-line benefit\n- Each links to /services (relevant section anchor)\n- Below grid: 'See all services →' text link to /services\n- Reduced from 8 to 5 to sharpen homepage positioning. Full menu lives on /services.\n\n5. FINAL CTA (dark navy background):\n- Headline: 'Ready to see what AI-powered marketing can do for your startup?'\n- Orange CTA button: 'Get Your Free Marketing Audit' → /contact\n- Supporting text: 'Or email me directly: jodie@jodieplant.com'\n- Availability: 'Currently accepting new clients for Q2 2026'\n\nTone: Bold, confident, direct. Use Cabinet Grotesk for all section headlines.",
       "acceptanceCriteria": [
         "Homepage has exactly 5 sections: Hero, Social Proof Bar, How I'm Different, Services Overview, Final CTA",
         "Hero has dark navy background with bold Cabinet Grotesk headline and orange CTA",
         "Social proof bar appears immediately after hero with real credential stats (not placeholder)",
         "How I'm Different section has 3 differentiator cards with orange accents",
-        "Services overview shows 8 cards in responsive grid (2×4 desktop) linking to /services",
+        "Services overview shows 5 hero cards in responsive grid linking to /services, plus 'See all services' link",
         "Final CTA uses dark navy background with orange button",
         "Availability signal appears in hero and final CTA sections",
         "All internal links work (/services, /results, /contact)",
@@ -81,12 +81,12 @@
     {
       "id": "FEAT-005",
       "title": "Build Services page with AI-led structure and engagement models",
-      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'AI-Powered Marketing for Tech Companies'. Subhead about AI-enhanced workflows giving agency output from a senior practitioner.\n\n2. THE AI-ENHANCED METHOD (before individual services): Brief explanation of how AI changes marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 8 services, each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) SEO & GEO, (2) AI Implementation Consulting, (3) Content Marketing, (4) Paid Advertising (Beyond Google & Meta), (5) Social Media & Short-Form Video, (6) Local Visibility & Reputation, (7) Email Marketing & Owned Audience, (8) Analytics & Reporting.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. PACKAGES & PRICING: Three tiered retainer packages (Foundation $1,500-$2,500 / Growth $2,500-$4,500 / Authority $4,500-$7,500) as pricing cards with orange accent on recommended tier (Growth). Plus one-time projects. Each card shows what's included, who it's for, price range, CTA to /contact. What a typical month looks like at each tier. Reporting cadence.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free Marketing Audit' → /contact + jodie@jodieplant.com.",
+      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'AI-Powered Marketing for Tech Companies'. Subhead about AI-enhanced workflows giving agency output from a senior practitioner.\n\n2. THE AI-ENHANCED METHOD (before individual services): Brief explanation of how AI changes marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 9 services (Analytics/Performance Intelligence presented as 'included infrastructure'), each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) Search & AI Visibility (SEO + GEO), (2) AI Marketing Systems, (3) Content Marketing, (4) Paid Advertising (Beyond Google & Meta), (5) Fractional Marketing Leadership, (6) Social Media & Short-Form Video, (7) Conversion Rate Optimization, (8) Local Visibility & Reputation, (9) Email Marketing & Owned Audience.\n\nPerformance Intelligence (analytics & reporting) is not a standalone service block — it's featured in a 'What's always included' section after the service blocks.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. PACKAGES & PRICING: Three tiered retainer packages (Foundation $1,500-$2,500 / Growth $2,500-$4,500 / Authority $4,500-$7,500) as pricing cards with orange accent on recommended tier (Growth). Plus one-time projects. Each card shows what's included, who it's for, price range, CTA to /contact. What a typical month looks like at each tier. Reporting cadence. Authority tier should explicitly include 'Fractional marketing leadership' language. Add a 'Strategy Sprint' one-time project ($3,000-$7,000) for funded startups preparing launches, market entries, or pivots — this fills the gap between free audit and committed retainer.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free Marketing Audit' → /contact + jodie@jodieplant.com.",
       "acceptanceCriteria": [
         "Services page has Hero, AI Method section, 8 Service Blocks, Pricing, and CTA",
         "AI-Enhanced Method section appears BEFORE individual services",
-        "Each service block leads with 'The AI difference' specific to that service",
-        "Services ordered by differentiation strength (SEO & GEO first, Analytics last)",
+        "Services use client-facing names (Search & AI Visibility, AI Marketing Systems, Performance Intelligence) with technical terms (SEO, GEO) in subtext",
+        "Services ordered by differentiation strength (Search & AI Visibility first); Performance Intelligence presented as included infrastructure, not standalone",
         "Pricing section shows Foundation/Growth/Authority tiers with price ranges and one-time projects",
         "All service blocks are scannable with alternating visual layout",
         "Orange accents used for service icons and highlights",
@@ -97,7 +97,7 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CRITICAL: This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate."
+      "groomingNotes": "CRITICAL: This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate. Service names use client-facing language (Search & AI Visibility, not SEO & GEO) with technical terms in subtext. Fractional Marketing Leadership and CRO are new additions. Analytics folded into 'always included' to avoid looking like table stakes."
     },
     {
       "id": "FEAT-006",
@@ -316,7 +316,7 @@
     {
       "id": "FEAT-017",
       "title": "Add individual service sub-pages",
-      "description": "Create 8 individual service pages per brief Appendix C (v2.0): /services/seo-geo, /services/ai-consulting, /services/content-marketing, /services/paid-ads, /services/social-media, /services/local-visibility, /services/email-marketing, /services/analytics. Each: hero, AI-enhanced approach for this service, deliverables, FAQ (3-5 questions), CTA. Targets long-tail search queries.",
+      "description": "Create 8 individual service pages per brief Appendix C (v2.0): /services/search-ai-visibility, /services/ai-marketing-systems, /services/content-marketing, /services/paid-ads, /services/social-media, /services/local-visibility, /services/email-marketing, /services/conversion-optimization, /services/performance-intelligence. Each: hero, AI-enhanced approach for this service, deliverables, FAQ (3-5 questions), CTA. Targets long-tail search queries.",
       "acceptanceCriteria": [
         "8 service sub-pages exist under /services/",
         "Each leads with the AI-enhanced approach specific to that service",
@@ -457,7 +457,7 @@
     {
       "id": "FEAT-026",
       "title": "Create GEO-optimized 'best answer' content pages",
-      "description": "Create 3-5 'best answer' content pages designed to win in AI answer engines and human search. These pages directly and completely answer high-intent buyer questions.\n\nRef: MARKET_RESEARCH_2026.md 'Content Designed for AI Answers', WEBSITE_BRIEF.md Appendix A 'Best Answer Content Pages'.\n\nPriority pages:\n1. 'How much does startup marketing cost?' — pricing transparency, budget tiers from research, what to expect at each level. Demystifies costs, builds trust.\n2. 'Marketing agency vs freelancer vs in-house' — comparison table using Section 6 data. Honest pros/cons of each.\n3. 'What does a marketing retainer actually include?' — concrete deliverables, typical month walkthrough.\n4. 'How to get leads without expensive Google and Meta Ads' — alternative channels from research (partnerships, newsletters, community, LinkedIn organic).\n5. 'What is GEO and why does it matter for your business?' — thought leadership, demonstrates expertise.\n\nFormat for each page:\n- Clear question as H1 headline\n- Direct, concise answer in the first paragraph (AI-extractable)\n- Supporting detail, examples, and evidence\n- Structured data (FAQPage schema where applicable)\n- CTA: 'Want help with this? Get your free marketing audit'\n- Author attribution (Jodie Plant) for E-E-A-T signals\n\nThese can be blog posts (if blog infrastructure exists via FEAT-013) or standalone pages under a /guides or /resources path.",
+      "description": "Create 3-5 'best answer' content pages designed to win in AI answer engines and human search. These pages directly and completely answer high-intent buyer questions.\n\nRef: MARKET_RESEARCH_2026.md 'Content Designed for AI Answers', WEBSITE_BRIEF.md Appendix A 'Best Answer Content Pages'.\n\nPriority pages:\n1. 'How much does startup marketing cost?' — pricing transparency, budget tiers from research, what to expect at each level. Demystifies costs, builds trust.\n2. 'Marketing agency vs freelancer vs in-house' — comparison table using Section 6 data. Honest pros/cons of each.\n3. 'What does a marketing retainer actually include?' — concrete deliverables, typical month walkthrough.\n4. 'How to get leads without expensive Google and Meta Ads' — alternative channels from research (partnerships, newsletters, community, LinkedIn organic).\n5. 'What is GEO and why does it matter for your business?' — thought leadership, demonstrates expertise.\n6. 'Fractional CMO vs Marketing Agency vs Freelancer vs In-House' — comparison using Section 6 data plus fractional CMO pricing (see FEAT-039 for full spec).\n\nFormat for each page:\n- Clear question as H1 headline\n- Direct, concise answer in the first paragraph (AI-extractable)\n- Supporting detail, examples, and evidence\n- Structured data (FAQPage schema where applicable)\n- CTA: 'Want help with this? Get your free marketing audit'\n- Author attribution (Jodie Plant) for E-E-A-T signals\n\nThese can be blog posts (if blog infrastructure exists via FEAT-013) or standalone pages under a /guides or /resources path.",
       "acceptanceCriteria": [
         "At least 3 'best answer' pages published with substantive content (800+ words each)",
         "Each page has a clear question as headline and direct answer in opening paragraph",
@@ -538,11 +538,11 @@
         "Clear differentiation from the free marketing audit",
         "npm run build succeeds"
       ],
-      "priority": "should",
+      "priority": "must",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Productized offering that's genuinely differentiated in 2026. Most agencies can't offer this. Creates a paid entry point below retainer commitment. The audit process itself demonstrates GEO expertise."
+      "groomingNotes": "ELEVATED TO MUST: Productized offering that's genuinely differentiated in 2026. Most agencies can't offer this. Creates a paid entry point below retainer commitment. The audit process itself demonstrates GEO expertise. Ship alongside or immediately after MVP."
     },
     {
       "id": "FEAT-033",
@@ -572,10 +572,79 @@
         "NAP consistency verified across all listings",
         "At least 1 review or testimonial collected"
       ],
-      "priority": "should",
+      "priority": "must",
       "readyForSprint": true,
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Off-site authority is the biggest lever for AI citation. No dependencies on website code. Can start immediately in parallel with website development. This is the 'practice what you preach' item for GEO."
+      "groomingNotes": "ELEVATED TO MUST: Off-site authority is the #1 lever for AI citation, confirmed by 2026 market research. No dependencies on website code. Start immediately in parallel with website development. This is the 'practice what you preach' item for GEO. Jodie should be actively contributing on Reddit (r/marketing, r/startups), LinkedIn, and at least one directory within 30 days of launch."
+    },
+    {
+      "id": "FEAT-036",
+      "title": "Add Fractional Marketing Leadership as a service and positioning element",
+      "description": "Add 'Fractional Marketing Leadership' language throughout the site to capture the fractional CMO buyer segment.\n\nThis is NOT a new service — it's a reframing of what the Authority tier already delivers. But the term 'fractional CMO' is a recognized buying category that founders actively search for.\n\nImplementation:\n- Add as the 5th hero service card on the homepage\n- Add as a service block on /services (positioned after Paid Advertising)\n- Add to About page positioning statement\n- Add to Authority tier package description: 'Fractional marketing leadership — strategy, execution, and reporting at the CMO level'\n- Add fractional CMO keywords to SEO meta tags and page content\n- Authority tier pricing card can be labeled 'Fractional CMO' or 'Fractional Marketing Leadership'\n\nKey messaging:\n- 'Think of me as your fractional CMO — senior marketing leadership without the $300K salary'\n- 'Strategy AND execution. Not a consultant who leaves you with a PDF'\n- 'Embedded in your team, not an outside vendor'\n\nDo NOT:\n- Create a separate pricing tier — this IS the Authority tier, just named differently\n- Overclaim — fractional CMO implies strategic leadership, not just task execution\n- Use 'fractional CMO' on the Foundation or Growth tiers — those are execution-focused, not leadership-focused",
+      "acceptanceCriteria": [
+        "Fractional Marketing Leadership appears as a homepage hero service card",
+        "Fractional Marketing Leadership has a service block on /services",
+        "Authority tier description includes 'fractional marketing leadership' language",
+        "About page positioning statement references fractional CMO model",
+        "SEO meta tags include fractional CMO keywords on relevant pages",
+        "npm run build succeeds"
+      ],
+      "priority": "must",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE, LOW EFFORT: The single highest-impact positioning change identified in the marketing review. Jodie already delivers this service — the brief just doesn't name it. Adding the language opens the fractional CMO buyer category without restructuring anything."
+    },
+    {
+      "id": "FEAT-037",
+      "title": "Add Conversion Rate Optimization (CRO) to services and Growth/Authority tiers",
+      "description": "Add CRO as a service block on /services and as an explicit deliverable in Growth and Authority retainer tiers.\n\nCRO is a high-ROI service that's notably absent from the current brief. For tech companies spending on traffic (paid or organic), optimizing conversion rates is often the highest-leverage activity.\n\nService block content:\n- The AI difference: AI-powered A/B test prioritization, heatmap analysis, conversion funnel optimization\n- Deliverables: Conversion audit, A/B testing, landing page optimization, form/CTA optimization, funnel analysis, monthly reporting\n- Client benefit: 'A 20% improvement in conversion rate equals a 20% increase in your marketing budget — without spending another dollar on ads.'\n\nPackage integration:\n- Growth tier: Add 'landing page optimization and basic conversion tracking'\n- Authority tier: Add 'full CRO program including A/B testing and funnel optimization'\n- One-time: 'Conversion & Tracking Setup' already exists ($1,000-$3,000) — expand description to include CRO audit",
+      "acceptanceCriteria": [
+        "CRO service block exists on /services page with AI difference, deliverables, and client benefit",
+        "Growth tier explicitly mentions conversion optimization",
+        "Authority tier explicitly mentions CRO program",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: CRO pairs naturally with paid advertising and SEO. Adding it as a deliverable in Growth/Authority tiers increases perceived value of those packages. Service block on /services provides a long-tail SEO target."
+    },
+    {
+      "id": "FEAT-038",
+      "title": "Add Go-To-Market (GTM) Strategy Sprint as a productized one-time offering",
+      "description": "Add a 'GTM Strategy Sprint' as a one-time project option ($3,000-$7,000) on /services and /contact pages.\n\nFor funded startups preparing a product launch, market entry, or pivot. This captures founders who have an imminent need but aren't ready for a monthly retainer.\n\nDeliverables:\n- Market positioning and competitive analysis\n- Channel strategy and prioritization\n- Messaging framework and value proposition\n- 90-day marketing execution roadmap\n- Budget allocation recommendations\n- Recommended tech stack\n\nPositioning:\n- Entry point for startups that just raised a round\n- Natural upsell path into ongoing retainer work\n- Demonstrates strategic depth before monthly commitment\n\nImplementation:\n- Add to one-time projects table on /services pricing section\n- Add as option on /contact page: 'Planning a launch? Ask about our GTM Strategy Sprint'\n- Can be paired with the free marketing audit as a deeper engagement",
+      "acceptanceCriteria": [
+        "GTM Strategy Sprint listed in one-time projects on /services with price range",
+        "Deliverables clearly described",
+        "Mentioned or linked from /contact page",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005", "FEAT-007"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Fills a gap between free audit and monthly retainer. GTM is a recognized buying category for funded startups. $3K-$7K is an accessible entry point that demonstrates value before committing to $2.5K-$7.5K/month."
+    },
+    {
+      "id": "FEAT-039",
+      "title": "Create 'Fractional CMO vs Agency vs In-House' best-answer content page",
+      "description": "Create a GEO-optimized best-answer page: 'Fractional CMO vs Marketing Agency vs In-House: Which Is Right for Your Startup?'\n\nThis is one of the highest-intent comparison queries in the marketing services space. It naturally positions Jodie's service model as the answer.\n\nContent should cover:\n- What each model actually looks like (fractional CMO, agency, freelancer, in-house hire)\n- Honest comparison table: cost, quality, speed, accountability, strategic depth\n- When each model is the right fit (stage, budget, needs)\n- The hidden costs of each model (agency overhead, hiring time, management burden)\n- Real pricing data from the market ($5K-$15K/month fractional vs $200K-$400K full-time vs $6K-$60K agency retainer)\n- Use competitive comparison data from brief Section 6\n\nFormat: Clear comparison headline, direct answer in first paragraph, detailed comparison table, pricing breakdown, FAQ section with structured data, CTA to free audit.\n\nThis page serves dual purpose:\n1. GEO target — AI systems frequently answer 'should I hire a fractional CMO?' queries\n2. Sales enablement — sends this page to prospects evaluating their options",
+      "acceptanceCriteria": [
+        "Page published with 1000+ words of substantive comparison content",
+        "Includes honest comparison table across all models",
+        "Includes real pricing data for each model",
+        "Has clear question headline and direct answer in opening paragraph",
+        "FAQPage structured data",
+        "CTA to /contact for free audit",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Fractional CMO comparison queries are high-intent and growing. This page positions Jodie in the conversation and uses real market pricing data (from the review) to build credibility. Natural fit alongside the other best-answer pages in FEAT-026."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."

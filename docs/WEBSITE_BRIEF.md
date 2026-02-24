@@ -93,7 +93,7 @@ A marketing website for Jodie Plant Marketing — a solo, AI/tech-forward digita
 ### Brand Positioning Statement
 
 **For** startup founders, CTOs, and heads of marketing at tech companies who need marketing that actually moves the needle,
-**Jodie Plant Marketing is** an AI/tech-forward digital marketing partner
+**Jodie Plant Marketing is** a fractional marketing leader and AI-forward digital marketing partner
 **that** delivers full-service marketing with senior-level attention on every account,
 **unlike** big agencies that hand you off to juniors, freelancers who only do one thing, or DIY tools that lack strategy,
 **Jodie** combines deep marketing expertise with modern AI tools to deliver faster, smarter, and more measurable results.
@@ -113,6 +113,7 @@ Replace the anxiety of "is our marketing even working?" with confidence and clar
 - Direct access to the person doing the work — always
 - Data-driven decisions, not gut feelings
 - Startup-native — understands the constraints and pace
+- Fractional marketing leadership — CMO-level strategy and execution without the $300K salary
 
 ### Scarcity & Urgency Positioning
 
@@ -121,6 +122,7 @@ Solo practitioners have a natural capacity constraint — this is a feature, not
 - **Capacity signal**: "Currently taking on 2 new clients this quarter" (update quarterly)
 - **Availability signal**: "Next available: [Month Year]" (update as needed)
 - **Quality signal**: "I limit my client roster to give each company my full attention"
+- **Leadership signal**: "Fractional CMO for companies that need senior marketing leadership without the full-time hire"
 
 This isn't manufactured urgency — it's the honest reality of a one-person operation. Prospects who delay may genuinely miss out.
 
@@ -161,6 +163,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 - "An extension of your team, not another vendor"
 - "Senior marketing execution, on demand"
 - "I speak your language — literally"
+- "Fractional marketing leadership that integrates with your team"
 
 ### Secondary: CTOs / Technical Co-founders
 
@@ -197,6 +200,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 | Startup-native | Understands constraints and pace | "Built for companies that move fast and break things" |
 | Data-driven | Transparent, measurable results | "Every dollar tracked. Every result measured." |
 | No bloat | No account managers, no overhead | "You're not paying for a fancy office and a sales team" |
+| **Fractional leadership** | **CMO-level strategy at a fraction of the cost** | **"Think of me as your fractional CMO — strategy AND execution, without the $300K salary"** |
 
 ### The "Why Jodie" Argument
 
@@ -239,7 +243,11 @@ Before listing individual services, establish the overarching method:
 
 > "Every service I deliver is powered by an AI-enhanced workflow. This isn't about replacing strategy with automation — it's about using modern tools to research deeper, create faster, optimise smarter, and report clearer than a traditional agency can."
 
-### SEO & GEO (Search + AI Engine Optimization)
+### Search & AI Visibility (SEO + GEO)
+
+> Service is presented to clients as "Search & AI Visibility" — a name that describes the outcome.
+> "SEO" and "GEO" mean nothing to a technical founder. "Search & AI Visibility" communicates what they're buying.
+> The technical terms (SEO, GEO, AEO) appear in subtext for those who know them, and remain the SEO keyword targets.
 
 **The AI difference**: AI-powered competitor analysis, content gap identification at scale, automated technical audit workflows, and GEO optimization for AI answer engines (see `MARKET_RESEARCH_2026.md`).
 
@@ -316,7 +324,7 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Build an audience you own, nurture them into customers — without being annoying about it."
 
-### Analytics & Reporting
+### Performance Intelligence
 
 **The AI difference**: AI-generated insight summaries, anomaly detection, and natural-language reporting that explains what the data means — not just what it says.
 
@@ -327,9 +335,9 @@ Before listing individual services, establish the overarching method:
 - Attribution modeling
 - Actionable recommendations
 
-**For the client**: "Finally know what's working and what's burning money."
+**For the client**: "AI-enhanced insights that tell you what's working, what's burning money, and what to do next."
 
-### AI Implementation & Workflow Consulting
+### AI Marketing Systems
 
 > 54% of SMBs already use AI marketing tools, but most don't know how to use them strategically. The gap is guidance, not tools. See `MARKET_RESEARCH_2026.md` Part 1.
 
@@ -342,7 +350,7 @@ Before listing individual services, establish the overarching method:
 - Build SOPs for AI-assisted marketing workflows
 - Ongoing advisory on new tools and techniques
 
-**For the client**: "Do more with less. We'll show you exactly how AI fits into your marketing — no hype, just practical efficiency gains."
+**For the client**: "We'll build your AI marketing systems — SOPs, tools, and workflows that make your team faster. No hype, just practical efficiency gains."
 
 ### Local Visibility & Reputation (SMB Services)
 
@@ -357,6 +365,20 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Turn your Google profile into your best sales rep — calls, directions, bookings on autopilot."
 
+### Conversion Rate Optimization (CRO)
+
+**The AI difference**: AI-powered A/B test prioritization, heatmap analysis, and conversion funnel optimization that identifies the highest-leverage changes to test.
+
+**What you get**:
+- Conversion audit of website, landing pages, and key funnels
+- A/B testing strategy and implementation
+- Landing page optimization
+- Form and CTA optimization
+- Funnel drop-off analysis and remediation
+- Monthly conversion rate reporting
+
+**For the client**: "A 20% improvement in conversion rate is the same as a 20% increase in your marketing budget — without spending another dollar on ads."
+
 ### Service Packaging (Market-Aligned)
 
 > Based on 2026 market research (see `MARKET_RESEARCH_2026.md`): buyers want measurable leads, less platform dependence, and credibility in both AI and human discovery. Present services as tiered packages — simple, clear, easy to choose.
@@ -367,7 +389,7 @@ Before listing individual services, establish the overarching method:
 |---------|-------------|-----------------|----------|
 | **Foundation** | $1,500–$2,500 | Social media (2 platforms, including short-form video), content creation (8–12 posts), basic email marketing (2–4 campaigns), local visibility setup, monthly reporting | Local businesses, early-stage startups |
 | **Growth** | $2,500–$4,500 | Foundation + GEO/SEO strategy, "best answer" content pages, one paid ad channel, AI visibility monitoring, partnership channel activation | Growing SMBs, funded startups |
-| **Authority** | $4,500–$7,500 | Growth + full GEO + SEO, multi-channel paid media, email automation & nurture sequences, AI workflow consulting, schema markup & technical optimization | Established SMBs ready to dominate their niche |
+| **Authority** | $4,500–$7,500 | Growth + full Search & AI Visibility (SEO + GEO), multi-channel paid media, email automation & nurture sequences, AI marketing systems consulting, conversion rate optimization, schema markup & technical optimization. **Fractional marketing leadership** — strategy, execution, and reporting at the CMO level. | Established SMBs ready to dominate their niche |
 
 #### One-Time Projects
 
@@ -378,6 +400,9 @@ Before listing individual services, establish the overarching method:
 | Marketing Strategy & Roadmap | $1,500–$3,000 |
 | Email Automation Setup | $1,000–$2,500 |
 | Website Content Overhaul for GEO | $2,000–$5,000 |
+| Go-To-Market (GTM) Strategy Sprint | $3,000–$7,000 |
+
+> **GTM Strategy Sprint**: For funded startups preparing a product launch, market entry, or pivot. Includes positioning, channel strategy, messaging framework, and a 90-day execution roadmap. A natural entry point into ongoing retainer work.
 
 #### Budget Alignment
 
@@ -402,6 +427,7 @@ Before listing individual services, establish the overarching method:
 | **Other freelancers** | Day rate / retainer | Usually single-channel specialists, inconsistent availability, no AI edge |
 | **In-house hire** | $50-100k salary + benefits | Expensive, single skill set, recruitment time, management overhead |
 | **DIY tools** | $100-500/month in SaaS | Tools without strategy, time-consuming, learning curve, no expertise |
+| **Fractional CMOs** | $5k-15k/month | Strategy-only, don't always execute; expensive; often generic playbooks applied to your company |
 
 ### How Jodie Plant Compares
 
@@ -414,6 +440,7 @@ Before listing individual services, establish the overarching method:
 | **Cost** | Mid-range | Premium | Low-mid | High (loaded) |
 | **Speed** | Fast (AI-assisted) | Slow (process) | Variable | Depends |
 | **Accountability** | Name on the door | Account manager buffer | Variable | Direct |
+| **Fractional CMO** | Yes — strategy + execution | No | No | N/A (they ARE the in-house) |
 
 ### Key Differentiators to Emphasize
 
@@ -522,14 +549,15 @@ jodieplant.com/
 ├── /              (Homepage)
 ├── /about         (About Jodie)
 ├── /services      (Services overview + pricing)
-│   ├── /seo-geo
-│   ├── /ai-consulting
+│   ├── /search-ai-visibility    (was /seo-geo)
+│   ├── /ai-marketing-systems    (was /ai-consulting)
 │   ├── /content-marketing
 │   ├── /paid-ads
 │   ├── /social-media
 │   ├── /local-visibility
 │   ├── /email-marketing
-│   └── /analytics
+│   ├── /conversion-optimization  (NEW)
+│   └── /performance-intelligence (was /analytics)
 ├── /results       (Results & methodology)
 │   └── /[case-study-slug]  (Individual case studies — when real content exists)
 ├── /blog          (Blog / insights — Phase 2 priority)
@@ -615,12 +643,21 @@ Combines the old "Problem" and "Jodie Difference" sections into one focused pitc
 
 #### 4. Services Overview
 
-- 8 service cards in a responsive grid (2×4 on desktop, stacked on mobile)
-- Each card: icon + service name + one-line benefit (the "For the client" line from Section 5)
-- The 8 services: SEO & GEO, Content Marketing, Paid Advertising, Social Media & Video, Email & Owned Audience, Analytics & Reporting, AI Implementation Consulting, Local Visibility & Reputation
-- Each card links to /services (to the relevant section anchor)
-- Clean, scannable. Not trying to explain everything here — that's what /services is for
+- 5 hero service cards in a responsive grid (desktop: 3 + 2, or 2 + 3; stacked on mobile)
+- These are the **differentiating** services — not the full menu
 - Brief intro line above the grid: "Full-service marketing. Every channel. One partner."
+- The 5 hero services (ordered by differentiation):
+  1. **Search & AI Visibility** — "Get found by people — and AI — already searching for what you sell."
+  2. **AI Marketing Systems** — "We'll build the AI workflows that make your marketing faster and smarter."
+  3. **Content for AI & Search** — "Content that ranks, gets cited by AI, and converts."
+  4. **Paid Advertising (Beyond Google & Meta)** — "Turn ad spend into pipeline — on the platforms where your budget works."
+  5. **Fractional Marketing Leadership** — "CMO-level strategy and execution, without the CMO salary."
+- Each card: icon + service name + one-line benefit
+- Each card links to /services (to the relevant section anchor)
+- Below the grid: "See all services →" text link to /services for the full menu
+- Clean, scannable. The full 9 services live on /services — the homepage sells the sharp positioning.
+
+> **Design note**: Reduced from 8 to 5 cards. Eight services on the homepage created choice overload and diluted the AI-forward positioning by making Jodie look like a generic full-service freelancer. The homepage should sell the differentiators. The full menu is one click away.
 
 #### 5. Final CTA (Dark section)
 
@@ -641,7 +678,7 @@ Combines the old "Problem" and "Jodie Difference" sections into one focused pitc
 #### 1. Hero
 
 - Headline in Cabinet Grotesk: "One marketer. Full attention. Real results."
-- Brief positioning statement
+- Brief positioning statement: "Think of me as your fractional CMO — the senior marketing leadership your startup needs, without the $300K salary. Strategy AND execution, from one person who's fully invested in your growth."
 
 #### 2. Jodie's Story
 
@@ -698,7 +735,7 @@ Before listing services, establish the overarching approach:
 
 #### 3. Service Blocks
 
-For each of the 8 services, structured as **AI difference + Deliverables + Client benefit**:
+9 services (Performance Intelligence presented as "included infrastructure"), each structured as **AI difference + Deliverables + Client benefit**:
 
 Each block:
 - Service name and icon (orange accent)
@@ -707,14 +744,18 @@ Each block:
 - Benefit-driven one-liner
 
 Services in order of differentiation strength:
-1. **SEO & GEO** — GEO positioning is the single most differentiating offering in 2026
-2. **AI Implementation & Workflow Consulting** — unique to AI-forward agencies
+1. **Search & AI Visibility (SEO + GEO)** — GEO positioning is the single most differentiating offering in 2026
+2. **AI Marketing Systems** — unique to AI-forward practitioners
 3. **Content Marketing** — "best answer" approach is differentiating
 4. **Paid Advertising (Beyond Google & Meta)** — "beyond" framing is differentiating
-5. **Social Media & Short-Form Video** — video emphasis signals current-market awareness
-6. **Local Visibility & Reputation** — high demand, clear ROI for SMBs
-7. **Email Marketing & Owned Audience** — audience ownership reduces platform dependence
-8. **Analytics & Reporting** — foundational, enables everything else
+5. **Fractional Marketing Leadership** — positions the Authority tier as CMO-level engagement
+6. **Social Media & Short-Form Video** — video emphasis signals current-market awareness
+7. **Conversion Rate Optimization** — high-ROI, data-driven, pairs with paid and SEO
+8. **Local Visibility & Reputation** — high demand, clear ROI for SMBs
+9. **Email Marketing & Owned Audience** — audience ownership reduces platform dependence
+10. **Performance Intelligence** — foundational, enables everything else (presented as included infrastructure, not a standalone sale)
+
+> **Note**: Performance Intelligence (analytics/reporting) is not presented as a standalone service card but as a feature included in all retainer packages. The /services page may show it in a "What's always included" section rather than as a separate block. This brings the visible service blocks to 9.
 
 Each block should be visually distinct and scannable. Alternating layout (left/right or card-based) to prevent monotony.
 
@@ -1220,6 +1261,8 @@ See [Appendix A](#appendix-a-seo-keyword-targets) for full keyword strategy.
 - startup marketing consultant
 - tech company marketing agency
 - AI marketing agency
+- fractional CMO for startups
+- fractional marketing leader
 
 ### Long-tail Keywords
 
@@ -1229,6 +1272,9 @@ See [Appendix A](#appendix-a-seo-keyword-targets) for full keyword strategy.
 - "AI-powered marketing agency"
 - "senior marketing consultant for startups"
 - "full-service marketing for early-stage startups"
+- "fractional CMO for tech companies"
+- "fractional CMO vs marketing agency"
+- "part-time marketing leadership for startups"
 
 ### Local Keywords (if targeting specific geography)
 
@@ -1247,6 +1293,9 @@ These target AI answer engines and "best answer" queries:
 - what is generative engine optimization
 - best marketing channels for startups 2026
 - how to show up in AI search results
+- fractional CMO vs marketing agency vs in-house
+- how much does a fractional CMO cost
+- what does a fractional CMO actually do
 
 ### Content Opportunities (Phase 2 Blog — seed posts)
 
@@ -1260,6 +1309,10 @@ Additional posts (ongoing cadence of 2-4 per month):
 - "Why your startup needs a marketing partner, not an agency"
 - "How AI is changing digital marketing in [year]"
 - "The startup marketing stack: tools that actually matter"
+- "Fractional CMO vs Marketing Agency vs In-House: What's Right for Your Startup?"
+- "How to Get Your Brand Cited by ChatGPT and Perplexity"
+- "The Real Cost of Marketing for a Series A Startup"
+- "Why Your Marketing Agency Doesn't Understand AI (And What to Do About It)"
 
 ### "Best Answer" Content Pages (GEO-Optimized)
 
@@ -1271,6 +1324,7 @@ Priority pages:
 3. "What does a marketing retainer actually include?" — demystifies the engagement, shows concrete deliverables
 4. "How to get leads without expensive Google and Meta Ads" — alternative channels, partnerships, organic strategies
 5. "What is GEO (Generative Engine Optimization) and why does it matter?" — thought leadership, demonstrates expertise
+6. "Fractional CMO vs Marketing Agency vs Freelancer: Which is right for your startup?" — comparison using Section 6 competitive data, adds the fractional CMO dimension, high-intent buyer query
 
 ---
 
@@ -1357,7 +1411,7 @@ Priority pages:
 - FAQ (3-5 common questions)
 - CTA to get in touch
 
-**Pages**: `/services/seo-geo`, `/services/ai-consulting`, `/services/content-marketing`, `/services/paid-ads`, `/services/social-media`, `/services/local-visibility`, `/services/email-marketing`, `/services/analytics`
+**Pages**: `/services/search-ai-visibility`, `/services/ai-marketing-systems`, `/services/content-marketing`, `/services/paid-ads`, `/services/social-media`, `/services/local-visibility`, `/services/email-marketing`, `/services/conversion-optimization`, `/services/performance-intelligence`
 
 ---
 
