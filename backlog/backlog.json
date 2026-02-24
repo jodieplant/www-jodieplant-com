@@ -578,11 +578,11 @@
         "Clear differentiation from the free marketing audit (paid diagnostic vs. free assessment)",
         "npm run build succeeds"
       ],
-      "priority": "should",
-      "readyForSprint": false,
+      "priority": "must",
+      "readyForSprint": true,
       "dependsOn": ["FEAT-005"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Bridge product fills the conversion ladder gap (Free Snapshot → $997 AI Visibility Audit → $1,500+ Retainer). Without this, prospects jump from free to $1,500/mo commitment. FEAT-005 done — Tech Lead should assess readyForSprint. Recommend elevating to 'must' as core conversion funnel element."
+      "groomingNotes": "PRIORITY ELEVATED TO MUST: Bridge product fills the critical conversion ladder gap (Free Snapshot → $997 AI Visibility Audit → $1,500+ Retainer). Without this, prospects jump from free to $1,500/mo commitment — a trust gap that loses deals. All dependencies met (FEAT-005 complete). Sprint-ready after FEAT-036."
     },
     {
       "id": "FEAT-033",
@@ -702,7 +702,7 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-002", "FEAT-003"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "CONVERSION-CRITICAL: Mobile users lose primary CTA on scroll — real conversion leak. All dependencies met (FEAT-002, FEAT-003, FEAT-012 complete). Low effort, high conversion impact. RECOMMEND: Tech Lead mark readyForSprint immediately."
+      "groomingNotes": "CONVERSION-CRITICAL: Mobile users lose primary CTA on scroll — real conversion leak. All dependencies met (FEAT-002, FEAT-003, FEAT-012 complete). Low effort, high conversion impact. PRIORITY for post-MUST sprint. ACTION: Tech Lead mark readyForSprint."
     },
     {
       "id": "FEAT-041",
@@ -778,8 +778,9 @@
       "priority": "future",
       "readyForSprint": false,
       "dependsOn": ["FEAT-003", "FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "ARCHIVED: Absorbed into FEAT-003 and FEAT-005 per v2.3 review. Kept for historical reference only — excluded from active sprint planning."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "ARCHIVED: Absorbed into FEAT-003 and FEAT-005 per v2.3 review. Kept for historical reference only — excluded from active sprint planning.",
+      "status": "absorbed"
     },
     {
       "id": "FEAT-046",
