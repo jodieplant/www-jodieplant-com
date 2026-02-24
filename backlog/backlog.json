@@ -15,7 +15,9 @@
       "priority": "must",
       "readyForSprint": true,
       "groomedAt": "2026-02-23",
-      "groomingNotes": "FOUNDATION: Everything depends on this. Must be first sprint. The bold color/type choices are a key differentiator — Cabinet Grotesk for headlines and orange accent are deliberate departures from generic tech aesthetic."
+      "groomingNotes": "FOUNDATION: Everything depends on this. Must be first sprint. The bold color/type choices are a key differentiator — Cabinet Grotesk for headlines and orange accent are deliberate departures from generic tech aesthetic.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-002",
@@ -34,7 +36,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-001"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "FOUNDATION: Layout, Header, and Footer are the structural shell. The orange CTA in the nav and availability signal in the footer are conversion elements that appear on every page."
+      "groomingNotes": "FOUNDATION: Layout, Header, and Footer are the structural shell. The orange CTA in the nav and availability signal in the footer are conversion elements that appear on every page.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-003",
@@ -60,7 +64,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. Includes the Visibility Engine framework diagram (absorbed from FEAT-045) and primary growth engines. Headline broadened to 'Marketing That Gets You Found' per v2.3. Hero subhead elevated to 'One senior marketer. Your entire account.' Stats must be real numbers."
+      "groomingNotes": "CONVERSION-CRITICAL. Includes the Visibility Engine framework diagram (absorbed from FEAT-045) and primary growth engines. Headline broadened to 'Marketing That Gets You Found' per v2.3. Hero subhead elevated to 'One senior marketer. Your entire account.' Stats must be real numbers.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-004",
@@ -80,7 +86,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Trust page for a solo practitioner. The AI Advantage section is unique to this agency and reinforces the core differentiator."
+      "groomingNotes": "HIGH VALUE: Trust page for a solo practitioner. The AI Advantage section is unique to this agency and reinforces the core differentiator.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-005",
@@ -101,7 +109,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate. Service names use outcome-first language (Authority Content & AI Citation, Smart-Stack Paid Media, Growth Attribution & AI Insights) with technical terms in subtext. Per brief v2.3: Hero = 'Marketing That Gets You Found' (no AI in headline); include Visibility Engine framework (no ™) in AI Method section. FEAT-045 (Visibility Engine diagram) absorbed into this page's section 2. Include minimal AI Visibility Audit mention (bridge product from FEAT-032) in section 5 for launch day — full featured section can come later."
+      "groomingNotes": "CONVERSION-CRITICAL. This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate. Service names use outcome-first language (Authority Content & AI Citation, Smart-Stack Paid Media, Growth Attribution & AI Insights) with technical terms in subtext. Per brief v2.3: Hero = 'Marketing That Gets You Found' (no AI in headline); include Visibility Engine framework (no ™) in AI Method section. FEAT-045 (Visibility Engine diagram) absorbed into this page's section 2. Include minimal AI Visibility Audit mention (bridge product from FEAT-032) in section 5 for launch day — full featured section can come later.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-006",
@@ -123,7 +133,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. Reframed from fake portfolio to honest credentials page. This is more credible and more useful for a new agency. The methodology walkthroughs answer 'what do I actually get?' which is what prospects really want to know. Outcome range anchors (synthesis review) make methodology tangible. 'Peek Under the Hood' adds visual proof of AI-enhanced workflows — blurred screenshots, sample reports, dashboard mockups. This is the most powerful differentiator for countering AI skepticism."
+      "groomingNotes": "CONVERSION-CRITICAL. Reframed from fake portfolio to honest credentials page. This is more credible and more useful for a new agency. The methodology walkthroughs answer 'what do I actually get?' which is what prospects really want to know. Outcome range anchors (synthesis review) make methodology tangible. 'Peek Under the Hood' adds visual proof of AI-enhanced workflows — blurred screenshots, sample reports, dashboard mockups. This is the most powerful differentiator for countering AI skepticism.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-007",
@@ -148,7 +160,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. Simplified to 5 clean sections per v2.3. AI Visibility Audit upsell moved to /services — contact page is a clean conversion path. Calendar booking moved to form confirmation flow to ensure prospects share context first. Includes minimal bridge product mention for launch day (FEAT-032 absorbed). Availability signal drives urgency."
+      "groomingNotes": "CONVERSION-CRITICAL. Simplified to 5 clean sections per v2.3. AI Visibility Audit upsell moved to /services — contact page is a clean conversion path. Calendar booking moved to form confirmation flow to ensure prospects share context first. Includes minimal bridge product mention for launch day (FEAT-032 absorbed). Availability signal drives urgency.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-008",
@@ -167,7 +181,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. Meta titles updated per v2.3: Homepage leads with 'One Senior Marketer. Your Entire Account.' Contact page leads with 'Get Your Free Visibility Snapshot' — both crafted for search CTR."
+      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. Meta titles updated per v2.3: Homepage leads with 'One Senior Marketer. Your Entire Account.' Contact page leads with 'Get Your Free Visibility Snapshot' — both crafted for search CTR.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-009",
@@ -185,7 +201,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-008"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Important for search indexing. Structured data helps with rich results."
+      "groomingNotes": "MEDIUM VALUE: Important for search indexing. Structured data helps with rich results.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-010",
@@ -211,7 +229,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: PostHog is the analytics foundation. Cookie consent banner is legally required and MUST ship with PostHog — not deferred. Core events cover the interactions that feed into conversion funnels (FEAT-021)."
+      "groomingNotes": "HIGH VALUE: PostHog is the analytics foundation. Cookie consent banner is legally required and MUST ship with PostHog — not deferred. Core events cover the interactions that feed into conversion funnels (FEAT-021).",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-011",
@@ -228,7 +248,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "LOW-MEDIUM VALUE: Quick win for professional polish. The 404 copy is a brand opportunity — even error pages should demonstrate personality."
+      "groomingNotes": "LOW-MEDIUM VALUE: Quick win for professional polish. The 404 copy is a brand opportunity — even error pages should demonstrate personality.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-012",
@@ -247,7 +269,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-006"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Motion adds polish and makes the site feel premium. Stat count-up animations draw attention to credibility numbers. Must respect accessibility."
+      "groomingNotes": "MEDIUM VALUE: Motion adds polish and makes the site feel premium. Stat count-up animations draw attention to credibility numbers. Must respect accessibility.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-013",
@@ -266,8 +290,8 @@
       "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Moved from Phase 3 to Phase 2 priority. Blog posts target valuable keywords, demonstrate expertise, and give the site ongoing SEO momentum. The seed posts are carefully chosen to serve each target audience. DISTRIBUTION (per external strategy review): Blog posts should be 'LinkedIn-first' — post the substance on LinkedIn first to build entity authority signals, then link back to the site. AI models prioritize high-engagement social threads for expert citations. Each post should have a LinkedIn companion post drafted as part of the content creation process."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "HIGH VALUE: Phase 2 priority. Core MVP complete — blog is the next major user-facing feature. Enables content marketing flywheel, supports entity authority (FEAT-035), and targets long-tail SEO keywords. LinkedIn-first distribution strategy. Unblocks FEAT-019 (email capture), FEAT-024 (blog analytics). RECOMMEND: Tech Lead assess readyForSprint."
     },
     {
       "id": "FEAT-014",
@@ -321,7 +345,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "ELEVATED PRIORITY: Now 'should' instead of 'could' because PostHog uses cookies. The consent banner (FEAT-010) links to this page, so it should exist before or alongside analytics go-live."
+      "groomingNotes": "ELEVATED PRIORITY: Now 'should' instead of 'could' because PostHog uses cookies. The consent banner (FEAT-010) links to this page, so it should exist before or alongside analytics go-live.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-017",
@@ -371,8 +397,8 @@
       "priority": "future",
       "readyForSprint": false,
       "dependsOn": ["FEAT-013"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Lead nurturing requires blog content first (FEAT-013). Phase 2 item, after blog is live."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "MEDIUM VALUE: Lead nurturing requires blog content first (FEAT-013). Phase 2 item, after blog is live. Priority correctly 'future' until FEAT-013 ships — then elevate to 'should'."
     },
     {
       "id": "FEAT-020",
@@ -427,7 +453,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-010"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Unblocked from FEAT-020/021 (deprioritised to 'could') — dashboard doc can reference planned events without requiring them to be implemented first. Depends only on FEAT-010 (core PostHog). Documentation ensures the setup is reproducible."
+      "groomingNotes": "HIGH VALUE: Unblocked from FEAT-020/021 (deprioritised to 'could') — dashboard doc can reference planned events without requiring them to be implemented first. Depends only on FEAT-010 (core PostHog). Documentation ensures the setup is reproducible.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-023",
@@ -515,8 +543,8 @@
       "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-009"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: FAQ structured data is a direct GEO/AEO tactic — helps both Google rich results and AI answer extraction. Reusable component makes it easy to add FAQs to any page. Low effort, compounding benefit."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "MEDIUM VALUE: FAQ structured data is a direct GEO/AEO tactic — appears in AI answers and Google rich results. All dependencies met (FEAT-005, FEAT-009 complete). Low effort, compounding SEO benefit. RECOMMEND: Tech Lead mark readyForSprint."
     },
     {
       "id": "FEAT-031",
@@ -553,8 +581,8 @@
       "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "SHOULD: Minimal version (mention in pricing section) ships with FEAT-005 and satisfies launch requirements. Full dedicated featured section is a post-launch enhancement. Removed FEAT-007 dependency — audit upsell no longer on /contact per v2.3."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "HIGH VALUE: Bridge product fills the conversion ladder gap (Free Snapshot → $997 AI Visibility Audit → $1,500+ Retainer). Without this, prospects jump from free to $1,500/mo commitment. FEAT-005 done — Tech Lead should assess readyForSprint. Recommend elevating to 'must' as core conversion funnel element."
     },
     {
       "id": "FEAT-033",
@@ -587,8 +615,8 @@
       "priority": "must",
       "readyForSprint": false,
       "sprintable": false,
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MUST PRIORITY — PARALLEL MANUAL TRACK: Off-site/manual work only — NOT sprintable by AI agents. Zero code dependencies. Jodie should start immediately in parallel with website development: LinkedIn posting, Reddit engagement (r/marketing, r/startups), directory listings. LinkedIn-first content distribution builds entity signals before site launch. Target: active on LinkedIn + 1 directory within 30 days."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "URGENT MANUAL TRACK: Site MVP is complete — entity authority work should have started already. LinkedIn posting, Reddit engagement (r/marketing, r/startups), directory listings. This builds the off-site signals that AI and search engines use to establish credibility. Entity authority compounds over time. TARGET: Active LinkedIn presence + 1 directory listing within 14 days."
     },
     {
       "id": "FEAT-036",
@@ -605,8 +633,8 @@
       "priority": "must",
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE, LOW EFFORT: The single highest-impact positioning change identified in the marketing review. Jodie already delivers this service — the brief just doesn't name it. Adding the language opens the fractional CMO buyer category without restructuring anything."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "PRIORITY SPRINT: Highest-impact positioning change identified. All dependencies complete (FEAT-003, 004, 005). Opens the fractional CMO buyer category — a recognized keyword with growing search volume. Copy-only changes across 3-4 pages. Recommend sprinting immediately as next 'must' item."
     },
     {
       "id": "FEAT-037",
@@ -670,11 +698,11 @@
         "Respects prefers-reduced-motion if applicable",
         "npm run build succeeds"
       ],
-      "priority": "could",
+      "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-002", "FEAT-003"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION OPT: Mobile users lose the primary CTA on scroll. Sticky bar ensures conversion path is always visible. Low-medium effort. User value: reduces friction for mobile visitors who are ready to act."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "CONVERSION-CRITICAL: Mobile users lose primary CTA on scroll — real conversion leak. All dependencies met (FEAT-002, FEAT-003, FEAT-012 complete). Low effort, high conversion impact. RECOMMEND: Tech Lead mark readyForSprint immediately."
     },
     {
       "id": "FEAT-041",
@@ -686,11 +714,11 @@
         "Visual hierarchy: inline CTAs secondary to main content, not overwhelming",
         "npm run build succeeds"
       ],
-      "priority": "could",
+      "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-032"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION OPT: Long /services page (10+ scroll heights) needs multiple conversion opportunities. Users reading mid-page should not have to scroll to bottom. User value: captures high-intent visitors at moment of decision."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "CONVERSION PATH: Services page is long — users need mid-page conversion opportunities. FEAT-005 done; blocked on FEAT-032 (AI Visibility Audit section needed as one of the inline CTAs). Sprint after FEAT-032 completes."
     },
     {
       "id": "FEAT-042",
@@ -766,8 +794,8 @@
       "priority": "must",
       "readyForSprint": false,
       "sprintable": false,
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MUST PRIORITY — MANUAL PRE-LAUNCH TASK: Not sprintable by AI agents. This is Jodie's personal outreach task. A strong LinkedIn recommendation from a VP of Marketing carries more weight than 'testimonials coming soon.' Should be completed before FEAT-006 (Results page) is built so testimonials can populate at launch."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "URGENT MANUAL TRACK: Results page (FEAT-006) is live with placeholder testimonials. Real testimonials dramatically improve conversion. One strong LinkedIn recommendation from a VP of Marketing > 'testimonials coming soon' copy. Reach out to 3-5 former clients/colleagues this week. This work should happen in parallel with entity authority (FEAT-035)."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."
