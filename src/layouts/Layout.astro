@@ -8,6 +8,7 @@ import '@fontsource/space-grotesk/700.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import ScrollAnimations from '../components/ScrollAnimations.astro';
 
 interface Props {
   title?: string;
@@ -72,5 +73,6 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     </main>
     <Footer />
     <CookieConsent />
+    <ScrollAnimations />
   </body>
 </html>
