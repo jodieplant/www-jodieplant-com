@@ -1,0 +1,28 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout
+  title="404 — Page Not Found — Jodie Plant Marketing"
+  description="This page doesn't exist. But your marketing strategy should."
+>
+  <section class="py-24 sm:py-32 bg-white text-center">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="font-mono text-6xl sm:text-8xl font-bold text-orange">404</p>
+      <h1 class="mt-4 font-headline text-3xl sm:text-4xl font-bold text-navy">
+        This page doesn't exist.
+      </h1>
+      <p class="mt-2 font-headline text-xl text-muted">
+        But your marketing strategy should.
+      </p>
+      <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+          Go Home
+        </a>
+        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 border border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors min-h-[44px]">
+          Get Your Free Audit
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>
