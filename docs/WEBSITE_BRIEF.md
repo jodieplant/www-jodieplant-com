@@ -137,7 +137,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 | Pain | Built something great, nobody knows about it. Tried DIY marketing, wasted time. Previous agency burned budget with no results |
 | Trigger | Just raised a round, need to show growth. Competitor gaining visibility. Board asking about marketing metrics |
 | Win | Clear marketing strategy, measurable pipeline growth, someone who "gets" tech |
-| Budget | £2k-10k/month |
+| Budget | $2.5k-12k/month |
 | Channels | LinkedIn, startup events, founder communities, referrals |
 
 **Key Messages**:
@@ -154,7 +154,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 | Pain | Too much to do, not enough team. Need specialist skills (SEO, paid ads) without hiring full-time. Agency overhead and communication friction |
 | Trigger | Big launch coming, new market entry, team member leaving, scaling pressure |
 | Win | Reliable execution partner who doesn't need hand-holding |
-| Budget | £3k-15k/month |
+| Budget | $4k-18k/month |
 | Channels | LinkedIn, marketing communities, industry events, referrals |
 
 **Key Messages**:
@@ -171,7 +171,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 | Pain | Marketing feels like guesswork. Agencies speak a different language. Need data-driven, systematic approach |
 | Trigger | CEO told them to "sort out marketing." Need to hire but want to understand it first |
 | Win | A marketing partner who thinks like an engineer — systematic, measurable, iterative |
-| Budget | £2k-8k/month |
+| Budget | $2.5k-10k/month |
 | Channels | Tech meetups, dev communities, LinkedIn, referrals from other founders |
 
 **Key Messages**:
@@ -195,7 +195,7 @@ This isn't manufactured urgency — it's the honest reality of a one-person oper
 | Senior-level attention | No juniors, no hand-offs | "One senior marketer. Your entire account." |
 | Full-service | One partner for everything | "SEO, paid, social, content, email — one relationship" |
 | Startup-native | Understands constraints and pace | "Built for companies that move fast and break things" |
-| Data-driven | Transparent, measurable results | "Every pound tracked. Every result measured." |
+| Data-driven | Transparent, measurable results | "Every dollar tracked. Every result measured." |
 | No bloat | No account managers, no overhead | "You're not paying for a fancy office and a sales team" |
 
 ### The "Why Jodie" Argument
@@ -254,31 +254,37 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Get found by the people — and the AI — already searching for what you sell."
 
-### Paid Advertising (PPC)
+### Paid Advertising (Beyond Google & Meta)
 
-**The AI difference**: AI-assisted ad copy generation and testing, predictive bid optimization, and automated performance anomaly detection.
+> Google and Meta CPCs keep climbing. For SMBs with budgets under $5K/month, there are stronger plays: Bing (~60% lower CPC), Reddit (~$0.20 CPC), Quora ($0.35–$0.75), Pinterest, TikTok Spark Ads. See `MARKET_RESEARCH_2026.md` Part 3 for full platform comparison.
+
+**The AI difference**: AI-assisted ad copy generation and testing, predictive bid optimization, automated performance anomaly detection, and smart budget allocation across platforms.
 
 **What you get**:
-- Campaign strategy and structure
+- Campaign strategy and structure (Google, Meta, AND lower-cost alternatives)
+- Platform selection based on budget and audience (not defaulting to Google)
 - Ad creative and copywriting
 - Audience targeting and segmentation
 - Bid management and optimization
-- ROAS and conversion tracking
+- ROAS and conversion tracking across channels
 
-**For the client**: "Turn ad spend into pipeline, not vanity metrics."
+**For the client**: "Turn ad spend into pipeline — on the platforms where your budget actually works."
 
-### Social Media Marketing
+### Social Media Marketing & Short-Form Video
 
-**The AI difference**: AI-driven content ideation, optimal posting time analysis, and sentiment monitoring across channels.
+> Social media (68%) is the #1 channel SMBs say will drive the most business in 2026. Short-form video (TikTok, Reels, Shorts) continues to dominate engagement. See `MARKET_RESEARCH_2026.md`.
+
+**The AI difference**: AI-driven content ideation, optimal posting time analysis, sentiment monitoring across channels, and AI-assisted short-form video scripting and editing.
 
 **What you get**:
-- Platform strategy (LinkedIn, Twitter/X, others as relevant)
+- Platform strategy (LinkedIn, Twitter/X, TikTok, Instagram, others as relevant)
 - Content calendar and creation
+- Short-form video content (talking-head, B-roll with text overlays)
 - Community engagement
 - Social listening and competitor monitoring
 - Performance reporting
 
-**For the client**: "Build a brand presence where your audience actually hangs out."
+**For the client**: "Build a brand presence where your audience actually hangs out — with the content formats they actually watch."
 
 ### Content Marketing
 
@@ -295,18 +301,20 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Content that ranks, gets cited by AI, converts — and sounds like a human wrote it."
 
-### Email Marketing
+### Email Marketing & Owned Audience
 
-**The AI difference**: AI-powered subject line optimization, send-time personalisation, and automated segmentation based on engagement patterns.
+**The AI difference**: AI-powered subject line optimization, send-time personalisation, automated segmentation, and smart engagement-based nurture triggers.
 
 **What you get**:
 - Email strategy and segmentation
 - Campaign creation and automation
+- Newsletter setup + lead magnets that are genuinely useful
+- Nurture sequences (welcome, education, "book a call")
+- Referral loop design (customer referral, partner referral)
 - List hygiene and growth
 - A/B testing and optimization
-- Deliverability monitoring
 
-**For the client**: "Nurture leads into customers without being annoying about it."
+**For the client**: "Build an audience you own, nurture them into customers — without being annoying about it."
 
 ### Analytics & Reporting
 
@@ -321,21 +329,20 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Finally know what's working and what's burning money."
 
-### GEO / Answer Engine Optimization (New in 2026)
+### AI Implementation & Workflow Consulting
 
-> SEO isn't dead, but clicks are less reliable. AI Overviews and zero-click experiences are reducing organic CTR. Content must earn trust and get referenced — even when it isn't clicked. See `MARKET_RESEARCH_2026.md` for full context.
+> 54% of SMBs already use AI marketing tools, but most don't know how to use them strategically. The gap is guidance, not tools. See `MARKET_RESEARCH_2026.md` Part 1.
 
-**The AI difference**: AI-powered analysis of how LLMs and AI answer engines reference and cite content. Systematic optimization for AI discoverability alongside traditional search.
+**The AI difference**: This IS the AI difference — made into a standalone service. Jodie's own AI-enhanced workflow, systematized and taught to client teams.
 
 **What you get**:
-- "Best answer" page strategy (pricing, comparisons, alternatives, how-it-works, FAQs)
-- Brand signal audit — how your brand appears across AI answers, search, and communities
-- Structured data and clean site architecture for AI crawlability
-- Third-party mention strategy (PR, partners, reviews, communities)
-- llms.txt implementation
-- Success measurement: branded search lift, assisted conversions, direct traffic, lead quality
+- Audit current marketing processes for AI opportunities
+- Recommend & set up AI tools (content creation, analytics, automation)
+- Train team on effective AI usage
+- Build SOPs for AI-assisted marketing workflows
+- Ongoing advisory on new tools and techniques
 
-**For the client**: "Get referenced and recommended by AI — not just ranked by Google."
+**For the client**: "Do more with less. We'll show you exactly how AI fits into your marketing — no hype, just practical efficiency gains."
 
 ### Local Visibility & Reputation (SMB Services)
 
@@ -350,53 +357,38 @@ Before listing individual services, establish the overarching method:
 
 **For the client**: "Turn your Google profile into your best sales rep — calls, directions, bookings on autopilot."
 
-### Owned Audience & Nurture Systems
-
-**The AI difference**: AI-assisted newsletter content, smart segmentation, and automated engagement-based nurture triggers.
-
-**What you get**:
-- Newsletter setup + lead magnets that are genuinely useful
-- Nurture sequences (welcome, education, "book a call")
-- Referral loop design (customer referral, partner referral)
-- List hygiene and growth strategy
-- Community presence strategy
-
-**For the client**: "Build an audience you own — stop renting attention from platforms."
-
-### Partnerships & Distribution
-
-**The AI difference**: AI-powered partner identification, outreach templating, and performance tracking across partnership channels.
-
-**What you get**:
-- Newsletter sponsorship sourcing and placement
-- Podcast guesting / sponsorship strategy
-- Influencer/creator micro-partnership activation
-- Affiliate or referral partner program design
-- Channel performance measurement
-
-**For the client**: "Buy trust and attention cheaper than clicks — through the right partners."
-
 ### Service Packaging (Market-Aligned)
 
-> Based on 2026 market research (see `MARKET_RESEARCH_2026.md`): buyers want measurable leads, less platform dependence, and credibility in both AI and human discovery. Package services by outcome, not channel.
+> Based on 2026 market research (see `MARKET_RESEARCH_2026.md`): buyers want measurable leads, less platform dependence, and credibility in both AI and human discovery. Present services as tiered packages — simple, clear, easy to choose.
 
-**Recommended starter packages:**
+#### Retainer Packages
 
-| Package | Model | What's Included | Buyer Need |
-|---------|-------|-----------------|------------|
-| **Conversion & Tracking Setup** | Fixed-fee | Website conversion audit, landing page(s), analytics/attribution, lead capture | "I need more leads from my existing traffic" |
-| **Local Visibility & Reviews** | Retainer | GBP optimization, review generation, local pages, citations | "I need more local calls and bookings" |
-| **AI-Ready Content** | Retainer (2 pages/month + distribution) | "Best answer" pages, proof assets, LinkedIn/newsletter distribution | "I need to show up in search AND AI answers" |
-| **Partnerships Outreach** | Project-based | Partner identification, newsletter sponsorships, podcast placements, referral programs | "I need leads without expensive ads" |
+| Package | Monthly Fee | What's Included | Best For |
+|---------|-------------|-----------------|----------|
+| **Foundation** | $1,500–$2,500 | Social media (2 platforms, including short-form video), content creation (8–12 posts), basic email marketing (2–4 campaigns), local visibility setup, monthly reporting | Local businesses, early-stage startups |
+| **Growth** | $2,500–$4,500 | Foundation + GEO/SEO strategy, "best answer" content pages, one paid ad channel, AI visibility monitoring, partnership channel activation | Growing SMBs, funded startups |
+| **Authority** | $4,500–$7,500 | Growth + full GEO + SEO, multi-channel paid media, email automation & nurture sequences, AI workflow consulting, schema markup & technical optimization | Established SMBs ready to dominate their niche |
 
-**Budget tier alignment** (what buyers expect at each level):
+#### One-Time Projects
 
-| Monthly Budget | Buyer Profile | Recommended Package Combination |
-|----------------|---------------|--------------------------------|
-| $0-$1,500 | Micro-SMB, solopreneurs | Local visibility + one landing page + simple email follow-up |
-| $1,500-$5,000 | Typical SMB services | Conversion setup + local + 1-2 content pillars + light paid tests |
-| $5,000-$15,000 | Serious SMB / early startup | Full measurement + conversion + AI-ready content + partnerships + disciplined paid |
-| $15,000+ | Growth-stage | Multi-channel, creative production, experimentation, quarterly planning |
+| Project | Fee Range |
+|---------|-----------|
+| AI Visibility Audit | $500–$1,500 |
+| Conversion & Tracking Setup | $1,000–$3,000 |
+| Marketing Strategy & Roadmap | $1,500–$3,000 |
+| Email Automation Setup | $1,000–$2,500 |
+| Website Content Overhaul for GEO | $2,000–$5,000 |
+
+#### Budget Alignment
+
+| Monthly Budget | Buyer Profile | Recommended Package |
+|----------------|---------------|---------------------|
+| $1,500–$2,500 | Local businesses, early-stage startups | Foundation |
+| $2,500–$5,000 | Growing SMBs, funded startups | Growth |
+| $5,000–$7,500 | Established SMBs | Authority |
+| $7,500+ | Growth-stage companies | Custom engagement |
+
+> **Pricing note:** Frame everything around outcomes, not deliverables. Not "12 posts per month" but "build your brand's AI citation presence and drive qualified leads." Charge for value from day one.
 
 ---
 
@@ -406,10 +398,10 @@ Before listing individual services, establish the overarching method:
 
 | Alternative | Model | Weakness |
 |-------------|-------|----------|
-| **Big agencies** | Retainer £5k-50k/month | Hand-off to juniors, slow, expensive overhead, generic playbooks |
+| **Big agencies** | Retainer $6k-60k/month | Hand-off to juniors, slow, expensive overhead, generic playbooks |
 | **Other freelancers** | Day rate / retainer | Usually single-channel specialists, inconsistent availability, no AI edge |
-| **In-house hire** | £40-80k salary + benefits | Expensive, single skill set, recruitment time, management overhead |
-| **DIY tools** | £100-500/month in SaaS | Tools without strategy, time-consuming, learning curve, no expertise |
+| **In-house hire** | $50-100k salary + benefits | Expensive, single skill set, recruitment time, management overhead |
+| **DIY tools** | $100-500/month in SaaS | Tools without strategy, time-consuming, learning curve, no expertise |
 
 ### How Jodie Plant Compares
 
@@ -425,11 +417,23 @@ Before listing individual services, establish the overarching method:
 
 ### Key Differentiators to Emphasize
 
-1. **AI/Tech-Forward** — "Not just using ChatGPT — systematically using AI across research, creation, optimization, and analysis to deliver more, faster"
+1. **AI-Forward (Method + Services)** — "I use AI to deliver faster AND I get your brand cited by AI. Most agencies are still selling 2020 SEO — I sell 2026 visibility." (This combines two edges: AI as a delivery method AND GEO/AEO as a service offering. Both are genuinely differentiating.)
 2. **Senior-Level, Always** — "You'll never be handed off to a junior. The person you talk to is the person doing the work"
 3. **Full-Service, One Relationship** — "SEO, paid, social, content, email, analytics — one partner, one strategy, no coordination overhead"
 4. **Startup-Native** — "Understands runway pressure, product-market fit, and why your Series A deck matters"
 5. **No Bloat** — "No account managers. No project managers. No fancy office. Just results"
+
+### Vertical Specialization Strategy
+
+> Consider highlighting 1–2 target verticals on the site to build credibility faster. See `MARKET_RESEARCH_2026.md` Part 5.
+
+**Strongest fits for Jodie:**
+- **Tech/SaaS startups** — already the primary target audience, natural alignment
+- **Local service businesses** — high demand for local SEO + reviews, clear ROI, fast results
+
+**Why specialize:** Deep case studies in a vertical build trust faster than being a generalist. "I've done this for 5 other SaaS companies" beats "I can do it for anyone." Can expand verticals later once proof points exist.
+
+**How to implement:** Not a hard pivot — more like featured case studies, industry-specific language on service pages, and "Industries" section on Results page that highlights depth in chosen verticals.
 
 ---
 
@@ -517,11 +521,13 @@ jodieplant.com/
 jodieplant.com/
 ├── /              (Homepage)
 ├── /about         (About Jodie)
-├── /services      (Services overview)
-│   ├── /seo
+├── /services      (Services overview + pricing)
+│   ├── /seo-geo
+│   ├── /ai-consulting
+│   ├── /content-marketing
 │   ├── /paid-ads
 │   ├── /social-media
-│   ├── /content-marketing
+│   ├── /local-visibility
 │   ├── /email-marketing
 │   └── /analytics
 ├── /results       (Results & methodology)
@@ -557,7 +563,7 @@ jodieplant.com/
 - **Get Your Free Audit** (CTA button)
 
 **Footer**:
-- Services: SEO, Paid Ads, Social Media, Content, Email, Analytics
+- Services: SEO & GEO, Content, Paid Ads, Social Media, Email, Analytics, AI Consulting, Local
 - Company: About, Results, Blog, Contact
 - Legal: Privacy Policy
 - Social links
@@ -609,8 +615,9 @@ Combines the old "Problem" and "Jodie Difference" sections into one focused pitc
 
 #### 4. Services Overview
 
-- 6 service cards in a responsive grid (2×3 on desktop, stacked on mobile)
+- 8 service cards in a responsive grid (2×4 on desktop, stacked on mobile)
 - Each card: icon + service name + one-line benefit (the "For the client" line from Section 5)
+- The 8 services: SEO & GEO, Content Marketing, Paid Advertising, Social Media & Video, Email & Owned Audience, Analytics & Reporting, AI Implementation Consulting, Local Visibility & Reputation
 - Each card links to /services (to the relevant section anchor)
 - Clean, scannable. Not trying to explain everything here — that's what /services is for
 - Brief intro line above the grid: "Full-service marketing. Every channel. One partner."
@@ -691,7 +698,7 @@ Before listing services, establish the overarching approach:
 
 #### 3. Service Blocks
 
-For each of the 6 services, structured as **AI difference + Deliverables + Client benefit**:
+For each of the 8 services, structured as **AI difference + Deliverables + Client benefit**:
 
 Each block:
 - Service name and icon (orange accent)
@@ -700,21 +707,22 @@ Each block:
 - Benefit-driven one-liner
 
 Services in order of differentiation strength:
-1. **Content Marketing** — AI difference most visible here
-2. **SEO** — AI-powered analysis is highly differentiating
-3. **Paid Advertising** — AI optimization is concrete and measurable
-4. **Analytics & Reporting** — AI-generated insights are a clear advantage
-5. **Social Media** — AI-assisted content and timing
-6. **Email Marketing** — AI-powered personalisation
+1. **SEO & GEO** — GEO positioning is the single most differentiating offering in 2026
+2. **AI Implementation & Workflow Consulting** — unique to AI-forward agencies
+3. **Content Marketing** — "best answer" approach is differentiating
+4. **Paid Advertising (Beyond Google & Meta)** — "beyond" framing is differentiating
+5. **Social Media & Short-Form Video** — video emphasis signals current-market awareness
+6. **Local Visibility & Reputation** — high demand, clear ROI for SMBs
+7. **Email Marketing & Owned Audience** — audience ownership reduces platform dependence
+8. **Analytics & Reporting** — foundational, enables everything else
 
 Each block should be visually distinct and scannable. Alternating layout (left/right or card-based) to prevent monotony.
 
-#### 4. How Engagements Work
+#### 4. Packages & Pricing
 
-- **Monthly Retainer**: "Ongoing marketing partner — strategy, execution, and optimization on a rolling basis. Most clients start here."
-- **Project-Based**: "Defined scope, clear deliverables, fixed timeline. Good for audits, launches, or specific campaigns."
-- **Advisory**: "Strategy and guidance without execution. For teams who need direction, not hands."
-- What a typical month looks like
+Show the three tiered retainer packages (Foundation / Growth / Authority) from Section 5, plus one-time projects. Design as pricing cards with orange accent on recommended tier (Growth). Each card shows: what's included, who it's for, price range, CTA to /contact.
+
+- What a typical month looks like at each tier
 - Reporting and communication cadence
 
 #### 5. CTA
@@ -800,7 +808,7 @@ This is the lead magnet in action:
   - Company name
   - Company URL
   - Biggest marketing challenge (dropdown or short text)
-  - Budget range (optional dropdown: <£2k, £2-5k, £5-10k, £10k+)
+  - Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+)
 - Form submits to Jodie's email (via Formspree, Formspark, or similar static-compatible service)
 - Confirmation message: "Thanks! I'll review your marketing and get back to you within 24 hours."
 
@@ -875,7 +883,7 @@ www-jodieplant-com/
 | `llms.txt` | Curated AI-friendly index of key site content | `public/llms.txt` |
 | `llms-full.txt` | Extended version with full page content in markdown | `public/llms-full.txt` (optional) |
 
-**llms.txt** is a proposed convention for helping AI agents understand a site's most important content. It should list key pages with brief descriptions in clean markdown. Treat as a small technical add-on in the broader GEO strategy — not a substitute for authority, distribution, or third-party mentions.
+**llms.txt** is a proposed convention for helping AI agents understand a site's most important content. It lists key pages with brief descriptions in clean markdown. **Reality check**: Google confirmed they don't use it, and no major AI company has officially adopted it. However, implementation cost is minimal and it's reasonable future-proofing. Yoast SEO and Webflow already support it. Treat as a low-priority technical add-on — not a substitute for authority, distribution, or third-party mentions.
 
 Generate/update `llms.txt` as part of the build process or maintain manually. Include: homepage, services, about, results, contact, and blog posts (when they exist).
 
@@ -1095,7 +1103,7 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 - Canonical URLs
 - XML sitemap (`/sitemap.xml`)
 - `robots.txt`
-- Structured data (Organization, LocalBusiness, Service)
+- Structured data (Organization, LocalBusiness, Service, FAQPage, Article, HowTo)
 - Alt text on all images
 - Semantic HTML headings hierarchy
 - Clean URL structure (no trailing slashes, lowercase)
@@ -1108,7 +1116,7 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 
 **Services**:
 - Title: "Services — Jodie Plant Marketing"
-- Description: "AI-enhanced SEO, paid advertising, social media, content marketing, email marketing, and analytics for startups and tech companies."
+- Description: "AI-enhanced SEO & GEO, content marketing, paid advertising, social media, email, analytics, and AI workflow consulting for startups and tech companies."
 
 **About**:
 - Title: "About — Jodie Plant Marketing"
@@ -1124,9 +1132,17 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 
 ### GEO / Answer Engine Optimization (AEO)
 
-> SEO is expanding into Generative Engine Optimization. The site itself should practice what Jodie sells. See `MARKET_RESEARCH_2026.md` for full market context.
+> SEO is expanding into Generative Engine Optimization. The site itself should practice what Jodie sells. See `MARKET_RESEARCH_2026.md` Part 2 for full context, including the SEO vs GEO comparison table.
 
-**"Best answer" page strategy**: Key pages should directly and completely answer buyer questions — not just target keywords. Structure content so AI systems can extract and cite clear answers.
+**Content structured for machine understanding:**
+- Answer questions directly in the first paragraph (AI-extractable)
+- Use clear heading hierarchies (H2, H3, H4)
+- Include specific data, statistics, and citations
+- Use natural conversational language (matching how people talk to AI)
+- Implement comprehensive schema markup (Organization, Article, FAQPage, HowTo)
+- **Update core content every 90 days** — freshness matters for AI citation
+
+**"Best answer" page strategy**: Key pages should directly and completely answer buyer questions — not just target keywords.
 
 **Tactics for this site**:
 - Service pages structured as clear Q&A: "What does an SEO engagement include?", "How much does startup marketing cost?", "What's the difference between an agency and a freelancer?"
@@ -1134,13 +1150,23 @@ This enables answering: "Which LinkedIn post / campaign / channel is driving act
 - Comparison-style content: "Agency vs freelancer vs in-house" (already partly covered in Section 6)
 - Results page methodology walkthroughs serve as "how we do it" proof assets
 
-**llms.txt**: Add `/llms.txt` — a curated, AI-friendly index of the site's key content in clean markdown. Small technical add-on, not a substitute for authority. See Section 10 for implementation.
+**Entity authority** (more important than keyword volume):
+- Consistent brand presence across the web (website, LinkedIn, directories, Reddit, industry forums)
+- If the brand appears across multiple credible sources, AI systems gain "confidence" in recommending it
+- Verified reviews, case studies, and testimonials are trust signals for AI systems
+- Third-party mentions (PR, partners, reviews, communities)
+
+**AI citation monitoring**: Track how and where the brand appears in AI answers.
+- Tools: Semrush AIO, Otterly.ai, Ahrefs Brand Radar, Brandi AI
+- Check what AI systems say when asked about marketing agencies / consultants in the target niche
+
+**llms.txt**: Add `/llms.txt` — a curated, AI-friendly index of the site's key content in clean markdown. See Section 10 for implementation. **Important caveat**: Google's John Mueller confirmed Google Search doesn't use llms.txt. No major AI company has officially adopted it. It's useful for developer docs and RAG systems, and implementation cost is minimal, but it is **not a citation factor** — treat as future-proofing, not a strategy.
 
 **Success metrics beyond rankings**:
 - Branded search volume (are more people searching "Jodie Plant Marketing"?)
 - Direct traffic growth
 - Assisted conversions (visitors who saw content before converting)
-- AI citation monitoring (where does the brand appear in AI answers?)
+- AI citation monitoring (share of voice in AI answers — what do ChatGPT/Perplexity say?)
 - Lead quality (not just quantity)
 
 ### Keyword Targets
@@ -1171,6 +1197,9 @@ See [Appendix A](#appendix-a-seo-keyword-targets) for full keyword strategy.
 | Services page views | > 40% of homepage visitors | Analytics |
 | Organic search traffic | Growing month-over-month | Analytics + Search Console |
 | Form completion rate | > 50% of form starters | Analytics |
+| Branded search volume | Growing month-over-month | Search Console |
+| Direct traffic | Growing month-over-month | Analytics |
+| AI citation presence | Mentioned when relevant queries asked of ChatGPT/Perplexity | Manual checks + Semrush AIO / Otterly.ai |
 
 ### Qualitative Goals
 
@@ -1328,7 +1357,7 @@ Priority pages:
 - FAQ (3-5 common questions)
 - CTA to get in touch
 
-**Pages**: `/services/seo`, `/services/paid-ads`, `/services/social-media`, `/services/content-marketing`, `/services/email-marketing`, `/services/analytics`
+**Pages**: `/services/seo-geo`, `/services/ai-consulting`, `/services/content-marketing`, `/services/paid-ads`, `/services/social-media`, `/services/local-visibility`, `/services/email-marketing`, `/services/analytics`
 
 ---
 

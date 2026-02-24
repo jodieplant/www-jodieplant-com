@@ -39,13 +39,13 @@
     {
       "id": "FEAT-003",
       "title": "Build Homepage with condensed high-impact sections",
-      "description": "Build src/pages/index.astro as the homepage per brief Section 9 (v2.0). Condensed to 5 high-impact sections (down from 7). Startup founders are time-poor — every section must earn the next scroll.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline in Cabinet Grotesk 800, large scale (e.g., 'Marketing that moves the needle for tech companies')\n- Subhead: 1-2 sentences — AI-forward, senior-level, full-service value prop\n- Primary CTA: 'Get Your Free Marketing Audit' (orange button → /contact)\n- Secondary CTA: 'See How I Work' (text link → /results)\n- Availability signal: small text 'Currently taking on 2 new clients for Q2 2026'\n- Visual: clean typographic hero, subtle geometric pattern or gradient. No stock photos\n\n2. SOCIAL PROOF BAR (immediately after hero — most important trust signal):\n- 3-4 credential stats in Space Grotesk at large scale with orange accent on key numbers\n- Stats MUST be real: years experience, campaigns delivered, ad spend managed, etc.\n- If client logos available: 'Trusted by' logo bar\n- If testimonial available: one pull quote\n- Light background. This section appears before any other content because trust comes first for services businesses\n\n3. HOW I'M DIFFERENT (combines old Problem + Jodie Difference):\n- Opening line: 'Tired of agencies that hand you off to juniors?'\n- Three bold differentiator cards: AI-Powered, Senior-Level Always, Full-Service\n- Each card: orange icon/accent + title + 1-2 sentence explanation\n- CTA: 'See what I'd do for your startup →' linking to /contact\n\n4. SERVICES OVERVIEW:\n- Intro line: 'Full-service marketing. Every channel. One partner.'\n- 6 service cards in responsive grid (2×3 desktop, stacked mobile)\n- Each card: icon + service name + one-line benefit from Section 5\n- Each links to /services (with anchor to relevant section)\n\n5. FINAL CTA (dark navy background):\n- Headline: 'Ready to see what AI-powered marketing can do for your startup?'\n- Orange CTA button: 'Get Your Free Marketing Audit' → /contact\n- Supporting text: 'Or email me directly: jodie@jodieplant.com'\n- Availability: 'Currently accepting new clients for Q2 2026'\n\nTone: Bold, confident, direct. Use Cabinet Grotesk for all section headlines.",
+      "description": "Build src/pages/index.astro as the homepage per brief Section 9 (v2.0). Condensed to 5 high-impact sections (down from 7). Startup founders are time-poor — every section must earn the next scroll.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline in Cabinet Grotesk 800, large scale (e.g., 'Marketing that moves the needle for tech companies')\n- Subhead: 1-2 sentences — AI-forward, senior-level, full-service value prop\n- Primary CTA: 'Get Your Free Marketing Audit' (orange button → /contact)\n- Secondary CTA: 'See How I Work' (text link → /results)\n- Availability signal: small text 'Currently taking on 2 new clients for Q2 2026'\n- Visual: clean typographic hero, subtle geometric pattern or gradient. No stock photos\n\n2. SOCIAL PROOF BAR (immediately after hero — most important trust signal):\n- 3-4 credential stats in Space Grotesk at large scale with orange accent on key numbers\n- Stats MUST be real: years experience, campaigns delivered, ad spend managed, etc.\n- If client logos available: 'Trusted by' logo bar\n- If testimonial available: one pull quote\n- Light background. This section appears before any other content because trust comes first for services businesses\n\n3. HOW I'M DIFFERENT (combines old Problem + Jodie Difference):\n- Opening line: 'Tired of agencies that hand you off to juniors?'\n- Three bold differentiator cards: AI-Powered, Senior-Level Always, Full-Service\n- Each card: orange icon/accent + title + 1-2 sentence explanation\n- CTA: 'See what I'd do for your startup →' linking to /contact\n\n4. SERVICES OVERVIEW:\n- Intro line: 'Full-service marketing. Every channel. One partner.'\n- 8 service cards in responsive grid (2×4 desktop, stacked mobile)\n- The 8 services: SEO & GEO, AI Implementation & Workflow Consulting, Content Marketing, Paid Advertising (Beyond Google & Meta), Social Media & Short-Form Video, Local Visibility & Reputation, Email Marketing & Owned Audience, Analytics & Reporting\n- Each card: icon + service name + one-line benefit from Section 5\n- Each links to /services (with anchor to relevant section)\n\n5. FINAL CTA (dark navy background):\n- Headline: 'Ready to see what AI-powered marketing can do for your startup?'\n- Orange CTA button: 'Get Your Free Marketing Audit' → /contact\n- Supporting text: 'Or email me directly: jodie@jodieplant.com'\n- Availability: 'Currently accepting new clients for Q2 2026'\n\nTone: Bold, confident, direct. Use Cabinet Grotesk for all section headlines.",
       "acceptanceCriteria": [
         "Homepage has exactly 5 sections: Hero, Social Proof Bar, How I'm Different, Services Overview, Final CTA",
         "Hero has dark navy background with bold Cabinet Grotesk headline and orange CTA",
         "Social proof bar appears immediately after hero with real credential stats (not placeholder)",
         "How I'm Different section has 3 differentiator cards with orange accents",
-        "Services overview shows 6 cards in responsive grid linking to /services",
+        "Services overview shows 8 cards in responsive grid (2×4 desktop) linking to /services",
         "Final CTA uses dark navy background with orange button",
         "Availability signal appears in hero and final CTA sections",
         "All internal links work (/services, /results, /contact)",
@@ -81,13 +81,13 @@
     {
       "id": "FEAT-005",
       "title": "Build Services page with AI-led structure and engagement models",
-      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'AI-Powered Marketing for Tech Companies'. Subhead about AI-enhanced workflows giving agency output from a senior practitioner.\n\n2. THE AI-ENHANCED METHOD (before individual services): Brief explanation of how AI changes marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 6 services, each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) Content Marketing, (2) SEO, (3) Paid Advertising, (4) Analytics & Reporting, (5) Social Media, (6) Email Marketing.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. HOW ENGAGEMENTS WORK: Three models — Monthly Retainer ('Most clients start here'), Project-Based, Advisory. What a typical month looks like. Reporting cadence.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free Marketing Audit' → /contact + jodie@jodieplant.com.",
+      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'AI-Powered Marketing for Tech Companies'. Subhead about AI-enhanced workflows giving agency output from a senior practitioner.\n\n2. THE AI-ENHANCED METHOD (before individual services): Brief explanation of how AI changes marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 8 services, each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) SEO & GEO, (2) AI Implementation Consulting, (3) Content Marketing, (4) Paid Advertising (Beyond Google & Meta), (5) Social Media & Short-Form Video, (6) Local Visibility & Reputation, (7) Email Marketing & Owned Audience, (8) Analytics & Reporting.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. PACKAGES & PRICING: Three tiered retainer packages (Foundation $1,500-$2,500 / Growth $2,500-$4,500 / Authority $4,500-$7,500) as pricing cards with orange accent on recommended tier (Growth). Plus one-time projects. Each card shows what's included, who it's for, price range, CTA to /contact. What a typical month looks like at each tier. Reporting cadence.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free Marketing Audit' → /contact + jodie@jodieplant.com.",
       "acceptanceCriteria": [
-        "Services page has Hero, AI Method section, 6 Service Blocks, Engagements, and CTA",
+        "Services page has Hero, AI Method section, 8 Service Blocks, Pricing, and CTA",
         "AI-Enhanced Method section appears BEFORE individual services",
         "Each service block leads with 'The AI difference' specific to that service",
-        "Services ordered by differentiation strength (Content first, Email last)",
-        "Engagement section explains three models (retainer, project, advisory)",
+        "Services ordered by differentiation strength (SEO & GEO first, Analytics last)",
+        "Pricing section shows Foundation/Growth/Authority tiers with price ranges and one-time projects",
         "All service blocks are scannable with alternating visual layout",
         "Orange accents used for service icons and highlights",
         "CTA offers form link and email",
@@ -122,7 +122,7 @@
     {
       "id": "FEAT-007",
       "title": "Build Contact page with form, email, and calendar — multiple conversion paths",
-      "description": "Build src/pages/contact.astro per brief Section 9 (v2.0) 'Contact Page'.\n\nCRITICAL: Multiple conversion paths, not just mailto:. A form is lower friction than composing an email from scratch. Different prospects prefer different channels.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'Let's Talk'. Subhead: 'Whether you want a free audit, have a quick question, or are ready to get started — I'm here.'\n\n2. FREE MARKETING AUDIT FORM (primary conversion path):\n- Headline: 'Get Your Free Marketing Audit'\n- Description: 'Tell me a bit about your company and I'll send you a personalised assessment...'\n- Form fields: Name, Company name, Company URL, Biggest marketing challenge (short text or dropdown), Budget range (optional dropdown: <£2k, £2-5k, £5-10k, £10k+)\n- Submit to Formspree or Formspark (static-site compatible, sends to email)\n- Confirmation: 'Thanks! I'll review your marketing and get back to you within 24 hours.'\n- Form validation with helpful error messages\n\n3. OTHER WAYS TO REACH ME:\n- Email: jodie@jodieplant.com with mailto: link\n- Book a call: placeholder for Cal.com/Calendly link (Phase 2) — can show as 'Coming soon' or omit until ready\n- LinkedIn: profile link\n\n4. WHAT TO EXPECT:\n- 'I respond to every enquiry within 24 hours'\n- 'Audit responses include a personalised assessment, not a generic template'\n- 'No pressure, no hard sell'\n\n5. AVAILABILITY:\n- 'Currently taking on 2 new clients for Q2 2026'\n- Creates urgency without being pushy",
+      "description": "Build src/pages/contact.astro per brief Section 9 (v2.0) 'Contact Page'.\n\nCRITICAL: Multiple conversion paths, not just mailto:. A form is lower friction than composing an email from scratch. Different prospects prefer different channels.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'Let's Talk'. Subhead: 'Whether you want a free audit, have a quick question, or are ready to get started — I'm here.'\n\n2. FREE MARKETING AUDIT FORM (primary conversion path):\n- Headline: 'Get Your Free Marketing Audit'\n- Description: 'Tell me a bit about your company and I'll send you a personalised assessment...'\n- Form fields: Name, Company name, Company URL, Biggest marketing challenge (short text or dropdown), Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+)\n- Submit to Formspree or Formspark (static-site compatible, sends to email)\n- Confirmation: 'Thanks! I'll review your marketing and get back to you within 24 hours.'\n- Form validation with helpful error messages\n\n3. OTHER WAYS TO REACH ME:\n- Email: jodie@jodieplant.com with mailto: link\n- Book a call: placeholder for Cal.com/Calendly link (Phase 2) — can show as 'Coming soon' or omit until ready\n- LinkedIn: profile link\n\n4. WHAT TO EXPECT:\n- 'I respond to every enquiry within 24 hours'\n- 'Audit responses include a personalised assessment, not a generic template'\n- 'No pressure, no hard sell'\n\n5. AVAILABILITY:\n- 'Currently taking on 2 new clients for Q2 2026'\n- Creates urgency without being pushy",
       "acceptanceCriteria": [
         "Contact page has Hero, Audit Form, Other Contact Methods, Expectations, and Availability sections",
         "Form has fields for name, company, URL, challenge, and optional budget range",
@@ -163,7 +163,7 @@
     {
       "id": "FEAT-009",
       "title": "Add structured data, XML sitemap, and robots.txt",
-      "description": "Implement structured data and search engine configuration per brief Section 12 (v2.0).\n\nStructured data (JSON-LD):\n- Organization schema: name, url, logo, contactPoint (email), sameAs (LinkedIn)\n- LocalBusiness schema (if targeting geography): name, address, email\n- Service schema on /services: serviceType for each of the 6 services\n\nXML Sitemap: Install @astrojs/sitemap, configure in astro.config.mjs with site URL https://www.jodieplant.com.\n\nrobots.txt: Create public/robots.txt, allow all crawlers, reference sitemap.\n\nClean URLs: consistent trailing slash behavior, lowercase.",
+      "description": "Implement structured data and search engine configuration per brief Section 12 (v2.0).\n\nStructured data (JSON-LD):\n- Organization schema: name, url, logo, contactPoint (email), sameAs (LinkedIn)\n- LocalBusiness schema (if targeting geography): name, address, email\n- Service schema on /services: serviceType for each of the 8 services\n\nXML Sitemap: Install @astrojs/sitemap, configure in astro.config.mjs with site URL https://www.jodieplant.com.\n\nrobots.txt: Create public/robots.txt, allow all crawlers, reference sitemap.\n\nClean URLs: consistent trailing slash behavior, lowercase.",
       "acceptanceCriteria": [
         "JSON-LD Organization schema in Layout or homepage",
         "Service schema markup on /services page",
@@ -316,9 +316,9 @@
     {
       "id": "FEAT-017",
       "title": "Add individual service sub-pages",
-      "description": "Create 6 individual service pages per brief Appendix C (v2.0): /services/seo, /services/paid-ads, /services/social-media, /services/content-marketing, /services/email-marketing, /services/analytics. Each: hero, AI-enhanced approach for this service, deliverables, FAQ (3-5 questions), CTA. Targets long-tail search queries.",
+      "description": "Create 8 individual service pages per brief Appendix C (v2.0): /services/seo-geo, /services/ai-consulting, /services/content-marketing, /services/paid-ads, /services/social-media, /services/local-visibility, /services/email-marketing, /services/analytics. Each: hero, AI-enhanced approach for this service, deliverables, FAQ (3-5 questions), CTA. Targets long-tail search queries.",
       "acceptanceCriteria": [
-        "6 service sub-pages exist under /services/",
+        "8 service sub-pages exist under /services/",
         "Each leads with the AI-enhanced approach specific to that service",
         "Each has FAQ section targeting service-specific search queries",
         "Navigation updated to support service sub-pages",
@@ -455,25 +455,6 @@
       "groomingNotes": "MEDIUM VALUE: Measures whether blog content drives enquiries. Blocked on blog existing (FEAT-013). Feeds the Content Dashboard and content funnel."
     },
     {
-      "id": "FEAT-025",
-      "title": "Add outcome-based service packages to Services page",
-      "description": "Update /services page to include market-aligned, outcome-based service packages alongside the existing channel-based services (ref: MARKET_RESEARCH_2026.md, WEBSITE_BRIEF.md Section 5 'Service Packaging').\n\nThe current services (SEO, PPC, Social, Content, Email, Analytics) are channel-based — table stakes. Buyers in 2026 describe their needs by outcome: 'I need leads', 'I need to be found locally', 'I need to show up in AI answers.'\n\nAdd a new section to the services page (after or alongside the AI-enhanced method) that presents packaged offerings:\n\n1. **Conversion & Tracking Setup** (fixed-fee): Website conversion audit, landing page(s), analytics/attribution setup, lead capture forms. Headline benefit: 'More leads from your existing traffic.'\n\n2. **Local Visibility & Reviews** (retainer): GBP optimization, review generation system, local pages, citation cleanup. Headline benefit: 'More local calls and bookings.'\n\n3. **AI-Ready Content** (retainer): 'Best answer' pages (2/month), proof assets, distribution via LinkedIn/newsletters/partners. Headline benefit: 'Show up in search AND AI answers.'\n\n4. **Partnerships & Distribution** (project-based): Partner identification, newsletter sponsorships, podcast placements, referral programs. Headline benefit: 'Leads without expensive ads.'\n\nInclude budget tier guidance to help prospects self-qualify (brief Section 5 'Budget tier alignment' table).\n\nDesign: Use the same visual treatment as existing service blocks (orange accents, alternating layout). Packages should feel like a natural complement to the channel services, not a replacement. Consider a tab or toggle to switch between 'By Channel' and 'By Outcome' views.",
-      "acceptanceCriteria": [
-        "Services page includes outcome-based packages section with 4 packages",
-        "Each package shows: name, engagement model (fixed-fee/retainer/project), what's included, headline benefit",
-        "Budget tier guidance is visible to help prospects self-qualify",
-        "Packages complement (not replace) existing channel-based service blocks",
-        "Visual treatment matches brand design system (orange accents, brand typography)",
-        "Page remains scannable and not overwhelming despite additional content",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Aligns service presentation with how buyers actually describe their needs in 2026. Outcome-based packaging ('I need leads') converts better than channel lists ('SEO, PPC, Social'). Based on MARKET_RESEARCH_2026.md findings."
-    },
-    {
       "id": "FEAT-026",
       "title": "Create GEO-optimized 'best answer' content pages",
       "description": "Create 3-5 'best answer' content pages designed to win in AI answer engines and human search. These pages directly and completely answer high-intent buyer questions.\n\nRef: MARKET_RESEARCH_2026.md 'Content Designed for AI Answers', WEBSITE_BRIEF.md Appendix A 'Best Answer Content Pages'.\n\nPriority pages:\n1. 'How much does startup marketing cost?' — pricing transparency, budget tiers from research, what to expect at each level. Demystifies costs, builds trust.\n2. 'Marketing agency vs freelancer vs in-house' — comparison table using Section 6 data. Honest pros/cons of each.\n3. 'What does a marketing retainer actually include?' — concrete deliverables, typical month walkthrough.\n4. 'How to get leads without expensive Google and Meta Ads' — alternative channels from research (partnerships, newsletters, community, LinkedIn organic).\n5. 'What is GEO and why does it matter for your business?' — thought leadership, demonstrates expertise.\n\nFormat for each page:\n- Clear question as H1 headline\n- Direct, concise answer in the first paragraph (AI-extractable)\n- Supporting detail, examples, and evidence\n- Structured data (FAQPage schema where applicable)\n- CTA: 'Want help with this? Get your free marketing audit'\n- Author attribution (Jodie Plant) for E-E-A-T signals\n\nThese can be blog posts (if blog infrastructure exists via FEAT-013) or standalone pages under a /guides or /resources path.",
@@ -507,25 +488,7 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "LOW-MEDIUM VALUE: Quick win for AI discoverability. Takes minutes to create. Should be updated whenever significant pages are added. Part of broader GEO strategy but not high-impact on its own."
-    },
-    {
-      "id": "FEAT-028",
-      "title": "Update SEO service block and services page for GEO/AEO positioning",
-      "description": "Update the SEO service block on /services to reflect the expanded SEO → GEO/AEO positioning from the market research.\n\nRef: MARKET_RESEARCH_2026.md 'GEO/AEO: What Is Replacing Traditional SEO', WEBSITE_BRIEF.md Section 5 'SEO & GEO'.\n\nChanges:\n- Rename service from 'SEO' to 'SEO & GEO' or 'Search & AI Optimization' on the services page\n- Update the AI difference copy to include GEO/AEO language\n- Add deliverables: 'best answer' page strategy, AI citation tracking, llms.txt, structured data for AI crawlability\n- Update the benefit one-liner: 'Get found by the people — and the AI — already searching for what you sell.'\n- Consider adding a brief explainer paragraph about GEO/AEO for visitors unfamiliar with the concept\n\nThis positions Jodie ahead of agencies still talking about 'SEO' as if it's 2020. The GEO framing is a differentiator in itself.",
-      "acceptanceCriteria": [
-        "SEO service block renamed to reflect GEO/AEO positioning",
-        "AI difference copy updated with GEO-specific language",
-        "Deliverables list includes GEO items (best answer pages, AI citation tracking, llms.txt)",
-        "Benefit one-liner updated",
-        "Positioning is clear and accessible (not jargon-heavy for non-technical buyers)",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: GEO/AEO is the most differentiating service positioning available in 2026. Most agencies haven't updated their language yet. Being early to this framing signals thought leadership and attracts forward-thinking clients."
+      "groomingNotes": "LOW VALUE: Quick win but tempered expectations — Google confirmed they don't use llms.txt and no major AI company has officially adopted it. Useful for developer docs and RAG systems. Implementation cost is minimal (future-proofing), but don't prioritize over schema markup, entity authority, or content quality."
     },
     {
       "id": "FEAT-029",
@@ -544,6 +507,75 @@
       "dependsOn": ["FEAT-005", "FEAT-009"],
       "groomedAt": "2026-02-23",
       "groomingNotes": "MEDIUM VALUE: FAQ structured data is a direct GEO/AEO tactic — helps both Google rich results and AI answer extraction. Reusable component makes it easy to add FAQs to any page. Low effort, compounding benefit."
+    },
+    {
+      "id": "FEAT-031",
+      "title": "Create 'Alternatives to Google & Meta Ads' best-answer content page",
+      "description": "Create a GEO-optimized 'best answer' content page: 'How to Get Leads Without Expensive Google and Meta Ads.'\n\nRef: MARKET_RESEARCH_2026.md Part 3 — detailed platform comparison with CPCs, minimum budgets, and smart stack allocations.\n\nThis page should cover:\n- Why Google/Meta CPCs keep climbing and what that means for SMBs\n- Platform alternatives with specific data: Bing (~60% lower CPC), Reddit (~$0.20), Quora ($0.35-$0.75), TikTok Spark Ads, Pinterest\n- Organic/owned alternatives: micro-influencer partnerships ($100-$500/post), newsletter sponsorships ($200-$1,000), podcast advertising, LinkedIn organic, community marketing\n- Smart stack budget allocations ($2K, $3K, $5K monthly breakdowns)\n- The 'rent vs own' argument (paid stops when you stop paying; content compounds)\n\nFormat: Clear question headline, direct answer first paragraph, supporting detail with data tables, CTA to free marketing audit.\n\nThis page is both a lead magnet (genuinely useful to the target audience) and a GEO play (AI systems will cite specific budget data and platform comparisons).",
+      "acceptanceCriteria": [
+        "Page published with 1000+ words of substantive content",
+        "Includes specific CPC data and minimum budgets for each platform",
+        "Includes smart stack budget allocation tables",
+        "Has clear question headline and direct answer in opening paragraph",
+        "Includes CTA to /contact for free audit",
+        "FAQPage structured data if applicable",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-002"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: This page directly serves the #1 question budget-conscious buyers ask. The specific data (CPCs, budget allocations) makes it citation-worthy for AI systems. Also positions Jodie as a 'smart budget' expert, not just another Google Ads reseller."
+    },
+    {
+      "id": "FEAT-032",
+      "title": "Add AI Visibility Audit as productized one-time service offering",
+      "description": "Add an 'AI Visibility Audit' as a prominent productized offering on the /services and /contact pages.\n\nRef: MARKET_RESEARCH_2026.md Part 4 — one-time project fee $500-$1,500.\n\nThe AI Visibility Audit asks: 'What happens when someone asks ChatGPT/Perplexity/Gemini about your industry? Are you cited? Are competitors? What would it take to change that?'\n\nThis can serve as both:\n1. A paid entry point (lower commitment than a retainer)\n2. An enhanced lead magnet (upgrade from the free marketing audit to a deeper paid audit)\n\nImplementation:\n- Add audit description to /services page (in GEO/AEO section or as a standalone productized offering)\n- Add as an option on /contact page ('Want a deeper dive? Book an AI Visibility Audit')\n- Consider a dedicated landing page for the audit (could be a best-answer page)\n\nDeliverables to describe:\n- Audit of how the brand appears across ChatGPT, Perplexity, Gemini, Google AI Overviews\n- Competitor AI visibility comparison\n- Content gap analysis (what questions are being asked that you don't answer?)\n- Entity authority assessment\n- Actionable recommendations with priority ranking",
+      "acceptanceCriteria": [
+        "AI Visibility Audit described on /services page with clear deliverables",
+        "Audit mentioned or linked from /contact page as an option",
+        "Pricing or price range indicated ($500-$1,500)",
+        "Clear differentiation from the free marketing audit",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005", "FEAT-007"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Productized offering that's genuinely differentiated in 2026. Most agencies can't offer this. Creates a paid entry point below retainer commitment. The audit process itself demonstrates GEO expertise."
+    },
+    {
+      "id": "FEAT-033",
+      "title": "Add pricing FAQ section with structured data to services page",
+      "description": "Add a FAQ section below the pricing cards on /services addressing common pricing questions. The pricing cards themselves (Foundation/Growth/Authority tiers) are built as part of FEAT-005. This item adds the supporting FAQ content and structured data.\n\nQuestions to answer:\n- 'How much does startup marketing cost?'\n- 'What's included in a retainer?'\n- 'Can I start with a one-time project?'\n- 'What if I need something custom?'\n- 'How long until I see results?'\n\nImplementation:\n- FAQ content visible as accordion or list below pricing cards\n- FAQPage JSON-LD structured data (reuse component from FEAT-029 if available)\n- This is a GEO play — pricing FAQs are high-intent queries that AI systems frequently answer",
+      "acceptanceCriteria": [
+        "FAQ section exists below pricing cards with 4-5 common pricing questions",
+        "FAQPage structured data renders in page head",
+        "FAQ content matches the tiered pricing structure from FEAT-005",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "dependsOn": ["FEAT-005"],
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "MEDIUM VALUE: Pricing FAQs are a GEO opportunity — 'how much does marketing cost' is a high-intent query. Structured data helps with both Google rich results and AI answer extraction. Depends on pricing cards being built in FEAT-005."
+    },
+    {
+      "id": "FEAT-035",
+      "title": "Build entity authority presence for Jodie Plant Marketing",
+      "description": "Build consistent brand presence across the web to improve AI citation confidence. This is NOT a code/website task — it's an off-site authority building task that should be tracked alongside website work.\n\nRef: MARKET_RESEARCH_2026.md Part 2 — entity authority matters more than keyword volume for GEO. If a brand appears across multiple credible sources, AI systems gain confidence in recommending it.\n\nActions:\n- Create/optimize LinkedIn profile and company page with consistent positioning\n- Register on relevant directories (Clutch, DesignRush, GoodFirms, etc.)\n- Establish presence on Reddit (r/marketing, r/startups, r/smallbusiness) with genuine value\n- Set up Google Business Profile if targeting local clients\n- Ensure NAP (name, address, phone) consistency across all listings\n- Begin collecting reviews/testimonials on Google and LinkedIn\n- Contribute to industry forums and communities\n\nGoal: When someone asks ChatGPT/Perplexity 'who are good marketing consultants for startups?', Jodie Plant Marketing should start appearing as a recommendation.",
+      "acceptanceCriteria": [
+        "LinkedIn personal and company profiles optimized with consistent brand positioning",
+        "Listed on at least 3 relevant agency directories",
+        "Active presence on at least 2 community platforms (Reddit, forums, etc.)",
+        "Google Business Profile created if targeting local",
+        "NAP consistency verified across all listings",
+        "At least 1 review or testimonial collected"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "groomedAt": "2026-02-23",
+      "groomingNotes": "HIGH VALUE: Off-site authority is the biggest lever for AI citation. No dependencies on website code. Can start immediately in parallel with website development. This is the 'practice what you preach' item for GEO."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."
