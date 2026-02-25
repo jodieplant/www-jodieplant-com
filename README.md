@@ -1,6 +1,6 @@
 # www.jodieplant.com
 
-Marketing website for Jodie Plant Marketing — an AI/tech-forward digital marketing agency targeting startups and tech companies.
+The main public website for Jodie Plant Marketing — an AI/tech-forward digital marketing agency targeting startups and tech companies.
 
 **Live**: [www.jodieplant.com](https://www.jodieplant.com)
 
