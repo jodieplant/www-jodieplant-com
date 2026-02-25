@@ -250,6 +250,238 @@
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Blog is live with 3 posts. Author bio with LinkedIn link strengthens E-E-A-T signals. LinkedIn share buttons are especially high value given the FEAT-035 LinkedIn-first distribution strategy — make it one-click for Jodie to share each post and for readers to share with their networks. Reading time signals content quality. Related posts create a content loop (blog → guides → contact). Low-effort batch sprint — all in blog post template file."
     }
+    ,
+    {
+      "id": "FEAT-052",
+      "title": "Guide: How to Measure Marketing ROI — A Startup Founder's Guide",
+      "description": "Create a new best-answer guide page at /guides/how-to-measure-marketing-roi. Measuring ROI is the #1 challenge for marketers (33% per HubSpot 2026 State of Marketing), and 73% face increased budget scrutiny from leadership.\n\nTarget audience: startup founders and solo marketers who need to justify marketing spend to boards/investors.\n\nContent outline:\n- Why ROI measurement is broken (vanity metrics vs business metrics)\n- Attribution models explained simply (first-touch, last-touch, multi-touch, incrementality)\n- What to measure at each stage (awareness → consideration → conversion → retention)\n- The metrics that actually matter by channel (SEO, paid, content, email)\n- How to build a simple reporting dashboard\n- When ROI isn't the right metric (brand building, category creation)\n- FAQ section (3-5 questions)\n\nFormat: Same best-answer guide style as existing 4 guides. Include FAQ schema markup. CTA: Free visibility snapshot.\n\nSource insight: HubSpot 2026 State of Marketing — 33% cite ROI measurement as top challenge, 73% report increased budget scrutiny.",
+      "acceptanceCriteria": [
+        "/guides/how-to-measure-marketing-roi exists and renders correctly",
+        "Content covers attribution models, channel-specific metrics, and board-level reporting",
+        "FAQ section with schema markup included",
+        "Internal links to relevant existing guides and services page",
+        "CTA linking to /contact at bottom",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-026"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 State of Marketing report — ROI measurement is the #1 marketer challenge (33%), and 73% face increased budget scrutiny. High search intent topic that maps directly to the target audience (startup founders reporting to investors/boards). Same best-answer format as existing guides. Natural internal links to services page (Growth Attribution) and retainer guide. Strengthens topical authority cluster around marketing strategy."
+    },
+    {
+      "id": "FEAT-053",
+      "title": "Blog post: Why Short-Form Video Is the Highest-ROI Channel in 2026",
+      "description": "Write a blog post covering why short-form video has become the #1 ROI format for marketers and how startups can get started without a production budget.\n\nKey data points to reference (HubSpot 2026 State of Marketing):\n- Short-form video: 48.6% say highest ROI (vs 28.6% long-form, 25.1% live-stream)\n- 91% of businesses use video as a marketing tool\n- Video marketing is a top-3 area for budget increases (37.1%)\n\nContent outline:\n- The data: why video outperforms every other format\n- Why startups avoid video (and why those reasons are wrong)\n- 5 short-form video formats that work for B2B tech (founder talking head, product demos, customer snippets, behind-the-scenes, hot takes)\n- The minimum viable video stack (phone + natural light + CapCut)\n- Platform strategy: LinkedIn vs TikTok vs YouTube Shorts vs Instagram Reels for B2B\n- How AI tools accelerate video production (scripting, editing, repurposing)\n- CTA: Get your free visibility snapshot\n\nTone: Practical, action-oriented. Not 'video is important' — 'here's how to start this week.'",
+      "acceptanceCriteria": [
+        "Blog post published at /blog/short-form-video-highest-roi-2026",
+        "Includes specific data points from HubSpot report",
+        "Actionable advice for startups with limited budgets",
+        "Internal links to services page (Social Media & Short-Form Video)",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-013"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — video is the #1 ROI format but the site barely mentions it. This post supports FEAT-055 (elevating video prominence) and creates content to distribute via LinkedIn (FEAT-035 entity authority). Also addresses FEAT-049 content cadence goal. Good candidate for early content calendar slot."
+    },
+    {
+      "id": "FEAT-054",
+      "title": "Blog post: AI Personalization for Startups — Competing Without Enterprise Budgets",
+      "description": "Write a blog post about how startups can use AI-driven personalization without enterprise MarTech stacks.\n\nKey data points (HubSpot 2026 State of Marketing):\n- AI-driven personalization is the #1 marketing trend (48.6%)\n- 93.2% say personalization drives more leads/purchases\n- 96% say it strengthened customer relationships\n- Only 12.6% do hyper-personalization — most use basic segmentation\n\nContent outline:\n- The personalization gap: enterprise vs startup capabilities\n- What 'personalization' actually means at startup scale (not 1:1, but smart segmentation)\n- 5 practical AI personalization tactics for startups:\n  1. AI-powered email segmentation and send-time optimization\n  2. Dynamic landing page content by traffic source\n  3. Chatbot conversations that adapt to visitor context\n  4. Content recommendations based on browsing behavior\n  5. Ad creative personalization at scale\n- Tools that make it accessible (free/affordable tiers)\n- When personalization isn't worth the effort (small audiences, early stage)\n- CTA: Free visibility snapshot\n\nTone: Demystifying, practical. Cut through the enterprise hype.",
+      "acceptanceCriteria": [
+        "Blog post published at /blog/ai-personalization-for-startups",
+        "Includes HubSpot data points on personalization trends",
+        "Practical tactics with tool recommendations",
+        "Internal links to AI Marketing Systems service",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-013"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — personalization is the #1 trend but the site barely mentions it. This post positions Jodie's AI Marketing Systems service as a solution. Also supports FEAT-064 (adding personalization to service copy). Content cadence item (FEAT-049)."
+    },
+    {
+      "id": "FEAT-055",
+      "title": "Elevate video prominence on homepage and services page",
+      "description": "Short-form video is the #1 ROI content format (48.6% per HubSpot 2026), but 'Social Media & Short-Form Video' is buried as service #6 on the services page, and video isn't mentioned in the homepage Growth Engines section.\n\nChanges:\n1. HOMEPAGE: Add video as a visible element in the Growth Engines section or as a standalone callout. Consider adding it as a 4th engine or incorporating it into the 'Authority Content' engine description.\n2. SERVICES PAGE: Move 'Social Media & Short-Form Video' higher in the service list (consider position 3-4 instead of 6), OR add a prominent callout about video ROI near the top of the services page.\n3. RESULTS PAGE: Add video-related typical outcomes to the results methodology section if applicable.\n\nDo NOT restructure the entire page — targeted copy and ordering changes only.",
+      "acceptanceCriteria": [
+        "Video/short-form content is visible on homepage without deep scrolling",
+        "Video service is more prominent on services page (higher position or callout)",
+        "Changes are copy/ordering only — no structural redesign",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": [],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — video is THE top ROI format but is underweight on the site. An agency selling marketing in 2026 needs to signal video competence prominently. Low effort — copy and ordering changes to existing pages. No new pages required."
+    },
+    {
+      "id": "FEAT-056",
+      "title": "Add third-party data citations to SEO/GEO and AI service sections",
+      "description": "The site claims AI search matters and positions SEO+GEO as service #1, but doesn't cite any third-party data to back these claims. Adding industry statistics builds credibility and supports E-E-A-T signals.\n\nData points to incorporate (HubSpot 2026 State of Marketing + other sources):\n- 50% of consumers now use AI-powered search\n- Half of Google searches include an AI Overview\n- 40.6% of marketers are updating SEO strategies for AI search\n- 86.4% of marketing teams use AI tools\n- Short-form video is #1 ROI format (48.6%)\n\nPlacement:\n1. SERVICES PAGE: Add a data callout near the SEO & AI Visibility service (e.g. '50% of consumers now use AI-powered search — HubSpot 2026')\n2. HOMEPAGE: Consider adding a brief stat in the Search & AI Visibility growth engine section\n3. GUIDE PAGES: Update relevant guides with fresh data where applicable\n\nKeep citations light — one or two per section, not a data dump. Link to sources where appropriate.",
+      "acceptanceCriteria": [
+        "At least 2 third-party data points added to services page",
+        "At least 1 data point added to homepage growth engines section",
+        "Sources cited inline or in footnotes",
+        "Data points are accurate and attributed",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": [],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): The site makes strong claims about AI search disruption but doesn't back them with third-party data. Citing HubSpot (1,500+ marketers surveyed) adds instant credibility. Low effort — targeted copy additions to existing pages. Also improves E-E-A-T signals for search."
+    },
+    {
+      "id": "FEAT-057",
+      "title": "Blog post: The Marketing Workload Crisis — Why Founders Are Burning Out",
+      "description": "Write a blog post addressing the marketing workload crisis and positioning fractional CMO / AI-enhanced marketing as the solution.\n\nKey data points (HubSpot 2026 State of Marketing):\n- 73% of marketers saw workload increase significantly or moderately\n- 83.5% are expected to produce more content\n- 70% believe marketing changed more in 3 years than the prior 50\n- 37.9% say leadership views marketing as less important (despite expecting more output)\n\nContent outline:\n- The numbers: marketing workload is at breaking point\n- Why startup founders have it worst (wearing the marketing hat on top of everything else)\n- The 'do more with less' trap (and why it eventually breaks)\n- Three models that actually solve the problem (hire, outsource, or go fractional)\n- How AI-enhanced workflows change the equation (real efficiency, not buzzwords)\n- When to stop DIY and get help (honest signals)\n- CTA: Free visibility snapshot\n\nTone: Empathetic but practical. Name the pain, then offer the path forward.",
+      "acceptanceCriteria": [
+        "Blog post published at /blog/marketing-workload-crisis-founder-burnout",
+        "Includes HubSpot data on workload increases",
+        "Positions fractional CMO model as solution without being sales-heavy",
+        "Internal links to about page and fractional CMO guide",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-013"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — workload/burnout is a major industry theme. Speaks directly to the target audience (overwhelmed founders). Natural bridge to the fractional CMO positioning and existing guide on Fractional CMO vs Agency vs In-House. Good LinkedIn content — high empathy = high engagement. Content cadence item (FEAT-049)."
+    },
+    {
+      "id": "FEAT-058",
+      "title": "Blog post: Defending Your Marketing Budget to the Board — What Metrics Matter",
+      "description": "Write a blog post helping startup founders and marketing leaders justify marketing spend to boards and investors.\n\nKey data points (HubSpot 2026 State of Marketing):\n- 73% report increased budget scrutiny\n- 33% say measuring ROI is their top challenge\n- 79.2% expect budget increases — but need to justify them\n- 37.9% say leadership views marketing as less important\n\nContent outline:\n- The budget scrutiny reality: more expected, more questioned\n- Why 'marketing metrics' don't work in board meetings (nobody cares about impressions)\n- The 5 metrics boards actually care about (CAC, LTV, pipeline contribution, payback period, revenue attribution)\n- How to build a one-page marketing dashboard for investors\n- Framing marketing as investment, not cost (with specific language)\n- The 'marketing changed more in 3 years than 50' problem — educating leadership\n- CTA: Free visibility snapshot\n\nTone: Practical, board-room ready. Provide templates and frameworks, not theory.",
+      "acceptanceCriteria": [
+        "Blog post published at /blog/defending-marketing-budget-board-metrics",
+        "Includes specific metrics and frameworks for board reporting",
+        "Internal links to ROI guide (FEAT-052) and services page",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-013"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Companion piece to FEAT-052 (ROI guide) — this one is blog-length and more tactical. Addresses the budget scrutiny trend (73%) directly. High-intent search topic: founders searching for 'how to justify marketing budget' are exactly the right audience. Pairs well with the fractional CMO positioning (senior marketer who speaks board language). Content cadence item (FEAT-049)."
+    },
+    {
+      "id": "FEAT-059",
+      "title": "Blog post: Micro-Influencer Marketing for B2B Tech — A Practical Playbook",
+      "description": "Write a blog post on micro-influencer partnerships for B2B tech companies.\n\nKey data points (HubSpot 2026 State of Marketing):\n- Micro-influencers are the most successful tier (32.4%)\n- 5x higher impressions and 6x higher engagement reported in case studies\n- 21.2% of brands use influencer partnerships (18.6% B2B — growing)\n\nContent outline:\n- Why micro-influencers outperform macro (authenticity, niche audiences, cost)\n- The B2B influencer landscape (it's not just B2C anymore)\n- How to find the right micro-influencers for your niche (tools, signals, vetting)\n- Typical costs and what to expect ($100-$500/post for micro-influencers)\n- 4 campaign formats that work for B2B tech (product reviews, co-created content, podcast appearances, LinkedIn collaborations)\n- Measuring influencer ROI (tracking codes, UTMs, attributed pipeline)\n- Common mistakes (paying for followers, no brief, no tracking)\n- CTA: Free visibility snapshot\n\nExpands on the brief micro-influencer mention in the existing 'Leads Without Ads' guide.",
+      "acceptanceCriteria": [
+        "Blog post published at /blog/micro-influencer-marketing-b2b-tech",
+        "Includes specific cost ranges and ROI data",
+        "Practical playbook format with actionable steps",
+        "Internal links to leads-without-ads guide",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-013"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — micro-influencers are the most effective tier but barely covered on the site. Expands on a brief mention in the leads-without-ads guide. B2B influencer marketing is an emerging differentiator — most agencies still think of influencers as B2C only. Good LinkedIn content topic. Content cadence item (FEAT-049)."
+    },
+    {
+      "id": "FEAT-060",
+      "title": "Blog post: The 5 AI Marketing Skills Every Startup Needs in 2026",
+      "description": "Write a blog post about the AI skills gap in marketing and what startups need to know.\n\nKey data points (HubSpot 2026 State of Marketing):\n- AI/automation prompting is the #1 most in-demand marketing skill\n- Finding candidates with the right skill set is the top hiring challenge\n- 86.4% of teams use AI but confidence and measurement lag behind\n- 68.2% understand AI applications (up from 47% in 2025 — still a gap)\n\nContent outline:\n- The AI skills gap: everyone uses AI, few use it well\n- Skill 1: Prompt engineering for marketing (beyond 'write me a blog post')\n- Skill 2: AI-augmented research and competitive intelligence\n- Skill 3: AI-powered content workflows (not just generation — editing, distribution, repurposing)\n- Skill 4: Marketing data analysis with AI (turning dashboards into insights)\n- Skill 5: AI tool evaluation and stack building (knowing what's worth paying for)\n- The meta-skill: knowing when NOT to use AI\n- How to build these skills (resources, practice frameworks)\n- CTA: Free visibility snapshot (or: 'want someone who already has these skills?')\n\nTone: Educational, not gatekeeping. Position Jodie as the expert who already has these skills.",
+      "acceptanceCriteria": [
+        "Blog post published at /blog/ai-marketing-skills-startups-2026",
+        "Includes practical skill descriptions with examples",
+        "Internal links to about page (AI advantage section) and services",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-013"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — AI skills are the #1 hiring challenge but the site has no content about it. Positions Jodie as someone who already has these skills (implied CTA: why build internally when you can access them now?). Good LinkedIn content — skill-gap posts get high engagement. Content cadence item (FEAT-049)."
+    },
+    {
+      "id": "FEAT-061",
+      "title": "Blog post: Why Brand Positioning Is Your Most Underrated Growth Lever in 2026",
+      "description": "Write a blog post about brand positioning as a growth lever, especially for startups that skip straight to performance marketing.\n\nKey data points (HubSpot 2026 State of Marketing):\n- 46.8% of marketers prioritizing brand values-based content (#3 trend)\n- 75% have clear values positioning, but only 23.9% strongly agree\n- Growth is increasingly driven by distinctiveness, trust, and relevance\n\nContent outline:\n- Why startups skip positioning (speed bias, 'we'll figure it out later')\n- The cost of bad positioning (every campaign works harder, nothing compounds)\n- Positioning vs branding vs messaging (clear definitions)\n- The 3-question positioning framework (who, what differently, why it matters)\n- How positioning makes everything else work better (ads, content, sales)\n- When to revisit positioning (stage triggers, market shifts, new competitors)\n- Brand values as a content strategy (the 46.8% trend)\n- CTA: Free visibility snapshot (includes positioning review)\n\nTone: Strategic but accessible. Make the abstract concrete with examples.",
+      "acceptanceCriteria": [
+        "Blog post published at /blog/brand-positioning-growth-lever-2026",
+        "Includes actionable positioning framework",
+        "Internal links to fractional CMO guide and services page",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [
+        "FEAT-013"
+      ],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — brand values-based content is #3 trend, but the site has no content addressing positioning as a capability. Supports FEAT-055 (elevating services) and the fractional CMO positioning (positioning IS what a CMO does). High engagement LinkedIn topic. Content cadence item (FEAT-049)."
+    },
+    {
+      "id": "FEAT-062",
+      "title": "Update Visibility Engine to emphasize cyclical/iterative nature",
+      "description": "The Visibility Engine (Discover → Dominate → Amplify → Optimize) is currently presented as a linear 4-step process. HubSpot's 2026 report introduces 'Loop Marketing' — a repeatable cycle where each stage feeds the next. The Visibility Engine already IS a loop (Optimize feeds back into Discover), but this isn't visually or verbally communicated.\n\nChanges:\n1. Add a visual arrow or connection from Optimize back to Discover (on homepage and services page)\n2. Add a brief line like 'Then we loop back — each cycle compounds on the last' after the 4th step\n3. Consider adding 'continuous' or 'compounding' language to the Optimize step description\n\nDo NOT rebrand or restructure. Minimal copy and visual changes to communicate the iterative nature.",
+      "acceptanceCriteria": [
+        "Visual connection from Optimize back to Discover on homepage and services page",
+        "Copy communicates iterative/compounding nature",
+        "No structural redesign — minimal changes only",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Inspired by HubSpot's Loop Marketing framework. The Visibility Engine is already conceptually a loop but presented linearly. Making the cycle explicit reinforces the retainer model (why month-to-month compounds) and aligns with industry direction. Very small change — a visual arrow and 1-2 lines of copy. Low effort, high alignment."
+    },
+    {
+      "id": "FEAT-063",
+      "title": "Add content repurposing as explicit service deliverable",
+      "description": "Content repurposing is the #5 marketing trend (35.1% per HubSpot 2026), and startups with limited budgets want to know that one piece of content becomes multiple assets. This is already what Jodie does but it's not called out explicitly.\n\nChanges:\n1. SERVICES PAGE — Authority Content service: Add 'content repurposing' as an explicit deliverable (e.g. 'One blog post becomes a LinkedIn carousel, email snippet, Twitter thread, and short-form video script')\n2. SERVICES PAGE — Retainer descriptions: Mention cross-channel repurposing in Growth and Authority tiers\n3. Optionally add to the 'What's Included in a Marketing Retainer' guide\n\nMinimal copy additions — not a new service, just making an existing capability visible.",
+      "acceptanceCriteria": [
+        "Content repurposing mentioned as deliverable in Authority Content service",
+        "Retainer tier descriptions reference cross-channel repurposing",
+        "Changes are copy additions only — no structural changes",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — 35.1% of marketers prioritize content repurposing, but the site doesn't mention it. Making it explicit adds perceived value to retainers ('you get 5 assets from every blog post, not just 1'). Trivial copy changes to services page. Stack with FEAT-055 or FEAT-056."
+    },
+    {
+      "id": "FEAT-064",
+      "title": "Add AI personalization capability to AI Marketing Systems service copy",
+      "description": "AI-driven personalization is the #1 marketing trend (48.6% per HubSpot 2026), with 93.2% saying it drives more leads. The AI Marketing Systems service (#2 on services page) describes automation but doesn't mention personalization as a capability.\n\nChanges:\n1. SERVICES PAGE — AI Marketing Systems: Add personalization to the service description and deliverables (e.g. 'AI-powered audience segmentation and content personalization')\n2. Add personalization to the 'AI difference' callout for this service\n3. Optionally update the homepage Growth Engines section to mention personalization\n\nMinimal copy additions to existing service description.",
+      "acceptanceCriteria": [
+        "AI Marketing Systems service mentions personalization as a capability",
+        "Deliverables include audience segmentation or content personalization",
+        "Changes are copy additions only",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": [],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — personalization is the #1 trend but barely mentioned on the site. The AI Marketing Systems service is the natural home for this. Trivial copy change — one or two sentences added to service description and deliverables. Stack with FEAT-054 (personalization blog post) for coherent messaging."
+    }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."
 }
