@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # aishore - AI Sprint Runner CLI
 # A self-contained sprint orchestration tool for Claude Code
 #
