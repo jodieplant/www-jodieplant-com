@@ -1,9 +1,10 @@
 ---
+import { url } from '../utils/url';
 const navLinks = [
-  { href: '/services', label: 'Services' },
-  { href: '/results', label: 'Results' },
-  { href: '/about', label: 'About' },
-  { href: '/blog', label: 'Blog' },
+  { href: url('/services'), label: 'Services' },
+  { href: url('/results'), label: 'Results' },
+  { href: url('/about'), label: 'About' },
+  { href: url('/blog'), label: 'Blog' },
 ];
 ---
 
@@ -11,7 +12,7 @@ const navLinks = [
   <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
     <div class="flex items-center justify-between h-16 sm:h-20">
       <!-- Brand -->
-      <a href="/" class="font-headline text-xl sm:text-2xl font-bold text-navy tracking-tight">
+      <a href={url('/')} class="font-headline text-xl sm:text-2xl font-bold text-navy tracking-tight">
         Jodie Plant
       </a>
 
@@ -23,7 +24,7 @@ const navLinks = [
           </a>
         ))}
         <a
-          href="/contact"
+          href={url('/contact')}
           class="inline-flex items-center px-5 py-2.5 bg-orange text-white font-semibold text-sm rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]"
         >
           Get Your Free Audit
@@ -57,7 +58,7 @@ const navLinks = [
         </a>
       ))}
       <a
-        href="/contact"
+        href={url('/contact')}
         class="block mt-2 px-3 py-3 bg-orange text-white font-semibold text-base text-center rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]"
       >
         Get Your Free Audit

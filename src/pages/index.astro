@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { url } from '../utils/url';
 ---
 
 <Layout
@@ -23,10 +24,10 @@ import Layout from '../layouts/Layout.astro';
           Startups &amp; tech companies &middot; Senior-led execution &middot; AI-orchestrated systems
         </p>
         <div class="mt-8 flex flex-col sm:flex-row gap-4">
-          <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+          <a href={url('/contact')} class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
             Get Your Free Visibility Snapshot
           </a>
-          <a href="/services#visibility-engine" class="inline-flex items-center justify-center px-8 py-4 text-white/80 hover:text-white font-medium text-lg transition-colors min-h-[44px]">
+          <a href={url('/services#visibility-engine')} class="inline-flex items-center justify-center px-8 py-4 text-white/80 hover:text-white font-medium text-lg transition-colors min-h-[44px]">
             See How It Works &rarr;
           </a>
         </div>
@@ -126,7 +127,7 @@ import Layout from '../layouts/Layout.astro';
       </div>
 
       <div class="mt-10 text-center">
-        <a href="/contact" class="inline-flex items-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
           Start with a Free Visibility Snapshot &rarr;
         </a>
       </div>
@@ -148,7 +149,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="font-headline text-xl font-bold text-navy">Search &amp; AI Visibility</h3>
           <p class="mt-3 text-muted">Get found where buyers actually look — Google, ChatGPT, Perplexity, and AI Overviews.</p>
           <p class="mt-4 text-xs font-mono text-orange">Organic visibility doubled in 6–12 months (typical)</p>
-          <a href="/services" class="mt-4 inline-flex items-center text-sm font-medium text-orange hover:text-orange/80 transition-colors">
+          <a href={url('/services')} class="mt-4 inline-flex items-center text-sm font-medium text-orange hover:text-orange/80 transition-colors">
             Learn more &rarr;
           </a>
         </div>
@@ -161,7 +162,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="font-headline text-xl font-bold text-navy">Authority Content &amp; AI Citation</h3>
           <p class="mt-3 text-muted">Create the content that builds trust, earns links, and gets cited by AI systems.</p>
           <p class="mt-4 text-xs font-mono text-orange">Content that compounds — not content that disappears</p>
-          <a href="/services" class="mt-4 inline-flex items-center text-sm font-medium text-orange hover:text-orange/80 transition-colors">
+          <a href={url('/services')} class="mt-4 inline-flex items-center text-sm font-medium text-orange hover:text-orange/80 transition-colors">
             Learn more &rarr;
           </a>
         </div>
@@ -174,7 +175,7 @@ import Layout from '../layouts/Layout.astro';
           <h3 class="font-headline text-xl font-bold text-navy">Smart-Stack Paid Media</h3>
           <p class="mt-3 text-muted">Stretch every dollar across the platforms that actually convert — not just Google and Meta.</p>
           <p class="mt-4 text-xs font-mono text-orange">Cost per lead reduced 18–40% (typical)</p>
-          <a href="/services" class="mt-4 inline-flex items-center text-sm font-medium text-orange hover:text-orange/80 transition-colors">
+          <a href={url('/services')} class="mt-4 inline-flex items-center text-sm font-medium text-orange hover:text-orange/80 transition-colors">
             Learn more &rarr;
           </a>
         </div>
@@ -190,7 +191,7 @@ import Layout from '../layouts/Layout.astro';
         Get a personalised visibility snapshot — free, no strings. Or email me directly.
       </p>
       <div class="mt-8">
-        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
           Get Your Free Visibility Snapshot
         </a>
       </div>

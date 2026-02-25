@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { url } from '../../utils/url';
 import FAQSection from '../../components/FAQSection.astro';
 
 const faqs = [
@@ -317,7 +318,7 @@ const faqs = [
         Start with a free visibility snapshot. I'll show you where you stand and recommend the right tier for your goals and budget.
       </p>
       <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
           Get Your Free Visibility Snapshot
         </a>
         <a href="mailto:jodie@jodieplant.com" class="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white font-medium text-lg rounded-lg hover:bg-white/10 transition-colors min-h-[44px]">

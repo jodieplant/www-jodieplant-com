@@ -1,5 +1,6 @@
 ---
 import Layout from '../../layouts/Layout.astro';
+import { url } from '../../utils/url';
 import { getCollection } from 'astro:content';
 
 const posts = (await getCollection('blog')).sort(
@@ -32,7 +33,7 @@ const rest = posts.filter(p => p.id !== featured?.id);
   {featured && (
     <section class="py-12 sm:py-16 bg-white">
       <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
-        <a href={`/blog/${featured.id}`} class="block group">
+        <a href={url(`/blog/${featured.id}`)} class="block group">
           <div class="bg-light rounded-xl p-8 sm:p-10 border border-gray-100 hover:border-orange/30 transition-colors">
             <span class="inline-block bg-orange/10 text-orange text-xs font-bold px-3 py-1 rounded-full mb-4">Featured</span>
             <h2 class="font-headline text-2xl sm:text-3xl font-bold text-navy group-hover:text-orange transition-colors">
@@ -60,7 +61,7 @@ const rest = posts.filter(p => p.id !== featured?.id);
       )}
       <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {rest.map(post => (
-          <a href={`/blog/${post.id}`} class="block group">
+          <a href={url(`/blog/${post.id}`)} class="block group">
             <article class="bg-white rounded-xl p-6 border border-gray-100 hover:border-orange/30 transition-colors h-full flex flex-col">
               <div class="flex gap-2 mb-3">
                 {post.data.tags.slice(0, 2).map(tag => (
@@ -88,7 +89,7 @@ const rest = posts.filter(p => p.id !== featured?.id);
       <p class="mt-4 text-lg text-white/70 max-w-xl mx-auto">
         Get a free visibility snapshot and I'll show you exactly where your marketing stands.
       </p>
-      <a href="/contact" class="mt-8 inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+      <a href={url('/contact')} class="mt-8 inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
         Get Your Free Visibility Snapshot
       </a>
     </div>

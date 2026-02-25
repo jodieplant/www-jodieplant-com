@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { url } from '../utils/url';
 ---
 
 <Layout
@@ -271,7 +272,7 @@ import Layout from '../layouts/Layout.astro';
         Start with a free visibility snapshot — I'll show you exactly where you stand and what to do about it.
       </p>
       <div class="mt-8">
-        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
           Get Your Free Visibility Snapshot
         </a>
       </div>

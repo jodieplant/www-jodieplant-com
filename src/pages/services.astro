@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { url } from '../utils/url';
 import FAQSection from '../components/FAQSection.astro';
 
 const pricingFaqs = [
@@ -170,7 +171,7 @@ const pricingFaqs = [
         <!-- Inline CTA between service blocks -->
         <div class="bg-orange/5 rounded-xl p-6 text-center border border-orange/10">
           <p class="text-navy font-medium">Want to see what I'd recommend for your business?</p>
-          <a href="/contact" class="mt-3 inline-flex items-center justify-center px-6 py-2.5 bg-orange text-white font-semibold text-sm rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+          <a href={url('/contact')} class="mt-3 inline-flex items-center justify-center px-6 py-2.5 bg-orange text-white font-semibold text-sm rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
             Get Your Free Visibility Snapshot
           </a>
         </div>
@@ -276,7 +277,7 @@ const pricingFaqs = [
       <!-- Inline CTA -->
       <div class="mt-12 text-center">
         <p class="text-muted mb-4">Not sure where to start?</p>
-        <a href="/contact" class="inline-flex items-center justify-center px-6 py-3 bg-orange/10 text-orange font-semibold rounded-lg hover:bg-orange/20 transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center justify-center px-6 py-3 bg-orange/10 text-orange font-semibold rounded-lg hover:bg-orange/20 transition-colors min-h-[44px]">
           Get Your Free Visibility Snapshot
         </a>
       </div>
@@ -354,7 +355,7 @@ const pricingFaqs = [
 
       <div class="mt-10 text-center">
         <p class="text-sm text-muted mb-4">The conversion ladder: <span class="font-medium text-navy">Free Snapshot</span> &#8594; <span class="font-medium text-orange">AI Visibility Audit</span> &#8594; <span class="font-medium text-navy">Retainer</span></p>
-        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
           Start with AI Visibility Audit
         </a>
       </div>
@@ -381,7 +382,7 @@ const pricingFaqs = [
             <li class="flex gap-2"><span class="text-orange">✓</span> AI-enhanced workflows</li>
           </ul>
           <p class="mt-4 text-xs text-muted">Who it's for: Seed to Series A. Getting started with structured marketing.</p>
-          <a href="/contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 border border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors min-h-[44px]">
+          <a href={url('/contact')} class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 border border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors min-h-[44px]">
             Get Started
           </a>
         </div>
@@ -402,7 +403,7 @@ const pricingFaqs = [
             <li class="flex gap-2"><span class="text-orange">✓</span> Bi-weekly strategy calls</li>
           </ul>
           <p class="mt-4 text-xs text-muted">Who it's for: Series A–B. Ready to invest in growth.</p>
-          <a href="/contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-orange text-white font-semibold rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+          <a href={url('/contact')} class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 bg-orange text-white font-semibold rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
             Get Started
           </a>
         </div>
@@ -422,7 +423,7 @@ const pricingFaqs = [
             <li class="flex gap-2"><span class="text-orange">✓</span> Weekly strategy calls</li>
           </ul>
           <p class="mt-4 text-xs text-muted">Who it's for: Series B+ or revenue-stage. Need CMO-level leadership.</p>
-          <a href="/contact" class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 border border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors min-h-[44px]">
+          <a href={url('/contact')} class="mt-6 inline-flex items-center justify-center w-full px-6 py-3 border border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors min-h-[44px]">
             Get Started
           </a>
         </div>
@@ -466,7 +467,7 @@ const pricingFaqs = [
         Let's figure it out together. Start with a free visibility snapshot — I'll show you exactly where you stand.
       </p>
       <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
           Get Your Free Visibility Snapshot
         </a>
       </div>

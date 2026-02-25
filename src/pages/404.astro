@@ -1,5 +1,6 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import { url } from '../utils/url';
 ---
 
 <Layout
@@ -16,10 +17,10 @@ import Layout from '../layouts/Layout.astro';
         But your marketing strategy should.
       </p>
       <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-        <a href="/" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        <a href={url('/')} class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
           Go Home
         </a>
-        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 border border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors min-h-[44px]">
+        <a href={url('/contact')} class="inline-flex items-center justify-center px-8 py-4 border border-navy text-navy font-semibold rounded-lg hover:bg-navy hover:text-white transition-colors min-h-[44px]">
           Get Your Free Audit
         </a>
       </div>
