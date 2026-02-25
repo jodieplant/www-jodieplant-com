@@ -249,8 +249,7 @@
       ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Blog is live with 3 posts. Author bio with LinkedIn link strengthens E-E-A-T signals. LinkedIn share buttons are especially high value given the FEAT-035 LinkedIn-first distribution strategy — make it one-click for Jodie to share each post and for readers to share with their networks. Reading time signals content quality. Related posts create a content loop (blog → guides → contact). Low-effort batch sprint — all in blog post template file."
-    }
-    ,
+    },
     {
       "id": "FEAT-052",
       "title": "Guide: How to Measure Marketing ROI — A Startup Founder's Guide",
@@ -320,10 +319,13 @@
         "npm run build succeeds"
       ],
       "priority": "should",
-      "readyForSprint": true,
+      "readyForSprint": false,
       "dependsOn": [],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — video is THE top ROI format but is underweight on the site. An agency selling marketing in 2026 needs to signal video competence prominently. Low effort — copy and ordering changes to existing pages. No new pages required."
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — video is THE top ROI format but is underweight on the site. An agency selling marketing in 2026 needs to signal video competence prominently. Low effort — copy and ordering changes to existing pages. No new pages required.",
+      "passes": true,
+      "status": "done",
+      "completedAt": "2026-02-24T22:36:19-08:00"
     },
     {
       "id": "FEAT-056",
