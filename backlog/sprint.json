@@ -1,22 +1,22 @@
 {
-  "sprintId": "sprint-1772001751",
-  "startedAt": "2026-02-24T22:42:31-08:00",
+  "sprintId": "sprint-1772002038",
+  "startedAt": "2026-02-24T22:47:18-08:00",
   "status": "completed",
   "item": {
-    "id": "FEAT-062",
-    "title": "Update Visibility Engine to emphasize cyclical/iterative nature",
+    "id": "FEAT-063",
+    "title": "Add content repurposing as explicit service deliverable",
     "sourceBacklog": "backlog.json",
     "steps": [],
     "acceptanceCriteria": [
-      "Visual connection from Optimize back to Discover on homepage and services page",
-      "Copy communicates iterative/compounding nature",
-      "No structural redesign — minimal changes only",
+      "Content repurposing mentioned as deliverable in Authority Content service",
+      "Retainer tier descriptions reference cross-channel repurposing",
+      "Changes are copy additions only — no structural changes",
       "npm run build succeeds"
     ],
-    "startedAt": "2026-02-24T22:42:31-08:00",
+    "startedAt": "2026-02-24T22:47:18-08:00",
     "status": "passed",
-    "completedAt": "2026-02-24T22:47:18-08:00"
+    "completedAt": "2026-02-24T22:50:57-08:00"
   },
-  "completedAt": "2026-02-24T22:47:18-08:00",
+  "completedAt": "2026-02-24T22:50:57-08:00",
   "attempts": 1
 }

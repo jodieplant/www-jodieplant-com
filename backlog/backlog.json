@@ -469,10 +469,13 @@
         "npm run build succeeds"
       ],
       "priority": "could",
-      "readyForSprint": true,
+      "readyForSprint": false,
       "dependsOn": [],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — 35.1% of marketers prioritize content repurposing, but the site doesn't mention it. Making it explicit adds perceived value to retainers ('you get 5 assets from every blog post, not just 1'). Trivial copy changes to services page. Stack with FEAT-055 or FEAT-056."
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — 35.1% of marketers prioritize content repurposing, but the site doesn't mention it. Making it explicit adds perceived value to retainers ('you get 5 assets from every blog post, not just 1'). Trivial copy changes to services page. Stack with FEAT-055 or FEAT-056.",
+      "passes": true,
+      "status": "done",
+      "completedAt": "2026-02-24T22:50:57-08:00"
     },
     {
       "id": "FEAT-064",
