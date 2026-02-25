@@ -488,10 +488,13 @@
         "npm run build succeeds"
       ],
       "priority": "could",
-      "readyForSprint": true,
+      "readyForSprint": false,
       "dependsOn": [],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — personalization is the #1 trend but barely mentioned on the site. The AI Marketing Systems service is the natural home for this. Trivial copy change — one or two sentences added to service description and deliverables. Stack with FEAT-054 (personalization blog post) for coherent messaging."
+      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — personalization is the #1 trend but barely mentioned on the site. The AI Marketing Systems service is the natural home for this. Trivial copy change — one or two sentences added to service description and deliverables. Stack with FEAT-054 (personalization blog post) for coherent messaging.",
+      "passes": true,
+      "status": "done",
+      "completedAt": "2026-02-24T22:54:21-08:00"
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."

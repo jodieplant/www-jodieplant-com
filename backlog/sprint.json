@@ -1,22 +1,22 @@
 {
-  "sprintId": "sprint-1772002038",
-  "startedAt": "2026-02-24T22:47:18-08:00",
+  "sprintId": "sprint-1772002257",
+  "startedAt": "2026-02-24T22:50:57-08:00",
   "status": "completed",
   "item": {
-    "id": "FEAT-063",
-    "title": "Add content repurposing as explicit service deliverable",
+    "id": "FEAT-064",
+    "title": "Add AI personalization capability to AI Marketing Systems service copy",
     "sourceBacklog": "backlog.json",
     "steps": [],
     "acceptanceCriteria": [
-      "Content repurposing mentioned as deliverable in Authority Content service",
-      "Retainer tier descriptions reference cross-channel repurposing",
-      "Changes are copy additions only — no structural changes",
+      "AI Marketing Systems service mentions personalization as a capability",
+      "Deliverables include audience segmentation or content personalization",
+      "Changes are copy additions only",
       "npm run build succeeds"
     ],
-    "startedAt": "2026-02-24T22:47:18-08:00",
+    "startedAt": "2026-02-24T22:50:57-08:00",
     "status": "passed",
-    "completedAt": "2026-02-24T22:50:57-08:00"
+    "completedAt": "2026-02-24T22:54:21-08:00"
   },
-  "completedAt": "2026-02-24T22:50:57-08:00",
+  "completedAt": "2026-02-24T22:54:21-08:00",
   "attempts": 1
 }
