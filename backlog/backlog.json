@@ -369,8 +369,8 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Good for SEO long-tail. Phase 3 — after MVP and blog are established."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "RE-GROOMED (2026-02-24): Phase 2 now complete — blog, guides (4 pages), analytics, chat, and calendar all live. Service sub-pages are still Phase 3 — good for long-tail SEO but not conversion-blocking. Sprint after entity authority (FEAT-035) and testimonials (FEAT-046) are established — individual service pages work best when there is social proof and domain authority behind them. Each page should target a specific service keyword (e.g. 'fractional CMO for startups', 'AI-powered SEO agency'). Estimated: Q2 2026."
     },
     {
       "id": "FEAT-018",
@@ -386,8 +386,8 @@
       "priority": "future",
       "readyForSprint": false,
       "dependsOn": ["FEAT-006"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE when real content exists. Explicitly blocked until genuine case studies are available. Never fabricate."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "RE-GROOMED (2026-02-24): Future track — explicitly blocked until real case studies exist. Never fabricate. The current /results page (real credentials + methodology walkthroughs + outcome range anchors) is more credible than empty case study shells. This item becomes relevant after 3–6 months of active client engagements. When real results exist: one detailed case study is worth ten vague portfolio logos. Estimated: Q3–Q4 2026."
     },
     {
       "id": "FEAT-019",
@@ -400,11 +400,11 @@
         "Privacy notice near form",
         "Confirmation message on submission"
       ],
-      "priority": "future",
+      "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-013"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: Lead nurturing requires blog content first (FEAT-013). Phase 2 item, after blog is live. Priority correctly 'future' until FEAT-013 ships — then elevate to 'should'."
+      "groomingNotes": "ELEVATED TO SHOULD: Blog (3 posts) and guides (4 pages) are live — the infrastructure to drive email subscribers now exists. Email capture converts readers who aren't ready to book a call. LEAD MAGNET RECOMMENDATION: A 1-page PDF 'Startup Marketing Playbook' — curated summary of the 4 guide pages (Fractional CMO comparison, Alternatives to Ads, Marketing Costs, What a Retainer Includes) as a downloadable quick-reference. Lightweight to create, high alignment with existing guide content. Natural placement: at the end of each blog post and each guide page. Use ConvertKit free tier (up to 10K subscribers). BLOCKER: Lead magnet PDF must exist before Tech Lead marks readyForSprint. Create PDF first, then sprint the form integration."
     },
     {
       "id": "FEAT-020",
@@ -499,10 +499,10 @@
         "npm run build succeeds"
       ],
       "priority": "could",
-      "readyForSprint": false,
+      "readyForSprint": true,
       "dependsOn": ["FEAT-010", "FEAT-013"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Measures whether blog content drives enquiries. Blocked on blog existing (FEAT-013). Feeds the Content Dashboard and content funnel."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "UNBLOCKED: FEAT-013 (blog) is now live with 3 posts. All dependencies met. Add tracking to src/pages/blog/[id].astro: blog_post_viewed (slug, title on load), blog_read_depth (IntersectionObserver at 25/50/75/100% of article body), blog_cta_clicked (end-of-post CTA). Low effort sprint — add script block to blog post template. Sprint when traffic warrants measurement."
     },
     {
       "id": "FEAT-026",
@@ -640,7 +640,7 @@
       "readyForSprint": false,
       "sprintable": false,
       "groomedAt": "2026-02-24",
-      "groomingNotes": "URGENT MANUAL TRACK: Site MVP is complete — entity authority work should have started already. LinkedIn posting, Reddit engagement (r/marketing, r/startups), directory listings. This builds the off-site signals that AI and search engines use to establish credibility. Entity authority compounds over time. TARGET: Active LinkedIn presence + 1 directory listing within 14 days."
+      "groomingNotes": "URGENT MANUAL TRACK (active): Site MVP + guides + blog are live — entity authority work must have started by now. Priorities: (1) LinkedIn: post 2x/week minimum, original marketing commentary + links to guides/blog. High-engagement LinkedIn threads are the #1 source of AI citation signals. (2) Reddit: genuine answers in r/marketing, r/startups, r/SaaS — link to guides where relevant. (3) Directory listings: Clutch, GoodFirms, Crunchbase — consistent NAP across all. (4) Guest podcast/newsletter outreach: pitch Jodie as a guest to B2B marketing podcasts. Milestone: by 2026-03-10 — LinkedIn profile optimized, 5 posts published, 2+ directory listings live."
     },
     {
       "id": "FEAT-036",
@@ -803,10 +803,10 @@
         "npm run build succeeds (if implementation is in-repo)"
       ],
       "priority": "could",
-      "readyForSprint": false,
+      "readyForSprint": true,
       "dependsOn": ["FEAT-007", "FEAT-014"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "PHASE 2: Requires Cal.com integration (FEAT-014) first. Reduces low-quality calls by encouraging audit-first path. User value: higher quality conversations, better-prepared prospects. Consider bypass option for high-intent users."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "UNBLOCKED: FEAT-014 (Cal.com) is now integrated in contact.astro. Implementation: update the form confirmation message to show Cal.com booking link only after form submit (not as a standalone persistent section). This ensures prospects have shared context before booking. Keep an 'or email me directly' fallback for high-intent users. Low-effort change — update contact.astro confirmation flow."
     },
     {
       "id": "FEAT-045",
@@ -836,7 +836,94 @@
       "readyForSprint": false,
       "sprintable": false,
       "groomedAt": "2026-02-24",
-      "groomingNotes": "URGENT MANUAL TRACK: Results page (FEAT-006) is live with placeholder testimonials. Real testimonials dramatically improve conversion. One strong LinkedIn recommendation from a VP of Marketing > 'testimonials coming soon' copy. Reach out to 3-5 former clients/colleagues this week. This work should happen in parallel with entity authority (FEAT-035)."
+      "groomingNotes": "URGENT MANUAL TRACK (active): Results page live, TestimonialSchema.astro (FEAT-043) is ready to receive real content. The conversion impact of even 1 strong testimonial is significant. Action plan: (1) This week — reach out via LinkedIn DM to 3-5 former clients/colleagues, ask for a LinkedIn recommendation (public) or a short quote with name+title. (2) Frame the ask: 'I'm launching Jodie Plant Marketing and would love your support — even one sentence about working together would mean a lot.' (3) Once received, add to /results testimonials section and trigger TestimonialSchema markup. Milestone by 2026-03-10: 2+ testimonials live on site."
+    },
+    {
+      "id": "FEAT-047",
+      "title": "Add /guides/ index page for discoverability and internal linking",
+      "description": "Create src/pages/guides/index.astro — a listing page for all 'best answer' guide pages. Currently navigating to /guides/ returns a 404. An index page improves crawlability, provides a linking target from blog posts and services, and creates a coherent content hub.\n\nContent: list all guide pages with title, one-line description, and link. Group by category if useful (e.g. 'Pricing & Budget', 'Strategy', 'Channel Mix'). Add CTA: 'Need help applying this? Get your free visibility snapshot.'\n\nAlso: add a 'Guides' link or section to the site navigation (footer at minimum, optionally header).",
+      "acceptanceCriteria": [
+        "/guides/ returns a branded index page (not 404)",
+        "All existing guide pages listed with titles and descriptions",
+        "CTA linking to /contact at bottom of page",
+        "Guide pages linked from Footer or Header navigation",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-026", "FEAT-031", "FEAT-039"],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "QUICK WIN: /guides/ 404 is a user experience and crawlability gap. All 4 guide pages are live. A listing page takes one sprint and creates a proper content hub. Improves internal linking and makes guides accessible via navigation. Recommend as next should-priority sprint."
+    },
+    {
+      "id": "FEAT-048",
+      "title": "Update llms.txt to include blog posts and guide pages",
+      "description": "FEAT-027 created the initial llms.txt covering only the 5 MVP pages. Since then, 4 guide pages and a 3-post blog have launched. Update public/llms.txt to add:\n- Blog index page (/blog/)\n- Each blog post with title and slug\n- Guides index page (/guides/) when FEAT-047 is done\n- Each guide page with title and slug\n\nThis is a static file update — no code changes required beyond editing the file directly.",
+      "acceptanceCriteria": [
+        "public/llms.txt includes all guide pages with accurate descriptions",
+        "public/llms.txt includes blog index and all published posts",
+        "File remains clean markdown format per llms.txt convention",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-027", "FEAT-013", "FEAT-026"],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "TRIVIAL WIN: llms.txt is stale — it was created before blog and guides launched. File edit only, no code change. Stack with another sprint or do as a standalone 10-minute task."
+    },
+    {
+      "id": "FEAT-049",
+      "title": "Establish ongoing content cadence (blog posts post-seed)",
+      "description": "With 3 seed blog posts and 4 guide pages live, the content infrastructure is established. The next step is a sustainable content cadence to build topical authority and fresh signals for AI/search engines.\n\nThis is a MANUAL TRACK item (not a code sprint). Content cadence:\n- 2 blog posts per month minimum (one tactical how-to, one strategic perspective)\n- 1 guide page update or new guide per quarter\n- LinkedIn companion post for each piece of content (drafted as part of content creation)\n- Track in a content calendar\n\nContent priority order:\n1. Posts that answer specific buyer questions (what does a marketing retainer include, how long does SEO take)\n2. Posts that link to guide pages for internal authority\n3. Posts that demonstrate AI-enhanced workflow (process transparency)",
+      "acceptanceCriteria": [
+        "Content calendar created with topics planned 4-6 weeks ahead",
+        "2+ new blog posts published per month",
+        "Each blog post has a LinkedIn companion post",
+        "Guide pages updated when new information becomes available"
+      ],
+      "priority": "should",
+      "readyForSprint": false,
+      "sprintable": false,
+      "dependsOn": ["FEAT-013"],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "MANUAL TRACK — ONGOING: Content is the fuel for entity authority (FEAT-035). 3 seed posts won't sustain topical authority signals — AI systems favour fresh, regularly updated content. Each post also creates a LinkedIn distribution opportunity (primary entity signal channel). Goal: 12 posts by end of Q2 2026. Seed posts are done; content cadence must become the default going-forward activity."
+    },
+    {
+      "id": "FEAT-050",
+      "title": "Core Web Vitals and performance audit",
+      "description": "Run a Lighthouse audit and Core Web Vitals check on the live site. A marketing agency website must be fast — slow load times undermine the brand and hurt search rankings.\n\nAudit areas:\n- Lighthouse scores (Performance, Accessibility, SEO, Best Practices) on homepage, services, and contact pages\n- Core Web Vitals: LCP, CLS, INP\n- Image optimization (format, size, lazy loading)\n- Font loading strategy (Cabinet Grotesk, Space Grotesk, Inter load order)\n- Third-party script impact: PostHog, Crisp chat\n- Mobile performance\n\nFixes to implement based on findings:\n- Convert images to WebP/AVIF where applicable\n- Add width/height to prevent CLS\n- Defer non-critical third-party scripts\n- Preload critical fonts\n- Any other Lighthouse-recommended improvements\n\nTarget: Lighthouse Performance ≥90, Accessibility ≥95, SEO ≥95 on mobile.",
+      "acceptanceCriteria": [
+        "Lighthouse Performance score ≥90 on homepage (mobile)",
+        "Lighthouse Accessibility score ≥95 on all main pages",
+        "Lighthouse SEO score ≥95 on all main pages",
+        "CLS (Cumulative Layout Shift) <0.1 on all pages",
+        "All images have explicit dimensions and appropriate formats",
+        "Font loading does not block page render",
+        "npm run build succeeds"
+      ],
+      "priority": "should",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-010", "FEAT-015"],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): A marketing agency website must have excellent Core Web Vitals — it is a proof point as much as a technical requirement. Jodie sells marketing and AI systems; a slow or inaccessible site directly contradicts the brand. Third-party scripts (PostHog, Crisp) may be impacting performance now that all pages and features are live. All core pages are built — this is now actionable. Sprint after FEAT-047 (guides index). HIGH CREDIBILITY IMPACT: Google ranks fast sites higher, and prospects who audit Jodie's site expect it to pass the same tests she'd apply to theirs."
+    },
+    {
+      "id": "FEAT-051",
+      "title": "Add blog post reading time, author bio, and social sharing",
+      "description": "Enhance individual blog post pages (/blog/[slug]) with engagement and shareability features:\n\n1. READING TIME: Calculate and display estimated reading time (words / 200 wpm). Display near article header: 'X min read'. Improves perceived quality.\n\n2. AUTHOR BIO BLOCK: Add brief author section at the end of each post. Name: Jodie Plant. Title: Marketing consultant & AI systems builder. Short bio (1–2 sentences). LinkedIn profile link. Optional: professional photo. Reinforces E-E-A-T signals.\n\n3. SOCIAL SHARING: Add LinkedIn and Twitter/X share buttons at the bottom of each post. LinkedIn is the primary distribution channel (FEAT-035 strategy). Simple URL-encoded share links — no third-party widgets.\n\n4. RELATED POSTS: Show 2 related posts at the end of each post (by category or manual selection). Reduces bounce rate and surfaces guide content.",
+      "acceptanceCriteria": [
+        "Estimated reading time appears on each blog post",
+        "Author bio block appears at the end of each post with name, title, and LinkedIn link",
+        "LinkedIn and Twitter/X share links at bottom of each post",
+        "2 related posts displayed at the end of each post",
+        "All additions are responsive and match brand styling",
+        "npm run build succeeds"
+      ],
+      "priority": "could",
+      "readyForSprint": true,
+      "dependsOn": ["FEAT-013"],
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "NEW (2026-02-24): Blog is live with 3 posts. Author bio with LinkedIn link strengthens E-E-A-T signals. LinkedIn share buttons are especially high value given the FEAT-035 LinkedIn-first distribution strategy — make it one-click for Jodie to share each post and for readers to share with their networks. Reading time signals content quality. Related posts create a content loop (blog → guides → contact). Low-effort batch sprint — all in blog post template file."
     }
   ],
   "_dependsOn_docs": "Items may include an optional 'dependsOn' array of item ID strings (e.g. \"dependsOn\": [\"FEAT-001\"]). Auto-pick skips items whose dependencies are not yet done."
