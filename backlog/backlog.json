@@ -291,7 +291,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Core Phase 2 feature. Unblocks FEAT-019 (email capture), FEAT-024 (blog analytics). Enables content marketing flywheel and entity authority. Priority stays should — manual tracks (FEAT-035, FEAT-046) and positioning page (FEAT-039) take precedence. READY FOR SPRINT when Tech Lead assesses."
+      "groomingNotes": "HIGH VALUE: Core Phase 2 feature. Unblocks FEAT-019 (email capture), FEAT-024 (blog analytics). Enables content marketing flywheel and entity authority. Priority stays should — manual tracks (FEAT-035, FEAT-046) and positioning page (FEAT-039) take precedence. READY FOR SPRINT when Tech Lead assesses.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-014",
@@ -307,7 +309,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-007"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: Calendar in confirmation flow ensures context before booking. Low effort. Keep could — conversion paths already work via form + email."
+      "groomingNotes": "MEDIUM VALUE: Calendar in confirmation flow ensures context before booking. Low effort. Keep could — conversion paths already work via form + email.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-015",
@@ -323,7 +327,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-003"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Engages high-intent visitors in real-time. Phase 2 item."
+      "groomingNotes": "MEDIUM VALUE: Engages high-intent visitors in real-time. Phase 2 item.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-016",
@@ -515,7 +521,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Core GEO/AEO strategy. Can launch as standalone pages before blog. Per brief v2.3, these pages serve both AI citation and human conversion. Pricing transparency content is a significant lead driver. Recommend Tech Lead assess readyForSprint."
+      "groomingNotes": "HIGH VALUE: Core GEO/AEO strategy. Can launch as standalone pages before blog. Per brief v2.3, these pages serve both AI citation and human conversion. Pricing transparency content is a significant lead driver. Recommend Tech Lead assess readyForSprint.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-027",
@@ -573,7 +581,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Directly addresses top question from budget-conscious buyers. Citation-worthy for AI systems due to specific data (CPCs, budget allocations). Positions Jodie as smart-budget expert. Part of the best-answer content cluster with FEAT-026 and FEAT-039."
+      "groomingNotes": "HIGH VALUE: Directly addresses top question from budget-conscious buyers. Citation-worthy for AI systems due to specific data (CPCs, budget allocations). Positions Jodie as smart-budget expert. Part of the best-answer content cluster with FEAT-026 and FEAT-039.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-032",
@@ -666,7 +676,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: CRO pairs naturally with paid advertising and SEO. Adding it to Growth/Authority tiers increases perceived package value. Lower priority than positioning content (FEAT-039, FEAT-026, FEAT-031) — those drive new leads, this optimizes existing pages."
+      "groomingNotes": "MEDIUM VALUE: CRO pairs naturally with paid advertising and SEO. Adding it to Growth/Authority tiers increases perceived package value. Lower priority than positioning content (FEAT-039, FEAT-026, FEAT-031) — those drive new leads, this optimizes existing pages.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-038",
@@ -682,7 +694,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-007"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: GTM Sprint fills gap between audit and retainer. Recognized buying category for funded startups. $3K-$7K entry point. Lower priority than positioning content — add after FEAT-039 establishes fractional CMO positioning."
+      "groomingNotes": "MEDIUM VALUE: GTM Sprint fills gap between audit and retainer. Recognized buying category for funded startups. $3K-$7K entry point. Lower priority than positioning content — add after FEAT-039 establishes fractional CMO positioning.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-039",
@@ -701,7 +715,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "ELEVATED TO MUST: Fractional CMO positioning is core to the brand (brief Section 2.2). This comparison page directly addresses high-intent buyers researching their options. Market research shows fractional CMO is a growth category. Strongly positions Jodie in the GEO/AEO landscape alongside FEAT-026 and FEAT-031."
+      "groomingNotes": "ELEVATED TO MUST: Fractional CMO positioning is core to the brand (brief Section 2.2). This comparison page directly addresses high-intent buyers researching their options. Market research shows fractional CMO is a growth category. Strongly positions Jodie in the GEO/AEO landscape alongside FEAT-026 and FEAT-031.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-040",
@@ -754,7 +770,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "ELEVATED TO SHOULD: Micro proof within service blocks adds immediate credibility without waiting for full case studies. User value: visitors see evidence alongside claims. Can use real, generalized outcome ranges now. Lower effort than full testimonials track."
+      "groomingNotes": "ELEVATED TO SHOULD: Micro proof within service blocks adds immediate credibility without waiting for full case studies. User value: visitors see evidence alongside claims. Can use real, generalized outcome ranges now. Lower effort than full testimonials track.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-043",
@@ -770,7 +788,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-006", "FEAT-009"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "FUTURE-READY: Schema prep for when testimonials exist. Low effort to build reusable component now. User value: SEO rich results and AI citation when content is added. Keep low priority until testimonials are collected."
+      "groomingNotes": "FUTURE-READY: Schema prep for when testimonials exist. Low effort to build reusable component now. User value: SEO rich results and AI citation when content is added. Keep low priority until testimonials are collected.",
+      "status": "completed",
+      "completedAt": "2026-02-25"
     },
     {
       "id": "FEAT-044",

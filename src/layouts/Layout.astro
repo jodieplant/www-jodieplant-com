@@ -78,5 +78,12 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <CookieConsent />
     <ScrollAnimations />
     <ScrollDepthTracking />
+    <!-- Crisp Chat Widget (loads async, non-blocking) -->
+    <script is:inline>
+      window.$crisp=[];window.CRISP_WEBSITE_ID=import.meta.env?.PUBLIC_CRISP_WEBSITE_ID||"";
+      if(window.CRISP_WEBSITE_ID&&window.location.hostname!=="localhost"){
+        (function(){var d=document;var s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();
+      }
+    </script>
   </body>
 </html>

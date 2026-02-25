@@ -1,0 +1,329 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const faqs = [
+  {
+    question: 'How long is a typical marketing retainer commitment?',
+    answer: 'At Jodie Plant Marketing, there are no long-term lock-in contracts. Retainers run month-to-month with 30 days notice to cancel. That said, marketing results compound over time — SEO and content strategies typically need 3-6 months to show meaningful ROI. I recommend committing to at least a 3-month engagement mentally, even if the contract doesn\'t require it, so the strategy has time to work.',
+  },
+  {
+    question: 'What happens if I need to pause my retainer?',
+    answer: 'Life happens — funding delays, pivots, seasonal slowdowns. If you need to pause, give 30 days notice. We\'ll wrap up in-progress work, deliver final reports, and document everything so you can pick up where you left off. There are no pause fees or penalties. Some clients pause for a month or two and come back when they\'re ready.',
+  },
+  {
+    question: 'Is ad spend included in the retainer price?',
+    answer: 'No — retainer fees cover strategy, management, and execution. Ad spend (the money paid directly to Google, Meta, LinkedIn, etc.) is separate and goes directly to the platforms. This keeps things transparent: you always know exactly what you\'re paying for management versus media. I\'ll help you set the right ad budget based on your goals and track every dollar of return.',
+  },
+  {
+    question: 'How do I know if my retainer is actually working?',
+    answer: 'Every retainer includes monthly reporting with clear KPIs tied to business outcomes — not vanity metrics. You\'ll see traffic growth, lead volume, conversion rates, cost per acquisition, and pipeline attribution. We set benchmarks in month one and track against them. If something isn\'t working, I\'ll tell you directly and adjust the strategy. No hiding behind impressions and click-through rates.',
+  },
+];
+---
+
+<Layout
+  title="What Does a Marketing Retainer Include? — Jodie Plant Marketing"
+  description="Demystifying marketing retainers: what you get each month, what a typical month looks like at each tier, and red flags to watch for in retainer agreements."
+>
+  <!-- HERO -->
+  <section class="bg-navy text-white py-16 sm:py-24">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-orange font-mono text-sm font-semibold mb-4">Marketing Guide</p>
+        <h1 class="font-headline text-4xl sm:text-5xl font-extrabold leading-tight">
+          What Does a Marketing Retainer Actually Include?
+        </h1>
+        <p class="mt-6 text-lg text-white/70 leading-relaxed">
+          A marketing retainer is a monthly agreement where you pay a fixed fee for ongoing marketing strategy and execution. What's included varies enormously — from bare-minimum reporting to full-service marketing leadership. The key is knowing what to expect at your price point and which inclusions actually move the needle versus pad the deliverables list.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+
+        <h2 class="font-headline text-3xl font-bold text-navy">Why Retainers Exist (and Why They're Usually Better Than Projects)</h2>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          Marketing isn't a one-time activity. It's a system that compounds over time. A blog post you publish in month one earns traffic in month six. A paid media campaign you optimize in week two performs better in week eight. SEO work you do today pays dividends for years.
+        </p>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          One-off projects have their place — audits, strategy sprints, and launch campaigns all work well as standalone engagements. But the real value in marketing comes from sustained, strategic effort. That's what a retainer buys you: continuity, compounding results, and a partner who understands your business deeply enough to make smart decisions fast.
+        </p>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          The problem is that "retainer" has become an industry catch-all that can mean anything from "we'll check in once a month" to "we run your entire marketing department." Let's break down what you should actually expect.
+        </p>
+
+        <!-- WHAT'S ALWAYS INCLUDED -->
+        <h2 class="font-headline text-3xl font-bold text-navy mt-16">What Should Always Be Included (at Any Price Point)</h2>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          Regardless of what tier or package you buy, any legitimate marketing retainer should include these non-negotiables. If they're missing, ask why.
+        </p>
+
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-orange rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Analytics and Tracking Infrastructure</h3>
+              <p class="mt-1 text-muted">Proper GA4 setup, conversion tracking, UTM frameworks, and attribution modeling. You can't improve what you can't measure. This should be set up in month one and maintained throughout the engagement.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-orange rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Monthly Reporting with Business Metrics</h3>
+              <p class="mt-1 text-muted">Not a PDF of screenshots. Real reporting that connects marketing activity to business outcomes: leads generated, pipeline created, cost per acquisition, and revenue attribution. You should understand exactly what your marketing dollars are producing.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-orange rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Strategic Direction and Prioritization</h3>
+              <p class="mt-1 text-muted">Someone should be thinking about which activities to prioritize, what to test next, and how channels connect. If your retainer only includes execution without strategy, you're paying for hands without a brain.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-orange rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Regular Communication</h3>
+              <p class="mt-1 text-muted">At minimum, a monthly strategy call and async access for questions. Bi-weekly calls are better for growth-stage companies. Weekly calls are standard at the fractional CMO level. If you're only hearing from your marketer when the invoice arrives, something is wrong.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-orange rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Full Access and Ownership</h3>
+              <p class="mt-1 text-muted">You should own all accounts, assets, and data. All ad accounts should be in your name. All content should be yours. If the relationship ends, everything stays with you — no hostage situations.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- A TYPICAL MONTH -->
+        <h2 class="font-headline text-3xl font-bold text-navy mt-16">A Typical Month at Each Tier</h2>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          Here's what an actual month looks like at each package level at Jodie Plant Marketing. This isn't a deliverables wishlist — it's what actually gets done, week by week.
+        </p>
+
+      </div>
+
+      <!-- TIER WALKTHROUGHS -->
+      <div class="mt-12 space-y-10 max-w-4xl">
+
+        <!-- Foundation -->
+        <div class="rounded-xl border border-gray-200 overflow-hidden">
+          <div class="bg-light px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="font-headline text-xl font-bold text-navy">Foundation Tier</h3>
+              <p class="text-sm text-muted">From $1,500/mo &mdash; Seed to Series A</p>
+            </div>
+          </div>
+          <div class="px-6 py-5">
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">1</span>
+                  Week 1: Strategy &amp; SEO
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Review previous month's performance. Keyword tracking and ranking analysis. Technical SEO monitoring and fixes. Plan content for the month based on search opportunity data.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">2</span>
+                  Week 2: Content Production
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Write and publish first blog post (SEO-optimized, AI-citation ready). Optimize existing high-potential pages. Update internal linking structure.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">3</span>
+                  Week 3: Paid Media &amp; Content
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Paid campaign optimization (bid adjustments, ad copy testing, negative keywords). Write and publish second blog post. Monitor and adjust based on performance data.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">4</span>
+                  Week 4: Reporting &amp; Planning
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Compile monthly performance report. Monthly strategy call to review results, discuss next month's priorities. Adjust strategy based on what the data is telling us.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Growth -->
+        <div class="rounded-xl border-2 border-orange overflow-hidden relative">
+          <span class="absolute top-3 right-3 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+          <div class="bg-orange/5 px-6 py-4 border-b border-orange/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="font-headline text-xl font-bold text-navy">Growth Tier</h3>
+              <p class="text-sm text-muted">From $2,500/mo &mdash; Series A&ndash;B</p>
+            </div>
+          </div>
+          <div class="px-6 py-5">
+            <p class="text-text leading-relaxed mb-6">
+              Everything in Foundation, plus a significantly expanded scope. Here's what the additional investment buys you:
+            </p>
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Full AI Visibility (GEO) Program
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Monitoring and optimization for how your brand appears in ChatGPT, Perplexity, Gemini, and Google AI Overviews. Content structured for AI extraction and citation. Entity authority building across the web.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Multi-Platform Paid Media
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Campaigns across 2-4 platforms (Google, Meta, LinkedIn, Bing, Reddit) with smart budget allocation based on performance data. Creative testing at scale. Retargeting and audience building.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Conversion Rate Optimization
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Landing page audits and optimization. A/B testing on key conversion pages. Form optimization. CTA testing. The goal: squeeze more leads from the traffic you already have.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Social Media Management
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Content calendar, scheduling, and distribution across LinkedIn and one additional platform. Organic social strategy that reinforces your paid and content efforts.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Bi-Weekly Strategy Calls
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Twice the strategic touchpoints. Faster iteration. More responsive to market changes, competitive moves, and performance data.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Authority -->
+        <div class="rounded-xl border border-gray-200 overflow-hidden">
+          <div class="bg-light px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="font-headline text-xl font-bold text-navy">Authority Tier <span class="text-sm font-normal text-muted">/ Fractional CMO</span></h3>
+              <p class="text-sm text-muted">From $4,500/mo &mdash; Series B+ / Revenue Stage</p>
+            </div>
+          </div>
+          <div class="px-6 py-5">
+            <p class="text-text leading-relaxed mb-6">
+              This is a fundamentally different engagement. You're not buying a list of marketing services — you're getting a fractional marketing leader embedded in your team. Everything in Growth is included, plus:
+            </p>
+            <div class="space-y-6">
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Marketing Leadership
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Quarterly and annual marketing roadmap development. Budget planning and allocation. Channel strategy. Market positioning. The strategic thinking that turns disconnected tactics into a growth system.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Team &amp; Vendor Management
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Managing freelancers, agencies, or junior marketing staff on your behalf. Vendor evaluation and selection. Quality control across all marketing outputs.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Board-Level Reporting
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">KPI frameworks that tie marketing to revenue. Board-ready decks. Investor-facing metrics. Marketing as a function your board understands and trusts.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Email Marketing &amp; Automation
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Full email infrastructure: nurture sequences, drip campaigns, newsletter strategy, list segmentation. Building an owned audience that doesn't depend on algorithms.</p>
+              </div>
+              <div>
+                <h4 class="font-semibold text-navy flex items-center gap-2">
+                  <span class="inline-flex items-center justify-center w-6 h-6 rounded-full bg-orange/10 text-orange font-mono font-bold text-xs">+</span>
+                  Weekly Strategy Calls
+                </h4>
+                <p class="mt-2 text-muted text-sm ml-8">Real-time strategic partnership. Quick decisions, fast pivots, and alignment with your sales and product teams.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mt-16">
+
+        <!-- RED FLAGS -->
+        <h2 class="font-headline text-3xl font-bold text-navy">Red Flags in Retainer Agreements</h2>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          Not all retainers are created equal. Here are the warning signs that a retainer agreement is designed to protect the agency, not serve you.
+        </p>
+
+        <div class="mt-8 space-y-5">
+          <div class="bg-red-50 rounded-xl p-5 border border-red-100">
+            <h4 class="font-semibold text-navy">"Deliverables subject to change"</h4>
+            <p class="mt-1 text-sm text-muted">If the retainer doesn't specify what you're getting each month, you have no way to hold them accountable. Vague scope = vague results.</p>
+          </div>
+          <div class="bg-red-50 rounded-xl p-5 border border-red-100">
+            <h4 class="font-semibold text-navy">6-12 month lock-in with no performance clause</h4>
+            <p class="mt-1 text-sm text-muted">Long commitments are fine if there's a performance exit clause. If they're confident in their work, they shouldn't need to contractually prevent you from leaving.</p>
+          </div>
+          <div class="bg-red-50 rounded-xl p-5 border border-red-100">
+            <h4 class="font-semibold text-navy">They own the ad accounts</h4>
+            <p class="mt-1 text-sm text-muted">If your Google Ads account, Meta Business Manager, or analytics are in their name, you lose everything if you leave. All accounts should be in your name from day one.</p>
+          </div>
+          <div class="bg-red-50 rounded-xl p-5 border border-red-100">
+            <h4 class="font-semibold text-navy">Reporting is "impressions" and "reach" only</h4>
+            <p class="mt-1 text-sm text-muted">If your monthly report doesn't include leads, conversions, cost per acquisition, or pipeline metrics, they're hiding behind vanity numbers. Demand business outcomes.</p>
+          </div>
+          <div class="bg-red-50 rounded-xl p-5 border border-red-100">
+            <h4 class="font-semibold text-navy">You never talk to the person doing the work</h4>
+            <p class="mt-1 text-sm text-muted">If your calls are with an account manager who then relays information to the actual strategist, you're playing telephone with your marketing budget. Insist on direct access to the person doing the thinking.</p>
+          </div>
+          <div class="bg-red-50 rounded-xl p-5 border border-red-100">
+            <h4 class="font-semibold text-navy">Percentage-of-spend fees without caps</h4>
+            <p class="mt-1 text-sm text-muted">Paying 15-20% of ad spend incentivizes your marketer to spend more, not spend smarter. Fixed retainers align incentives — they make money by making your marketing work, not by increasing your budget.</p>
+          </div>
+        </div>
+
+        <div class="mt-10 bg-orange/5 rounded-xl p-6 border border-orange/10">
+          <p class="text-text leading-relaxed">
+            <strong class="text-navy">How we do it differently:</strong> Month-to-month agreements. You own all accounts and assets. Reports focus on business metrics, not vanity numbers. You talk directly to me — the senior marketer doing the strategy and execution. No layers, no handoffs.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div class="mt-16">
+          <FAQSection faqs={faqs} heading="Retainer Questions" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20 bg-navy text-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-headline text-3xl sm:text-4xl font-bold">Ready to see what a retainer looks like for your business?</h2>
+      <p class="mt-4 text-lg text-white/70 max-w-xl mx-auto">
+        Start with a free visibility snapshot. I'll show you where you stand and recommend the right tier for your goals and budget.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+          Get Your Free Visibility Snapshot
+        </a>
+        <a href="mailto:jodie@jodieplant.com" class="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white font-medium text-lg rounded-lg hover:bg-white/10 transition-colors min-h-[44px]">
+          Email Me Directly
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

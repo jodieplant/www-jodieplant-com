@@ -1,0 +1,286 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import FAQSection from '../../components/FAQSection.astro';
+
+const faqs = [
+  {
+    question: 'How much should a startup spend on marketing as a percentage of revenue?',
+    answer: 'The standard benchmark is 10-20% of revenue for growth-stage startups, but this varies wildly by stage. Pre-revenue companies should budget based on runway and milestones, not revenue. Seed-stage companies typically allocate $1,500-$3,000/month. Series A companies targeting aggressive growth often spend 15-25% of revenue. The more important question is: what\'s your cost per acquisition target, and what channels can hit it?',
+  },
+  {
+    question: 'Should I spend on paid ads or organic marketing first?',
+    answer: 'Start with the foundation: a website that converts, basic analytics, and clear messaging. Then test paid ads on a small budget ($500-$1,500/month) to validate which channels and messages resonate. Use those insights to inform your organic strategy. Paid gives you fast data. Organic gives you compounding returns. You need both, but paid first for learning, organic first for building.',
+  },
+  {
+    question: 'What marketing tools do I actually need as a startup?',
+    answer: 'At minimum: Google Analytics 4 (free), Google Search Console (free), a CRM like HubSpot free tier, and an email tool like Mailchimp or Brevo free tier. As you grow, add SEO tools ($100-$200/month), social scheduling ($30-$50/month), and conversion tracking. Total tool cost for most startups: $150-$500/month. Don\'t buy enterprise tools until you have enterprise needs.',
+  },
+  {
+    question: 'Is it worth hiring a marketing agency if I only have $2,000/month?',
+    answer: 'At $2,000/month, most agencies will either turn you down or put a junior on your account. You\'re better off with a focused retainer from a solo practitioner or fractional marketer who can stretch that budget across strategy and execution. At Jodie Plant Marketing, the Foundation tier starts at $1,500/month and includes SEO, content, basic paid media, and monthly reporting — all managed by a senior marketer, not a junior coordinator.',
+  },
+];
+---
+
+<Layout
+  title="How Much Does Startup Marketing Cost in 2026? — Jodie Plant Marketing"
+  description="Real startup marketing costs by stage: pre-seed to Series B+. Budget breakdowns, what you get at each level, and where most startups waste money."
+>
+  <!-- HERO -->
+  <section class="bg-navy text-white py-16 sm:py-24">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+        <p class="text-orange font-mono text-sm font-semibold mb-4">Marketing Guide</p>
+        <h1 class="font-headline text-4xl sm:text-5xl font-extrabold leading-tight">
+          How Much Does Startup Marketing Cost in 2026?
+        </h1>
+        <p class="mt-6 text-lg text-white/70 leading-relaxed">
+          Startup marketing costs range from $0-$1,500/month for bootstrapped companies doing it themselves, to $4,500-$10,000/month for Series A-B companies with fractional CMO-level support. The right budget depends on your stage, goals, and whether you're optimizing for learning or scaling. Here's exactly what to expect at every level.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <section class="py-16 sm:py-20 bg-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-3xl">
+
+        <h2 class="font-headline text-3xl font-bold text-navy">Marketing Budgets by Stage</h2>
+        <p class="mt-4 text-lg text-muted leading-relaxed">
+          The biggest mistake startups make with marketing budgets is benchmarking against companies at a completely different stage. A pre-seed founder shouldn't be spending like a Series B, and a Series A company shouldn't be scraping by on DIY tactics. Here's what actually makes sense at each level.
+        </p>
+
+      </div>
+
+      <!-- BUDGET TIERS -->
+      <div class="mt-12 space-y-8 max-w-4xl">
+
+        <!-- Tier 1: Pre-seed / Bootstrapped -->
+        <div class="rounded-xl border border-gray-200 overflow-hidden">
+          <div class="bg-light px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="font-headline text-xl font-bold text-navy">Pre-Seed / Bootstrapped</h3>
+              <p class="text-sm text-muted">DIY + targeted expert help</p>
+            </div>
+            <span class="font-mono text-2xl font-bold text-navy">$0&ndash;$1,500<span class="text-sm text-muted font-normal">/mo</span></span>
+          </div>
+          <div class="px-6 py-5">
+            <p class="text-text leading-relaxed">
+              At this stage, your job is learning, not scaling. You need to understand your market, test messages, and find what resonates — all while preserving cash. The goal isn't a marketing machine. It's validated assumptions you can invest in later.
+            </p>
+            <h4 class="font-semibold text-navy mt-6 mb-3">What you should be doing:</h4>
+            <ul class="space-y-2 text-text text-sm">
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Set up Google Analytics 4, Search Console, and basic conversion tracking (free)</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Build a simple, conversion-focused website ($0-$500 with templates)</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Founder-led content: LinkedIn posts, community participation, direct outreach</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Small paid experiments to test messaging ($200-$500/month)</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> One-time expert audit to identify quick wins ($500-$1,500)</li>
+            </ul>
+            <p class="mt-4 text-sm text-muted">
+              <strong class="text-navy">Pro tip:</strong> The AI Visibility Snapshot (free) can show you where you stand before you spend a dollar. Then a one-time audit tells you exactly where to focus first.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tier 2: Seed to Series A -->
+        <div class="rounded-xl border border-gray-200 overflow-hidden">
+          <div class="bg-light px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="font-headline text-xl font-bold text-navy">Seed to Series A</h3>
+              <p class="text-sm text-muted">Foundation package territory</p>
+            </div>
+            <span class="font-mono text-2xl font-bold text-navy">$1,500&ndash;$3,000<span class="text-sm text-muted font-normal">/mo</span></span>
+          </div>
+          <div class="px-6 py-5">
+            <p class="text-text leading-relaxed">
+              You've got some traction and some funding. Now it's time to build the foundation that everything else will scale on. This is where most startups either get it right or waste six months on the wrong things.
+            </p>
+            <h4 class="font-semibold text-navy mt-6 mb-3">What you get at this level:</h4>
+            <ul class="space-y-2 text-text text-sm">
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> SEO and search visibility foundation — technical fixes, keyword strategy, content roadmap</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> 2 optimized blog posts per month targeting high-intent search queries</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Basic paid media management on 1-2 platforms ($500-$1,500 ad spend on top)</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Monthly analytics reporting and strategy adjustments</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> AI-enhanced workflows for faster execution</li>
+            </ul>
+            <p class="mt-4 text-sm text-muted">
+              <strong class="text-navy">Expected outcomes:</strong> First organic traffic growth within 2-3 months. Initial paid media data to guide channel strategy. Clear picture of CAC by channel within 90 days.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tier 3: Series A-B -->
+        <div class="rounded-xl border-2 border-orange overflow-hidden relative">
+          <span class="absolute top-3 right-3 bg-orange text-white text-xs font-bold px-3 py-1 rounded-full">Most Popular</span>
+          <div class="bg-orange/5 px-6 py-4 border-b border-orange/20 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="font-headline text-xl font-bold text-navy">Series A&ndash;B</h3>
+              <p class="text-sm text-muted">Growth package territory</p>
+            </div>
+            <span class="font-mono text-2xl font-bold text-navy">$2,500&ndash;$5,000<span class="text-sm text-muted font-normal">/mo</span></span>
+          </div>
+          <div class="px-6 py-5">
+            <p class="text-text leading-relaxed">
+              You've proven product-market fit. Now you need to prove you can scale acquisition efficiently. This is where marketing transitions from "experiment" to "growth engine" — and where the right investment creates compounding returns.
+            </p>
+            <h4 class="font-semibold text-navy mt-6 mb-3">What you get at this level:</h4>
+            <ul class="space-y-2 text-text text-sm">
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Full SEO + AI visibility (GEO) program across search and AI answer engines</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> 4+ content pieces per month — blog posts, guides, thought leadership</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Multi-platform paid media management (Google, Meta, LinkedIn, Bing, Reddit)</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Landing page optimization and conversion rate optimization (CRO)</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Social media management and content distribution</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Bi-weekly strategy calls with clear KPI tracking</li>
+            </ul>
+            <p class="mt-4 text-sm text-muted">
+              <strong class="text-navy">Expected outcomes:</strong> 30-50% organic traffic growth within 6 months. Measurable pipeline from paid channels. Clear attribution model showing ROI by channel. Board-ready marketing metrics.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tier 4: Series B+ -->
+        <div class="rounded-xl border border-gray-200 overflow-hidden">
+          <div class="bg-light px-6 py-4 border-b border-gray-200 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+            <div>
+              <h3 class="font-headline text-xl font-bold text-navy">Series B+ / Revenue Stage</h3>
+              <p class="text-sm text-muted">Authority / Fractional CMO territory</p>
+            </div>
+            <span class="font-mono text-2xl font-bold text-navy">$4,500&ndash;$10,000<span class="text-sm text-muted font-normal">/mo</span></span>
+          </div>
+          <div class="px-6 py-5">
+            <p class="text-text leading-relaxed">
+              At this stage, you need marketing leadership — not just execution. You need someone who can own the marketing function, report to the board, manage vendors, and build the systems that scale to $10M+ ARR. A fractional CMO gives you that leadership without the $250K-$400K fully-loaded cost of a full-time VP of Marketing.
+            </p>
+            <h4 class="font-semibold text-navy mt-6 mb-3">What you get at this level:</h4>
+            <ul class="space-y-2 text-text text-sm">
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Everything in the Growth tier, plus:</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Fractional marketing leadership — strategy, roadmap, budget planning</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Full CRO program with A/B testing and experimentation</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Email marketing and automation infrastructure</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Team and vendor management</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Board-level reporting and KPI frameworks</li>
+              <li class="flex gap-3"><span class="text-orange flex-shrink-0">&#10003;</span> Weekly strategy calls</li>
+            </ul>
+            <p class="mt-4 text-sm text-muted">
+              <strong class="text-navy">Expected outcomes:</strong> Full marketing function running without a full-time marketing hire. Clear path to building an in-house team when the time is right. Investor-ready growth metrics and attribution.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="max-w-3xl mt-16">
+
+        <!-- ONE-TIME PROJECTS -->
+        <h2 class="font-headline text-3xl font-bold text-navy">One-Time Projects: When a Retainer Isn't Right (Yet)</h2>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          Not every company needs ongoing marketing support. Sometimes you need a focused engagement to solve a specific problem, build a foundation, or figure out what to do next. These projects stand alone or serve as a natural on-ramp to a retainer.
+        </p>
+
+        <div class="mt-8 space-y-4">
+          <div class="bg-light rounded-xl p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h4 class="font-semibold text-navy">AI Visibility Audit</h4>
+              <p class="text-sm text-muted mt-1">How your brand appears across search engines and AI answer platforms. Includes competitor comparison, content gap analysis, and prioritized recommendations.</p>
+            </div>
+            <span class="font-mono text-lg font-bold text-navy flex-shrink-0">$500&ndash;$1,500</span>
+          </div>
+          <div class="bg-light rounded-xl p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h4 class="font-semibold text-navy">Conversion &amp; Tracking Setup</h4>
+              <p class="text-sm text-muted mt-1">Analytics infrastructure, conversion tracking, attribution setup. The foundation you need before spending a dollar on marketing.</p>
+            </div>
+            <span class="font-mono text-lg font-bold text-navy flex-shrink-0">$1,000&ndash;$3,000</span>
+          </div>
+          <div class="bg-light rounded-xl p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h4 class="font-semibold text-navy">Content Strategy &amp; Audit</h4>
+              <p class="text-sm text-muted mt-1">Full audit of existing content, keyword opportunity analysis, 6-month editorial roadmap. Delivered as an actionable plan you can execute yourself or hand to a writer.</p>
+            </div>
+            <span class="font-mono text-lg font-bold text-navy flex-shrink-0">$1,500&ndash;$3,000</span>
+          </div>
+          <div class="bg-light rounded-xl p-6 border border-gray-100 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+            <div>
+              <h4 class="font-semibold text-navy">GTM Strategy Sprint</h4>
+              <p class="text-sm text-muted mt-1">Complete go-to-market strategy for a product launch, pivot, or new market entry. Messaging, channel strategy, budget allocation, timeline, and KPIs.</p>
+            </div>
+            <span class="font-mono text-lg font-bold text-navy flex-shrink-0">$3,000&ndash;$7,000</span>
+          </div>
+        </div>
+
+        <!-- WHERE STARTUPS WASTE MONEY -->
+        <h2 class="font-headline text-3xl font-bold text-navy mt-16">Where Most Startups Waste Marketing Budget</h2>
+        <p class="mt-4 text-lg text-text leading-relaxed">
+          After working with dozens of startups, I see the same budget leaks over and over. Fixing these alone can save $1,000-$5,000 per month.
+        </p>
+
+        <div class="mt-8 space-y-6">
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-red-400 rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Paying for tools they don't use</h3>
+              <p class="mt-1 text-muted">The average startup has $300-$800/month in marketing SaaS subscriptions. Half of them are either redundant, barely used, or overkill for their stage. Audit your stack quarterly.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-red-400 rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Running ads without conversion tracking</h3>
+              <p class="mt-1 text-muted">I've audited accounts spending $5,000+/month on Google Ads with no conversion tracking, no attribution, and no idea which keywords actually drive revenue. You're literally burning cash in the dark.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-red-400 rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Chasing brand awareness too early</h3>
+              <p class="mt-1 text-muted">Pre-Series A companies spending on display ads, sponsorships, and brand campaigns before they've nailed their conversion funnel. Awareness doesn't matter if your landing page converts at 0.5%.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-red-400 rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Hiring a junior marketer as first marketing hire</h3>
+              <p class="mt-1 text-muted">A $60K/year marketing coordinator can't build strategy from scratch. They need someone to tell them what to do. You end up paying a junior salary plus an agency or consultant to manage them. A fractional CMO costs less total and delivers more.</p>
+            </div>
+          </div>
+          <div class="flex gap-4">
+            <div class="flex-shrink-0 w-1 bg-red-400 rounded-full"></div>
+            <div>
+              <h3 class="font-semibold text-navy">Spreading budget across too many channels</h3>
+              <p class="mt-1 text-muted">$500 each on Google, Meta, LinkedIn, TikTok, and Reddit means $500 everywhere and results nowhere. Better to spend $2,000 on one or two channels, prove ROI, then expand.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-10 bg-orange/5 rounded-xl p-6 border border-orange/10">
+          <p class="text-text leading-relaxed">
+            <strong class="text-navy">The bottom line:</strong> Most startups don't have a budget problem — they have an allocation problem. The right $2,500/month strategy outperforms a scattered $5,000/month approach every single time.
+          </p>
+        </div>
+
+        <!-- FAQ -->
+        <div class="mt-16">
+          <FAQSection faqs={faqs} heading="Startup Marketing Cost Questions" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20 bg-navy text-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-headline text-3xl sm:text-4xl font-bold">Want to know what your startup should be spending?</h2>
+      <p class="mt-4 text-lg text-white/70 max-w-xl mx-auto">
+        Start with a free visibility snapshot. I'll show you where you stand and recommend a budget that matches your stage and goals.
+      </p>
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center">
+        <a href="/contact" class="inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+          Get Your Free Visibility Snapshot
+        </a>
+        <a href="mailto:jodie@jodieplant.com" class="inline-flex items-center justify-center px-8 py-4 border border-white/20 text-white font-medium text-lg rounded-lg hover:bg-white/10 transition-colors min-h-[44px]">
+          Email Me Directly
+        </a>
+      </div>
+    </div>
+  </section>
+</Layout>

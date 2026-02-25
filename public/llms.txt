@@ -25,6 +25,14 @@ Core services include Search & AI Visibility (SEO + GEO), AI Marketing Systems, 
 - [About](https://www.jodieplant.com/about): Jodie Plant's background, approach (4-step process), and how AI enhances marketing delivery.
 - [Contact](https://www.jodieplant.com/contact): Get a free visibility snapshot — personalised video walkthrough with search analysis, AI citation check, and prioritised next actions.
 - [Privacy](https://www.jodieplant.com/privacy): Privacy policy covering analytics, cookies, and data rights.
+- [Blog](https://www.jodieplant.com/blog): Marketing insights for startups and tech companies — SEO, AI visibility, paid media strategy, and practical advice.
+
+## Guides
+
+- [Fractional CMO vs Agency vs In-House](https://www.jodieplant.com/guides/fractional-cmo-vs-agency-vs-in-house): Honest comparison of marketing models with real pricing data to help startups choose the right fit.
+- [Startup Marketing Costs](https://www.jodieplant.com/guides/startup-marketing-costs): How much startup marketing costs in 2026, with budget tiers from bootstrapped to Series B+.
+- [What a Marketing Retainer Includes](https://www.jodieplant.com/guides/what-marketing-retainer-includes): Demystifying marketing retainers — what you get, typical monthly deliverables, and red flags.
+- [Leads Without Google & Meta Ads](https://www.jodieplant.com/guides/leads-without-google-meta-ads): Alternative paid platforms and organic channels for startups with limited ad budgets.
 
 ## Contact
 

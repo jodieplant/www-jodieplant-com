@@ -1,0 +1,36 @@
+---
+interface Testimonial {
+  author: string;
+  role: string;
+  company?: string;
+  text: string;
+  rating?: number;
+}
+
+interface Props {
+  testimonials: Testimonial[];
+  businessName?: string;
+}
+
+const { testimonials, businessName = 'Jodie Plant Marketing' } = Astro.props;
+
+const reviewSchema = testimonials.map(t => ({
+  "@type": "Review",
+  "author": {
+    "@type": "Person",
+    "name": t.author,
+    ...(t.role && { "jobTitle": t.role }),
+  },
+  "reviewBody": t.text,
+  ...(t.rating && { "reviewRating": { "@type": "Rating", "ratingValue": t.rating, "bestRating": 5 } }),
+}));
+
+const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": businessName,
+  "review": reviewSchema,
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(schema)} />

@@ -1,0 +1,96 @@
+---
+import Layout from '../../layouts/Layout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog')).sort(
+  (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
+);
+
+const featured = posts.find(p => p.data.featured) || posts[0];
+const rest = posts.filter(p => p.id !== featured?.id);
+---
+
+<Layout
+  title="Blog — Jodie Plant Marketing"
+  description="Marketing insights for startups and tech companies. SEO, AI visibility, paid media strategy, and practical marketing advice from a senior practitioner."
+>
+  <!-- HERO -->
+  <section class="bg-navy text-white py-16 sm:py-20">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="max-w-2xl">
+        <h1 class="font-headline text-4xl sm:text-5xl font-extrabold leading-tight">
+          Marketing Insights
+        </h1>
+        <p class="mt-4 text-lg text-white/70 leading-relaxed">
+          Practical advice on SEO, AI visibility, paid media, and marketing strategy for startups and tech companies.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED POST -->
+  {featured && (
+    <section class="py-12 sm:py-16 bg-white">
+      <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+        <a href={`/blog/${featured.id}`} class="block group">
+          <div class="bg-light rounded-xl p-8 sm:p-10 border border-gray-100 hover:border-orange/30 transition-colors">
+            <span class="inline-block bg-orange/10 text-orange text-xs font-bold px-3 py-1 rounded-full mb-4">Featured</span>
+            <h2 class="font-headline text-2xl sm:text-3xl font-bold text-navy group-hover:text-orange transition-colors">
+              {featured.data.title}
+            </h2>
+            <p class="mt-3 text-muted leading-relaxed max-w-2xl">{featured.data.description}</p>
+            <div class="mt-4 flex items-center gap-4 text-sm text-muted">
+              <span>{featured.data.author}</span>
+              <span>&middot;</span>
+              <time datetime={featured.data.date}>
+                {new Date(featured.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+  )}
+
+  <!-- ALL POSTS -->
+  <section class="py-12 sm:py-16 bg-light">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8">
+      {rest.length > 0 && (
+        <h2 class="font-headline text-2xl font-bold text-navy mb-8">All Posts</h2>
+      )}
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {rest.map(post => (
+          <a href={`/blog/${post.id}`} class="block group">
+            <article class="bg-white rounded-xl p-6 border border-gray-100 hover:border-orange/30 transition-colors h-full flex flex-col">
+              <div class="flex gap-2 mb-3">
+                {post.data.tags.slice(0, 2).map(tag => (
+                  <span class="text-xs text-orange font-medium">{tag}</span>
+                ))}
+              </div>
+              <h3 class="font-headline text-lg font-bold text-navy group-hover:text-orange transition-colors">
+                {post.data.title}
+              </h3>
+              <p class="mt-2 text-sm text-muted leading-relaxed flex-grow">{post.data.description}</p>
+              <time datetime={post.data.date} class="mt-4 text-xs text-muted block">
+                {new Date(post.data.date).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+              </time>
+            </article>
+          </a>
+        ))}
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="py-16 sm:py-20 bg-navy text-white">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="font-headline text-3xl sm:text-4xl font-bold">Want help implementing this?</h2>
+      <p class="mt-4 text-lg text-white/70 max-w-xl mx-auto">
+        Get a free visibility snapshot and I'll show you exactly where your marketing stands.
+      </p>
+      <a href="/contact" class="mt-8 inline-flex items-center justify-center px-8 py-4 bg-orange text-white font-bold text-lg rounded-lg hover:bg-orange/90 transition-colors min-h-[44px]">
+        Get Your Free Visibility Snapshot
+      </a>
+    </div>
+  </section>
+</Layout>
