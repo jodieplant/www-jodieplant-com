@@ -1,0 +1,63 @@
+---
+---
+
+<!-- Scroll depth sentinel elements -->
+<div data-scroll-depth="25" class="absolute left-0 w-0 h-0" style="top: 25%;" aria-hidden="true"></div>
+<div data-scroll-depth="50" class="absolute left-0 w-0 h-0" style="top: 50%;" aria-hidden="true"></div>
+<div data-scroll-depth="75" class="absolute left-0 w-0 h-0" style="top: 75%;" aria-hidden="true"></div>
+<div data-scroll-depth="100" class="absolute left-0 w-0 h-0" style="top: 100%;" aria-hidden="true"></div>
+
+<script>
+  function trackEvent(eventName: string, properties?: Record<string, any>) {
+    (window as any).__trackEvent?.(eventName, properties);
+  }
+
+  // Scroll depth tracking (25/50/75/100%)
+  const sentinels = document.querySelectorAll('[data-scroll-depth]');
+  const firedDepths = new Set<string>();
+
+  const depthObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const depth = (entry.target as HTMLElement).dataset.scrollDepth;
+          if (depth && !firedDepths.has(depth)) {
+            firedDepths.add(depth);
+            trackEvent('scroll_depth', {
+              depth_percent: parseInt(depth, 10),
+              page: window.location.pathname,
+            });
+          }
+        }
+      });
+    },
+    { threshold: 0 }
+  );
+
+  sentinels.forEach(s => depthObserver.observe(s));
+
+  // Section visibility tracking
+  const sections = document.querySelectorAll('section[id], section:first-child');
+  const firedSections = new Set<string>();
+
+  const sectionObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const section = entry.target as HTMLElement;
+          const sectionId = section.id || section.querySelector('h1,h2')?.textContent?.trim().toLowerCase().replace(/\s+/g, '-').slice(0, 40) || 'unknown';
+          if (!firedSections.has(sectionId)) {
+            firedSections.add(sectionId);
+            trackEvent('page_section_viewed', {
+              section_id: sectionId,
+              page: window.location.pathname,
+            });
+          }
+        }
+      });
+    },
+    { threshold: 0.3 }
+  );
+
+  sections.forEach(s => sectionObserver.observe(s));
+</script>

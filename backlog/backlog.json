@@ -418,7 +418,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-010"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "Deprioritised to 'could' — valuable but not needed for launch. The form is the primary conversion path. Understanding where prospects drop off directly enables conversion optimization. Implement after traffic reaches meaningful volume."
+      "groomingNotes": "Deprioritised to 'could' — valuable but not needed for launch. The form is the primary conversion path. Understanding where prospects drop off directly enables conversion optimization. Implement after traffic reaches meaningful volume.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-021",
@@ -436,7 +438,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-010"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "Deprioritised to 'could' — useful for optimization but not needed for launch. Scroll depth reveals whether the homepage structure is working. Implement after traffic reaches meaningful volume."
+      "groomingNotes": "Deprioritised to 'could' — useful for optimization but not needed for launch. Scroll depth reveals whether the homepage structure is working. Implement after traffic reaches meaningful volume.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-022",
@@ -473,7 +477,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-010"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "Deprioritised to 'could' — session recordings are valuable for conversion optimization but not needed for launch. Free tier supports 5K recordings/month. Implement after core analytics (FEAT-010) and basic traffic are established."
+      "groomingNotes": "Deprioritised to 'could' — session recordings are valuable for conversion optimization but not needed for launch. Free tier supports 5K recordings/month. Implement after core analytics (FEAT-010) and basic traffic are established.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-024",
@@ -526,7 +532,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "LOW VALUE: Quick win but tempered expectations — Google confirmed they don't use llms.txt and no major AI company has officially adopted it. Useful for developer docs and RAG systems. Implementation cost is minimal (future-proofing), but don't prioritize over schema markup, entity authority, or content quality."
+      "groomingNotes": "LOW VALUE: Quick win but tempered expectations — Google confirmed they don't use llms.txt and no major AI company has officially adopted it. Useful for developer docs and RAG systems. Implementation cost is minimal (future-proofing), but don't prioritize over schema markup, entity authority, or content quality.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-029",
@@ -544,7 +552,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-009"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: FAQ structured data is a direct GEO/AEO tactic — appears in AI answers and Google rich results. All dependencies met (FEAT-005, FEAT-009 complete). Low effort, compounding SEO benefit. RECOMMEND: Tech Lead mark readyForSprint."
+      "groomingNotes": "MEDIUM VALUE: FAQ structured data is a direct GEO/AEO tactic — appears in AI answers and Google rich results. All dependencies met (FEAT-005, FEAT-009 complete). Low effort, compounding SEO benefit. RECOMMEND: Tech Lead mark readyForSprint.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-031",
@@ -582,7 +592,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-005"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "PRIORITY ELEVATED TO MUST: Bridge product fills the critical conversion ladder gap (Free Snapshot → $997 AI Visibility Audit → $1,500+ Retainer). Without this, prospects jump from free to $1,500/mo commitment — a trust gap that loses deals. All dependencies met (FEAT-005 complete). Sprint-ready after FEAT-036."
+      "groomingNotes": "PRIORITY ELEVATED TO MUST: Bridge product fills the critical conversion ladder gap (Free Snapshot → $997 AI Visibility Audit → $1,500+ Retainer). Without this, prospects jump from free to $1,500/mo commitment — a trust gap that loses deals. All dependencies met (FEAT-005 complete). Sprint-ready after FEAT-036.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-033",
@@ -598,7 +610,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
       "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Pricing FAQs are a GEO opportunity — 'how much does marketing cost' is a high-intent query. Structured data helps with both Google rich results and AI answer extraction. Depends on pricing cards being built in FEAT-005."
+      "groomingNotes": "MEDIUM VALUE: Pricing FAQs are a GEO opportunity — 'how much does marketing cost' is a high-intent query. Structured data helps with both Google rich results and AI answer extraction. Depends on pricing cards being built in FEAT-005.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-035",
@@ -634,7 +648,9 @@
       "readyForSprint": true,
       "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "PRIORITY SPRINT: Highest-impact positioning change identified. All dependencies complete (FEAT-003, 004, 005). Opens the fractional CMO buyer category — a recognized keyword with growing search volume. Copy-only changes across 3-4 pages. Recommend sprinting immediately as next 'must' item."
+      "groomingNotes": "PRIORITY SPRINT: Highest-impact positioning change identified. All dependencies complete (FEAT-003, 004, 005). Opens the fractional CMO buyer category — a recognized keyword with growing search volume. Copy-only changes across 3-4 pages. Recommend sprinting immediately as next 'must' item.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-037",
@@ -702,7 +718,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-002", "FEAT-003"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "CONVERSION-CRITICAL: Mobile users lose primary CTA on scroll — real conversion leak. All dependencies met (FEAT-002, FEAT-003, FEAT-012 complete). Low effort, high conversion impact. PRIORITY for post-MUST sprint. ACTION: Tech Lead mark readyForSprint."
+      "groomingNotes": "CONVERSION-CRITICAL: Mobile users lose primary CTA on scroll — real conversion leak. All dependencies met (FEAT-002, FEAT-003, FEAT-012 complete). Low effort, high conversion impact. PRIORITY for post-MUST sprint. ACTION: Tech Lead mark readyForSprint.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-041",
@@ -718,7 +736,9 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-032"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "CONVERSION PATH: Services page is long — users need mid-page conversion opportunities. FEAT-005 done; blocked on FEAT-032 (AI Visibility Audit section needed as one of the inline CTAs). Sprint after FEAT-032 completes."
+      "groomingNotes": "CONVERSION PATH: Services page is long — users need mid-page conversion opportunities. FEAT-005 done; blocked on FEAT-032 (AI Visibility Audit section needed as one of the inline CTAs). Sprint after FEAT-032 completes.",
+      "status": "completed",
+      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-042",

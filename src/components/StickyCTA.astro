@@ -1,0 +1,63 @@
+---
+---
+
+<div id="sticky-cta" class="fixed bottom-0 left-0 right-0 z-40 translate-y-full transition-transform duration-300 pointer-events-none">
+  <div class="bg-orange/95 backdrop-blur-sm shadow-lg pointer-events-auto">
+    <div class="max-w-container mx-auto px-4 sm:px-6 lg:px-8 py-3 flex items-center justify-between gap-4">
+      <p class="text-white text-sm font-medium hidden sm:block">Ready to get found?</p>
+      <a
+        href="/contact"
+        class="inline-flex items-center justify-center w-full sm:w-auto px-6 py-2.5 bg-white text-orange font-bold text-sm rounded-lg hover:bg-white/90 transition-colors min-h-[44px]"
+      >
+        Free Visibility Snapshot
+      </a>
+    </div>
+  </div>
+</div>
+
+<script>
+  const stickyCTA = document.getElementById('sticky-cta');
+  const cookieBanner = document.getElementById('cookie-banner');
+  const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  // Don't show on /contact page
+  if (stickyCTA && window.location.pathname !== '/contact') {
+    let shown = false;
+
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // Show when hero scrolls out of view
+        if (!entry.isIntersecting && !shown) {
+          shown = true;
+          stickyCTA.classList.remove('translate-y-full');
+          if (prefersReducedMotion) {
+            stickyCTA.style.transition = 'none';
+          }
+        }
+      },
+      { threshold: 0 }
+    );
+
+    // Observe the first section (hero)
+    const hero = document.querySelector('main > section:first-child');
+    if (hero) {
+      observer.observe(hero);
+    }
+
+    // Hide when cookie banner is visible
+    const checkBanner = () => {
+      if (cookieBanner && !cookieBanner.classList.contains('hidden')) {
+        stickyCTA.classList.add('translate-y-full');
+      }
+    };
+
+    // Re-check when cookie banner hides
+    if (cookieBanner) {
+      const bannerObserver = new MutationObserver(checkBanner);
+      bannerObserver.observe(cookieBanner, { attributes: true, attributeFilter: ['class'] });
+    }
+  } else if (stickyCTA) {
+    // Hide on contact page
+    stickyCTA.remove();
+  }
+</script>

@@ -88,11 +88,42 @@ Measures how visitors explore services before converting.
 | CTA engagement | `cta_clicked` count and breakdown by location |
 | Email click rate | `email_clicked` / `$pageview` (contact page) |
 
+### Form Analytics Events (FEAT-020)
+
+| Event | Properties | Fires When |
+|-------|-----------|------------|
+| `form_viewed` | `page` | Contact form scrolls into viewport |
+| `form_started` | `first_field`, `page` | First form field receives focus |
+| `form_field_completed` | `field_name`, `page` | Field loses focus with a value |
+| `form_abandoned` | `fields_completed`, `last_field`, `page` | User navigates away with partial form |
+| `form_error` | `field_name`, `error_type`, `page` | Validation error shown |
+| `form_submitted` | `budget_range`, `has_url`, `challenge_length`, `page` | Form successfully submitted |
+
+### Scroll & Section Events (FEAT-021)
+
+| Event | Properties | Fires When |
+|-------|-----------|------------|
+| `scroll_depth` | `depth_percent` (25/50/75/100), `page` | User scrolls past threshold (fires once per threshold per page load) |
+| `page_section_viewed` | `section_id`, `page` | Named section scrolls into viewport (30% visible) |
+
+## Session Recording (FEAT-023)
+
+Session recording is enabled in the PostHog init config. Recordings are only captured when cookie consent is granted.
+
+**What's recorded:** Mouse movements, clicks, scrolls, page navigation, DOM changes.
+
+**What's masked:** Fields with `data-ph-no-capture` attribute:
+- Company URL field (`#url` on /contact)
+- Budget range dropdown (`#budget` on /contact)
+
+**Sample rate:** 100% (low-traffic site; PostHog free tier allows 5K recordings/month).
+
+**Retention:** Per PostHog's default retention policy (typically 30 days on free tier).
+
+**How to review recordings:** PostHog dashboard → Recordings → filter by page URL, duration, or events.
+
 ## Future Events (planned)
 
 These events are defined but not yet implemented:
 
-- `form_viewed`, `form_started`, `form_field_completed`, `form_abandoned`, `form_error` (FEAT-020)
-- `scroll_depth`, `page_section_viewed` (FEAT-021)
-- `blog_post_read`, `external_link_clicked` (FEAT-024)
-- Session recordings with masked sensitive fields (FEAT-023)
+- `blog_post_read`, `external_link_clicked` (FEAT-024 — requires blog infrastructure)

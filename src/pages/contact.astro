@@ -71,6 +71,7 @@ import Layout from '../layouts/Layout.astro';
                 id="url"
                 name="url"
                 required
+                data-ph-no-capture
                 class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange/50 focus:border-orange outline-none transition-colors text-text"
                 placeholder="https://yourcompany.com"
               />
@@ -95,6 +96,7 @@ import Layout from '../layouts/Layout.astro';
               <select
                 id="budget"
                 name="budget"
+                data-ph-no-capture
                 class="w-full px-4 py-3 border border-gray-200 rounded-lg focus:ring-2 focus:ring-orange/50 focus:border-orange outline-none transition-colors text-text bg-white"
               >
                 <option value="">Prefer not to say</option>
@@ -181,27 +183,103 @@ import Layout from '../layouts/Layout.astro';
   const successMsg = document.getElementById('form-success');
   const errorMsg = document.getElementById('form-error');
 
-  form?.addEventListener('submit', async (e) => {
-    e.preventDefault();
-    successMsg?.classList.add('hidden');
-    errorMsg?.classList.add('hidden');
+  // FEAT-020: Form analytics helper
+  function trackFormEvent(eventName: string, properties?: Record<string, any>) {
+    (window as any).__trackEvent?.(eventName, properties);
+  }
 
-    try {
-      const response = await fetch(form.action, {
-        method: 'POST',
-        body: new FormData(form),
-        headers: { 'Accept': 'application/json' },
+  // FEAT-020: Track form viewed (IntersectionObserver)
+  if (form) {
+    const formObserver = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          trackFormEvent('form_viewed', { page: '/contact' });
+          formObserver.disconnect();
+        }
+      },
+      { threshold: 0.1 }
+    );
+    formObserver.observe(form);
+
+    // Track first field focus (form_started)
+    let formStarted = false;
+    const fields = form.querySelectorAll('input, textarea, select');
+    fields.forEach(field => {
+      field.addEventListener('focus', () => {
+        if (!formStarted) {
+          formStarted = true;
+          trackFormEvent('form_started', { first_field: field.id || field.getAttribute('name'), page: '/contact' });
+        }
       });
 
-      if (response.ok) {
-        form.reset();
-        form.classList.add('hidden');
-        successMsg?.classList.remove('hidden');
-      } else {
+      // Track field completion on blur
+      field.addEventListener('blur', () => {
+        const value = (field as HTMLInputElement).value;
+        if (value && value.trim()) {
+          trackFormEvent('form_field_completed', { field_name: field.id || field.getAttribute('name'), page: '/contact' });
+        }
+      });
+    });
+
+    // Track form abandonment
+    let formSubmitted = false;
+    window.addEventListener('beforeunload', () => {
+      if (formStarted && !formSubmitted) {
+        const completedFields = Array.from(fields).filter(f => {
+          const val = (f as HTMLInputElement).value;
+          return val && val.trim();
+        });
+        trackFormEvent('form_abandoned', {
+          fields_completed: completedFields.length,
+          last_field: document.activeElement?.id || document.activeElement?.getAttribute('name') || 'unknown',
+          page: '/contact',
+        });
+      }
+    });
+
+    // Track validation errors
+    fields.forEach(field => {
+      field.addEventListener('invalid', () => {
+        trackFormEvent('form_error', {
+          field_name: field.id || field.getAttribute('name'),
+          error_type: (field as HTMLInputElement).validity.valueMissing ? 'required' : 'invalid',
+          page: '/contact',
+        });
+      });
+    });
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      formSubmitted = true;
+      successMsg?.classList.add('hidden');
+      errorMsg?.classList.add('hidden');
+
+      // Enrich form_submitted with additional properties
+      const formData = new FormData(form);
+      trackFormEvent('form_submitted', {
+        budget_range: formData.get('budget') || 'not_specified',
+        has_url: Boolean(formData.get('url')),
+        challenge_length: (formData.get('challenge') as string)?.length || 0,
+        page: '/contact',
+      });
+
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          body: formData,
+          headers: { 'Accept': 'application/json' },
+        });
+
+        if (response.ok) {
+          form.reset();
+          form.classList.add('hidden');
+          successMsg?.classList.remove('hidden');
+        } else {
+          errorMsg?.classList.remove('hidden');
+        }
+      } catch {
         errorMsg?.classList.remove('hidden');
       }
-    } catch {
-      errorMsg?.classList.remove('hidden');
-    }
-  });
+    });
+  }
 </script>

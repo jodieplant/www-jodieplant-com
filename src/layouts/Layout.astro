@@ -8,7 +8,9 @@ import '@fontsource/space-grotesk/700.css';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import CookieConsent from '../components/CookieConsent.astro';
+import StickyCTA from '../components/StickyCTA.astro';
 import ScrollAnimations from '../components/ScrollAnimations.astro';
+import ScrollDepthTracking from '../components/ScrollDepthTracking.astro';
 
 interface Props {
   title?: string;
@@ -66,13 +68,15 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     })} />
     <slot name="head" />
   </head>
-  <body class="font-body text-text bg-white antialiased">
+  <body class="font-body text-text bg-white antialiased relative">
     <Header />
     <main>
       <slot />
     </main>
     <Footer />
+    <StickyCTA />
     <CookieConsent />
     <ScrollAnimations />
+    <ScrollDepthTracking />
   </body>
 </html>

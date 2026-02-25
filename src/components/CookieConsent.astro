@@ -75,6 +75,12 @@
         capture_pageview: true,
         capture_pageleave: true,
         autocapture: true,
+        session_recording: {
+          maskAllInputs: false,
+          maskInputOptions: {
+            password: true,
+          },
+        },
       });
 
       // Set person properties
