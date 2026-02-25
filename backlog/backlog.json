@@ -291,7 +291,7 @@
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Phase 2 priority. Core MVP complete — blog is the next major user-facing feature. Enables content marketing flywheel, supports entity authority (FEAT-035), and targets long-tail SEO keywords. LinkedIn-first distribution strategy. Unblocks FEAT-019 (email capture), FEAT-024 (blog analytics). RECOMMEND: Tech Lead assess readyForSprint."
+      "groomingNotes": "HIGH VALUE: Core Phase 2 feature. Unblocks FEAT-019 (email capture), FEAT-024 (blog analytics). Enables content marketing flywheel and entity authority. Priority stays should — manual tracks (FEAT-035, FEAT-046) and positioning page (FEAT-039) take precedence. READY FOR SPRINT when Tech Lead assesses."
     },
     {
       "id": "FEAT-014",
@@ -306,8 +306,8 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": ["FEAT-007"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Per v2.3, calendar in confirmation flow ensures prospects share context before booking. Reduces low-quality calls. Low effort integration."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "MEDIUM VALUE: Calendar in confirmation flow ensures context before booking. Low effort. Keep could — conversion paths already work via form + email."
     },
     {
       "id": "FEAT-015",
@@ -514,8 +514,8 @@
       "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Core GEO/AEO strategy. These pages serve both AI citation (direct answers, structured data) and human conversion (trust-building, CTA). The pricing transparency page alone can be a significant lead driver. Can launch as standalone pages even before blog infrastructure."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "HIGH VALUE: Core GEO/AEO strategy. Can launch as standalone pages before blog. Per brief v2.3, these pages serve both AI citation and human conversion. Pricing transparency content is a significant lead driver. Recommend Tech Lead assess readyForSprint."
     },
     {
       "id": "FEAT-027",
@@ -572,8 +572,8 @@
       "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: This page directly serves the #1 question budget-conscious buyers ask. The specific data (CPCs, budget allocations) makes it citation-worthy for AI systems. Also positions Jodie as a 'smart budget' expert, not just another Google Ads reseller."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "HIGH VALUE: Directly addresses top question from budget-conscious buyers. Citation-worthy for AI systems due to specific data (CPCs, budget allocations). Positions Jodie as smart-budget expert. Part of the best-answer content cluster with FEAT-026 and FEAT-039."
     },
     {
       "id": "FEAT-032",
@@ -665,8 +665,8 @@
       "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: CRO pairs naturally with paid advertising and SEO. Adding it as a deliverable in Growth/Authority tiers increases perceived value of those packages. Service block on /services provides a long-tail SEO target."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "MEDIUM VALUE: CRO pairs naturally with paid advertising and SEO. Adding it to Growth/Authority tiers increases perceived package value. Lower priority than positioning content (FEAT-039, FEAT-026, FEAT-031) — those drive new leads, this optimizes existing pages."
     },
     {
       "id": "FEAT-038",
@@ -681,8 +681,8 @@
       "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005", "FEAT-007"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Fills a gap between free audit and monthly retainer. GTM is a recognized buying category for funded startups. $3K-$7K is an accessible entry point that demonstrates value before committing to $2.5K-$7.5K/month."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "MEDIUM VALUE: GTM Sprint fills gap between audit and retainer. Recognized buying category for funded startups. $3K-$7K entry point. Lower priority than positioning content — add after FEAT-039 establishes fractional CMO positioning."
     },
     {
       "id": "FEAT-039",
@@ -697,11 +697,11 @@
         "CTA to /contact for free audit",
         "npm run build succeeds"
       ],
-      "priority": "should",
+      "priority": "must",
       "readyForSprint": false,
       "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Fractional CMO comparison queries are high-intent and growing. This page positions Jodie in the conversation and uses real market pricing data (from the review) to build credibility. Natural fit alongside the other best-answer pages in FEAT-026."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "ELEVATED TO MUST: Fractional CMO positioning is core to the brand (brief Section 2.2). This comparison page directly addresses high-intent buyers researching their options. Market research shows fractional CMO is a growth category. Strongly positions Jodie in the GEO/AEO landscape alongside FEAT-026 and FEAT-031."
     },
     {
       "id": "FEAT-040",
@@ -750,11 +750,11 @@
         "Visual treatment distinct from body copy (e.g. callout, italic, or small badge)",
         "npm run build succeeds"
       ],
-      "priority": "could",
+      "priority": "should",
       "readyForSprint": false,
       "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "CREDIBILITY: Micro proof within service context builds trust without requiring full case studies. Use real, generalized outcome ranges only. User value: visitors see evidence alongside claims, increasing confidence."
+      "groomedAt": "2026-02-24",
+      "groomingNotes": "ELEVATED TO SHOULD: Micro proof within service blocks adds immediate credibility without waiting for full case studies. User value: visitors see evidence alongside claims. Can use real, generalized outcome ranges now. Lower effort than full testimonials track."
     },
     {
       "id": "FEAT-043",
