@@ -14,9 +14,7 @@
       ],
       "priority": "could",
       "readyForSprint": false,
-      "dependsOn": [
-        "FEAT-005"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "RE-GROOMED (2026-02-24): Phase 2 now complete — blog, guides (4 pages), analytics, chat, and calendar all live. Service sub-pages are still Phase 3 — good for long-tail SEO but not conversion-blocking. Sprint after entity authority (FEAT-035) and testimonials (FEAT-046) are established — individual service pages work best when there is social proof and domain authority behind them. Each page should target a specific service keyword (e.g. 'fractional CMO for startups', 'AI-powered SEO agency'). Estimated: Q2 2026."
     },
@@ -33,9 +31,7 @@
       ],
       "priority": "future",
       "readyForSprint": false,
-      "dependsOn": [
-        "FEAT-006"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "RE-GROOMED (2026-02-24): Future track — explicitly blocked until real case studies exist. Never fabricate. The current /results page (real credentials + methodology walkthroughs + outcome range anchors) is more credible than empty case study shells. This item becomes relevant after 3–6 months of active client engagements. When real results exist: one detailed case study is worth ten vague portfolio logos. Estimated: Q3–Q4 2026."
     },
@@ -52,9 +48,7 @@
       ],
       "priority": "should",
       "readyForSprint": false,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "ELEVATED TO SHOULD: Blog (3 posts) and guides (4 pages) are live — the infrastructure to drive email subscribers now exists. Email capture converts readers who aren't ready to book a call. LEAD MAGNET RECOMMENDATION: A 1-page PDF 'Startup Marketing Playbook' — curated summary of the 4 guide pages (Fractional CMO comparison, Alternatives to Ads, Marketing Costs, What a Retainer Includes) as a downloadable quick-reference. Lightweight to create, high alignment with existing guide content. Natural placement: at the end of each blog post and each guide page. Use ConvertKit free tier (up to 10K subscribers). BLOCKER: Lead magnet PDF must exist before Tech Lead marks readyForSprint. Create PDF first, then sprint the form integration."
     },
@@ -71,10 +65,7 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-010",
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "UNBLOCKED: FEAT-013 (blog) is now live with 3 posts. All dependencies met. Add tracking to src/pages/blog/[id].astro: blog_post_viewed (slug, title on load), blog_read_depth (IntersectionObserver at 25/50/75/100% of article body), blog_cta_clicked (end-of-post CTA). Low effort sprint — add script block to blog post template. Sprint when traffic warrants measurement."
     },
@@ -108,10 +99,7 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-007",
-        "FEAT-014"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "UNBLOCKED: FEAT-014 (Cal.com) is now integrated in contact.astro. Implementation: update the form confirmation message to show Cal.com booking link only after form submit (not as a standalone persistent section). This ensures prospects have shared context before booking. Keep an 'or email me directly' fallback for high-intent users. Low-effort change — update contact.astro confirmation flow."
     },
@@ -124,10 +112,7 @@
       ],
       "priority": "future",
       "readyForSprint": false,
-      "dependsOn": [
-        "FEAT-003",
-        "FEAT-005"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "ARCHIVED: Absorbed into FEAT-003 and FEAT-005 per v2.3 review. Kept for historical reference only — excluded from active sprint planning.",
       "status": "absorbed"
@@ -161,11 +146,7 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-026",
-        "FEAT-031",
-        "FEAT-039"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "QUICK WIN: /guides/ 404 is a user experience and crawlability gap. All 4 guide pages are live. A listing page takes one sprint and creates a proper content hub. Improves internal linking and makes guides accessible via navigation. Recommend as next should-priority sprint."
     },
@@ -182,9 +163,6 @@
       "priority": "could",
       "readyForSprint": false,
       "dependsOn": [
-        "FEAT-027",
-        "FEAT-013",
-        "FEAT-026",
         "FEAT-047"
       ],
       "groomedAt": "2026-02-24",
@@ -203,9 +181,7 @@
       "priority": "should",
       "readyForSprint": false,
       "sprintable": false,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "MANUAL TRACK — ONGOING: Content is the fuel for entity authority (FEAT-035). 3 seed posts won't sustain topical authority signals — AI systems favour fresh, regularly updated content. Each post also creates a LinkedIn distribution opportunity (primary entity signal channel). Goal: 12 posts by end of Q2 2026. Seed posts are done; content cadence must become the default going-forward activity."
     },
@@ -224,10 +200,7 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-010",
-        "FEAT-015"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): A marketing agency website must have excellent Core Web Vitals — it is a proof point as much as a technical requirement. Jodie sells marketing and AI systems; a slow or inaccessible site directly contradicts the brand. Third-party scripts (PostHog, Crisp) may be impacting performance now that all pages and features are live. All core pages are built — this is now actionable. Sprint after FEAT-047 (guides index). HIGH CREDIBILITY IMPACT: Google ranks fast sites higher, and prospects who audit Jodie's site expect it to pass the same tests she'd apply to theirs."
     },
@@ -245,9 +218,7 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "ELEVATED TO SHOULD (2026-02-24): LinkedIn share buttons directly support FEAT-035 (entity authority — must priority). LinkedIn-first distribution is the #1 entity authority signal for AI citations; one-click sharing from every blog post removes friction and multiplies organic reach. Author bio with LinkedIn link also strengthens E-E-A-T signals for search. Related posts reduce bounce and surface guide content. Low-effort batch sprint — all changes in blog post template. This amplifies FEAT-035 which cannot be deferred."
     },
@@ -265,9 +236,7 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-026"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 State of Marketing report — ROI measurement is the #1 marketer challenge (33%), and 73% face increased budget scrutiny. High search intent topic that maps directly to the target audience (startup founders reporting to investors/boards). Same best-answer format as existing guides. Natural internal links to services page (Growth Attribution) and retainer guide. Strengthens topical authority cluster around marketing strategy."
     },
@@ -284,9 +253,7 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "RE-GROOMED (2026-02-24): FEAT-055 completed — video is now elevated on homepage and services page. This blog post is the content layer that backs the site positioning: the site now leads with video capability, and this post gives visitors the 'why' and 'how'. Strong LinkedIn distribution candidate — foundational authority content on the #1 ROI format. Good candidate for first slot in content cadence (FEAT-049)."
     },
@@ -303,9 +270,7 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "RE-GROOMED (2026-02-24): FEAT-064 completed — AI personalization is now explicit in the AI Marketing Systems service copy. This blog post is the content layer: site says 'we do personalization', blog post explains why it matters and how startups can access it. Strong service → content alignment. Natural internal link from blog post to AI Marketing Systems service. Prioritise alongside or immediately after FEAT-053 (video blog post) to build content momentum."
     },
@@ -361,9 +326,7 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — workload/burnout is a major industry theme. Speaks directly to the target audience (overwhelmed founders). Natural bridge to the fractional CMO positioning and existing guide on Fractional CMO vs Agency vs In-House. Good LinkedIn content — high empathy = high engagement. Content cadence item (FEAT-049)."
     },
@@ -379,9 +342,7 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Companion piece to FEAT-052 (ROI guide) — this one is blog-length and more tactical. Addresses the budget scrutiny trend (73%) directly. High-intent search topic: founders searching for 'how to justify marketing budget' are exactly the right audience. Pairs well with the fractional CMO positioning (senior marketer who speaks board language). Content cadence item (FEAT-049)."
     },
@@ -398,9 +359,7 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — micro-influencers are the most effective tier but barely covered on the site. Expands on a brief mention in the leads-without-ads guide. B2B influencer marketing is an emerging differentiator — most agencies still think of influencers as B2C only. Good LinkedIn content topic. Content cadence item (FEAT-049)."
     },
@@ -416,9 +375,7 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — AI skills are the #1 hiring challenge but the site has no content about it. Positions Jodie as someone who already has these skills (implied CTA: why build internally when you can access them now?). Good LinkedIn content — skill-gap posts get high engagement. Content cadence item (FEAT-049)."
     },
@@ -434,9 +391,7 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": [
-        "FEAT-013"
-      ],
+      "dependsOn": [],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — brand values-based content is #3 trend, but the site has no content addressing positioning as a capability. Supports FEAT-055 (elevating services) and the fractional CMO positioning (positioning IS what a CMO does). High engagement LinkedIn topic. Content cadence item (FEAT-049)."
     },
