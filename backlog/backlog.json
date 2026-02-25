@@ -180,14 +180,15 @@
         "npm run build succeeds"
       ],
       "priority": "could",
-      "readyForSprint": true,
+      "readyForSprint": false,
       "dependsOn": [
         "FEAT-027",
         "FEAT-013",
-        "FEAT-026"
+        "FEAT-026",
+        "FEAT-047"
       ],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "TRIVIAL WIN: llms.txt is stale — it was created before blog and guides launched. File edit only, no code change. Stack with another sprint or do as a standalone 10-minute task."
+      "groomingNotes": "TRIVIAL WIN: llms.txt is stale — it was created before blog and guides launched. File edit only, no code change. BLOCKED until FEAT-047 (/guides/ index) is live — llms.txt should document the guides index page, not just individual guide URLs. Stack immediately after FEAT-047 — one sprint that cleans up all AI discoverability metadata."
     },
     {
       "id": "FEAT-049",
@@ -242,13 +243,13 @@
         "All additions are responsive and match brand styling",
         "npm run build succeeds"
       ],
-      "priority": "could",
+      "priority": "should",
       "readyForSprint": true,
       "dependsOn": [
         "FEAT-013"
       ],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "NEW (2026-02-24): Blog is live with 3 posts. Author bio with LinkedIn link strengthens E-E-A-T signals. LinkedIn share buttons are especially high value given the FEAT-035 LinkedIn-first distribution strategy — make it one-click for Jodie to share each post and for readers to share with their networks. Reading time signals content quality. Related posts create a content loop (blog → guides → contact). Low-effort batch sprint — all in blog post template file."
+      "groomingNotes": "ELEVATED TO SHOULD (2026-02-24): LinkedIn share buttons directly support FEAT-035 (entity authority — must priority). LinkedIn-first distribution is the #1 entity authority signal for AI citations; one-click sharing from every blog post removes friction and multiplies organic reach. Author bio with LinkedIn link also strengthens E-E-A-T signals for search. Related posts reduce bounce and surface guide content. Low-effort batch sprint — all changes in blog post template. This amplifies FEAT-035 which cannot be deferred."
     },
     {
       "id": "FEAT-052",
@@ -287,7 +288,7 @@
         "FEAT-013"
       ],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — video is the #1 ROI format but the site barely mentions it. This post supports FEAT-055 (elevating video prominence) and creates content to distribute via LinkedIn (FEAT-035 entity authority). Also addresses FEAT-049 content cadence goal. Good candidate for early content calendar slot."
+      "groomingNotes": "RE-GROOMED (2026-02-24): FEAT-055 completed — video is now elevated on homepage and services page. This blog post is the content layer that backs the site positioning: the site now leads with video capability, and this post gives visitors the 'why' and 'how'. Strong LinkedIn distribution candidate — foundational authority content on the #1 ROI format. Good candidate for first slot in content cadence (FEAT-049)."
     },
     {
       "id": "FEAT-054",
@@ -306,7 +307,7 @@
         "FEAT-013"
       ],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "NEW (2026-02-24): Gap identified from HubSpot 2026 report — personalization is the #1 trend but the site barely mentions it. This post positions Jodie's AI Marketing Systems service as a solution. Also supports FEAT-064 (adding personalization to service copy). Content cadence item (FEAT-049)."
+      "groomingNotes": "RE-GROOMED (2026-02-24): FEAT-064 completed — AI personalization is now explicit in the AI Marketing Systems service copy. This blog post is the content layer: site says 'we do personalization', blog post explains why it matters and how startups can access it. Strong service → content alignment. Natural internal link from blog post to AI Marketing Systems service. Prioritise alongside or immediately after FEAT-053 (video blog post) to build content momentum."
     },
     {
       "id": "FEAT-055",
