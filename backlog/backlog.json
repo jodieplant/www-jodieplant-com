@@ -2,360 +2,6 @@
   "description": "Feature backlog — www.jodieplant.com (ref: docs/WEBSITE_BRIEF.md v2.3)",
   "items": [
     {
-      "id": "FEAT-001",
-      "title": "Install Tailwind CSS and configure brand design tokens",
-      "description": "Install @astrojs/tailwind and tailwindcss. Create tailwind.config.mjs with the design tokens from WEBSITE_BRIEF.md Section 7 (v2.0):\n\nColors: Dark #0F172A (navy — nav, footer, dark sections), Accent #FF6B35 (warm orange — CTAs, links, brand mark), Accent Secondary #6366F1 (indigo — supporting highlights), Light BG #FFFFFF/#F8FAFC, Text #1E293B (slate-800), Muted #64748B (slate-500).\n\nTypography: Cabinet Grotesk (700-800) for headlines — this is the bold brand differentiator. Inter (400-500) for body. Space Grotesk (500-700) for stats/callouts/numbers. Load Cabinet Grotesk and Space Grotesk via Google Fonts or Fontsource. Inter can use system font stack or Fontsource.\n\nBreakpoints: Mobile <640px, Tablet 640-1024px, Desktop >1024px with max-width 1280px container.\n\nAdd a base CSS layer with font-face declarations and CSS custom properties for the brand colors. Ensure the orange (#FF6B35) passes WCAG AA contrast on both navy and white backgrounds for large text.",
-      "acceptanceCriteria": [
-        "Tailwind CSS is installed and integrated with Astro via @astrojs/tailwind",
-        "tailwind.config.mjs defines all brand colors (navy, orange, indigo, light, text, muted), fonts, and breakpoints from brief Section 7",
-        "Cabinet Grotesk, Space Grotesk, and Inter fonts are loaded and available",
-        "Orange accent (#FF6B35) passes WCAG AA contrast check for large text on navy and white",
-        "npm run build succeeds with Tailwind configured"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "FOUNDATION: Everything depends on this. Must be first sprint. The bold color/type choices are a key differentiator — Cabinet Grotesk for headlines and orange accent are deliberate departures from generic tech aesthetic.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-002",
-      "title": "Build Layout.astro shell with Header and Footer components",
-      "description": "Rebuild src/layouts/Layout.astro as the base HTML shell for all pages. It should accept props for title, description, and ogImage.\n\nCreate src/components/Header.astro — responsive navigation per brief Section 8 (v2.0):\n- Nav links: Services, Results, About\n- CTA button: 'Get Your Free Audit' (orange #FF6B35 background) linking to /contact\n- Mobile: hamburger menu (JavaScript island or CSS-only)\n- Sticky header on scroll\n- Brand name 'Jodie Plant' as text in Cabinet Grotesk (no image logo yet)\n\nCreate src/components/Footer.astro per brief Section 8 (v2.0):\n- Links: Services | Results | About | Contact\n- Email: jodie@jodieplant.com\n- LinkedIn link placeholder\n- Availability signal: 'Currently taking on new clients for Q2 2026'\n- Copyright: © 2026 Jodie Plant Marketing\n- Dark background (navy #0F172A) with light text\n\nLayout wraps Header + <slot /> + Footer. Includes viewport meta, favicon links, font loading, and prefers-reduced-motion support.",
-      "acceptanceCriteria": [
-        "Layout.astro accepts title, description, and optional ogImage props",
-        "Header shows nav links (Services, Results, About) and orange 'Get Your Free Audit' CTA button",
-        "Header is sticky and responsive — hamburger menu on mobile (<640px)",
-        "Footer shows page links, email, availability signal, and copyright on dark navy background",
-        "Touch targets are minimum 44x44px on mobile",
-        "Cabinet Grotesk is used for brand name in header",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-001"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "FOUNDATION: Layout, Header, and Footer are the structural shell. The orange CTA in the nav and availability signal in the footer are conversion elements that appear on every page.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-003",
-      "title": "Build Homepage with condensed high-impact sections",
-      "description": "Build src/pages/index.astro as the category-defining homepage per brief Section 9 (v2.3). The goal is to communicate value in 10 seconds, disqualify poor-fit leads quickly, and make the method memorable.\n\nSections (in order):\n\n1. HERO (above the fold, dark navy background):\n- Headline: ‘Marketing That Gets You Found’\n- Subhead: ‘One senior marketer. Your entire account.’\n- Supporting line: ‘Search visibility, AI citation, authority content, and smart paid media — delivered through AI-orchestrated systems by someone who’s actually paying attention.’\n- Microproof line: ‘Startups & tech companies | Senior-led execution | AI-orchestrated systems’\n- Primary CTA: ‘Get Your Free Visibility Snapshot’ (orange button → /contact)\n- Secondary CTA: ‘See How It Works’ (text link → /services framework section)\n- Availability signal: ‘Limited roster model — I work with 5–7 companies at a time to maintain senior-level attention’\n\n2. WHO THIS IS FOR:\n- Headline: ‘This is for you if…’\n- Bullets:\n  - You’ve built something great but your pipeline isn’t predictable.\n  - You’re tired of agencies burning ad spend with no clear ROI.\n  - Your competitors show up in search and AI results — and you don’t.\n  - You need senior marketing leadership without hiring a full-time CMO.\n\n3. SOCIAL PROOF BAR (immediately after Who This Is For):\n- 3-4 credential stats in Space Grotesk (must be real)\n- Optional: trusted-by logos, pull quote\n\n4. THE VISIBILITY ENGINE (signature framework — absorbed from FEAT-045):\n- Simple 4-block diagram: Discover → Dominate → Amplify → Optimize\n- Each step has a concrete deliverable example underneath\n- CTA: ‘Start with a Free Visibility Snapshot →’ linking to /contact\n\n5. PRIMARY GROWTH ENGINES:\n- Three large cards only:\n  1) Search & AI Visibility\n  2) Authority Content & AI Citation\n  3) Smart-Stack Paid Media\n- Each card: one-line benefit + microproof snippet (generalised outcome range) + link to /services\n\n6. FINAL CTA (dark navy background):\n- Headline: ‘Ready to get found?’\n- Orange CTA button: ‘Get Your Free Visibility Snapshot’ → /contact\n- Supporting text: ‘Or email me directly: jodie@jodieplant.com’\n- Availability reminder: ‘Limited roster model — 5–7 companies at a time’\n\nTone: Bold, confident, direct. AI mentioned in exactly 2 places: Visibility Engine framework + microproof line. Not in every paragraph.",
-      "acceptanceCriteria": [
-        "Homepage has 6 sections: Hero, Who This Is For, Social Proof Bar, The Visibility Engine, Primary Growth Engines, Final CTA",
-        "Hero has dark navy background with bold Cabinet Grotesk headline ('Marketing That Gets You Found') and orange CTA",
-        "Hero subhead is 'One senior marketer. Your entire account.'",
-        "Hero primary CTA is 'Get Your Free Visibility Snapshot' linking to /contact",
-        "Hero secondary CTA links to Visibility Engine section on /services",
-        "Who This Is For includes competitor-in-search bullet and senior-leadership bullet",
-        "Social proof bar appears after Who This Is For with real credential stats (not placeholder)",
-        "Visibility Engine section shows 4-step diagram: Discover → Dominate → Amplify → Optimize with concrete deliverable examples",
-        "Primary Growth Engines section shows exactly 3 cards (Search & AI Visibility, Authority Content & AI Citation, Smart-Stack Paid Media)",
-        "Final CTA uses dark navy background with orange button",
-        "Limited roster model (5–7 companies) appears in hero and/or final CTA",
-        "All internal links work (/services, /results, /contact)",
-        "Page is fully responsive (single column mobile, multi-column desktop)",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. Includes the Visibility Engine framework diagram (absorbed from FEAT-045) and primary growth engines. Headline broadened to 'Marketing That Gets You Found' per v2.3. Hero subhead elevated to 'One senior marketer. Your entire account.' Stats must be real numbers.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-004",
-      "title": "Build About page with story, approach, and AI advantage",
-      "description": "Build src/pages/about.astro per brief Section 9 (v2.0) 'About Page'.\n\nPurpose: Build trust and personal connection. 'Solo' means 'senior-level attention' not 'under-resourced.'\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'One marketer. Full attention. Real results.' Brief positioning statement.\n\n2. JODIE'S STORY: Background and experience. Why she started the agency. Philosophy: senior talent, AI-enhanced, no bloat. Authentic voice — personal, not corporate. Use placeholder copy that captures the right tone (to be replaced with real bio).\n\n3. THE APPROACH: 4 numbered steps — (1) Understand your business, (2) Build data-driven strategy, (3) Execute with AI-enhanced workflows, (4) Measure, report, iterate. Visual: numbered steps or timeline. Emphasis on transparency.\n\n4. THE AI ADVANTAGE: How AI tools deliver better results — research at scale, content optimization, campaign management, reporting. Key message: augmenting human strategy, not replacing it.\n\n5. CTA: 'Let's talk about your marketing' with links to /contact (form) AND jodie@jodieplant.com (email) — dual paths.",
-      "acceptanceCriteria": [
-        "About page has all 5 sections: Hero, Story, Approach, AI Advantage, CTA",
-        "Hero uses Cabinet Grotesk headline",
-        "Story section has placeholder bio in bold, personal tone (not corporate)",
-        "Approach section shows 4 numbered steps in a visually clear format",
-        "AI Advantage section explains how AI enhances marketing delivery",
-        "CTA offers both form link (/contact) and direct email",
-        "Page is fully responsive",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Trust page for a solo practitioner. The AI Advantage section is unique to this agency and reinforces the core differentiator.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-005",
-      "title": "Build Services page with AI-led structure and engagement models",
-      "description": "Build src/pages/services.astro per brief Section 9 (v2.0) 'Services Page'.\n\nCRITICAL: This page must NOT read like a generic freelancer service list. Lead with the AI method, not just the menu.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'Marketing That Gets You Found'. Subhead: 'One senior marketer. Your entire account. Built on The Visibility Engine — a repeatable system to get you discovered by buyers (and by AI) at the moment of intent.'\n\n2. THE VISIBILITY ENGINE (before individual services): The named framework (4 steps: Discover/Dominate/Amplify/Optimize with concrete deliverable examples under each). Brief explanation of how AI-orchestrated systems change marketing delivery. Specific examples, not generic AI pitch. This section is what makes the page different from every other freelancer's site.\n\n3. SERVICE BLOCKS: 9 services (Growth Attribution & AI Insights presented as 'included infrastructure'), each structured as 'AI difference + Deliverables + Client benefit'. Order by differentiation strength: (1) Search & AI Visibility (SEO + GEO), (2) AI Marketing Systems, (3) Authority Content & AI Citation (was Content Marketing), (4) Smart-Stack Paid Media (was Paid Advertising), (5) Fractional Marketing Leadership, (6) Social Media & Short-Form Video, (7) Conversion Rate Optimization, (8) Local Visibility & Reputation, (9) Email Marketing & Owned Audience.\n\nGrowth Attribution & AI Insights (was Performance Intelligence; analytics & reporting) is not a standalone service block — it's featured in a 'What's always included' section after the service blocks.\n\nEach block has:\n- Service name and icon (orange accent)\n- 'The AI difference' — 1-2 sentences specific to THIS service (from brief Section 5)\n- Key deliverables (3-5 bullets)\n- Benefit one-liner\n\nAlternating layout to prevent monotony.\n\n4. PACKAGES & PRICING: Three tiered retainer packages (Foundation starting at $1,500 / Growth starting at $2,500 / Authority starting at $4,500) as pricing cards with orange accent on recommended tier (Growth). Plus one-time projects. Each card shows what's included, who it's for, price range, CTA to /contact. What a typical month looks like at each tier. Reporting cadence. Authority tier should explicitly include 'Fractional marketing leadership' language. Add a 'Strategy Sprint' one-time project ($3,000-$7,000) for funded startups preparing launches, market entries, or pivots — this fills the gap between free audit and committed retainer.\n\n5. CTA: 'Not sure what you need? Let's figure it out together.' + 'Get Your Free Visibility Snapshot' → /contact + jodie@jodieplant.com.",
-      "acceptanceCriteria": [
-        "Services page has Hero, AI Method section, 8 Service Blocks, Pricing, and CTA",
-        "AI-Enhanced Method section appears BEFORE individual services",
-        "Services use outcome-first names (Search & AI Visibility, AI Marketing Systems, Authority Content & AI Citation, Smart-Stack Paid Media, Growth Attribution & AI Insights) with technical terms (SEO, GEO) in subtext",
-        "Services ordered by differentiation strength (Search & AI Visibility first); Growth Attribution & AI Insights presented as included infrastructure, not standalone",
-        "Pricing section shows Foundation/Growth/Authority tiers with price ranges and one-time projects",
-        "All service blocks are scannable with alternating visual layout",
-        "Orange accents used for service icons and highlights",
-        "CTA offers form link and email",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. This page must differentiate from every other marketing freelancer. The AI-led structure is the key — method before menu. Service ordering (most differentiating first) is deliberate. Service names use outcome-first language (Authority Content & AI Citation, Smart-Stack Paid Media, Growth Attribution & AI Insights) with technical terms in subtext. Per brief v2.3: Hero = 'Marketing That Gets You Found' (no AI in headline); include Visibility Engine framework (no ™) in AI Method section. FEAT-045 (Visibility Engine diagram) absorbed into this page's section 2. Include minimal AI Visibility Audit mention (bridge product from FEAT-032) in section 5 for launch day — full featured section can come later.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-006",
-      "title": "Build Results page with real credentials and methodology (not fake case studies)",
-      "description": "Build src/pages/results.astro per brief Section 9 (v2.2) 'Results Page'.\n\nCRITICAL: This is NOT a portfolio page with fake case studies. Placeholder case studies with fabricated metrics actively harm credibility. This page uses real credentials and methodology to demonstrate expertise.\n\nSections:\n\n1. HERO: Cabinet Grotesk headline 'What You Can Expect'. Subhead: honest framing — 'I don't have a portfolio of logos to hide behind. Here's what I bring instead — real experience, a proven approach, and the results to back it up.'\n\n2. CREDENTIALS & NUMBERS: Real, provable stats in Space Grotesk at large scale — years experience, campaigns/projects delivered, ad spend managed, client retention, industries worked with. MUST be real. Small but honest beats large but fabricated. Add OUTCOME RANGE ANCHORS (generalized, historical patterns — not client-specific): e.g. 'Increased demo bookings 30–120% in 90 days', 'Reduced cost per lead 18–40%', 'Doubled organic visibility in 6–12 months'. Frame as 'What I've seen across engagements' or 'Typical outcome ranges' to make methodology tangible.\n\n3. THE APPROACH IN ACTION: Instead of fake case studies, show methodology applied:\n- 'What a typical SEO engagement looks like' — month-by-month\n- 'How I'd approach a startup launch campaign' — step-by-step\n- 'What a monthly retainer delivers' — concrete deliverables\nDemonstrates expertise without fabricating results.\n\n3b. 'PEEK UNDER THE HOOD' — VISUAL PROCESS PROOF:\nDon't just list what you do — VISUALIZE the workflow. Prospects are skeptical of AI claims. Show actual artifacts:\n- Blurred/redacted screenshot of an AI-enhanced research workflow or audit output\n- Sample 'AI Visibility Report' structure (designed mockup with real formatting, anonymized data)\n- Before/after of an AI-optimized content piece\n- Dashboard screenshot showing type of reporting (redacted data)\nUse subtle frame/border treatment to make these feel like real documents. This section is the most powerful differentiator on the page — it proves Jodie is a systems builder, not just a prompt engineer.\n\n4. WHAT CLIENTS SAY: Real testimonials, LinkedIn recommendations, or professional endorsements. Even 1-2 is better than none. If no client testimonials exist: results from past roles with appropriate framing. Structure ready for adding real testimonials later.\n\n5. INDUSTRIES & EXPERIENCE: Types of companies Jodie works with — SaaS, fintech, dev tools, etc. Pattern recognition: 'I've seen what works for companies like yours.'\n\n6. CTA: 'Want to see what I'd do for your company?' + 'Get Your Free Visibility Snapshot' → /contact.",
-      "acceptanceCriteria": [
-        "Results page has Hero, Credentials, Approach in Action, Client Testimonials, Industries, and CTA",
-        "No fake case studies or fabricated metrics anywhere on the page",
-        "Credentials section uses Space Grotesk at large scale for real stats",
-        "Credentials section includes 2-3 generalized outcome range anchors (e.g. demo bookings +30–120%, cost per lead -18–40%, organic visibility 2x in 6–12 months) framed as historical patterns",
-        "Approach in Action section shows methodology through real scenario walkthroughs",
-        "'Peek Under the Hood' section includes at least 2 visual artifacts (blurred screenshots, sample report mockups, or dashboard examples) proving the AI-enhanced workflow",
-        "Testimonials section has structure ready for real content (even if placeholder notes 'coming soon')",
-        "Hero acknowledges the honest positioning rather than pretending to have a portfolio",
-        "Page is fully responsive",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. Reframed from fake portfolio to honest credentials page. This is more credible and more useful for a new agency. The methodology walkthroughs answer 'what do I actually get?' which is what prospects really want to know. Outcome range anchors (synthesis review) make methodology tangible. 'Peek Under the Hood' adds visual proof of AI-enhanced workflows — blurred screenshots, sample reports, dashboard mockups. This is the most powerful differentiator for countering AI skepticism.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-007",
-      "title": "Build Contact page with form, email, and calendar — multiple conversion paths",
-      "description": "Build src/pages/contact.astro per brief Section 9 (v2.3) ‘Contact Page’.\n\nCRITICAL: Clean conversion path — form + email + expectations. No paid upsell on this page (AI Visibility Audit lives on /services only).\n\nSections (5 total):\n\n1. HERO: Cabinet Grotesk headline ‘Let’s Talk’. Subhead: ‘Whether you want a visibility snapshot, have a quick question, or are ready to get started — I’m here.’\n\n2. FREE VISIBILITY SNAPSHOT (primary conversion path):\n- Headline: ‘Get Your Free Visibility Snapshot’\n- Description: Personalised video walkthrough (5–10 min, Loom-style) with search visibility analysis + AI citation check + competitor gap summary + 3 prioritised next actions. Delivered within 48 hours. LIMITED WEEKLY SLOTS.\n- Form fields (in this order — order matters for conversion):\n  1. Name\n  2. Company name\n  3. Company URL\n  4. Biggest marketing challenge (short text or dropdown)\n  5. Budget range (optional dropdown: <$2k, $2-5k, $5-10k, $10k+) — MUST be LAST.\n- Submit to Formspree or Formspark (static-site compatible, sends to email)\n- Confirmation: ‘Thanks! I’ll send your Visibility Snapshot within 48 hours. Want to talk it through? Book a 15-minute intro call.’ (Calendar link in confirmation — Phase 2)\n- Form validation with helpful error messages\n\n3. OTHER WAYS TO REACH ME:\n- Email: jodie@jodieplant.com with mailto: link\n- LinkedIn: profile link\n(Calendar booking moved to form confirmation flow per v2.3)\n\n4. WHAT TO EXPECT:\n- ‘Your free snapshot is a video walkthrough (5–10 min), delivered within 48 hours. Limited weekly slots.’\n- ‘I respond to every enquiry within 24 hours’\n- ‘No pressure, no hard sell’\n\n5. AVAILABILITY:\n- ‘Limited roster model — 5–7 companies at a time’\n- Creates urgency without being pushy",
-      "acceptanceCriteria": [
-        "Contact page has 5 sections: Hero, Visibility Snapshot Form, Other Contact Methods, What to Expect, Availability",
-        "Snapshot is framed as video walkthrough (5–10 min), 48-hour delivery, limited weekly slots — stated in form description and What to Expect",
-        "No AI Visibility Audit upsell on this page (lives on /services only)",
-        "Calendar booking link appears in form confirmation message, not as separate section",
-        "Form has fields for name, company, URL, challenge, and optional budget range — budget range MUST be the last field (reduces drop-off)",
-        "Form submits to Formspree/Formspark (or similar static-compatible service) and sends to email",
-        "Form shows confirmation message after successful submission",
-        "Form has client-side validation with helpful error messages",
-        "Email mailto: link is prominent alongside the form (not hidden)",
-        "Availability signal uses limited roster model (5–7 companies) rather than generic capacity claims",
-        "Calendar booking link has placeholder structure for Phase 2",
-        "Page is fully responsive",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "CONVERSION-CRITICAL. Simplified to 5 clean sections per v2.3. AI Visibility Audit upsell moved to /services — contact page is a clean conversion path. Calendar booking moved to form confirmation flow to ensure prospects share context first. Includes minimal bridge product mention for launch day (FEAT-032 absorbed). Availability signal drives urgency.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-008",
-      "title": "Add SEO meta tags, Open Graph, and Twitter cards to all pages",
-      "description": "Update Layout.astro and all 5 pages to include proper SEO meta tags per brief Section 12 (v2.3).\n\nEach page needs: <title>, <meta name='description'>, Open Graph tags (og:title, og:description, og:type, og:url, og:image, og:site_name), Twitter card tags (twitter:card, twitter:title, twitter:description, twitter:image), canonical URL, lang='en' on html.\n\nMeta content per page (from brief Section 12 v2.3):\n- Homepage: 'Jodie Plant Marketing — One Senior Marketer. Your Entire Account.'\n- Services: 'Services — Jodie Plant Marketing' / 'Search & AI visibility, authority content, smart-stack paid media...'\n- About: 'About — Jodie Plant Marketing'\n- Results: 'Results — Jodie Plant Marketing'\n- Contact: 'Get Your Free Visibility Snapshot — Jodie Plant Marketing'\n\nCreate a default OG image placeholder in public/ (simple branded graphic with Cabinet Grotesk text, navy bg, orange accent).",
-      "acceptanceCriteria": [
-        "Every page has unique <title> and <meta name='description'> matching brief Section 12",
-        "Open Graph tags (og:title, og:description, og:type, og:url, og:image) on all pages",
-        "Twitter card meta tags on all pages",
-        "Canonical URLs set correctly",
-        "Contact page title leads with 'Get Your Free Visibility Snapshot' for search CTR",
-        "Default OG image exists in public/",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Essential for search visibility and social sharing. Meta titles updated per v2.3: Homepage leads with 'One Senior Marketer. Your Entire Account.' Contact page leads with 'Get Your Free Visibility Snapshot' — both crafted for search CTR.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-009",
-      "title": "Add structured data, XML sitemap, and robots.txt",
-      "description": "Implement structured data and search engine configuration per brief Section 12 (v2.0).\n\nStructured data (JSON-LD):\n- Organization schema: name, url, logo, contactPoint (email), sameAs (LinkedIn)\n- LocalBusiness schema (if targeting geography): name, address, email\n- Service schema on /services: serviceType for each of the 8 services\n\nXML Sitemap: Install @astrojs/sitemap, configure in astro.config.mjs with site URL https://www.jodieplant.com.\n\nrobots.txt: Create public/robots.txt, allow all crawlers, reference sitemap.\n\nClean URLs: consistent trailing slash behavior, lowercase.",
-      "acceptanceCriteria": [
-        "JSON-LD Organization schema in Layout or homepage",
-        "Service schema markup on /services page",
-        "@astrojs/sitemap installed and generates sitemap on build",
-        "public/robots.txt exists with sitemap reference",
-        "URLs are clean and consistent",
-        "npm run build succeeds and sitemap generated in dist/"
-      ],
-      "priority": "should",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-008"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Important for search indexing. Structured data helps with rich results.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-010",
-      "title": "Integrate PostHog with cookie consent banner and core event tracking",
-      "description": "Install PostHog JS and build a cookie consent banner. These MUST ship together — PostHog uses cookies so consent is required before initialisation.\n\nPer brief Section 11 (v2.0):\n\nCOOKIE CONSENT BANNER (src/components/CookieConsent.astro or similar):\n- Show on first visit if no consent stored\n- Two buttons: Accept / Reject\n- On Accept: store localStorage key 'analytics_consent' = 'granted', initialise PostHog, dismiss banner\n- On Reject: store 'analytics_consent' = 'denied', dismiss banner, do NOT load PostHog\n- On page load: check localStorage — only init PostHog if consent === 'granted'\n- Include link to /privacy page\n- Consent expires after 1 year (re-prompt)\n- Banner should be non-intrusive but visible (bottom of screen, not blocking content)\n\nPOSTHOG INITIALISATION:\n- Add posthog-js via npm or CDN script\n- Initialise ONLY after consent granted\n- Use environment variable for PostHog API key and host (don't hardcode)\n- Configure: autocapture enabled, capture_pageview: true, capture_pageleave: true\n- Disable PostHog in development (check for localhost)\n\nCORE CUSTOM EVENTS (instrument across all existing pages):\n- cta_clicked: on every CTA button/link. Properties: cta_text, cta_location (hero/nav/footer/inline), cta_destination, page\n- email_clicked: on every mailto: link. Properties: location (footer/contact/inline), page\n- nav_clicked: on header/footer nav links. Properties: link_text, destination, is_mobile\n- service_card_clicked: on homepage service cards. Properties: service_name\n\nUse data-ph-* attributes or a small inline script on each interactive element. Prefer data attributes where PostHog autocapture supports them.\n\nPERSON PROPERTIES (set on first visit):\n- first_visit_page: the page they landed on\n- utm_source, utm_medium, utm_campaign: from URL params if present\n- visit_count: increment each session",
-      "acceptanceCriteria": [
-        "Cookie consent banner appears on first visit with Accept/Reject options",
-        "PostHog JS does NOT load until user clicks Accept",
-        "Rejecting consent stores preference and does not load PostHog",
-        "Consent persists in localStorage across page loads (key: analytics_consent)",
-        "Banner links to /privacy page",
-        "PostHog initialises with autocapture, pageview, and pageleave enabled",
-        "PostHog API key is configurable via environment variable, not hardcoded",
-        "PostHog disabled on localhost/development",
-        "cta_clicked events fire on all CTA buttons across all pages with correct properties",
-        "email_clicked events fire on all mailto: links",
-        "nav_clicked events fire on header and footer navigation links",
-        "service_card_clicked events fire on homepage service grid",
-        "UTM parameters captured as person properties from URL",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-003", "FEAT-007"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: PostHog is the analytics foundation. Cookie consent banner is legally required and MUST ship with PostHog — not deferred. Core events cover the interactions that feed into conversion funnels (FEAT-021).",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-011",
-      "title": "Create custom 404 page",
-      "description": "Create src/pages/404.astro — branded 404 page using Layout component. Clear '404' message in bold brand tone (confident, not apologetic — e.g., 'This page doesn't exist. But your marketing strategy should.'). Links to homepage and /contact. Cabinet Grotesk headline. Orange accent on CTA.",
-      "acceptanceCriteria": [
-        "404.astro renders a branded 404 page with Layout (header/footer)",
-        "Tone matches brand voice — confident, not apologetic",
-        "Links to homepage and other key pages",
-        "Uses Cabinet Grotesk headline and orange accent",
-        "npm run build succeeds and 404.html generated in dist/"
-      ],
-      "priority": "should",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "LOW-MEDIUM VALUE: Quick win for professional polish. The 404 copy is a brand opportunity — even error pages should demonstrate personality.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-012",
-      "title": "Add scroll animations and micro-interactions",
-      "description": "Add subtle motion to the site per brief Section 7 visual style:\n- Fade-in sections on scroll (IntersectionObserver)\n- Counting-up animation for stat numbers in Social Proof bar and Results page\n- Hover effects on service cards and CTA buttons (scale, shadow, color shift)\n- Smooth scroll for anchor links\n- All animations respect prefers-reduced-motion media query\n\nKeep it subtle — enhance, don't distract. No heavy animation libraries; use CSS transitions and minimal JS.",
-      "acceptanceCriteria": [
-        "Sections fade in on scroll using IntersectionObserver",
-        "Stat numbers animate (count up) when scrolled into view",
-        "Cards and buttons have hover effects",
-        "Anchor links smooth-scroll",
-        "All animations disabled when prefers-reduced-motion is set",
-        "No heavy animation libraries added",
-        "npm run build succeeds"
-      ],
-      "priority": "could",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-003", "FEAT-006"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Motion adds polish and makes the site feel premium. Stat count-up animations draw attention to credibility numbers. Must respect accessibility.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-013",
-      "title": "Add blog infrastructure with 2-3 seed posts",
-      "description": "Set up blog per brief Appendix C (v2.0) — this is a Phase 2 PRIORITY, not Phase 3.\n\nA marketer without a blog is like a chef without a menu. Blog content demonstrates the expertise being sold.\n\nTechnical: Use Astro Content Collections with markdown files. Create:\n- /blog listing page with featured post\n- /blog/[slug] individual post pages\n- CTA at end of each post ('Want help implementing this? Get your free audit')\n\nSeed posts (2-3 at launch):\n1. 'How to build a marketing strategy for your seed-stage startup'\n2. 'SEO vs paid ads: where should startups spend first?'\n3. 'What an AI-powered marketing workflow actually looks like'\n\nPosts should be real, substantive content (800-1500 words) that demonstrates Jodie's expertise. These are NOT placeholder posts.",
-      "acceptanceCriteria": [
-        "Astro Content Collections configured for blog posts",
-        "/blog listing page shows posts with featured post highlighted",
-        "Individual /blog/[slug] pages render markdown with clean reading experience",
-        "Each post has CTA at the end linking to /contact",
-        "2-3 seed posts exist with real, substantive content (800+ words each)",
-        "Blog posts use brand typography and styling",
-        "Navigation updated to include Blog link",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Core Phase 2 feature. Unblocks FEAT-019 (email capture), FEAT-024 (blog analytics). Enables content marketing flywheel and entity authority. Priority stays should — manual tracks (FEAT-035, FEAT-046) and positioning page (FEAT-039) take precedence. READY FOR SPRINT when Tech Lead assesses.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-014",
-      "title": "Add Cal.com calendar booking integration",
-      "description": "Integrate Cal.com (free tier) for 15-minute intro call booking per brief Section 11 Phase 2. Per v2.3: calendar booking link appears in the FORM CONFIRMATION flow (after form submit), not as a standalone section on /contact. This ensures prospects share context first.\n\nConfigure Cal.com with:\n- 15-minute intro call slot\n- Availability windows\n- Confirmation email\n- Calendar sync\n\nIntegration point: form confirmation message includes 'Want to talk it through? Book a 15-minute intro call.' with Cal.com link.",
-      "acceptanceCriteria": [
-        "Cal.com booking link appears in form confirmation message on /contact",
-        "'Book a 15-minute intro call' option available after form submission",
-        "Booking flow works end-to-end",
-        "calendar_clicked PostHog event fires when link is clicked"
-      ],
-      "priority": "could",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-007"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: Calendar in confirmation flow ensures context before booking. Low effort. Keep could — conversion paths already work via form + email.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-015",
-      "title": "Add live chat widget (Crisp)",
-      "description": "Integrate Crisp free tier chat widget per brief Section 11 Phase 2. Widget on all pages, non-intrusive, loads async. Conversations route to Jodie. Must not cover CTAs on mobile.",
-      "acceptanceCriteria": [
-        "Crisp chat widget appears on all pages",
-        "Widget is non-intrusive and doesn't overlap mobile CTAs",
-        "Loads asynchronously without impacting page speed",
-        "Chat conversations route to Jodie"
-      ],
-      "priority": "could",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-003"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Engages high-intent visitors in real-time. Phase 2 item.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-016",
-      "title": "Add privacy policy page covering PostHog, cookies, and GDPR",
-      "groomingNotes": "DEPENDENCY: Must ship with or before FEAT-010 (PostHog) for GDPR compliance.",
-      "description": "Create src/pages/privacy.astro. This is more important now that PostHog uses cookies.\n\nMust cover per brief Appendix C (v2.0):\n- What data is collected: PostHog analytics (page views, clicks, scroll depth), session recordings (what is/isn't captured), form submissions via Formspree\n- Cookie usage: explain PostHog session cookies, what they do, how consent works\n- How to accept/reject cookies and what happens in each case\n- How to withdraw consent after granting it\n- No data selling\n- Session recordings: explain what's recorded, data retention period, that sensitive form fields can be masked\n- GDPR compliance statement\n- Data retention policy\n- Contact for data requests: jodie@jodieplant.com\n- Right to erasure\n\nUse Layout component. Add link in Footer. Write in plain English, not legalese.",
-      "acceptanceCriteria": [
-        "/privacy page exists with comprehensive privacy policy",
-        "Covers PostHog analytics, session recording, cookies, and form data",
-        "Explains cookie consent mechanism and how to change preference",
-        "Explains what session recordings capture and retention",
-        "GDPR compliance section with data subject rights",
-        "Written in plain English, not dense legalese",
-        "Footer links to /privacy",
-        "Cookie consent banner links to this page",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "ELEVATED PRIORITY: Now 'should' instead of 'could' because PostHog uses cookies. The consent banner (FEAT-010) links to this page, so it should exist before or alongside analytics go-live.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
       "id": "FEAT-017",
       "title": "Add individual service sub-pages",
       "description": "Create 9 individual service pages per brief Appendix C (v2.0): /services/search-ai-visibility, /services/ai-marketing-systems, /services/authority-content, /services/smart-stack-paid-media, /services/social-media, /services/local-visibility, /services/email-marketing, /services/conversion-optimization, /services/growth-attribution. Each: hero, AI-enhanced approach for this service, deliverables, FAQ (3-5 questions), CTA. Targets long-tail search queries. Service names use outcome-first language per external strategy review.",
@@ -368,7 +14,9 @@
       ],
       "priority": "could",
       "readyForSprint": false,
-      "dependsOn": ["FEAT-005"],
+      "dependsOn": [
+        "FEAT-005"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "RE-GROOMED (2026-02-24): Phase 2 now complete — blog, guides (4 pages), analytics, chat, and calendar all live. Service sub-pages are still Phase 3 — good for long-tail SEO but not conversion-blocking. Sprint after entity authority (FEAT-035) and testimonials (FEAT-046) are established — individual service pages work best when there is social proof and domain authority behind them. Each page should target a specific service keyword (e.g. 'fractional CMO for startups', 'AI-powered SEO agency'). Estimated: Q2 2026."
     },
@@ -385,7 +33,9 @@
       ],
       "priority": "future",
       "readyForSprint": false,
-      "dependsOn": ["FEAT-006"],
+      "dependsOn": [
+        "FEAT-006"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "RE-GROOMED (2026-02-24): Future track — explicitly blocked until real case studies exist. Never fabricate. The current /results page (real credentials + methodology walkthroughs + outcome range anchors) is more credible than empty case study shells. This item becomes relevant after 3–6 months of active client engagements. When real results exist: one detailed case study is worth ten vague portfolio logos. Estimated: Q3–Q4 2026."
     },
@@ -402,90 +52,11 @@
       ],
       "priority": "should",
       "readyForSprint": false,
-      "dependsOn": ["FEAT-013"],
+      "dependsOn": [
+        "FEAT-013"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "ELEVATED TO SHOULD: Blog (3 posts) and guides (4 pages) are live — the infrastructure to drive email subscribers now exists. Email capture converts readers who aren't ready to book a call. LEAD MAGNET RECOMMENDATION: A 1-page PDF 'Startup Marketing Playbook' — curated summary of the 4 guide pages (Fractional CMO comparison, Alternatives to Ads, Marketing Costs, What a Retainer Includes) as a downloadable quick-reference. Lightweight to create, high alignment with existing guide content. Natural placement: at the end of each blog post and each guide page. Use ConvertKit free tier (up to 10K subscribers). BLOCKER: Lead magnet PDF must exist before Tech Lead marks readyForSprint. Create PDF first, then sprint the form integration."
-    },
-    {
-      "id": "FEAT-020",
-      "title": "Add PostHog contact form analytics (start, abandon, field tracking)",
-      "description": "Instrument the contact/audit form with detailed PostHog event tracking per brief Section 11 'Custom Events — Contact Form'.\n\nThis goes deeper than the core CTA tracking in FEAT-010 — it tracks the full form interaction lifecycle to measure and improve form conversion.\n\nEvents to implement:\n- form_viewed: when form scrolls into viewport (IntersectionObserver)\n- form_started: when first form field receives focus. Properties: first_field\n- form_field_completed: when a field loses focus with a value. Properties: field_name\n- form_abandoned: when user navigates away with partially completed form (beforeunload). Properties: fields_completed (count), last_field\n- form_error: when validation error is shown. Properties: field_name, error_type\n\nNote: form_submitted is already tracked in FEAT-010. This story adds the surrounding lifecycle events.\n\nAlso add properties to the existing form_submitted event: budget_range (selected value), has_url (boolean), challenge_length (character count of challenge field).\n\nThis data enables calculating form completion rate (form_started vs form_submitted) and identifying where prospects drop off.",
-      "acceptanceCriteria": [
-        "form_viewed fires when contact form scrolls into viewport",
-        "form_started fires on first field focus with first_field property",
-        "form_field_completed fires on blur for each field with field_name",
-        "form_abandoned fires on page leave with partial form data (fields_completed, last_field)",
-        "form_error fires on validation errors with field_name and error_type",
-        "form_submitted event enriched with budget_range, has_url, challenge_length properties",
-        "Events only fire when PostHog consent is granted",
-        "npm run build succeeds"
-      ],
-      "priority": "could",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-010"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "Deprioritised to 'could' — valuable but not needed for launch. The form is the primary conversion path. Understanding where prospects drop off directly enables conversion optimization. Implement after traffic reaches meaningful volume.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-021",
-      "title": "Add PostHog scroll depth and section visibility tracking",
-      "description": "Add scroll and content engagement tracking per brief Section 11 'Custom Events — Page-Level'.\n\nEvents to implement:\n- scroll_depth: fires when user scrolls past 25%, 50%, 75%, 100% of page. Properties: depth_percent, page. Use IntersectionObserver on sentinel elements at each threshold. Deduplicate — each threshold fires once per page load.\n- page_section_viewed: fires when a named section scrolls into viewport. Properties: section_id, page, viewport_percent. Track all major sections on homepage (hero, social-proof, differentiators, services, final-cta) and other pages.\n\nThis data answers: 'How far do visitors scroll?', 'Do they see the services section?', 'Does anyone reach the final CTA?'\n\nAll events conditional on PostHog consent being granted.",
-      "acceptanceCriteria": [
-        "scroll_depth events fire at 25%, 50%, 75%, 100% thresholds with deduplication",
-        "page_section_viewed fires for all major homepage sections and key sections on other pages",
-        "Events include page and section_id properties",
-        "IntersectionObserver used (no scroll event listeners)",
-        "Events only fire when PostHog consent is granted",
-        "npm run build succeeds"
-      ],
-      "priority": "could",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-010"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "Deprioritised to 'could' — useful for optimization but not needed for launch. Scroll depth reveals whether the homepage structure is working. Implement after traffic reaches meaningful volume.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-022",
-      "title": "Configure PostHog conversion funnels and dashboards",
-      "description": "Set up PostHog dashboards and funnels per brief Section 11 'Conversion Funnels' and 'PostHog Dashboards'. This is configuration in the PostHog UI, not code — but document the setup in a new docs/ANALYTICS_SETUP.md file so it can be recreated.\n\nFUNNELS to configure:\n1. Primary funnel: $pageview (/) → $pageview (/contact) → form_started → form_submitted\n2. Services exploration: $pageview (/) → service_card_clicked OR $pageview (/services) → $pageview (/contact) → form_submitted\n\nDASHBOARDS to configure:\n1. Overview: unique visitors (daily/weekly/monthly), page views by page, bounce rate, avg session duration, top referrers, device breakdown\n2. Conversion: primary funnel visualization, form submissions (daily trend), email clicks, CTA clicks by location, form completion rate (started vs submitted), form abandonment by last field\n\nCreate docs/ANALYTICS_SETUP.md documenting:\n- PostHog project setup steps\n- Each funnel definition (steps, filters)\n- Each dashboard panel definition\n- How to read the key metrics\n- Mapping to brief Section 13 KPIs",
-      "acceptanceCriteria": [
-        "docs/ANALYTICS_SETUP.md created with full PostHog configuration guide",
-        "Document defines primary and services exploration funnels with exact event filters",
-        "Document defines Overview and Conversion dashboard panels",
-        "Each KPI from brief Section 13 is mapped to a specific PostHog metric or dashboard panel",
-        "Setup is reproducible from the documentation alone"
-      ],
-      "priority": "should",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-010"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "HIGH VALUE: Unblocked from FEAT-020/021 (deprioritised to 'could') — dashboard doc can reference planned events without requiring them to be implemented first. Depends only on FEAT-010 (core PostHog). Documentation ensures the setup is reproducible.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-023",
-      "title": "Enable PostHog session recording with privacy controls",
-      "description": "Enable PostHog session recording per brief Section 11. Session recordings let Jodie watch how visitors interact with the site — where they hover, scroll, click, and get stuck.\n\nConfiguration:\n- Enable session recording in PostHog init config (only when consent granted)\n- Mask sensitive form fields: budget_range dropdown value, company URL. Use PostHog's data attribute (data-ph-no-capture) on sensitive elements\n- Set recording sample rate (start at 100% — low traffic site, free tier allows 5K/month)\n- Document in ANALYTICS_SETUP.md: what's recorded, what's masked, retention period, how to review recordings\n\nPrivacy:\n- Recordings only captured when cookie consent is granted\n- Sensitive form field values masked\n- Update /privacy page content if it exists (FEAT-016) to explain session recordings",
-      "acceptanceCriteria": [
-        "PostHog session recording enabled in init config",
-        "Recordings only captured when analytics consent is granted",
-        "Sensitive form fields have data-ph-no-capture attribute",
-        "Session recording documented in docs/ANALYTICS_SETUP.md",
-        "If /privacy page exists, it explains what session recordings capture",
-        "npm run build succeeds"
-      ],
-      "priority": "could",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-010"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "Deprioritised to 'could' — session recordings are valuable for conversion optimization but not needed for launch. Free tier supports 5K recordings/month. Implement after core analytics (FEAT-010) and basic traffic are established.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-024",
@@ -500,129 +71,12 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": ["FEAT-010", "FEAT-013"],
+      "dependsOn": [
+        "FEAT-010",
+        "FEAT-013"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "UNBLOCKED: FEAT-013 (blog) is now live with 3 posts. All dependencies met. Add tracking to src/pages/blog/[id].astro: blog_post_viewed (slug, title on load), blog_read_depth (IntersectionObserver at 25/50/75/100% of article body), blog_cta_clicked (end-of-post CTA). Low effort sprint — add script block to blog post template. Sprint when traffic warrants measurement."
-    },
-    {
-      "id": "FEAT-026",
-      "title": "Create GEO-optimized 'best answer' content pages",
-      "description": "Create 3-5 'best answer' content pages designed to win in AI answer engines and human search. These pages directly and completely answer high-intent buyer questions.\n\nRef: MARKET_RESEARCH_2026.md 'Content Designed for AI Answers', WEBSITE_BRIEF.md Appendix A 'Best Answer Content Pages'.\n\nPriority pages:\n1. 'How much does startup marketing cost?' — pricing transparency, budget tiers from research, what to expect at each level. Demystifies costs, builds trust.\n2. 'Marketing agency vs freelancer vs in-house' — comparison table using Section 6 data. Honest pros/cons of each.\n3. 'What does a marketing retainer actually include?' — concrete deliverables, typical month walkthrough.\n4. 'How to get leads without expensive Google and Meta Ads' — alternative channels from research (partnerships, newsletters, community, LinkedIn organic).\n5. 'What is GEO and why does it matter for your business?' — thought leadership, demonstrates expertise.\n6. 'Fractional CMO vs Marketing Agency vs Freelancer vs In-House' — comparison using Section 6 data plus fractional CMO pricing (see FEAT-039 for full spec).\n\nFormat for each page:\n- Clear question as H1 headline\n- Direct, concise answer in the first paragraph (AI-extractable)\n- Supporting detail, examples, and evidence\n- Structured data (FAQPage schema where applicable)\n- CTA: 'Want help with this? Get your free marketing audit'\n- Author attribution (Jodie Plant) for E-E-A-T signals\n\nThese can be blog posts (if blog infrastructure exists via FEAT-013) or standalone pages under a /guides or /resources path.",
-      "acceptanceCriteria": [
-        "At least 3 'best answer' pages published with substantive content (800+ words each)",
-        "Each page has a clear question as headline and direct answer in opening paragraph",
-        "FAQPage structured data on pages with FAQ-style content",
-        "Each page has CTA linking to /contact for free audit",
-        "Content is genuinely useful and demonstrates expertise (not thin SEO content)",
-        "Pages are linked from relevant service pages and/or navigation",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Core GEO/AEO strategy. Can launch as standalone pages before blog. Per brief v2.3, these pages serve both AI citation and human conversion. Pricing transparency content is a significant lead driver. Recommend Tech Lead assess readyForSprint.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-027",
-      "title": "Add llms.txt for AI agent discoverability",
-      "description": "Create public/llms.txt — a curated, AI-friendly index of the site's most important content in clean markdown format.\n\nRef: MARKET_RESEARCH_2026.md 'llms.txt', WEBSITE_BRIEF.md Section 10 'AI Discoverability'.\n\nllms.txt is a proposed convention for helping AI agents understand a site's key content. It should:\n- List key pages with brief descriptions\n- Use clean markdown format\n- Include: homepage, services, about, results, contact\n- Include blog posts and 'best answer' pages when they exist\n- Optionally create llms-full.txt with extended page content\n\nFormat example:\n```\n# Jodie Plant Marketing\n\n> AI-powered digital marketing for startups and tech companies.\n\n## Pages\n\n- [Homepage](https://www.jodieplant.com/): Full-service digital marketing for tech companies, powered by AI.\n- [Services](https://www.jodieplant.com/services): AI-enhanced SEO, paid ads, content, social, email, analytics + outcome-based packages.\n- [About](https://www.jodieplant.com/about): Jodie Plant — senior marketer, AI-enhanced workflows, no agency bloat.\n- [Results](https://www.jodieplant.com/results): Methodology, credentials, and what to expect from an engagement.\n- [Contact](https://www.jodieplant.com/contact): Free marketing audit, contact form, booking.\n```\n\nThis is a small technical add-on — not a substitute for authority or distribution. Treat as one component of the broader GEO strategy.",
-      "acceptanceCriteria": [
-        "public/llms.txt exists with curated site index in clean markdown",
-        "All MVP pages listed with accurate descriptions",
-        "File is accessible at /llms.txt on the live site",
-        "Format follows the llms.txt convention (markdown, concise descriptions)",
-        "npm run build succeeds"
-      ],
-      "priority": "could",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005", "FEAT-006", "FEAT-007"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "LOW VALUE: Quick win but tempered expectations — Google confirmed they don't use llms.txt and no major AI company has officially adopted it. Useful for developer docs and RAG systems. Implementation cost is minimal (future-proofing), but don't prioritize over schema markup, entity authority, or content quality.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-029",
-      "title": "Add FAQ structured data to service and content pages",
-      "description": "Add FAQPage JSON-LD structured data to pages that contain FAQ-style content. This supports both traditional search rich results and AI answer engine discoverability.\n\nRef: MARKET_RESEARCH_2026.md 'Content Designed for AI Answers', WEBSITE_BRIEF.md Section 12 'GEO / Answer Engine Optimization'.\n\nPages to add FAQ schema:\n- /services — common questions about engagement models, pricing, what's included\n- /results — questions about methodology, what to expect, timelines\n- 'Best answer' content pages (FEAT-026) — inherently FAQ-structured\n- Individual service sub-pages (FEAT-017) when they exist — 3-5 FAQs per service\n\nImplementation:\n- Create a reusable FAQSchema.astro component that accepts an array of {question, answer} objects\n- Render as JSON-LD in the page <head>\n- Also render the FAQ content visibly on the page (accordion or list) — structured data must match visible content\n- Validate with Google's Rich Results Test",
-      "acceptanceCriteria": [
-        "FAQSchema.astro component exists and is reusable across pages",
-        "FAQPage JSON-LD renders in <head> with valid schema",
-        "FAQ content is visible on the page (not hidden)",
-        "Schema validates with Google Rich Results Test",
-        "/services page has at least 3-5 FAQs with structured data",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005", "FEAT-009"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: FAQ structured data is a direct GEO/AEO tactic — appears in AI answers and Google rich results. All dependencies met (FEAT-005, FEAT-009 complete). Low effort, compounding SEO benefit. RECOMMEND: Tech Lead mark readyForSprint.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-031",
-      "title": "Create 'Alternatives to Google & Meta Ads' best-answer content page",
-      "description": "Create a GEO-optimized 'best answer' content page: 'How to Get Leads Without Expensive Google and Meta Ads.'\n\nRef: MARKET_RESEARCH_2026.md Part 3 — detailed platform comparison with CPCs, minimum budgets, and smart stack allocations.\n\nThis page should cover:\n- Why Google/Meta CPCs keep climbing and what that means for SMBs\n- Platform alternatives with specific data: Bing (~60% lower CPC), Reddit (~$0.20), Quora ($0.35-$0.75), TikTok Spark Ads, Pinterest\n- Organic/owned alternatives: micro-influencer partnerships ($100-$500/post), newsletter sponsorships ($200-$1,000), podcast advertising, LinkedIn organic, community marketing\n- Smart stack budget allocations ($2K, $3K, $5K monthly breakdowns)\n- The 'rent vs own' argument (paid stops when you stop paying; content compounds)\n\nFormat: Clear question headline, direct answer first paragraph, supporting detail with data tables, CTA to free marketing audit.\n\nThis page is both a lead magnet (genuinely useful to the target audience) and a GEO play (AI systems will cite specific budget data and platform comparisons).",
-      "acceptanceCriteria": [
-        "Page published with 1000+ words of substantive content",
-        "Includes specific CPC data and minimum budgets for each platform",
-        "Includes smart stack budget allocation tables",
-        "Has clear question headline and direct answer in opening paragraph",
-        "Includes CTA to /contact for free audit",
-        "FAQPage structured data if applicable",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "HIGH VALUE: Directly addresses top question from budget-conscious buyers. Citation-worthy for AI systems due to specific data (CPCs, budget allocations). Positions Jodie as smart-budget expert. Part of the best-answer content cluster with FEAT-026 and FEAT-039.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-032",
-      "title": "Add AI Visibility Audit as primary bridge product on /services",
-      "description": "Add the 'AI Visibility Audit' as the PRIMARY BRIDGE PRODUCT with a DEDICATED FEATURED SECTION on /services. Per v2.3: the audit upsell lives on /services ONLY — NOT on /contact (contact page is a clean conversion path).\n\nREF: MARKET_RESEARCH_2026.md Part 4 — one-time project fee $500-$1,500.\n\nSTRATEGIC ROLE: The jump from Free Audit ($0) to Growth Retainer ($2,500+) is a significant trust gap. The AI Visibility Audit transforms Jodie from 'vendor asking for a retainer' into 'consultant providing a paid diagnostic.' Conversion ladder: Free Audit → AI Visibility Audit ($500-$1,500) → Retainer ($1,500-$7,500/mo).\n\nON /SERVICES — DEDICATED FEATURED SECTION (not just pricing row):\n- Headline and subhead: what the audit is and why it exists\n- What it includes: how the brand appears across ChatGPT/Perplexity/Gemini/Google AI Overviews; competitor AI visibility comparison; content gap analysis; entity authority assessment; actionable recommendations with priority ranking\n- Deliverable format: e.g. written report + optional walkthrough call\n- Timeline: e.g. delivered within 5–10 business days\n- Who it's for: founders/marketers who want to know where they stand in AI discovery before committing to a retainer\n- Visually marked as 'Recommended First Step' (badge or label)\n- Primary CTA: 'Start with AI Visibility Audit' (links to /contact with audit context)\n\nMINIMAL LAUNCH VERSION: A mention and link within the /services pricing section is sufficient for launch day. The full dedicated featured section can be built as a follow-up sprint.\n\nOptional: dedicated landing page for the audit (e.g. best-answer page).",
-      "acceptanceCriteria": [
-        "AI Visibility Audit has a dedicated featured section on /services with: what it includes, deliverable format, timeline, who it's for, why it exists",
-        "Section is visually marked as 'Recommended First Step' (badge or label)",
-        "Primary CTA in section: 'Start with AI Visibility Audit' linking to /contact with audit context",
-        "AI Visibility Audit does NOT appear as an upsell section on /contact page (per v2.3 — contact page is clean conversion path)",
-        "Clear conversion ladder messaging: Free Audit → AI Visibility Audit → Retainer",
-        "Clear differentiation from the free marketing audit (paid diagnostic vs. free assessment)",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "PRIORITY ELEVATED TO MUST: Bridge product fills the critical conversion ladder gap (Free Snapshot → $997 AI Visibility Audit → $1,500+ Retainer). Without this, prospects jump from free to $1,500/mo commitment — a trust gap that loses deals. All dependencies met (FEAT-005 complete). Sprint-ready after FEAT-036.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-033",
-      "title": "Add pricing FAQ section with structured data to services page",
-      "description": "Add a FAQ section below the pricing cards on /services addressing common pricing questions. The pricing cards themselves (Foundation/Growth/Authority tiers) are built as part of FEAT-005. This item adds the supporting FAQ content and structured data.\n\nQuestions to answer:\n- 'How much does startup marketing cost?'\n- 'What's included in a retainer?'\n- 'Can I start with a one-time project?'\n- 'What if I need something custom?'\n- 'How long until I see results?'\n\nImplementation:\n- FAQ content visible as accordion or list below pricing cards\n- FAQPage JSON-LD structured data (reuse component from FEAT-029 if available)\n- This is a GEO play — pricing FAQs are high-intent queries that AI systems frequently answer",
-      "acceptanceCriteria": [
-        "FAQ section exists below pricing cards with 4-5 common pricing questions",
-        "FAQPage structured data renders in page head",
-        "FAQ content matches the tiered pricing structure from FEAT-005",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "MEDIUM VALUE: Pricing FAQs are a GEO opportunity — 'how much does marketing cost' is a high-intent query. Structured data helps with both Google rich results and AI answer extraction. Depends on pricing cards being built in FEAT-005.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
     },
     {
       "id": "FEAT-035",
@@ -643,156 +97,6 @@
       "groomingNotes": "URGENT MANUAL TRACK (active): Site MVP + guides + blog are live — entity authority work must have started by now. Priorities: (1) LinkedIn: post 2x/week minimum, original marketing commentary + links to guides/blog. High-engagement LinkedIn threads are the #1 source of AI citation signals. (2) Reddit: genuine answers in r/marketing, r/startups, r/SaaS — link to guides where relevant. (3) Directory listings: Clutch, GoodFirms, Crunchbase — consistent NAP across all. (4) Guest podcast/newsletter outreach: pitch Jodie as a guest to B2B marketing podcasts. Milestone: by 2026-03-10 — LinkedIn profile optimized, 5 posts published, 2+ directory listings live."
     },
     {
-      "id": "FEAT-036",
-      "title": "Add Fractional Marketing Leadership as a service and positioning element",
-      "description": "Add 'Fractional Marketing Leadership' language throughout the site to capture the fractional CMO buyer segment.\n\nThis is NOT a new service — it's a reframing of what the Authority tier already delivers. But the term 'fractional CMO' is a recognized buying category that founders actively search for.\n\nImplementation:\n- Add as the 5th hero service card on the homepage\n- Add as a service block on /services (positioned after Paid Advertising)\n- Add to About page positioning statement\n- Add to Authority tier package description: 'Fractional marketing leadership — strategy, execution, and reporting at the CMO level'\n- Add fractional CMO keywords to SEO meta tags and page content\n- Authority tier pricing card can be labeled 'Fractional CMO' or 'Fractional Marketing Leadership'\n\nKey messaging:\n- 'Think of me as your fractional CMO — senior marketing leadership without the $300K salary'\n- 'Strategy AND execution. Not a consultant who leaves you with a PDF'\n- 'Embedded in your team, not an outside vendor'\n\nDo NOT:\n- Create a separate pricing tier — this IS the Authority tier, just named differently\n- Overclaim — fractional CMO implies strategic leadership, not just task execution\n- Use 'fractional CMO' on the Foundation or Growth tiers — those are execution-focused, not leadership-focused",
-      "acceptanceCriteria": [
-        "Fractional Marketing Leadership appears as a homepage hero service card",
-        "Fractional Marketing Leadership has a service block on /services",
-        "Authority tier description includes 'fractional marketing leadership' language",
-        "About page positioning statement references fractional CMO model",
-        "SEO meta tags include fractional CMO keywords on relevant pages",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": true,
-      "dependsOn": ["FEAT-003", "FEAT-004", "FEAT-005"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "PRIORITY SPRINT: Highest-impact positioning change identified. All dependencies complete (FEAT-003, 004, 005). Opens the fractional CMO buyer category — a recognized keyword with growing search volume. Copy-only changes across 3-4 pages. Recommend sprinting immediately as next 'must' item.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-037",
-      "title": "Add Conversion Rate Optimization (CRO) to services and Growth/Authority tiers",
-      "description": "Add CRO as a service block on /services and as an explicit deliverable in Growth and Authority retainer tiers.\n\nCRO is a high-ROI service that's notably absent from the current brief. For tech companies spending on traffic (paid or organic), optimizing conversion rates is often the highest-leverage activity.\n\nService block content:\n- The AI difference: AI-powered A/B test prioritization, heatmap analysis, conversion funnel optimization\n- Deliverables: Conversion audit, A/B testing, landing page optimization, form/CTA optimization, funnel analysis, monthly reporting\n- Client benefit: 'A 20% improvement in conversion rate equals a 20% increase in your marketing budget — without spending another dollar on ads.'\n\nPackage integration:\n- Growth tier: Add 'landing page optimization and basic conversion tracking'\n- Authority tier: Add 'full CRO program including A/B testing and funnel optimization'\n- One-time: 'Conversion & Tracking Setup' already exists ($1,000-$3,000) — expand description to include CRO audit",
-      "acceptanceCriteria": [
-        "CRO service block exists on /services page with AI difference, deliverables, and client benefit",
-        "Growth tier explicitly mentions conversion optimization",
-        "Authority tier explicitly mentions CRO program",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: CRO pairs naturally with paid advertising and SEO. Adding it to Growth/Authority tiers increases perceived package value. Lower priority than positioning content (FEAT-039, FEAT-026, FEAT-031) — those drive new leads, this optimizes existing pages.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-038",
-      "title": "Add Go-To-Market (GTM) Strategy Sprint as a productized one-time offering",
-      "description": "Add a 'GTM Strategy Sprint' as a one-time project option ($3,000-$7,000) on /services and /contact pages.\n\nFor funded startups preparing a product launch, market entry, or pivot. This captures founders who have an imminent need but aren't ready for a monthly retainer.\n\nDeliverables:\n- Market positioning and competitive analysis\n- Channel strategy and prioritization\n- Messaging framework and value proposition\n- 90-day marketing execution roadmap\n- Budget allocation recommendations\n- Recommended tech stack\n\nPositioning:\n- Entry point for startups that just raised a round\n- Natural upsell path into ongoing retainer work\n- Demonstrates strategic depth before monthly commitment\n\nImplementation:\n- Add to one-time projects table on /services pricing section\n- Add as option on /contact page: 'Planning a launch? Ask about our GTM Strategy Sprint'\n- Can be paired with the free marketing audit as a deeper engagement",
-      "acceptanceCriteria": [
-        "GTM Strategy Sprint listed in one-time projects on /services with price range",
-        "Deliverables clearly described",
-        "Mentioned or linked from /contact page",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005", "FEAT-007"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "MEDIUM VALUE: GTM Sprint fills gap between audit and retainer. Recognized buying category for funded startups. $3K-$7K entry point. Lower priority than positioning content — add after FEAT-039 establishes fractional CMO positioning.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-039",
-      "title": "Create 'Fractional CMO vs Agency vs In-House' best-answer content page",
-      "description": "Create a GEO-optimized best-answer page: 'Fractional CMO vs Marketing Agency vs In-House: Which Is Right for Your Startup?'\n\nThis is one of the highest-intent comparison queries in the marketing services space. It naturally positions Jodie's service model as the answer.\n\nContent should cover:\n- What each model actually looks like (fractional CMO, agency, freelancer, in-house hire)\n- Honest comparison table: cost, quality, speed, accountability, strategic depth\n- When each model is the right fit (stage, budget, needs)\n- The hidden costs of each model (agency overhead, hiring time, management burden)\n- Real pricing data from the market ($5K-$15K/month fractional vs $200K-$400K full-time vs $6K-$60K agency retainer)\n- Use competitive comparison data from brief Section 6\n\nFormat: Clear comparison headline, direct answer in first paragraph, detailed comparison table, pricing breakdown, FAQ section with structured data, CTA to free audit.\n\nThis page serves dual purpose:\n1. GEO target — AI systems frequently answer 'should I hire a fractional CMO?' queries\n2. Sales enablement — sends this page to prospects evaluating their options",
-      "acceptanceCriteria": [
-        "Page published with 1000+ words of substantive comparison content",
-        "Includes honest comparison table across all models",
-        "Includes real pricing data for each model",
-        "Has clear question headline and direct answer in opening paragraph",
-        "FAQPage structured data",
-        "CTA to /contact for free audit",
-        "npm run build succeeds"
-      ],
-      "priority": "must",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-002"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "ELEVATED TO MUST: Fractional CMO positioning is core to the brand (brief Section 2.2). This comparison page directly addresses high-intent buyers researching their options. Market research shows fractional CMO is a growth category. Strongly positions Jodie in the GEO/AEO landscape alongside FEAT-026 and FEAT-031.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-040",
-      "title": "Add sticky CTA on scroll (mobile-first)",
-      "description": "Add a sticky CTA bar (mobile-first) that appears on scroll (e.g. after user scrolls past hero or 25% of page). Especially important on mobile where the primary CTA can scroll out of view. CTA should be 'Free Visibility Snapshot' linking to /contact. Non-intrusive: should not cover key content; consider bottom orange bar or floating button. Per synthesis review: conversion optimization for mobile.",
-      "acceptanceCriteria": [
-        "Sticky CTA appears on scroll on homepage and key pages (e.g. after hero or at 25% scroll)",
-        "Mobile-friendly: visible and tappable without covering primary content",
-        "CTA copy and destination match primary conversion path (/contact)",
-        "Respects prefers-reduced-motion if applicable",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-002", "FEAT-003"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "CONVERSION-CRITICAL: Mobile users lose primary CTA on scroll — real conversion leak. All dependencies met (FEAT-002, FEAT-003, FEAT-012 complete). Low effort, high conversion impact. PRIORITY for post-MUST sprint. ACTION: Tech Lead mark readyForSprint.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-041",
-      "title": "Add inline CTAs in long services page",
-      "description": "Add inline CTAs at mid-page and between service blocks on /services, not just at the bottom. Long scroll without CTAs loses conversion. Options: 'Not sure where to start? Get your free audit' after AI Method section; 'Start with AI Visibility Audit' after the audit featured section; repeat CTA after every 2–3 service blocks. Per synthesis review: don't rely on bottom CTA only.",
-      "acceptanceCriteria": [
-        "At least 2 inline CTAs on /services in addition to bottom CTA (e.g. after AI Method, after AI Visibility Audit section)",
-        "CTAs link to /contact with appropriate context (free audit or AI Visibility Audit)",
-        "Visual hierarchy: inline CTAs secondary to main content, not overwhelming",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005", "FEAT-032"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "CONVERSION PATH: Services page is long — users need mid-page conversion opportunities. FEAT-005 done; blocked on FEAT-032 (AI Visibility Audit section needed as one of the inline CTAs). Sprint after FEAT-032 completes.",
-      "status": "completed",
-      "completedAt": "2026-02-24"
-    },
-    {
-      "id": "FEAT-042",
-      "title": "Add case-style micro proof snippets inside service blocks",
-      "description": "Inside selected service blocks on /services, add short 'proof' snippets — e.g. one-line outcome ('Increased demo bookings 40% in 90 days'), anonymised client type ('SaaS founder, Series A'), or methodology snippet. These are not full case studies; they are micro proof points that build credibility within the service description. Per synthesis review: case-style micro proof inside service blocks.",
-      "acceptanceCriteria": [
-        "At least 2–3 service blocks include a micro proof snippet (outcome range, client type, or methodology note)",
-        "Snippets are honest and generalised (no fabricated metrics or client names without permission)",
-        "Visual treatment distinct from body copy (e.g. callout, italic, or small badge)",
-        "npm run build succeeds"
-      ],
-      "priority": "should",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-005"],
-      "groomedAt": "2026-02-24",
-      "groomingNotes": "ELEVATED TO SHOULD: Micro proof within service blocks adds immediate credibility without waiting for full case studies. User value: visitors see evidence alongside claims. Can use real, generalized outcome ranges now. Lower effort than full testimonials track.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
-      "id": "FEAT-043",
-      "title": "Add testimonials schema markup (future-ready)",
-      "description": "Add Review or AggregateRating/Review structured data (JSON-LD) to support future testimonials and rich results. When real testimonials exist, they can be marked up for SEO and AI citation. Implementation: reusable TestimonialSchema component; include on /results and optionally /homepage when testimonial content exists. Placeholder or minimal implementation acceptable until testimonials are added. Per synthesis review: testimonials schema markup future-ready.",
-      "acceptanceCriteria": [
-        "Reusable component or pattern for testimonial/review structured data",
-        "Schema valid per schema.org Review or AggregateRating",
-        "Integrated on /results (and elsewhere when testimonial content exists)",
-        "npm run build succeeds"
-      ],
-      "priority": "could",
-      "readyForSprint": false,
-      "dependsOn": ["FEAT-006", "FEAT-009"],
-      "groomedAt": "2026-02-23",
-      "groomingNotes": "FUTURE-READY: Schema prep for when testimonials exist. Low effort to build reusable component now. User value: SEO rich results and AI citation when content is added. Keep low priority until testimonials are collected.",
-      "status": "completed",
-      "completedAt": "2026-02-25"
-    },
-    {
       "id": "FEAT-044",
       "title": "Calendly/Cal.com gating: require audit before call booking (Phase 2)",
       "description": "When calendar booking (Cal.com/Calendly) is live, add optional gating logic: require or strongly encourage completing the free audit (or AI Visibility Audit) before booking a call. E.g. calendar link on /contact could go to a short landing message: 'Best results when we've reviewed your marketing first — get your free audit, then book a call to discuss.' Or: only show calendar link after form submission. Reduces low-quality calls and aligns with conversion ladder. Phase 2 — after FEAT-014 (Cal.com integration). Per synthesis review: Calendly gating logic.",
@@ -804,7 +108,10 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": ["FEAT-007", "FEAT-014"],
+      "dependsOn": [
+        "FEAT-007",
+        "FEAT-014"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "UNBLOCKED: FEAT-014 (Cal.com) is now integrated in contact.astro. Implementation: update the form confirmation message to show Cal.com booking link only after form submit (not as a standalone persistent section). This ensures prospects have shared context before booking. Keep an 'or email me directly' fallback for high-intent users. Low-effort change — update contact.astro confirmation flow."
     },
@@ -817,7 +124,10 @@
       ],
       "priority": "future",
       "readyForSprint": false,
-      "dependsOn": ["FEAT-003", "FEAT-005"],
+      "dependsOn": [
+        "FEAT-003",
+        "FEAT-005"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "ARCHIVED: Absorbed into FEAT-003 and FEAT-005 per v2.3 review. Kept for historical reference only — excluded from active sprint planning.",
       "status": "absorbed"
@@ -851,7 +161,11 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": ["FEAT-026", "FEAT-031", "FEAT-039"],
+      "dependsOn": [
+        "FEAT-026",
+        "FEAT-031",
+        "FEAT-039"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "QUICK WIN: /guides/ 404 is a user experience and crawlability gap. All 4 guide pages are live. A listing page takes one sprint and creates a proper content hub. Improves internal linking and makes guides accessible via navigation. Recommend as next should-priority sprint."
     },
@@ -867,7 +181,11 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": ["FEAT-027", "FEAT-013", "FEAT-026"],
+      "dependsOn": [
+        "FEAT-027",
+        "FEAT-013",
+        "FEAT-026"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "TRIVIAL WIN: llms.txt is stale — it was created before blog and guides launched. File edit only, no code change. Stack with another sprint or do as a standalone 10-minute task."
     },
@@ -884,7 +202,9 @@
       "priority": "should",
       "readyForSprint": false,
       "sprintable": false,
-      "dependsOn": ["FEAT-013"],
+      "dependsOn": [
+        "FEAT-013"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "MANUAL TRACK — ONGOING: Content is the fuel for entity authority (FEAT-035). 3 seed posts won't sustain topical authority signals — AI systems favour fresh, regularly updated content. Each post also creates a LinkedIn distribution opportunity (primary entity signal channel). Goal: 12 posts by end of Q2 2026. Seed posts are done; content cadence must become the default going-forward activity."
     },
@@ -903,7 +223,10 @@
       ],
       "priority": "should",
       "readyForSprint": true,
-      "dependsOn": ["FEAT-010", "FEAT-015"],
+      "dependsOn": [
+        "FEAT-010",
+        "FEAT-015"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): A marketing agency website must have excellent Core Web Vitals — it is a proof point as much as a technical requirement. Jodie sells marketing and AI systems; a slow or inaccessible site directly contradicts the brand. Third-party scripts (PostHog, Crisp) may be impacting performance now that all pages and features are live. All core pages are built — this is now actionable. Sprint after FEAT-047 (guides index). HIGH CREDIBILITY IMPACT: Google ranks fast sites higher, and prospects who audit Jodie's site expect it to pass the same tests she'd apply to theirs."
     },
@@ -921,7 +244,9 @@
       ],
       "priority": "could",
       "readyForSprint": true,
-      "dependsOn": ["FEAT-013"],
+      "dependsOn": [
+        "FEAT-013"
+      ],
       "groomedAt": "2026-02-24",
       "groomingNotes": "NEW (2026-02-24): Blog is live with 3 posts. Author bio with LinkedIn link strengthens E-E-A-T signals. LinkedIn share buttons are especially high value given the FEAT-035 LinkedIn-first distribution strategy — make it one-click for Jodie to share each post and for readers to share with their networks. Reading time signals content quality. Related posts create a content loop (blog → guides → contact). Low-effort batch sprint — all in blog post template file."
     }
