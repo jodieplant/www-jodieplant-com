@@ -339,10 +339,13 @@
         "npm run build succeeds"
       ],
       "priority": "should",
-      "readyForSprint": true,
+      "readyForSprint": false,
       "dependsOn": [],
       "groomedAt": "2026-02-24",
-      "groomingNotes": "NEW (2026-02-24): The site makes strong claims about AI search disruption but doesn't back them with third-party data. Citing HubSpot (1,500+ marketers surveyed) adds instant credibility. Low effort — targeted copy additions to existing pages. Also improves E-E-A-T signals for search."
+      "groomingNotes": "NEW (2026-02-24): The site makes strong claims about AI search disruption but doesn't back them with third-party data. Citing HubSpot (1,500+ marketers surveyed) adds instant credibility. Low effort — targeted copy additions to existing pages. Also improves E-E-A-T signals for search.",
+      "passes": true,
+      "status": "done",
+      "completedAt": "2026-02-24T22:42:31-08:00"
     },
     {
       "id": "FEAT-057",

@@ -1,22 +1,23 @@
 {
-  "sprintId": "sprint-1772001057",
-  "startedAt": "2026-02-24T22:30:57-08:00",
+  "sprintId": "sprint-1772001379",
+  "startedAt": "2026-02-24T22:36:19-08:00",
   "status": "completed",
   "item": {
-    "id": "FEAT-055",
-    "title": "Elevate video prominence on homepage and services page",
+    "id": "FEAT-056",
+    "title": "Add third-party data citations to SEO/GEO and AI service sections",
     "sourceBacklog": "backlog.json",
     "steps": [],
     "acceptanceCriteria": [
-      "Video/short-form content is visible on homepage without deep scrolling",
-      "Video service is more prominent on services page (higher position or callout)",
-      "Changes are copy/ordering only — no structural redesign",
+      "At least 2 third-party data points added to services page",
+      "At least 1 data point added to homepage growth engines section",
+      "Sources cited inline or in footnotes",
+      "Data points are accurate and attributed",
       "npm run build succeeds"
     ],
-    "startedAt": "2026-02-24T22:30:57-08:00",
+    "startedAt": "2026-02-24T22:36:19-08:00",
     "status": "passed",
-    "completedAt": "2026-02-24T22:36:19-08:00"
+    "completedAt": "2026-02-24T22:42:31-08:00"
   },
-  "completedAt": "2026-02-24T22:36:19-08:00",
+  "completedAt": "2026-02-24T22:42:31-08:00",
   "attempts": 1
 }
